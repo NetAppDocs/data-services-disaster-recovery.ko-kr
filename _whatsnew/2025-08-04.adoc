@@ -1,0 +1,20 @@
+= NetApp 재해 복구 업데이트
+:allow-uri-read: 
+
+
+
+
+=== NetApp 재해 복구 업데이트
+
+이 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+
+* 여러 스토리지 가상 머신에서 제공되는 동일한 LUN을 처리하기 위해 VMFS 지원이 개선되었습니다.
+* 이미 마운트 해제되거나 삭제된 데이터 저장소를 처리하기 위해 테스트 해체 정리를 개선했습니다.
+* 제공된 네트워크 내에 입력된 게이트웨이가 포함되어 있는지 확인할 수 있도록 서브넷 매핑이 개선되었습니다.
+* VM 이름에 ".com"이 포함되어 있는 경우 복제 계획이 실패할 수 있는 문제를 수정했습니다.
+* 복제 계획 생성의 일부로 볼륨을 생성할 때 대상 볼륨이 소스 볼륨과 동일하지 않도록 하는 제한이 제거되었습니다.
+* Azure Marketplace에서 NetApp Intelligent Services에 대한 PAYGO(종량제) 구독 지원을 추가하고 무료 평가판 대화 상자에 Azure Marketplace에 대한 링크를 추가했습니다.
++
+자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html#licensing["NetApp 재해 복구 라이선싱"] 그리고 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["NetApp 재해 복구에 대한 라이선싱 설정"] .
+
+

@@ -1,0 +1,28 @@
+---
+section: use
+title: NetApp 재해 복구 사용
+entries:
+- title: NetApp 재해 복구 개요 사용
+  url: "/use/use-overview.html"
+- title: 대시보드에서 재해 복구 계획의 상태를 확인하세요.
+  url: "/use/dashboard-view.html"
+- title: 사이트에 vCenter 추가
+  url: "/use/sites-add.html"
+- title: 리소스 그룹 만들기
+  url: "/use/resource-group.html"
+- title: 복제 계획 만들기
+  url: "/use/drplan-create.html"
+- title: 다른 사이트로 복제
+  url: "/use/replicate.html"
+- title: 다른 사이트로 마이그레이션
+  url: "/use/migrate.html"
+- title: 원격 사이트로 장애 조치
+  url: "/use/failover.html"
+- title: 원래 소스 사이트로 애플리케이션을 다시 장애 조치합니다.
+  url: "/use/failback.html"
+- title: 사이트, 계획, 데이터 저장소 및 가상 머신 정보 관리
+  url: "/use/manage.html"
+- title: 재해 복구 작업 모니터링
+  url: "/use/monitor-jobs.html"
+- title: 재해 복구 보고서 만들기
+  url: "/use/reports.html"

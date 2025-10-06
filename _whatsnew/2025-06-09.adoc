@@ -1,0 +1,13 @@
+= Windows 로컬 관리자 암호 솔루션(LAPS) 지원
+:allow-uri-read: 
+
+
+
+
+=== Windows 로컬 관리자 암호 솔루션(LAPS) 지원
+
+Windows 로컬 관리자 암호 솔루션(Windows LAPS)은 Active Directory에서 로컬 관리자 계정의 암호를 자동으로 관리하고 백업하는 Windows 기능입니다.
+
+이제 도메인 컨트롤러 세부 정보를 제공하여 서브넷 매핑 옵션을 선택하고 LAPS 옵션을 확인할 수 있습니다.  이 옵션을 사용하면 각 가상 머신에 대한 비밀번호를 제공할 필요가 없습니다.
+
+자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .

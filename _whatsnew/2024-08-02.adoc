@@ -1,0 +1,20 @@
+= FC용 온프레미스 간 VMware VMFS 데이터 저장소 지원
+:allow-uri-read: 
+
+
+
+
+=== FC용 온프레미스 간 VMware VMFS 데이터 저장소 지원
+
+이 릴리스에는 FC로 보호되는 온프레미스 스토리지를 위한 VMware vSphere 가상 머신 파일 시스템(VMFS) 데이터 저장소에 마운트된 VM에 대한 지원에 대한 _기술 미리보기_가 포함되어 있습니다.  이전에는 이 서비스에서 iSCSI용 VMFS 데이터 저장소를 지원하는 기술 미리보기가 제공되었습니다.
+
+
+NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않습니다.
+
+
+
+=== 작업 취소
+
+이 릴리스에서는 이제 Job Monitor UI에서 작업을 취소할 수 있습니다.
+
+참조하다 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["작업 모니터링"] .

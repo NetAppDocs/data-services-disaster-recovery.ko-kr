@@ -1,0 +1,19 @@
+= VMFS 스토리지의 VM 및 데이터 저장소에 대한 ASA r2 지원
+:allow-uri-read: 
+
+
+
+
+=== VMFS 스토리지의 VM 및 데이터 저장소에 대한 ASA r2 지원
+
+NetApp Disaster Recovery의 이 릴리스에서는 VMFS 스토리지의 VM 및 데이터 저장소에 대한 ASA r2에 대한 지원을 제공합니다.  ASA r2 시스템에서 ONTAP 소프트웨어는 SAN 환경에서 지원되지 않는 기능을 제거하는 동시에 필수적인 SAN 기능을 지원합니다.
+
+이 릴리스는 ASA r2에 대해 다음 기능을 지원합니다.
+
+* 기본 스토리지에 대한 일관성 그룹 프로비저닝(계층 구조 없이 단일 레벨만 있는 플랫 일관성 그룹만 해당)
+* SnapMirror 자동화를 포함한 백업(일관성 그룹) 작업
+
+
+NetApp Disaster Recovery에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요합니다.
+
+데이터 저장소는 ONTAP 볼륨이나 ASA r2 스토리지 유닛에 마운트할 수 있지만 NetApp Disaster Recovery의 리소스 그룹에는 ONTAP 의 데이터 저장소와 ASA r2의 데이터 저장소를 모두 포함할 수 없습니다.  리소스 그룹에서 ONTAP 의 데이터 저장소나 ASA r2의 데이터 저장소를 선택할 수 있습니다.

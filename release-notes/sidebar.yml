@@ -1,0 +1,8 @@
+---
+section: release-notes
+title: 릴리스 노트
+entries:
+- title: 새로운 소식
+  url: "/release-notes/dr-whats-new.html"
+- title: 제한 사항
+  url: "/release-notes/dr-limitations.html"

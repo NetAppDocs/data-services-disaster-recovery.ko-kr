@@ -1,0 +1,52 @@
+---
+indexpage:
+  title: NetApp 재해 복구 설명서
+  summary: VMware용 NetApp 재해 복구를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 NetApp 클라우드
+    스토리지를 사용하여 재해 복구 사이트로 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제할 수 있습니다.
+  keywords: disaster, disaster recovery, bluexp, replicate, replication, cloud storage
+  lead: '클라우드로의 재해 복구는 사이트 중단 및 데이터 손상 사건(예: 랜섬웨어)으로부터 작업 부하를 보호하는 탄력적이고 비용 효율적인 방법입니다.  VMware용
+    NetApp 재해 복구를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 퍼블릭 클라우드의 VMware 소프트웨어
+    정의 데이터 센터나 재해 복구 사이트인 다른 온프레미스 사이트로 복제할 수 있습니다.'
+  tiles:
+  - title: 시작하기
+    links:
+    - title: NetApp 재해 복구에 대해 알아보세요
+      url: "/get-started/dr-intro.html"
+    - title: NetApp 재해 복구의 새로운 기능
+      url: "/release-notes/dr-whats-new.html"
+    - title: 빠른 시작
+      url: "/get-started/dr-quick-start.html"
+    - title: 필수 조건
+      url: "/get-started/dr-prerequisites.html"
+    - title: NetApp 재해 복구에 액세스
+      url: "/get-started/dr-login.html"
+    - title: 자주 묻는 질문
+      url: "/get-started/dr-faq.html"
+  - title: NetApp 재해 복구 사용
+    links:
+    - title: 사이트에 vCenter 추가
+      url: "/use/sites-add.html"
+    - title: 재해 복구 계획 만들기
+      url: "/use/drplan-create.html"
+    - title: 다른 사이트에 앱 복제
+      url: "/use/replicate.html"
+    - title: 앱을 다른 사이트로 마이그레이션
+      url: "/use/migrate.html"
+    - title: 원격 사이트로 앱 장애 조치
+      url: "/use/failover.html"
+    - title: 앱을 원래 소스 사이트로 다시 장애 조치합니다.
+      url: "/use/failback.html"
+  - title: 블로그 및 커뮤니티
+    links:
+    - title: NetApp 콘솔
+      url: https://www.netapp.com/console
+    - title: NetApp 데이터 서비스
+      url: https://www.netapp.com/data-services/
+    - title: NetApp 커뮤니티
+      url: https://community.netapp.com
+    - title: NetApp 재해 복구 블로그
+      url: https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-disaster-recovery-service-for-BC-with-VMware-Cloud-on-AWS-and-FSx-for/ba-p/447066
+    - title: NetApp Disaster Recovery as a Service Lab on Demand 시작하기
+      url: https://labondemand.netapp.com/lab/draas
+    - title: 비디오
+      url: https://www.youtube.com/@netapp/videos

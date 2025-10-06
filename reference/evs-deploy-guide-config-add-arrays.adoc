@@ -1,0 +1,77 @@
+---
+sidebar: sidebar 
+permalink: reference/evs-deploy-guide-config-add-arrays.html 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter,amazon elastic vmware service 
+summary: NetApp 재해 복구를 사용하기 전에 온프레미스 및 클라우드 호스팅 스토리지 인스턴스를 NetApp 콘솔 시스템에 추가해야 합니다. 
+---
+= NetApp 재해 복구를 사용하여 Amazon EVS용 NetApp 콘솔 시스템에 온프레미스 어레이 추가
+:allow-uri-read: 
+
+
+[role="lead"]
+NetApp 재해 복구를 사용하기 전에 온프레미스 및 클라우드 호스팅 스토리지 인스턴스를 NetApp 콘솔 시스템에 추가해야 합니다.
+
+다음을 수행해야 합니다.
+
+* NetApp 콘솔 시스템에 온프레미스 어레이를 추가합니다.
+* NetApp 콘솔 시스템에 Amazon FSx for NetApp ONTAP (FSx for ONTAP ) 인스턴스를 추가합니다.
+
+
+
+
+== NetApp 콘솔 시스템에 온프레미스 스토리지 어레이 추가
+
+NetApp 콘솔 시스템에 온프레미스 ONTAP 스토리지 리소스를 추가합니다.
+
+. NetApp 콘솔 시스템 페이지에서 *시스템 추가*를 선택합니다.
++
+image:evs-canvas-add-working-env-1.png["시스템 추가"]
+
+. 시스템 추가 페이지에서 *온프레미스* 카드를 선택합니다.
++
+image:evs-canvas-add-working-env-2.png["시스템 이미지 추가"]
+
+. On-Premises ONTAP 카드에서 *Discover*를 선택하세요.
++
+image:evs-canvas-add-working-env-3.png["시스템 이미지 추가"]
+
+. 클러스터 검색 페이지에서 다음 정보를 입력합니다.
++
+.. ONTAP 어레이 클러스터 관리 포트의 IP 주소
+.. 관리자 사용자 이름
+.. 관리자 비밀번호
+
+
+. 페이지 하단의 *발견*을 선택하세요.
++
+image:evs-canvas-add-working-env-4-5.png["시스템 이미지 추가"]
+
+. vCenter 데이터스토어를 호스팅할 각 ONTAP 어레이에 대해 1~5단계를 반복합니다.
+
+
+
+
+== NetApp 콘솔 시스템에 Amazon FSx for NetApp ONTAP 스토리지 인스턴스 추가
+
+다음으로, NetApp 콘솔 시스템에 Amazon FSx for NetApp ONTAP 스토리지 리소스를 추가합니다.
+
+. NetApp 콘솔 시스템 페이지에서 *시스템 추가*를 선택합니다.
++
+image:evs-canvas-add-working-env-1.png["시스템 이미지 추가"]
+
+. 시스템 추가 페이지에서 *Amazon Web Services* 카드를 선택합니다.
++
+image:evs-canvas-add-working-evs-2.png["시스템 이미지 추가"]
+
+. Amazon FSx for ONTAP 카드에서 *기존 검색* 링크를 선택합니다.
++
+image:evs-canvas-add-working-evs-3.png["시스템 이미지 추가"]
+
+. FSx for ONTAP 인스턴스를 호스팅하는 자격 증명과 AWS 지역을 선택합니다.
+. 추가할 FSx for ONTAP 파일 시스템을 하나 이상 선택하세요.
+. 페이지 하단의 *발견*을 선택하세요.
++
+image:evs-needs-updates-canvas-add-working-evs-4-5.png["시스템 이미지 추가"]
+
+. vCenter 데이터스토어를 호스팅할 각 FSx for ONTAP 인스턴스에 대해 1~6단계를 반복합니다.
+

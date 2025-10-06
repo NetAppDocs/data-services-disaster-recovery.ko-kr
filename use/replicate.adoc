@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: use/replicate.html 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
+summary: NetApp Disaster Recovery를 사용하면 SnapMirror 복제를 사용하여 소스 사이트의 VMware 앱을 클라우드의 재해 복구 원격 사이트로 복제할 수 있습니다. 
+---
+= NetApp 재해 복구를 사용하여 다른 사이트에 애플리케이션 복제
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+NetApp Disaster Recovery를 사용하면 SnapMirror 복제를 사용하여 소스 사이트의 VMware 앱을 클라우드의 재해 복구 원격 사이트로 복제할 수 있습니다.
+
+
+TIP: 재해 복구 계획을 만들고 마법사에서 재발을 식별하고 재해 복구 사이트로 복제를 시작하면 NetApp 재해 복구는 30분마다 복제가 실제로 계획에 따라 발생하는지 확인합니다. 작업 모니터 페이지에서 진행 상황을 모니터링할 수 있습니다.
+
+*필수 NetApp 콘솔 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자 또는 재해 복구 장애 조치 관리자 역할.
+
+link:../reference/dr-reference-roles.html["NetApp 재해 복구의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+
+.시작하기 전에
+복제를 시작하기 전에 복제 계획을 만들고 앱 복제를 선택해야 합니다.  그러면 작업 메뉴에 *복제* 옵션이 나타납니다.
+
+.단계
+. 에 로그인하세요 https://console.netapp.com/["NetApp 콘솔"^] .
+. NetApp 콘솔 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
+. 메뉴에서 *복제 계획*을 선택합니다.
+. 복제 계획을 선택하세요.
+. 오른쪽에서 *작업* 옵션을 선택하세요image:../use/icon-horizontal-dots.png["NetApp 재해 복구 서비스의 작업 메뉴 아이콘"] *복제*를 선택하세요.
+

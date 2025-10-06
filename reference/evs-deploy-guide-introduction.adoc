@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: reference/evs-deploy-guide-introduction.html 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, netapp, ontap 
+summary: Amazon EVS와 Amazon FSx for NetApp ONTAP 사용한 NetApp 재해 복구 소개. 
+---
+= Amazon Elastic VMware Service 및 Amazon FSx for NetApp ONTAP 사용한 NetApp 재해 복구 소개
+:allow-uri-read: 
+
+
+[role="lead"]
+점점 더 많은 고객이 VMware vSphere 기반과 같은 프로덕션 컴퓨팅 워크로드를 위해 가상화된 인프라에 더 의존하게 되었습니다.  가상 머신(VM)이 비즈니스에 더욱 중요해짐에 따라 고객은 물리적 컴퓨팅 리소스와 동일한 유형의 재해로부터 이러한 VM을 보호해야 합니다.  현재 제공되는 재해 복구(DR) 솔루션은 복잡하고 비용이 많이 들며 리소스가 많이 필요합니다.  가상화된 인프라에 사용되는 최대 규모의 스토리지 공급업체 NetApp 모든 유형의 ONTAP 스토리지 호스팅 데이터를 보호하는 것과 동일한 방식으로 고객의 VM을 보호하는 데 큰 관심을 가지고 있습니다.  이러한 목표를 달성하기 위해 NetApp NetApp 재해 복구 서비스를 만들었습니다.
+
+모든 DR 솔루션의 주요 과제 중 하나는 DR 복제 및 복구 인프라를 제공하기 위해 추가적인 컴퓨팅, 네트워크 및 스토리지 리소스를 구매, 구성 및 유지 관리하는 데 드는 증가 비용을 관리하는 것입니다.  중요한 온프레미스 가상 리소스를 보호하는 데 널리 사용되는 옵션 중 하나는 클라우드 호스팅 가상 리소스를 DR 복제 및 복구 인프라로 사용하는 것입니다.  Amazon은 NetApp ONTAP 호스팅 VM 인프라와 호환되는 비용 효율적인 리소스를 제공할 수 있는 솔루션의 한 예입니다.
+
+Amazon은 가상 사설 클라우드(VPC) 내에서 VMware Cloud Foundation을 지원하는 Amazon Elastic VMware Service(Amazon EVS)를 출시했습니다.  Amazon EVS는 AWS의 복원력과 성능과 함께 익숙한 VMware 소프트웨어 및 도구를 제공하여 Amazon EVS vCenter를 온프레미스 가상화 인프라의 확장 기능으로 통합할 수 있도록 합니다.
+
+Amazon EVS에는 스토리지 리소스가 포함되어 있지만, 스토리지 사용량이 많은 작업 부하가 있는 조직의 경우 기본 스토리지를 사용하면 효율성이 떨어질 수 있습니다.  이러한 경우 Amazon EVS를 Amazon FSx for NetApp ONTAP 스토리지(Amazon FSxN)와 함께 사용하면 더욱 유연한 스토리지 솔루션을 제공할 수 있습니다.  또한 온프레미스에서 NetApp ONTAP 스토리지 솔루션을 사용하여 VMware 인프라를 호스팅하는 경우 FSx for ONTAP 이 포함된 Amazon EVS를 사용하면 온프레미스와 클라우드 호스팅 인프라 간에 동급 최고의 데이터 상호 운용성과 보호 기능을 얻을 수 있습니다.
+
+Amazon FSx for NetApp ONTAP 에 대한 정보는 다음을 참조하세요. https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started.html["Amazon FSx for NetApp ONTAP 시작하기"^] .

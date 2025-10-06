@@ -1,0 +1,152 @@
+---
+sidebar: sidebar 
+permalink: get-started/dr-setup.html 
+keywords: bluexp, disaster recovery, aws, amazon web services, amazon fsx for netapp ontap 
+summary: NetApp 재해 복구를 사용하려면 몇 가지 단계를 수행하여 설정하세요. 
+---
+= NetApp 재해 복구를 위한 인프라 설정
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/get-started/
+
+
+[role="lead"]
+NetApp 재해 복구를 사용하려면 Amazon Web Services(AWS)와 NetApp 콘솔에서 몇 가지 단계를 수행하여 설정해야 합니다.
+
+
+TIP: 검토link:../get-started/dr-prerequisites.html["전제 조건"] 시스템이 준비되었는지 확인하세요.
+
+다음 인프라에서 NetApp 재해 복구를 사용할 수 있습니다.
+
+* 온프레미스 VMware 플러스 ONTAP 데이터 센터를 VMware Cloud on AWS 및 Amazon FSx for NetApp ONTAP 기반 AWS DR 인프라로 복제하는 하이브리드 클라우드 DR입니다.
+* 온프레미스 VMware와 ONTAP vCenter를 다른 온프레미스 VMware와 ONTAP vCenter로 복제하는 프라이빗 클라우드 DR입니다.
+
+
+
+
+== Amazon FSx for NetApp ONTAP 활용한 하이브리드 클라우드
+
+이 방법은 NFS 프로토콜을 사용하여 ONTAP FlexVol 볼륨에 호스팅된 데이터 저장소를 사용하는 온프레미스 프로덕션 vCenter 인프라로 구성됩니다.  DR 사이트는 NFS 프로토콜을 사용하는 하나 이상의 FSx for ONTAP 인스턴스에서 제공하는 FlexVol 볼륨에 호스팅된 데이터 저장소를 사용하는 하나 이상의 VMware Cloud SDDC 인스턴스로 구성됩니다.
+
+프로덕션 사이트와 DR 사이트는 AWS 호환 보안 연결을 통해 연결됩니다.  일반적인 연결 유형은 보안 VPN(개인 또는 AWS 제공), AWS Direct Connect 또는 기타 승인된 상호 연결 방법입니다.
+
+AWS 클라우드 인프라와 관련된 재해 복구의 경우 AWS용 콘솔 에이전트를 사용해야 합니다.  에이전트는 FSx for ONTAP 인스턴스와 동일한 VPC에 설치해야 합니다.  다른 VPC에 추가 FSx for ONTAP 인스턴스가 배포된 경우, 에이전트를 호스팅하는 VPC는 ​​다른 VPC에 액세스할 수 있어야 합니다.
+
+
+
+=== AWS 가용성 영역
+
+AWS는 특정 지역 내의 하나 이상의 가용성 영역(AZ)에 솔루션을 배포하는 것을 지원합니다.  재해 복구는 AWS에서 호스팅하는 두 가지 서비스인 VMware Cloud for AWS와 AWS FSx for NetApp ONTAP 사용합니다.
+
+* *AWS용 VMware Cloud*: 단일 AZ 또는 이중 AZ 스트레치 클러스터 SDDC 환경에서의 배포를 지원합니다.  재해 복구는 Amazon VMware Cloud for AWS에 대해서만 단일 AZ SDDC 배포를 지원합니다.
+* * NetApp ONTAP 용 AWS FSx*: 듀얼 AZ 구성으로 배포하는 경우 각 볼륨은 단일 FSx 시스템이 소유합니다.  각 볼륨은 단일 FSx 시스템이 소유합니다.  볼륨의 데이터는 두 번째 FSx 시스템에 미러링됩니다.  FSx for ONTAP 시스템은 단일 또는 이중 AZ 배포로 구축할 수 있습니다.  재해 복구는 FSx for ONTAP 배포를 위한 단일 및 다중 AZ FSx를 모두 지원합니다.
+
+
+*모범 사례*: AWS DR 사이트 구성의 경우 NetApp VMware Cloud와 AWS FSx for ONTAP 인스턴스 모두에 단일 AZ 배포를 사용할 것을 권장합니다.  AWS를 DR에 사용하기 때문에 여러 AZ를 도입하는 데 이점이 없습니다.  다중 AZ는 비용과 복잡성을 증가시킬 수 있습니다.
+
+
+
+=== 온프레미스에서 AWS로
+
+AWS는 프라이빗 데이터 센터를 AWS 클라우드에 연결하기 위해 다음과 같은 방법을 제공합니다.  각 솔루션에는 이점과 비용 고려사항이 있습니다.
+
+* *AWS Direct Connect*: 이는 AWS 파트너가 제공하는, 귀하의 개인 데이터 센터와 동일한 지리적 영역에 위치한 AWS 클라우드 상호 연결입니다.  이 솔루션은 공용 인터넷 연결이 필요 없이 로컬 데이터 센터와 AWS 클라우드 간에 안전하고 개인적인 연결을 제공합니다.  이는 AWS가 제공하는 가장 직접적이고 효율적인 연결 방법입니다.
+* *AWS 인터넷 게이트웨이*: AWS 클라우드 리소스와 외부 컴퓨팅 리소스 간의 공용 연결을 제공합니다.  이러한 유형의 연결은 일반적으로 보안이 필요하지 않은 HTTP/HTTPS 서비스와 같이 외부 고객에게 서비스를 제공하는 데 사용됩니다.  서비스 품질 제어, 보안, 연결 보장이 없습니다.  이러한 이유로 이 연결 방법은 프로덕션 데이터 센터를 클라우드에 연결하는 데 권장되지 않습니다.
+* *AWS 사이트 간 VPN*: 이 가상 사설망 연결은 공용 인터넷 서비스 제공자와 함께 안전한 액세스 연결을 제공하는 데 사용할 수 있습니다.  VPN은 AWS 클라우드에서 송수신되는 모든 데이터를 암호화하고 해독합니다.  VPN은 소프트웨어 기반이거나 하드웨어 기반일 수 있습니다.  기업용 애플리케이션의 경우, 공용 인터넷 서비스 제공자(ISP)는 DR 복제에 적절한 대역폭과 지연 시간이 제공되도록 서비스 품질을 보장해야 합니다.
+
+
+*모범 사례*: AWS DR 사이트 구성의 경우 NetApp AWS Direct Connect를 사용할 것을 권장합니다.  이 솔루션은 엔터프라이즈 애플리케이션에 최고의 성능과 보안을 제공합니다.  사용할 수 없는 경우 VPN과 함께 고성능 공용 ISP 연결을 사용해야 합니다.  ISP가 적절한 네트워크 성능을 보장하기 위해 상용 QoS 서비스 수준을 제공하는지 확인하세요.
+
+
+
+=== VPC 간 상호 연결
+
+AWS는 다음과 같은 유형의 VPC-VPC 상호연결을 제공합니다.  각 솔루션에는 이점과 비용 고려사항이 있습니다.
+
+* *VPC 피어링*: 두 VPC 간의 개인 연결입니다.  이는 AWS가 제공하는 가장 직접적이고 효율적인 연결 방법입니다.  VPC 피어링은 동일하거나 다른 AWS 지역에 있는 VPC를 연결하는 데 사용할 수 있습니다.
+* *AWS 인터넷 게이트웨이*: 일반적으로 AWS VPC 리소스와 비 AWS 리소스 및 엔드포인트 간의 연결을 제공하는 데 사용됩니다.  모든 트래픽은 "헤어핀" 경로를 따릅니다. 즉, 다른 VPC로 향하는 VPC 트래픽은 인터넷 게이트웨이를 통해 AWS 인프라를 빠져나와 동일하거나 다른 게이트웨이를 통해 AWS 인프라로 돌아갑니다.  이는 엔터프라이즈 VMware 솔루션에 적합한 VPC 연결 유형이 아닙니다.
+* *AWS Transit Gateway*: 이는 각 VPC가 단일 중앙 게이트웨이에 연결될 수 있도록 하는 중앙 집중식 라우터 기반 연결 유형으로, 이 게이트웨이는 모든 VPC 간 트래픽에 대한 중앙 허브 역할을 합니다.  이를 VPN 솔루션에 연결하여 온프레미스 데이터 센터 리소스가 AWS VPC 호스팅 리소스에 액세스할 수 있도록 할 수도 있습니다.  이러한 유형의 연결을 구현하려면 일반적으로 추가 비용이 필요합니다.
+
+
+*모범 사례*: VMware Cloud와 단일 FSx for ONTAP VPC를 포함하는 DR 솔루션의 경우 NetApp VPC 피어 연결을 사용할 것을 권장합니다.  여러 FSx for ONTAP VPC가 배포된 경우 여러 VPC 피어 연결의 관리 오버헤드를 줄이기 위해 AWS Transit Gateway를 사용하는 것이 좋습니다.
+
+
+
+=== AWS를 사용하여 온프레미스에서 클라우드로의 보호를 준비하세요
+
+AWS를 사용하여 온프레미스에서 클라우드로의 보호를 위한 NetApp 재해 복구를 설정하려면 다음을 설정해야 합니다.
+
+* NetApp ONTAP 용 AWS FSx 설정
+* AWS SDDC에 VMware Cloud 설정
+
+
+
+
+==== NetApp ONTAP 용 AWS FSx 설정
+
+* Amazon FSx for NetApp ONTAP 파일 시스템을 만듭니다.
++
+** ONTAP 에 대한 FSx를 프로비저닝하고 구성합니다.  Amazon FSx for NetApp ONTAP NetApp ONTAP 파일 시스템을 기반으로 높은 안정성, 확장성, 고성능, 다양한 기능을 갖춘 파일 스토리지를 제공하는 완전 관리형 서비스입니다.
+** 다음 단계를 따르세요 https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html["기술 보고서 ​​4938: VMware Cloud on AWS를 사용하여 Amazon FSx ONTAP NFS 데이터 저장소로 마운트"^] 그리고 https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html["Amazon FSx for NetApp ONTAP 빠른 시작"] FSx for ONTAP 을 프로비저닝하고 구성합니다.
+
+
+* 시스템에 Amazon FSx for ONTAP 을 추가하고 FSx for ONTAP 에 대한 AWS 자격 증명을 추가합니다.
+* AWS FSx for ONTAP 인스턴스에서 대상 ONTAP SVM을 생성하거나 확인합니다.
+* NetApp 콘솔에서 소스 온프레미스 ONTAP 클러스터와 FSx for ONTAP 인스턴스 간의 복제를 구성합니다.
+
+
+참조하다 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["ONTAP 시스템용 FSx를 설정하는 방법"^] 자세한 단계는 다음을 참조하세요.
+
+
+
+==== AWS SDDC에 VMware Cloud 설정
+
+https://www.vmware.com/products/vmc-on-aws.html["AWS의 VMware 클라우드"^]AWS 생태계에서 VMware 기반 워크로드에 대한 클라우드 네이티브 환경을 제공합니다. 각 VMware 소프트웨어 정의 데이터 센터(SDDC)는 Amazon Virtual Private Cloud(VPC)에서 실행되며 전체 VMware 스택(vCenter Server 포함), NSX-T 소프트웨어 정의 네트워킹, vSAN 소프트웨어 정의 스토리지, 워크로드에 컴퓨팅 및 스토리지 리소스를 제공하는 하나 이상의 ESXi 호스트를 제공합니다.
+
+AWS에서 VMware Cloud 환경을 구성하려면 다음 단계를 따르세요. https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-setup.html["AWS에서 가상화 환경 배포 및 구성"^] 파일럿 라이트 클러스터는 재해 복구 목적으로도 사용될 수 있습니다.
+
+
+
+== 프라이빗 클라우드
+
+NetApp Disaster Recovery를 사용하면 하나 이상의 vCenter 클러스터에 호스팅된 VMware VM을 보호할 수 있습니다. 즉, VM 데이터 저장소를 동일한 개인 데이터 센터에 있는 다른 vCenter 클러스터나 원격 개인 또는 공동 배치된 데이터 센터에 복제할 수 있습니다.
+
+온프레미스 간 상황의 경우, 물리적 사이트 중 하나에 콘솔 에이전트를 설치합니다.
+
+재해 복구는 이더넷과 TCP/IP를 사용하여 사이트 간 복제를 지원합니다.  모든 변경 사항을 복구 지점 목표(RPO) 시간 프레임 내에 DR 사이트에 복제할 수 있도록 프로덕션 사이트 VM에서 데이터 변경률을 지원할 수 있는 적절한 대역폭이 있는지 확인하세요.
+
+
+
+=== 온프레미스 간 보호를 준비하세요
+
+온프레미스 간 보호를 위해 NetApp Disaster Recovery를 설정하기 전에 다음 요구 사항이 충족되는지 확인하세요.
+
+* ONTAP 저장
++
+** ONTAP 자격 증명이 있는지 확인하세요.
+** 재해 복구 사이트를 만들거나 확인하세요.
+** 대상 ONTAP SVM을 생성하거나 확인하세요.
+** 소스 및 대상 ONTAP SVM이 피어링되었는지 확인하세요.
+
+
+* vCenter 클러스터
++
+** 보호하려는 VM이 ​​NFS 데이터 저장소( ONTAP NFS 볼륨 사용) 또는 VMFS 데이터 저장소( NetApp iSCSI LUN 사용)에 호스팅되어 있는지 확인하세요.
+** 검토link:../reference/vcenter-privileges.html["vCenter 권한"] NetApp 재해 복구에 필요합니다.
+** 재해 복구 사용자 계정(기본 vCenter 관리자 계정 아님)을 만들고 해당 계정에 vCenter 권한을 할당합니다.
+
+
+
+
+
+
+=== 지능형 프록시 지원
+
+NetApp 콘솔 에이전트는 지능형 프록시를 지원합니다.  지능형 프록시는 온프레미스 환경을 NetApp 콘솔에 연결하는 가볍고 안전하며 효율적인 방법입니다.  VPN이나 ​​직접 인터넷 접속이 필요 없이 시스템과 콘솔 서비스 간의 안전한 연결을 제공합니다.  이 최적화된 프록시 구현은 로컬 네트워크 내의 API 트래픽을 오프로드합니다.
+
+프록시가 구성되면 NetApp Disaster Recovery는 VMware 또는 ONTAP 과 직접 통신을 시도하고 직접 통신이 실패하면 구성된 프록시를 사용합니다.
+
+NetApp 재해 복구 프록시 구현에는 HTTPS 프로토콜을 사용하여 콘솔 에이전트와 모든 vCenter 서버 및 ONTAP 어레이 간에 포트 443 통신이 필요합니다.  콘솔 에이전트 내의 NetApp 재해 복구 에이전트는 모든 작업을 수행할 때 VMware vSphere, VC 또는 ONTAP 과 직접 통신합니다.
+
+NetApp 콘솔에서 일반 프록시 설정에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["프록시 서버를 사용하도록 콘솔 에이전트 구성"^] .
