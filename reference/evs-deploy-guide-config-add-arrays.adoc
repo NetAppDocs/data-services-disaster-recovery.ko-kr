@@ -2,28 +2,28 @@
 sidebar: sidebar 
 permalink: reference/evs-deploy-guide-config-add-arrays.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter,amazon elastic vmware service 
-summary: NetApp 재해 복구를 사용하기 전에 온프레미스 및 클라우드 호스팅 스토리지 인스턴스를 NetApp 콘솔 시스템에 추가해야 합니다. 
+summary: NetApp Disaster Recovery 사용하기 전에 온프레미스 및 클라우드 호스팅 스토리지 인스턴스를 NetApp Console 시스템에 추가해야 합니다. 
 ---
-= NetApp 재해 복구를 사용하여 Amazon EVS용 NetApp 콘솔 시스템에 온프레미스 어레이 추가
+= NetApp Disaster Recovery 사용하여 Amazon EVS용 NetApp Console 시스템에 온프레미스 어레이 추가
 :allow-uri-read: 
 
 
 [role="lead"]
-NetApp 재해 복구를 사용하기 전에 온프레미스 및 클라우드 호스팅 스토리지 인스턴스를 NetApp 콘솔 시스템에 추가해야 합니다.
+NetApp Disaster Recovery 사용하기 전에 온프레미스 및 클라우드 호스팅 스토리지 인스턴스를 NetApp Console 시스템에 추가해야 합니다.
 
 다음을 수행해야 합니다.
 
-* NetApp 콘솔 시스템에 온프레미스 어레이를 추가합니다.
-* NetApp 콘솔 시스템에 Amazon FSx for NetApp ONTAP (FSx for ONTAP ) 인스턴스를 추가합니다.
+* NetApp Console 시스템에 온프레미스 어레이를 추가합니다.
+* NetApp Console 시스템에 Amazon FSx for NetApp ONTAP (FSx for ONTAP ) 인스턴스를 추가합니다.
 
 
 
 
-== NetApp 콘솔 시스템에 온프레미스 스토리지 어레이 추가
+== NetApp Console 시스템에 온프레미스 스토리지 어레이 추가
 
-NetApp 콘솔 시스템에 온프레미스 ONTAP 스토리지 리소스를 추가합니다.
+NetApp Console 시스템에 온프레미스 ONTAP 스토리지 리소스를 추가합니다.
 
-. NetApp 콘솔 시스템 페이지에서 *시스템 추가*를 선택합니다.
+. NetApp Console 시스템 페이지에서 *시스템 추가*를 선택합니다.
 +
 image:evs-canvas-add-working-env-1.png["시스템 추가"]
 
@@ -51,11 +51,11 @@ image:evs-canvas-add-working-env-4-5.png["시스템 이미지 추가"]
 
 
 
-== NetApp 콘솔 시스템에 Amazon FSx for NetApp ONTAP 스토리지 인스턴스 추가
+== NetApp Console 시스템에 Amazon FSx for NetApp ONTAP 스토리지 인스턴스 추가
 
-다음으로, NetApp 콘솔 시스템에 Amazon FSx for NetApp ONTAP 스토리지 리소스를 추가합니다.
+다음으로, NetApp Console 시스템에 Amazon FSx for NetApp ONTAP 스토리지 리소스를 추가합니다.
 
-. NetApp 콘솔 시스템 페이지에서 *시스템 추가*를 선택합니다.
+. NetApp Console 시스템 페이지에서 *시스템 추가*를 선택합니다.
 +
 image:evs-canvas-add-working-env-1.png["시스템 이미지 추가"]
 

@@ -2,20 +2,20 @@
 sidebar: sidebar 
 permalink: reference/evs-deploy-guide-create-rp-wiz-02.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, netapp, ontap,amazon elastic vmware service 
-summary: Amazon EVS와 Amazon FSx for NetApp ONTAP 사용한 NetApp 재해 복구 소개.  NetApp 재해 복구를 사용하여 보호할 가상 머신을 선택합니다. 
+summary: Amazon EVS와 Amazon FSx for NetApp ONTAP 사용한 NetApp Disaster Recovery 소개.  NetApp Disaster Recovery 사용하여 보호할 가상 머신을 선택합니다. 
 ---
-= 복제 계획 만들기: 2단계 - NetApp 재해 복구에서 VM 리소스 선택
+= 복제 계획 만들기: 2단계 - NetApp Disaster Recovery 에서 VM 리소스 선택
 :allow-uri-read: 
 
 
 [role="lead"]
-NetApp 재해 복구를 사용하여 보호할 가상 머신을 선택합니다.
+NetApp Disaster Recovery 사용하여 보호할 가상 머신을 선택합니다.
 
 보호를 위해 VM을 선택하는 방법에는 여러 가지가 있습니다.
 
 * *개별 VM 선택*: *가상 머신* 버튼을 클릭하면 보호할 개별 VM을 선택할 수 있습니다.  각 VM을 선택하면 서비스는 화면 오른쪽에 있는 기본 리소스 그룹에 해당 VM을 추가합니다.
-* *이전에 생성한 리소스 그룹 선택*: NetApp 재해 복구 메뉴의 리소스 그룹 옵션을 사용하여 미리 사용자 지정 리소스 그룹을 만들 수 있습니다.  이는 필수 사항이 아니며, 복제 계획 프로세스의 일부로 다른 두 가지 방법을 사용하여 리소스 그룹을 만들 수 있습니다. 자세한 내용은 다음을 참조하십시오. link:../use/drplan-create.html["복제 계획 만들기"] .
-* *전체 vCenter 데이터스토어 선택*: 이 복제 계획으로 보호해야 할 VM이 많은 경우 개별 VM을 선택하는 것이 효율적이지 않을 수 있습니다.  NetApp Disaster Recovery는 볼륨 기반 SnapMirror 복제를 사용하여 VM을 보호하므로 데이터 저장소에 있는 모든 VM은 볼륨의 일부로 복제됩니다.  대부분의 경우 NetApp Disaster Recovery를 사용하여 데이터 저장소에 있는 모든 VM을 보호하고 다시 시작해야 합니다.  이 옵션을 사용하면 선택한 데이터 저장소에 호스팅된 모든 VM을 보호된 VM 목록에 추가하도록 서비스에 지시할 수 있습니다.
+* *이전에 생성한 리소스 그룹 선택*: NetApp Disaster Recovery 메뉴의 리소스 그룹 옵션을 사용하여 미리 사용자 지정 리소스 그룹을 만들 수 있습니다.  이는 필수 사항이 아니며, 복제 계획 프로세스의 일부로 다른 두 가지 방법을 사용하여 리소스 그룹을 만들 수 있습니다. 자세한 내용은 다음을 참조하십시오. link:../use/drplan-create.html["복제 계획 만들기"] .
+* *전체 vCenter 데이터스토어 선택*: 이 복제 계획으로 보호해야 할 VM이 많은 경우 개별 VM을 선택하는 것이 효율적이지 않을 수 있습니다.  NetApp Disaster Recovery 볼륨 기반 SnapMirror 복제를 사용하여 VM을 보호하므로 데이터 저장소에 있는 모든 VM은 볼륨의 일부로 복제됩니다.  대부분의 경우 NetApp Disaster Recovery 사용하여 데이터 저장소에 있는 모든 VM을 보호하고 다시 시작해야 합니다.  이 옵션을 사용하면 선택한 데이터 저장소에 호스팅된 모든 VM을 보호된 VM 목록에 추가하도록 서비스에 지시할 수 있습니다.
 
 
 이 가이드에서는 전체 vCenter 데이터스토어를 선택합니다.

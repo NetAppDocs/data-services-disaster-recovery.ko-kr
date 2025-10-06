@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference/dr-reference-roles.html 
 keywords: how bluexp disaster recovery works, what is disaster recovery, bluexp, vmware, vcenter, draas, replicate, failover, failback, fail over, fail back, vmware cloud, netapp intelligent services 
-summary: NetApp 재해 복구는 역할을 사용하여 각 사용자가 특정 기능과 작업에 대해 갖는 액세스를 관리합니다. 
+summary: NetApp Disaster Recovery 역할을 사용하여 각 사용자가 특정 기능과 작업에 대해 갖는 액세스를 관리합니다. 
 ---
-= NetApp 재해 복구 역할 기반 기능 액세스
+= NetApp Disaster Recovery 역할 기반 기능 액세스
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,19 +12,19 @@ summary: NetApp 재해 복구는 역할을 사용하여 각 사용자가 특정 
 
 
 [role="lead"]
-NetApp 재해 복구는 역할을 사용하여 각 사용자가 특정 기능과 작업에 대해 갖는 액세스를 관리합니다.
+NetApp Disaster Recovery 역할을 사용하여 각 사용자가 특정 기능과 작업에 대해 갖는 액세스를 관리합니다.
 
-이 서비스는 NetApp 재해 복구에 특정한 다음 역할을 사용합니다.
+이 서비스는 NetApp Disaster Recovery 에 특정한 다음 역할을 사용합니다.
 
-* *재해 복구 관리자*: NetApp 재해 복구에서 모든 작업을 수행합니다.
-* *재해 복구 장애 조치 관리자*: NetApp 재해 복구에서 장애 조치 및 마이그레이션 작업을 수행합니다.
+* *재해 복구 관리자*: NetApp Disaster Recovery 에서 모든 작업을 수행합니다.
+* *재해 복구 장애 조치 관리자*: NetApp Disaster Recovery 에서 장애 조치 및 마이그레이션 작업을 수행합니다.
 * *재해 복구 애플리케이션 관리자*: 복제 계획을 만들고 수정하고 테스트 장애 조치를 시작합니다.
-* *재해 복구 뷰어*: NetApp 재해 복구에서 정보를 볼 수 있지만, 어떤 작업도 수행할 수 없습니다.
+* *재해 복구 뷰어*: NetApp Disaster Recovery 에서 정보를 볼 수 있지만, 어떤 작업도 수행할 수 없습니다.
 
 
-이러한 역할은 NetApp 재해 복구에만 적용되며 NetApp 콘솔에서 사용되는 플랫폼 역할과 동일하지 않습니다.  모든 NetApp 콘솔 플랫폼 역할에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["NetApp 콘솔 설정 및 관리 문서"^] .
+이러한 역할은 NetApp Disaster Recovery 에만 해당되며 NetApp Console 에서 사용되는 플랫폼 역할과 동일하지 않습니다.  모든 NetApp Console 플랫폼 역할에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["NetApp Console 설정 및 관리 문서"^] .
 
-다음 표는 각 NetApp 재해 복구 역할이 수행할 수 있는 작업을 나타냅니다.
+다음 표는 각 NetApp Disaster Recovery 역할이 수행할 수 있는 작업을 나타냅니다.
 
 [cols="30,20a,20a,20a,20a"]
 |===

@@ -6,20 +6,20 @@
 
 === 지능형 프록시 지원
 
-NetApp 콘솔 에이전트는 지능형 프록시를 지원합니다.  지능형 프록시는 온프레미스 시스템을 NetApp 재해 복구에 연결하는 가볍고 안전하며 효율적인 방법입니다.  VPN이나 ​​직접 인터넷 접속이 필요 없이 시스템과 NetApp 재해 복구 간의 안전한 연결을 제공합니다.  이 최적화된 프록시 구현은 로컬 네트워크 내의 API 트래픽을 오프로드합니다.
+NetApp Console 에이전트는 지능형 프록시를 지원합니다.  지능형 프록시는 온프레미스 시스템을 NetApp Disaster Recovery 에 연결하는 가볍고 안전하며 효율적인 방법입니다.  VPN이나 ​​직접 인터넷 접속이 필요 없이 시스템과 NetApp Disaster Recovery 간의 안전한 연결을 제공합니다.  이 최적화된 프록시 구현은 로컬 네트워크 내의 API 트래픽을 오프로드합니다.
 
-프록시가 구성되면 NetApp Disaster Recovery는 VMware 또는 ONTAP 과 직접 통신을 시도하고 직접 통신이 실패하면 구성된 프록시를 사용합니다.
+프록시가 구성되면 NetApp Disaster Recovery VMware 또는 ONTAP 과 직접 통신을 시도하고 직접 통신이 실패하면 구성된 프록시를 사용합니다.
 
-NetApp 재해 복구 프록시 구현에는 HTTPS 프로토콜을 사용하여 콘솔 에이전트와 모든 vCenter 서버 및 ONTAP 어레이 간에 포트 443 통신이 필요합니다.  콘솔 에이전트 내의 NetApp 재해 복구 에이전트는 모든 작업을 수행할 때 VMware vSphere, VC 또는 ONTAP 과 직접 통신합니다.
+NetApp Disaster Recovery 프록시 구현에는 HTTPS 프로토콜을 사용하여 콘솔 에이전트와 모든 vCenter 서버 및 ONTAP 어레이 간에 포트 443 통신이 필요합니다.  콘솔 에이전트 내의 NetApp Disaster Recovery 에이전트는 모든 작업을 수행할 때 VMware vSphere, VC 또는 ONTAP 과 직접 통신합니다.
 
-NetApp 재해 복구용 지능형 프록시에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-setup.html["NetApp 재해 복구를 위한 인프라 설정"] .
+NetApp Disaster Recovery 용 지능형 프록시에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-setup.html["NetApp Disaster Recovery 위한 인프라 설정"] .
 
-NetApp 콘솔에서 일반 프록시 설정에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["프록시 서버를 사용하도록 콘솔 에이전트 구성"^] .
+NetApp Console 에서 일반 프록시 설정에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["프록시 서버를 사용하도록 콘솔 에이전트 구성"^] .
 
 
 
 === 언제든지 무료 체험을 종료하세요
 
-언제든지 무료 체험을 중단할 수 있고, 체험 기간이 만료될 때까지 기다릴 수도 있습니다.
+언제든지 무료 체험을 중단할 수 있으며, 체험 기간이 만료될 때까지 기다릴 수도 있습니다.
 
 보다 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html#end-the-free-trial["무료 체험 종료"] .

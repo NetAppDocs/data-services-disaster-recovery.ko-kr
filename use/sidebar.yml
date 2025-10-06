@@ -1,8 +1,8 @@
 ---
 section: use
-title: NetApp 재해 복구 사용
+title: NetApp Disaster Recovery 사용
 entries:
-- title: NetApp 재해 복구 개요 사용
+- title: NetApp Disaster Recovery 개요 사용
   url: "/use/use-overview.html"
 - title: 대시보드에서 재해 복구 계획의 상태를 확인하세요.
   url: "/use/dashboard-view.html"

@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: reference/evs-deploy-guide-add-vcenters.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter,amazon elastic vmware service 
-summary: Amazon EVS와 Amazon FSxN을 사용한 NetApp 재해 복구 소개. 사이트를 만들었으니 이제 NetApp 재해 복구의 각 사이트에 vCenter 클러스터를 추가합니다.  각 사이트를 만들 때, 우리는 각 사이트가 어떤 유형인지 표시했습니다.  이를 통해 NetApp Disaster Recovery는 각 사이트 유형에 호스팅된 vCenter에 필요한 액세스 유형을 알 수 있습니다.  Amazon EVS의 장점 중 하나는 Amazon EVS vCenter와 온프레미스 vCenter 사이에 실질적인 차이가 없다는 것입니다.  둘 다 동일한 연결 및 인증 정보가 필요합니다. 
+summary: Amazon EVS와 Amazon FSxN을 사용한 NetApp Disaster Recovery 소개. 사이트를 만들었으므로 이제 NetApp Disaster Recovery 에서 각 사이트에 vCenter 클러스터를 추가합니다.  각 사이트를 만들 때, 우리는 각 사이트가 어떤 유형인지 표시했습니다.  이를 통해 NetApp Disaster Recovery 각 사이트 유형에 호스팅된 vCenter에 필요한 액세스 유형을 알 수 있습니다.  Amazon EVS의 장점 중 하나는 Amazon EVS vCenter와 온프레미스 vCenter 사이에 실질적인 차이가 없다는 것입니다.  둘 다 동일한 연결 및 인증 정보가 필요합니다. 
 ---
-= NetApp 재해 복구에 온프레미스 및 Amazon EVS vCenter 클러스터 추가
+= NetApp Disaster Recovery 에 온프레미스 및 Amazon EVS vCenter 클러스터 추가
 :allow-uri-read: 
 
 
 [role="lead"]
-사이트가 생성되었으므로 이제 NetApp Disaster Recovery의 각 사이트에 vCenter 클러스터를 추가합니다.  각 사이트를 만들 때 우리는 각 사이트 유형을 지정했습니다.  이를 통해 NetApp Disaster Recovery는 각 사이트 유형에 호스팅된 vCenter에 필요한 액세스 유형을 알 수 있습니다.  Amazon EVS의 장점 중 하나는 Amazon EVS vCenter와 온프레미스 vCenter 사이에 실질적인 차이가 없다는 것입니다.  둘 다 동일한 연결 및 인증 정보가 필요합니다.
+사이트가 생성되었으므로 이제 NetApp Disaster Recovery 의 각 사이트에 vCenter 클러스터를 추가합니다.  각 사이트를 만들 때 우리는 각 사이트 유형을 지정했습니다.  이를 통해 NetApp Disaster Recovery 각 사이트 유형에 호스팅된 vCenter에 필요한 액세스 유형을 알 수 있습니다.  Amazon EVS의 장점 중 하나는 Amazon EVS vCenter와 온프레미스 vCenter 사이에 실질적인 차이가 없다는 것입니다.  둘 다 동일한 연결 및 인증 정보가 필요합니다.
 
 .각 사이트에 vCenter를 추가하는 단계
 . *사이트* 옵션에서 원하는 사이트에 대해 *vCenter 추가*를 선택합니다.
@@ -18,10 +18,10 @@ image:evs-add-vcenter-1.png["vCenter 옵션 추가"]
 
 . vCenter 서버 추가 대화 상자에서 다음 정보를 선택하거나 제공합니다.
 +
-.. AWS VPC 내에 호스팅된 NetApp 콘솔 에이전트입니다.
+.. AWS VPC 내에 호스팅된 NetApp Console 에이전트입니다.
 .. 추가할 vCenter의 IP 주소 또는 FQDN입니다.
 .. 다르다면 포트 값을 vCenter 클러스터 관리자가 사용하는 TCP 포트로 변경하세요.
-.. NetApp Disaster Recovery에서 vCenter를 관리하는 데 사용할 이전에 만든 계정의 vCenter 사용자 이름입니다.
+.. NetApp Disaster Recovery 에서 vCenter를 관리하는 데 사용할 이전에 만든 계정의 vCenter 사용자 이름입니다.
 .. 제공된 사용자 이름에 대한 vCenter 비밀번호입니다.
 .. 회사에서 외부 인증 기관(CA)이나 vCenter Endpoint 인증서 저장소를 사용하여 vCenter에 액세스하는 경우 *자체 서명 인증서 사용* 확인란의 선택을 취소합니다.  그렇지 않으면 상자를 체크된 상태로 두세요.
 

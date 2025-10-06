@@ -2,15 +2,15 @@
 section: get-started
 title: 시작하기
 entries:
-- title: NetApp 재해 복구에 대해 알아보세요
+- title: NetApp Disaster Recovery 에 대해 알아보세요
   url: "/get-started/dr-intro.html"
 - title: 필수 조건
   url: "/get-started/dr-prerequisites.html"
 - title: 빠른 시작
   url: "/get-started/dr-quick-start.html"
-- title: NetApp 재해 복구를 위한 인프라 설정
+- title: NetApp Disaster Recovery 위한 인프라 설정
   url: "/get-started/dr-setup.html"
-- title: NetApp 재해 복구에 액세스
+- title: NetApp Disaster Recovery 에 액세스
   url: "/get-started/dr-login.html"
 - title: 라이센스 설정
   url: "/get-started/dr-licensing.html"

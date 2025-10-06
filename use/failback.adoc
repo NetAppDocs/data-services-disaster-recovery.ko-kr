@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: use/failback.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: NetApp Disaster Recovery는 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다. 
+summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다. 
 ---
-= NetApp 재해 복구를 사용하여 애플리케이션을 원래 소스로 다시 장애 복구합니다.
+= NetApp Disaster Recovery 사용하여 애플리케이션을 원래 소스로 다시 장애 복구합니다.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,13 +14,13 @@ summary: NetApp Disaster Recovery는 재해 복구 워크플로를 자동화하�
 [role="lead"]
 재해가 해결된 후 재해 복구 사이트에서 소스 사이트로 장애 복구하여 정상적인 운영으로 돌아갑니다.  복구할 스냅샷을 선택할 수 있습니다.
 
-*필수 NetApp 콘솔 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자 또는 재해 복구 장애 조치 관리자 역할.
+*필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자 또는 재해 복구 장애 조치 관리자 역할.
 
-link:../reference/dr-reference-roles.html["NetApp 재해 복구의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+link:../reference/dr-reference-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 *이 작업에 관하여*
 
-이 워크플로에서 NetApp Disaster Recovery는 복제 방향을 반전하기 전에 모든 변경 사항을 원본 소스 가상 머신으로 복제(재동기화)합니다. 이 프로세스는 대상으로의 장애 조치를 완료한 관계에서 시작되며 다음 단계를 포함합니다.
+이 워크플로에서 NetApp Disaster Recovery 복제 방향을 반전하기 전에 모든 변경 사항을 원본 소스 가상 머신으로 복제(재동기화)합니다. 이 프로세스는 대상으로의 장애 조치를 완료한 관계에서 시작되며 다음 단계를 포함합니다.
 
 * 복구된 사이트에 대한 규정 준수 검사를 수행합니다.
 * 복구된 사이트에 있는 것으로 식별된 각 vCenter 클러스터에 대한 vCenter 정보를 새로 고칩니다.
@@ -31,11 +31,11 @@ link:../reference/dr-reference-roles.html["NetApp 재해 복구의 사용자 역
 
 
 .단계
-. 에 로그인하세요 https://console.netapp.com/["NetApp 콘솔"^] .
-. NetApp 콘솔 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
-. NetApp 재해 복구 메뉴에서 *복제 계획*을 선택합니다.
+. 에 로그인하세요 https://console.netapp.com/["NetApp Console"^] .
+. NetApp Console 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
+. NetApp Disaster Recovery 메뉴에서 *복제 계획*을 선택합니다.
 . 복제 계획을 선택하세요.
-. 오른쪽에서 *작업* 옵션을 선택하세요image:../use/icon-horizontal-dots.png["NetApp 재해 복구 서비스의 작업 메뉴 아이콘"] 그리고 *장애 복구*를 선택하세요.
+. 오른쪽에서 *작업* 옵션을 선택하세요image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"] 그리고 *장애 복구*를 선택하세요.
 . 복제 계획 이름을 입력하여 확인하고 장애 복구를 시작합니다.
 . 복구할 데이터 저장소의 스냅샷을 선택합니다.  기본값은 최신입니다.
 . 진행 상황을 확인하려면 메뉴에서 *작업 모니터링*을 선택하세요.

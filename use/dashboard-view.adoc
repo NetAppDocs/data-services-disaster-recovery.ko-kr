@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: use/dashboard-view.html 
 keywords: disaster recovery remediate, disaster recovery, failover, failback, replication, bluexp, netapp 
-summary: NetApp Disaster Recovery는 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다. 
+summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다. 
 ---
-= 대시보드에서 NetApp 재해 복구 계획의 상태를 확인하세요.
+= 대시보드에서 NetApp Disaster Recovery 계획의 상태를 확인하세요.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,18 +12,18 @@ summary: NetApp Disaster Recovery는 재해 복구 워크플로를 자동화하�
 
 
 [role="lead"]
-NetApp 재해 복구 대시보드를 사용하면 재해 복구 사이트와 복제 계획의 상태를 확인할 수 있습니다.  어떤 사이트와 계획이 정상인지, 연결이 끊겼는지, 성능이 저하되었는지 빠르게 확인할 수 있습니다.
+NetApp Disaster Recovery 대시보드를 사용하면 재해 복구 사이트와 복제 계획의 상태를 확인할 수 있습니다.  어떤 사이트와 계획이 정상인지, 연결이 끊겼는지, 성능이 저하되었는지 빠르게 확인할 수 있습니다.
 
-*필수 NetApp 콘솔 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자, 재해 복구 애플리케이션 관리자 또는 재해 복구 뷰어 역할.
+*필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자, 재해 복구 애플리케이션 관리자 또는 재해 복구 뷰어 역할.
 
-link:../reference/dr-reference-roles.html["NetApp 재해 복구의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+link:../reference/dr-reference-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. 에 로그인하세요 https://console.netapp.com/["NetApp 콘솔"^] .
-. NetApp 콘솔 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
-. NetApp 재해 복구 메뉴에서 *대시보드*를 선택합니다.
+. 에 로그인하세요 https://console.netapp.com/["NetApp Console"^] .
+. NetApp Console 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
+. NetApp Disaster Recovery 메뉴에서 *대시보드*를 선택합니다.
 +
-image:dr-dashboard.png["NetApp 재해 복구 대시보드"]
+image:dr-dashboard.png["NetApp Disaster Recovery 보드"]
 
 . 대시보드에서 다음 정보를 검토하세요.
 +

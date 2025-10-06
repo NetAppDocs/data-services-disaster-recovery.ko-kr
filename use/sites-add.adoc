@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: use/sites-add.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: 재해 복구 계획을 만들려면 먼저 NetApp 재해 복구에서 기본 vCenter 사이트와 대상 vCenter 재해 복구 사이트를 추가해야 합니다. 
+summary: 재해 복구 계획을 만들려면 먼저 NetApp Disaster Recovery 에서 기본 vCenter 사이트와 대상 vCenter 재해 복구 사이트를 추가해야 합니다. 
 ---
-= NetApp 재해 복구에서 사이트에 vCenter 추가
+= NetApp Disaster Recovery 에서 사이트에 vCenter 추가
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,23 +12,23 @@ summary: 재해 복구 계획을 만들려면 먼저 NetApp 재해 복구에서 
 
 
 [role="lead"]
-재해 복구 계획을 만들려면 먼저 NetApp 콘솔에서 기본 vCenter 서버를 사이트에 추가하고 대상 vCenter 재해 복구 사이트를 추가해야 합니다.
+재해 복구 계획을 만들려면 먼저 NetApp Console 에서 기본 vCenter 서버를 사이트에 추가하고 대상 vCenter 재해 복구 사이트를 추가해야 합니다.
 
 
-TIP: 소스 및 대상 vCenter가 모두 동일한 NetApp 콘솔 에이전트를 사용하는지 확인하세요.
+TIP: 소스 및 대상 vCenter가 모두 동일한 NetApp Console 에이전트를 사용하는지 확인하세요.
 
-vCenter가 추가되면 NetApp Disaster Recovery는 vCenter 클러스터, ESXi 호스트, 데이터 저장소, 스토리지 공간, 가상 머신 세부 정보, SnapMirror 복제본, 가상 머신 네트워크를 포함하여 vCenter 환경에 대한 심층 검색을 수행합니다.
+vCenter가 추가되면 NetApp Disaster Recovery vCenter 클러스터, ESXi 호스트, 데이터 저장소, 스토리지 공간, 가상 머신 세부 정보, SnapMirror 복제본, 가상 머신 네트워크를 포함하여 vCenter 환경에 대한 심층 검색을 수행합니다.
 
-*필수 NetApp 콘솔 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자.
+*필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자.
 
-link:../reference/dr-reference-roles.html["NetApp 재해 복구의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+link:../reference/dr-reference-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 *이 작업에 관하여*
 
 이전 릴리스에서 vCenter를 추가하고 검색 일정을 사용자 지정하려면 vCenter 서버 사이트를 편집하고 일정을 설정해야 합니다.
 
 
-TIP: NetApp 재해 복구는 24시간마다 검색을 수행합니다.  사이트를 설정한 후에는 vCenter를 편집하여 필요에 맞게 검색 일정을 사용자 지정할 수 있습니다.  예를 들어, VM 수가 많은 경우 검색 일정을 23시간 59분마다 실행되도록 설정할 수 있습니다.  VM 수가 적은 경우 검색 일정을 12시간마다 실행되도록 설정할 수 있습니다.  최소 간격은 30분이고, 최대 간격은 24시간입니다.
+TIP: NetApp Disaster Recovery 24시간마다 검색을 수행합니다.  사이트를 설정한 후에는 vCenter를 편집하여 필요에 맞게 검색 일정을 사용자 지정할 수 있습니다.  예를 들어, VM 수가 많은 경우 검색 일정을 23시간 59분마다 실행되도록 설정할 수 있습니다.  VM 수가 적은 경우 검색 일정을 12시간마다 실행되도록 설정할 수 있습니다.  최소 간격은 30분이고, 최대 간격은 24시간입니다.
 
 환경에 대한 최신 정보를 얻으려면 먼저 몇 가지 수동 검색을 수행해야 합니다.  그 후에는 일정을 자동으로 실행되도록 설정할 수 있습니다.
 
@@ -58,10 +58,10 @@ NOTE: 이 서비스는 자체 서명된 보안 인증서 또는 중앙 인증 �
 
 
 .단계
-. 에 로그인하세요 https://console.netapp.com/["NetApp 콘솔"^] .
-. NetApp 콘솔 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
+. 에 로그인하세요 https://console.netapp.com/["NetApp Console"^] .
+. NetApp Console 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
 +
-NetApp 재해 복구 대시보드 페이지로 이동합니다.  서비스를 처음 시작할 때 vCenter 정보를 추가해야 합니다.  나중에 대시보드에는 사이트와 복제 계획에 대한 데이터가 표시됩니다.
+NetApp Disaster Recovery 보드 페이지로 이동합니다.  서비스를 처음 시작할 때 vCenter 정보를 추가해야 합니다.  나중에 대시보드에는 사이트와 복제 계획에 대한 데이터가 표시됩니다.
 
 +
 
@@ -78,7 +78,7 @@ TIP: 이미 vCenter 사이트가 있고 더 추가하려는 경우 상단 메뉴
 image:vcenter-add.png["vCenter 서버 스크린샷 추가"]
 
 +
-** 사이트를 선택하고 NetApp 콘솔 에이전트를 선택한 다음 vCenter 자격 증명을 제공합니다.
+** 사이트를 선택하고 NetApp Console 에이전트를 선택한 다음 vCenter 자격 증명을 제공합니다.
 ** (온프레미스 사이트에만 적용) 소스 vCenter에 대한 자체 서명 인증서를 수락하려면 상자를 선택하세요.
 +
 
@@ -97,7 +97,7 @@ NOTE: 자체 서명 인증서는 다른 인증서만큼 안전하지 않습니�
 .. 대상 사이트와 위치를 선택하세요.  대상이 클라우드인 경우 *AWS*를 선택하세요.
 +
 *** (클라우드 사이트에만 적용) *API 토큰*: 조직의 서비스 액세스를 승인하려면 API 토큰을 입력하세요.  특정 조직 및 서비스 역할을 제공하여 API 토큰을 생성합니다.
-*** (클라우드 사이트에만 적용) *긴 조직 ID*: 조직의 고유 ID를 입력하세요.  NetApp 콘솔의 계정 섹션에서 사용자 이름을 클릭하면 이 ID를 식별할 수 있습니다.
+*** (클라우드 사이트에만 적용) *긴 조직 ID*: 조직의 고유 ID를 입력하세요.  NetApp Console 의 계정 섹션에서 사용자 이름을 클릭하면 이 ID를 식별할 수 있습니다.
 
 
 .. *추가*를 선택하세요.
@@ -118,7 +118,7 @@ image:sites-list2.png["사이트 페이지 스크린샷"]
 
 서브넷 매핑을 사용하면 장애 조치 작업 시 IP 주소를 관리할 수 있으며, 이를 통해 각 vCenter에 대한 서브넷을 추가할 수 있습니다.  이렇게 하면 각 가상 네트워크에 대한 IPv4 CIDR, 기본 게이트웨이, DNS가 정의됩니다.
 
-장애 조치 시 NetApp Disaster Recovery는 매핑된 네트워크의 CIDR을 사용하여 각 vNIC에 새 IP 주소를 할당합니다.
+장애 조치 시 NetApp Disaster Recovery 매핑된 네트워크의 CIDR을 사용하여 각 vNIC에 새 IP 주소를 할당합니다.
 
 예를 들어:
 
@@ -128,7 +128,7 @@ image:sites-list2.png["사이트 페이지 스크린샷"]
 
 VM1에는 NetworkA에 연결된 vNIC(10.1.1.50)가 있습니다.  NetworkA는 복제 계획 설정에서 NetworkB에 매핑됩니다.
 
-장애 조치 시 NetApp Disaster Recovery는 원래 IP 주소(10.1.1)의 네트워크 부분을 대체하고 원래 IP 주소(10.1.1.50)의 호스트 주소(.50)를 유지합니다.  VM1의 경우 NetApp Disaster Recovery는 NetworkB의 CIDR 설정을 살펴보고 NetworkB의 네트워크 부분인 192.168.1을 사용하고 호스트 부분(.50)은 그대로 유지하여 VM1의 새 IP 주소를 생성합니다.  새로운 IP는 192.168.1.50이 됩니다.
+장애 조치 시 NetApp Disaster Recovery 원래 IP 주소(10.1.1)의 네트워크 부분을 대체하고 원래 IP 주소(10.1.1.50)의 호스트 주소(.50)를 유지합니다.  VM1의 경우 NetApp Disaster Recovery NetworkB의 CIDR 설정을 살펴보고 NetworkB의 네트워크 부분인 192.168.1을 사용하고 호스트 부분(.50)은 그대로 유지하여 VM1의 새 IP 주소를 생성합니다.  새로운 IP는 192.168.1.50이 됩니다.
 
 요약하자면, 호스트 주소는 동일하게 유지되지만 네트워크 주소는 사이트 서브넷 매핑에 구성된 주소로 대체됩니다.  이를 통해 장애 조치 시 IP 주소 재할당을 보다 쉽게 관리할 수 있으며, 특히 관리해야 할 네트워크가 수백 개이고 VM이 수천 개일 경우 더욱 그렇습니다.
 
@@ -139,7 +139,7 @@ VM1에는 NetworkA에 연결된 vNIC(10.1.1.50)가 있습니다.  NetworkA는 �
 
 
 .단계
-. NetApp 재해 복구 메뉴에서 *사이트*를 선택합니다.
+. NetApp Disaster Recovery 메뉴에서 *사이트*를 선택합니다.
 . 행동으로부터image:icon-vertical-dots.png["작업 아이콘"] 오른쪽에 있는 아이콘을 클릭하고 *서브넷 추가*를 선택하세요.
 +
 image:dr-sites-subnet-menu.png["서브넷 추가 메뉴 스크린샷"]
@@ -177,7 +177,7 @@ TIP: CIDR 표기법은 IP 주소와 네트워크 마스크를 지정하는 방�
 
 
 .단계
-. NetApp 재해 복구 메뉴에서 *복제 계획*을 선택합니다.
+. NetApp Disaster Recovery 메뉴에서 *복제 계획*을 선택합니다.
 . 복제 계획을 추가하려면 *추가*를 선택하세요.
 . vCenter 서버를 추가하고, 리소스 그룹이나 애플리케이션을 선택하고, 매핑을 완료하여 평소와 같은 방식으로 필드를 완성합니다.
 . 복제 계획 > 리소스 매핑 페이지에서 *가상 머신* 섹션을 선택합니다.
@@ -203,7 +203,7 @@ vCenter 서버 사이트를 편집하여 검색 일정을 사용자 지정할 �
 검색 일정을 예약하지 않으려면 예약된 검색 옵션을 비활성화하고 언제든지 수동으로 검색을 새로 고칠 수 있습니다.
 
 .단계
-. NetApp 재해 복구 메뉴에서 *사이트*를 선택합니다.
+. NetApp Disaster Recovery 메뉴에서 *사이트*를 선택합니다.
 . 편집하려는 사이트를 선택하세요.
 . 작업을 선택하세요image:icon-vertical-dots.png["작업 아이콘"] 오른쪽에 있는 아이콘을 클릭하고 *편집*을 선택하세요.
 . vCenter 서버 편집 페이지에서 필요에 따라 필드를 편집합니다.
@@ -218,10 +218,10 @@ image:sites-edit-schedule.png["검색 일정 스크린샷 편집"]
 
 == 검색을 수동으로 새로 고침
 
-언제든지 수동으로 검색 내용을 새로 고칠 수 있습니다.  이 기능은 VM을 추가하거나 제거한 후 NetApp 재해 복구에서 정보를 업데이트하려는 경우에 유용합니다.
+언제든지 수동으로 검색 내용을 새로 고칠 수 있습니다.  이 기능은 VM을 추가하거나 제거한 후 NetApp Disaster Recovery 에서 정보를 업데이트하려는 경우에 유용합니다.
 
 .단계
-. NetApp 재해 복구 메뉴에서 *사이트*를 선택합니다.
+. NetApp Disaster Recovery 메뉴에서 *사이트*를 선택합니다.
 . 새로 고침할 사이트를 선택하세요.
 . 작업을 선택하세요image:icon-vertical-dots.png["작업 아이콘"] 오른쪽에 있는 아이콘을 클릭하고 *새로 고침*을 선택하세요.
 

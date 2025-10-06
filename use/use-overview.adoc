@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: use/use-overview.html 
 keywords: disaster recovery remediate, disaster recovery, failover, failback, replication 
-summary: NetApp Disaster Recovery는 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다. 
+summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다. 
 ---
-= NetApp 재해 복구 개요 사용
+= NetApp Disaster Recovery 개요 사용
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: NetApp Disaster Recovery는 재해 복구 워크플로를 자동화하�
 
 
 [role="lead"]
-NetApp 재해 복구를 사용하면 다음과 같은 목표를 달성할 수 있습니다.
+NetApp Disaster Recovery 사용하면 다음과 같은 목표를 달성할 수 있습니다.
 
 * link:../use/dashboard-view.html["재해 복구 계획의 상태를 확인하세요"] .
 * link:../use/sites-add.html["vCenter 사이트 추가"] .

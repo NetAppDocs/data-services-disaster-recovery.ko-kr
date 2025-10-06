@@ -2,31 +2,31 @@
 sidebar: sidebar 
 permalink: reference/evs-deploy-guide-solution-overview.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, bluexp, evs, console, amazon elastic vmware service 
-summary: Amazon EVS와 Amazon FSxN을 사용한 NetApp 재해 복구 솔루션 개요. 
+summary: Amazon EVS와 Amazon FSxN을 사용한 NetApp Disaster Recovery 솔루션 개요. 
 ---
-= Amazon EVS 및 Amazon FS를 사용한 NetApp ONTAP 용 NetApp 재해 복구 솔루션 개요
+= Amazon EVS 및 Amazon FS를 사용한 NetApp ONTAP 용 NetApp Disaster Recovery 솔루션 개요
 :allow-uri-read: 
 
 
 [role="lead"]
-NetApp 재해 복구는 NetApp 콘솔 소프트웨어 즉 서비스 환경 내에서 호스팅되는 부가가치 서비스로, 핵심 NetApp 콘솔 아키텍처에 따라 달라집니다.  콘솔 내 VMware 보호를 위한 DR 서비스는 여러 가지 주요 구성 요소로 구성됩니다.
+NetApp Disaster Recovery NetApp Console 소프트웨어 즉 서비스 환경 내에서 호스팅되는 부가가치 서비스로, 핵심 NetApp Console 아키텍처에 따라 달라집니다.  콘솔 내 VMware 보호를 위한 DR 서비스는 여러 가지 주요 구성 요소로 구성됩니다.
 
-NetApp 재해 복구 솔루션에 대한 전체 개요는 다음을 참조하세요.link:../get-started/dr-intro.html["VMware용 NetApp 재해 복구에 대해 알아보세요"] .
+NetApp Disaster Recovery 솔루션에 대한 전체 개요는 다음을 참조하세요.link:../get-started/dr-intro.html["VMware용 NetApp Disaster Recovery 에 대해 알아보세요"] .
 
 온프레미스 VMware 호스팅 가상 머신을 Amazon AWS로 보호하려면 해당 서비스를 사용하여 Amazon FSx for NetApp ONTAP 스토리지 호스팅 데이터스토어를 통해 Amazon EVS로 백업하세요.
 
 다음 그림은 Amazon EVS를 사용하여 VM을 보호하는 서비스의 작동 방식을 보여줍니다.
 
-Amazon EVS 및 FSx for ONTAP 사용한 NetApp 재해 복구 개요image:evs-soloverview-evs.png["Amazon EVS 및 FSx for ONTAP 사용한 NetApp 재해 복구 개요"]
+Amazon EVS 및 FSx for ONTAP 사용한 NetApp Disaster Recovery 개요image:evs-soloverview-evs.png["Amazon EVS 및 FSx for ONTAP 사용한 NetApp Disaster Recovery 개요"]
 
 . Amazon EVS는 귀하의 계정에서 단일 가용성 영역(AZ) 구성과 가상 사설 클라우드(VPC) 내에 배포됩니다.
 . FSx for ONTAP 파일 시스템은 Amazon EVS 배포와 동일한 AZ에 배포됩니다.  파일 시스템은 ENI(Elastic Network Interface), VPC 피어 연결 또는 AmazonTransit Gateway를 통해 Amazon EVS에 직접 연결됩니다.
-. NetApp 콘솔 에이전트가 VPC에 설치되었습니다.  NetApp 콘솔 에이전트는 로컬 물리적 데이터 센터와 Amazon AWS에서 호스팅되는 리소스 모두에서 VMware 인프라의 재해 복구를 관리하는 NetApp 재해 복구 에이전트를 포함하여 여러 데이터 관리 서비스(에이전트라고 함)를 호스팅합니다.
-. NetApp 재해 복구 에이전트는 NetApp 콘솔 클라우드 호스팅 서비스와 안전하게 통신하여 작업을 수신하고 해당 작업을 적절한 온프레미스 및 AWS 호스팅 vCenter와 ONTAP 스토리지 인스턴스에 배포합니다.
+. NetApp Console 에이전트가 VPC에 설치되었습니다.  NetApp Console 에이전트는 로컬 물리적 데이터 센터와 Amazon AWS에서 호스팅되는 리소스 모두에서 VMware 인프라의 재해 복구를 관리하는 NetApp Disaster Recovery 에이전트를 포함하여 여러 데이터 관리 서비스(에이전트라고 함)를 호스팅합니다.
+. NetApp Disaster Recovery 에이전트는 NetApp Console 클라우드 호스팅 서비스와 안전하게 통신하여 작업을 수신하고 해당 작업을 적절한 온프레미스 및 AWS 호스팅 vCenter와 ONTAP 스토리지 인스턴스에 배포합니다.
 . NetApp Console 클라우드 호스팅 UI 콘솔을 사용하여 복제 계획을 생성하면 보호해야 할 VM, 해당 VM을 보호해야 하는 빈도, 온프레미스 사이트에서 장애 조치가 발생할 경우 해당 VM을 다시 시작하기 위해 수행해야 하는 절차 등을 지정할 수 있습니다.
-. 복제 계획은 보호된 VM을 호스팅하는 vCenter 데이터 저장소와 해당 데이터 저장소를 호스팅하는 ONTAP 볼륨을 결정합니다.  FSx for ONTAP 클러스터에 볼륨이 아직 없으면 NetApp Disaster Recovery가 자동으로 볼륨을 생성합니다.
+. 복제 계획은 보호된 VM을 호스팅하는 vCenter 데이터 저장소와 해당 데이터 저장소를 호스팅하는 ONTAP 볼륨을 결정합니다.  FSx for ONTAP 클러스터에 볼륨이 아직 없으면 NetApp Disaster Recovery 자동으로 볼륨을 생성합니다.
 . 식별된 각 소스 ONTAP 볼륨에 대해 각 대상 FSx for ONTAP 호스팅 ONTAP 볼륨에 대한 SnapMirror 관계가 생성되고 복제 계획에서 사용자가 제공한 RPO를 기반으로 복제 일정이 생성됩니다.
-. 기본 사이트에 장애가 발생하는 경우 관리자는 NetApp 콘솔에서 수동 장애 조치 프로세스를 시작하고 복원 지점으로 사용할 백업을 선택합니다.
-. NetApp 재해 복구 에이전트는 FSx for ONTAP 호스팅 데이터 보호 볼륨을 활성화합니다.
+. 기본 사이트에 장애가 발생하는 경우 관리자는 NetApp Console 에서 수동 장애 조치 프로세스를 시작하고 복원 지점으로 사용할 백업을 선택합니다.
+. NetApp Disaster Recovery 에이전트는 FSx for ONTAP 호스팅 데이터 보호 볼륨을 활성화합니다.
 . 에이전트는 활성화된 각 FSx for ONTAP 볼륨을 Amazon EVS vCenter에 등록하고, 보호된 각 VM을 Amazon EVS vCenter에 등록한 후 복제 계획에 포함된 사전 정의된 규칙에 따라 각각을 시작합니다.
 

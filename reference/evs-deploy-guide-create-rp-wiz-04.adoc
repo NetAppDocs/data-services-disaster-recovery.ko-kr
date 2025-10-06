@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: reference/evs-deploy-guide-create-rp-wiz-04.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, netapp, ontap,amazon elastic vmware service 
-summary: Amazon EVS와 Amazon FSx for NetApp ONTAP 사용한 NetApp 재해 복구 소개.  NetApp Disaster Recovery에 모든 복제 계획 정보를 추가한 후 입력한 정보가 올바른지 확인하세요. 
+summary: Amazon EVS와 Amazon FSx for NetApp ONTAP 사용한 NetApp Disaster Recovery 소개.  NetApp Disaster Recovery 에 모든 복제 계획 정보를 추가한 후 입력한 정보가 올바른지 확인하세요. 
 ---
-= 복제 계획 만들기: 4단계 - NetApp 재해 복구 설정 확인
+= 복제 계획 만들기: 4단계 - NetApp Disaster Recovery 설정 확인
 :allow-uri-read: 
 
 
 [role="lead"]
-NetApp 재해 복구에 복제 계획 정보를 추가한 후 입력한 정보가 올바른지 확인하세요.
+NetApp Disaster Recovery 에 복제 계획 정보를 추가한 후 입력한 정보가 올바른지 확인하세요.
 
 .단계
 . 복제 계획을 활성화하기 전에 설정을 검토하려면 *저장*을 선택하세요.
@@ -22,4 +22,4 @@ NetApp 재해 복구에 복제 계획 정보를 추가한 후 입력한 정보�
 . 모든 설정이 올바른지 확인한 후 화면 하단에서 *플랜 추가*를 선택하세요.
 
 
-계속하기link:evs-deploy-guide-verify-rp.html["복제 계획을 확인하세요"] .
+계속하기link:evs-deploy-guide-verify-rp.html["복제 계획 확인"] .

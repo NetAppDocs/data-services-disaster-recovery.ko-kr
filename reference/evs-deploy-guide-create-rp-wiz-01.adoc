@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: reference/evs-deploy-guide-create-rp-wiz-01.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter,amazon elastic vmware service 
-summary: 먼저 NetApp Disaster Recovery를 사용하여 복제 계획 이름을 제공하고 복제를 위한 소스 및 대상 vCenter를 선택합니다. 
+summary: 먼저 NetApp Disaster Recovery 사용하여 복제 계획 이름을 제공하고 복제를 위한 소스 및 대상 vCenter를 선택합니다. 
 ---
-= 복제 계획 만들기: 1단계 - NetApp 재해 복구에서 vCenter 선택
+= 복제 계획 만들기: 1단계 - NetApp Disaster Recovery 에서 vCenter 선택
 :allow-uri-read: 
 
 
 [role="lead"]
-먼저 NetApp Disaster Recovery를 사용하여 복제 계획 이름을 제공하고 복제를 위한 소스 및 대상 vCenter를 선택합니다.
+먼저 NetApp Disaster Recovery 사용하여 복제 계획 이름을 제공하고 복제를 위한 소스 및 대상 vCenter를 선택합니다.
 
 . 복제 계획에 대한 고유한 이름을 입력하세요.
 +

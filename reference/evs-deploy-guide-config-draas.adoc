@@ -2,18 +2,18 @@
 sidebar: sidebar 
 permalink: reference/evs-deploy-guide-config-draas.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: NetApp 콘솔 에이전트를 설치한 후에는 DR 프로세스에 참여할 모든 ONTAP 스토리지와 VMware vCenter 리소스를 통합해야 합니다. 
+summary: NetApp Console 에이전트를 설치한 후에는 DR 프로세스에 참여할 모든 ONTAP 스토리지와 VMware vCenter 리소스를 통합해야 합니다. 
 ---
-= Amazon EVS에 대한 NetApp 재해 복구 구성 개요
+= Amazon EVS에 대한 NetApp Disaster Recovery 구성 개요
 :allow-uri-read: 
 
 
 [role="lead"]
-NetApp 콘솔 에이전트를 설치한 후에는 재해 복구 프로세스에 참여할 모든 ONTAP 스토리지와 VMware vCenter 리소스를 NetApp 재해 복구와 통합해야 합니다.
+NetApp Console 에이전트를 설치한 후에는 재해 복구 프로세스에 참여할 모든 ONTAP 스토리지와 VMware vCenter 리소스를 NetApp Disaster Recovery 와 통합해야 합니다.
 
-* link:evs-deploy-guide-config-prereqs.html["NetApp 재해 복구를 지원하는 Amazon EVS의 필수 구성 요소"]
-* link:evs-deploy-guide-config-add-arrays.html["NetApp 재해 복구에 ONTAP 스토리지 어레이 추가"]
-* link:evs-deploy-guide-enable-draas.html["Amazon EVS에 대한 NetApp 재해 복구 활성화"]
-* link:evs-deploy-guide-config-add-arrays.html["NetApp 재해 복구에 vCenter 사이트 추가"]
-* link:evs-deploy-guide-add-vcenters.html["NetApp 재해 복구에 vCenter 클러스터 추가"]
+* link:evs-deploy-guide-config-prereqs.html["NetApp Disaster Recovery 지원하는 Amazon EVS의 필수 구성 요소"]
+* link:evs-deploy-guide-config-add-arrays.html["NetApp Disaster Recovery 에 ONTAP 스토리지 어레이 추가"]
+* link:evs-deploy-guide-enable-draas.html["Amazon EVS에 대한 NetApp Disaster Recovery 활성화"]
+* link:evs-deploy-guide-config-add-arrays.html["NetApp Disaster Recovery 에 vCenter 사이트 추가"]
+* link:evs-deploy-guide-add-vcenters.html["NetApp Disaster Recovery 에 vCenter 클러스터 추가"]
 

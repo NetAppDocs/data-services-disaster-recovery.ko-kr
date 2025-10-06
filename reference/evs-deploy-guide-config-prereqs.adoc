@@ -2,23 +2,23 @@
 sidebar: sidebar 
 permalink: reference/evs-deploy-guide-config-prereqs.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter 
-summary: NetApp 재해 복구를 사용하여 Amazon EVS를 계속 구성하기 전에 몇 가지 전제 조건이 충족되었는지 확인해야 합니다. 
+summary: NetApp Disaster Recovery 사용하여 Amazon EVS를 계속 구성하기 전에 몇 가지 전제 조건이 충족되었는지 확인해야 합니다. 
 ---
-= NetApp 재해 복구를 지원하는 Amazon EVS의 필수 구성 요소
+= NetApp Disaster Recovery 지원하는 Amazon EVS의 필수 구성 요소
 :allow-uri-read: 
 
 
 [role="lead"]
-NetApp 재해 복구를 사용하여 Amazon EVS를 계속 구성하기 전에 몇 가지 전제 조건이 충족되었는지 확인해야 합니다.
+NetApp Disaster Recovery 사용하여 Amazon EVS를 계속 구성하기 전에 몇 가지 전제 조건이 충족되었는지 확인해야 합니다.
 
 구체적으로 다음을 수행하세요.
 
-* NetApp 재해 복구에 필요한 작업을 수행하는 데 필요한 특정 VMware 권한이 있는 vCenter 사용자 계정을 만듭니다.
+* NetApp Disaster Recovery 에 필요한 작업을 수행하는 데 필요한 특정 VMware 권한이 있는 vCenter 사용자 계정을 만듭니다.
 +
 
-NOTE: 기본 관리자 계정인 "\administrator@vsphere.com"은 사용하지 않는 것이 좋습니다.  대신, DR 프로세스에 참여할 모든 vCenter 클러스터에 NetApp 재해 복구 전용 사용자 계정을 만들어야 합니다.  필요한 특정 권한 목록은 다음을 참조하세요.link:vcenter-privileges.html["NetApp 재해 복구에 필요한 vCenter 권한"] .
+NOTE: 기본 관리자 계정인 "\administrator@vsphere.com"은 사용하지 않는 것이 좋습니다.  대신, DR 프로세스에 참여할 모든 vCenter 클러스터에 NetApp Disaster Recovery 전용 사용자 계정을 만들어야 합니다.  필요한 특정 권한 목록은 다음을 참조하세요.link:vcenter-privileges.html["NetApp Disaster Recovery 에 필요한 vCenter 권한"] .
 
-* NetApp Disaster Recovery로 보호되는 VM을 호스팅할 모든 vCenter 데이터 저장소가 NetApp ONTAP 스토리지 리소스에 있는지 확인하세요.
+* NetApp Disaster Recovery 로 보호되는 VM을 호스팅할 모든 vCenter 데이터 저장소가 NetApp ONTAP 스토리지 리소스에 있는지 확인하세요.
 +
 NetApp ONTAP 에서 Amazon FSx 사용할 경우 이 서비스는 iSCSI(FC는 아님)에서 NFS 및 VMFS를 지원합니다.  이 서비스는 FC를 지원하지만 Amazon FSx for NetApp ONTAP 지원하지 않습니다.
 

@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: reference/evs-deploy-guide-introduction.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, netapp, ontap 
-summary: Amazon EVS와 Amazon FSx for NetApp ONTAP 사용한 NetApp 재해 복구 소개. 
+summary: Amazon EVS와 Amazon FSx for NetApp ONTAP 사용한 NetApp Disaster Recovery 소개. 
 ---
-= Amazon Elastic VMware Service 및 Amazon FSx for NetApp ONTAP 사용한 NetApp 재해 복구 소개
+= Amazon Elastic VMware Service 및 Amazon FSx for NetApp ONTAP 사용한 NetApp Disaster Recovery 소개
 :allow-uri-read: 
 
 
 [role="lead"]
-점점 더 많은 고객이 VMware vSphere 기반과 같은 프로덕션 컴퓨팅 워크로드를 위해 가상화된 인프라에 더 의존하게 되었습니다.  가상 머신(VM)이 비즈니스에 더욱 중요해짐에 따라 고객은 물리적 컴퓨팅 리소스와 동일한 유형의 재해로부터 이러한 VM을 보호해야 합니다.  현재 제공되는 재해 복구(DR) 솔루션은 복잡하고 비용이 많이 들며 리소스가 많이 필요합니다.  가상화된 인프라에 사용되는 최대 규모의 스토리지 공급업체 NetApp 모든 유형의 ONTAP 스토리지 호스팅 데이터를 보호하는 것과 동일한 방식으로 고객의 VM을 보호하는 데 큰 관심을 가지고 있습니다.  이러한 목표를 달성하기 위해 NetApp NetApp 재해 복구 서비스를 만들었습니다.
+점점 더 많은 고객이 VMware vSphere 기반과 같은 프로덕션 컴퓨팅 워크로드를 위해 가상화된 인프라에 더 의존하게 되었습니다.  가상 머신(VM)이 비즈니스에 더욱 중요해짐에 따라 고객은 물리적 컴퓨팅 리소스와 동일한 유형의 재해로부터 이러한 VM을 보호해야 합니다.  현재 제공되는 재해 복구(DR) 솔루션은 복잡하고 비용이 많이 들며 리소스가 많이 필요합니다.  가상화된 인프라에 사용되는 최대 규모의 스토리지 공급업체 NetApp 모든 유형의 ONTAP 스토리지 호스팅 데이터를 보호하는 것과 동일한 방식으로 고객의 VM을 보호하는 데 큰 관심을 가지고 있습니다.  이러한 목표를 달성하기 위해 NetApp NetApp Disaster Recovery 서비스를 만들었습니다.
 
 모든 DR 솔루션의 주요 과제 중 하나는 DR 복제 및 복구 인프라를 제공하기 위해 추가적인 컴퓨팅, 네트워크 및 스토리지 리소스를 구매, 구성 및 유지 관리하는 데 드는 증가 비용을 관리하는 것입니다.  중요한 온프레미스 가상 리소스를 보호하는 데 널리 사용되는 옵션 중 하나는 클라우드 호스팅 가상 리소스를 DR 복제 및 복구 인프라로 사용하는 것입니다.  Amazon은 NetApp ONTAP 호스팅 VM 인프라와 호환되는 비용 효율적인 리소스를 제공할 수 있는 솔루션의 한 예입니다.
 

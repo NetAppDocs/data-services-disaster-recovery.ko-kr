@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: use/monitor-jobs.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, monitor, bluexp 
-summary: NetApp Disaster Recovery는 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다.  모든 재해 복구 작업을 모니터링하고 진행 상황을 확인할 수 있습니다. 
+summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다.  모든 재해 복구 작업을 모니터링하고 진행 상황을 확인할 수 있습니다. 
 ---
-= NetApp 재해 복구 작업 모니터링
+= NetApp Disaster Recovery 작업 모니터링
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,20 +12,20 @@ summary: NetApp Disaster Recovery는 재해 복구 워크플로를 자동화하�
 
 
 [role="lead"]
-모든 NetApp 재해 복구 작업을 모니터링하고 진행 상황을 확인할 수 있습니다.
+모든 NetApp Disaster Recovery 작업을 모니터링하고 진행 상황을 확인할 수 있습니다.
 
 
 
 == 채용공고 보기
 
-*필수 NetApp 콘솔 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자, 재해 복구 애플리케이션 관리자 또는 재해 복구 뷰어 역할.
+*필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자, 재해 복구 애플리케이션 관리자 또는 재해 복구 뷰어 역할.
 
-link:../reference/dr-reference-roles.html["NetApp 재해 복구의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+link:../reference/dr-reference-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. 에 로그인하세요 https://console.netapp.com/["NetApp 콘솔"^] .
-. NetApp 콘솔 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
-. 메뉴에서 *작업 모니터링*을 선택하세요.
+. 에 로그인하세요 https://console.netapp.com/["NetApp Console"^] .
+. NetApp Console 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
+. 메뉴에서 *작업 모니터링*을 선택합니다.
 . 운영과 관련된 모든 직무를 탐색하고 타임스탬프와 상태를 검토합니다.
 . 특정 직업의 세부 정보를 보려면 해당 행을 선택하세요.
 . 정보를 새로 고치려면 *새로 고침*을 선택하세요.
@@ -37,13 +37,13 @@ link:../reference/dr-reference-roles.html["NetApp 재해 복구의 사용자 역
 
 작업이 진행 중이거나 대기 중인 경우 계속 진행하고 싶지 않으면 해당 작업을 취소할 수 있습니다.  동일한 상태에 갇힌 작업을 취소하고 대기열에서 다음 작업을 비우고 싶을 수 있습니다.  시간이 초과되기 전에 작업을 취소하고 싶을 수도 있습니다.
 
-*필수 NetApp 콘솔 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자, 재해 복구 장애 조치 관리자 또는 재해 복구 애플리케이션 관리자 역할.
+*필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자, 재해 복구 장애 조치 관리자 또는 재해 복구 애플리케이션 관리자 역할.
 
-link:../reference/dr-reference-roles.html["NetApp 재해 복구의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+link:../reference/dr-reference-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp 콘솔 왼쪽 탐색 모음에서 *보호* > *재해 복구*를 선택합니다.
-. 메뉴에서 *작업 모니터링*을 선택하세요.
+. NetApp Console 왼쪽 탐색 모음에서 *보호* > *재해 복구*를 선택합니다.
+. 메뉴에서 *작업 모니터링*을 선택합니다.
 . 작업 모니터 페이지에서 취소하려는 작업의 ID를 기록해 둡니다.
 +
 작업은 "진행 중" 또는 "대기 중" 상태여야 합니다.

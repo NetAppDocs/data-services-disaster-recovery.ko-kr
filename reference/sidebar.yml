@@ -2,29 +2,29 @@
 section: reference
 title: 참조
 entries:
-- title: NetApp 재해 복구에 필요한 vCenter 권한
+- title: NetApp Disaster Recovery 에 필요한 vCenter 권한
   url: "/reference/vcenter-privileges.html"
-- title: NetApp 재해 복구 역할 및 권한
+- title: NetApp Disaster Recovery 역할 및 권한
   url: "/reference/dr-reference-roles.html"
-- title: Amazon EVS와 함께 NetApp 재해 복구 사용
+- title: Amazon EVS와 함께 NetApp Disaster Recovery 사용
   entries:
-  - title: Amazon EVS를 사용한 NetApp 재해 복구 개요
+  - title: Amazon EVS를 사용한 NetApp Disaster Recovery 개요
     url: "/reference/evs-deploy-guide-introduction.html"
   - title: 솔루션 개요
     url: "/reference/evs-deploy-guide-solution-overview.html"
-  - title: NetApp 콘솔 에이전트 설치
+  - title: NetApp Console 에이전트 설치
     url: "/reference/evs-deploy-guide-install-connector.html"
-  - title: Amazon EVS에 대한 NetApp 재해 복구 구성
+  - title: Amazon EVS에 대한 NetApp Disaster Recovery 구성
     entries:
-    - title: Amazon EVS에 대한 NetApp 재해 복구 구성 개요
+    - title: Amazon EVS에 대한 NetApp Disaster Recovery 구성 개요
       url: "/reference/evs-deploy-guide-config-draas.html"
     - title: Amazon EVS의 필수 구성 요소
       url: "/reference/evs-deploy-guide-config-prereqs.html"
     - title: Amazon EVS에 ONTAP 스토리지 어레이 추가
       url: "/reference/evs-deploy-guide-config-add-arrays.html"
-    - title: Amazon EVS에 NetApp 재해 복구 추가
+    - title: Amazon EVS에 NetApp Disaster Recovery 추가
       url: "/reference/evs-deploy-guide-enable-draas.html"
-    - title: Amazon EVS용 NetApp 재해 복구에 사이트 추가
+    - title: Amazon EVS용 NetApp Disaster Recovery 에 사이트 추가
       url: "/reference/evs-deploy-guide-add-sites.html"
     - title: Amazon EVS에 vCenter 클러스터 추가
       url: "/reference/evs-deploy-guide-add-vcenters.html"
