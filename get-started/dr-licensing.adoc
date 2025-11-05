@@ -28,7 +28,7 @@ link:../reference/dr-reference-roles.html["NetApp Disaster Recovery 의 사용�
 
 NOTE: NetApp Disaster Recovery 요금은 복제 계획이 있는 VM이 ​​하나 이상 있는 경우 소스 사이트의 데이터 저장소 사용 용량을 기준으로 부과됩니다.  장애 조치된 데이터 저장소의 용량은 용량 허용량에 포함되지 않습니다.  BYOL의 경우, 데이터가 허용된 용량을 초과하면 NetApp Console 에서 추가 용량 라이선스를 얻거나 라이선스를 업그레이드할 때까지 서비스 작업이 제한됩니다.
 
-link:https://docs.netapp.com/us-en/bluexp-digital-wallet/concept-digital-wallet.html["구독에 대해 자세히 알아보세요"^] .
+link:https://docs.netapp.com/us-en/console-licenses-subscriptions/concept-licenses-subscriptions.html["구독에 대해 자세히 알아보세요"^].
 
 무료 체험 기간이 종료되거나 라이선스가 만료된 후에도 서비스에서 다음 작업을 수행할 수 있습니다.
 
