@@ -1510,7 +1510,6 @@
   <block id="10c490bdf4b14320b22d49a659b33c9b" category="list-text">*선호하는 NFS LIF* 및 *내보내기 정책*: 일반적으로 서비스에서 선호하는 NFS LIF 및 내보내기 정책을 선택하게 합니다.  특정 NFS LIF 또는 내보내기 정책을 사용하려면 각 필드 옆에 있는 아래쪽 화살표를 선택하고 적절한 옵션을 선택하세요.</block>
   <block id="3a34b1c612fbfa5151b5f75fa3b7f4d8" category="paragraph">장애 조치 이벤트 후에 볼륨에 대해 특정 데이터 인터페이스(LIF)를 선택적으로 사용할 수 있습니다.  대상 SVM에 여러 개의 LIF가 있는 경우 데이터 트래픽을 분산하는 데 유용합니다.</block>
   <block id="80b4d61db95d764d9478be9bd5dce2ba" category="paragraph">NAS 데이터 액세스 보안에 대한 추가 제어를 위해 서비스는 다양한 데이터 저장소 볼륨에 특정 NAS 내보내기 정책을 할당할 수 있습니다.  내보내기 정책은 데이터 저장소 볼륨에 액세스하는 NFS 클라이언트에 대한 액세스 제어 규칙을 정의합니다.  내보내기 정책을 지정하지 않으면 서비스는 SVM에 대한 기본 내보내기 정책을 사용합니다.</block>
-  <block id="c1010e08c79f29288805732c914b88b2" category="paragraph">*모범 사례*: 보호된 VM을 호스팅할 소스 및 대상 vCenter ESXi 호스트에만 볼륨 액세스를 제한하는 전용 내보내기 정책을 만드는 것이 좋습니다.  이렇게 하면 외부 엔터티가 NFS 내보내기에 액세스하지 못하도록 방지하는 데 도움이 됩니다.</block>
   <block id="49511806f0e60c638845968f2dbb17f7" category="section-title">테스트 장애 조치 매핑 추가</block>
   <block id="a8c55ad0456d667323e1ede0b2d4845d" category="list-text">테스트 환경에 대해 다른 매핑을 설정하려면 상자의 선택을 취소하고 *테스트 매핑* 탭을 선택합니다.</block>
   <block id="3d2d89948829d5041f9ae015297d638b" category="list-text">이전과 마찬가지로 각 탭을 살펴보겠습니다. 하지만 이번에는 테스트 환경입니다.</block>
@@ -1915,4 +1914,16 @@
   <block id="c17db388b1bce3930a27ba26379fd97f" category="list-text">사이트를 선택한 다음 NetApp Console 에이전트를 선택하고 vCenter 자격 증명을 제공합니다.</block>
   <block id="51f46f78f8aed3edc5be5baa188edfc3" category="list-text">**온프레미스 사이트에만 해당:** 소스 vCenter에 대한 자체 서명 인증서를 수락하려면 상자를 선택하세요.</block>
   <block id="3197d20854469510f60e5d3f44b0db4d" category="paragraph">다음으로 대상 vCenter를 추가합니다.</block>
+  <block id="5b5de768a01e088dbab56f46d97b5a38" category="doc">계단식 장애 조치 지원</block>
+  <block id="8115dd8449bd907d08f3347f6d04324a" category="paragraph">이제 ONTAP 에서 계단식 관계를 구성하고 해당 복제 관계의 모든 단계를 재해 복구에 사용할 수 있습니다.</block>
+  <block id="eb2fa9dcb8eaa46c82c070f8bbe8418a" category="section-title">등록 중 VMware 하드웨어 지원 다운그레이드</block>
+  <block id="f83d7a6597b186db7483e2f478aeb8fa" category="paragraph">재해 복구는 이제 등록 중에 VMware 하드웨어를 이전 버전의 vSphere로 다운그레이드하는 것을 지원합니다. 이 기능은 소스 ESX 호스트가 재해 복구 사이트보다 최신 버전을 실행하는 경우에 유용합니다.</block>
+  <block id="a412b7de9758b999e39beb6a86f38803" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="3b88d2273f8f2a777f18a77cece1dbb2" category="inline-xref-macro-rx"></block>.</block>
+  <block id="bcf697aa5ef7fc37fba63ce6d2bf0e43" category="section-title">우아한 종료</block>
+  <block id="9437b903cdafc2fdfce3c66af80b97f0" category="paragraph">재해 복구 기능은 이제 VM의 전원을 끄는 대신 정상적으로 종료합니다. VM의 전원을 끄는 데 10분 이상 걸리는 경우 재해 복구 기능이 해당 VM의 전원을 끕니다.</block>
+  <block id="9b9e3165f7ecae3e2e3b2c795e562976" category="section-title">사전 백업 스크립팅 지원</block>
+  <block id="bb05f5a972177b632dbf8088c480f305" category="paragraph">이제 백업을 생성하기 전에 실행할 사용자 정의 스크립팅을 장애 조치 워크플로에 삽입할 수 있습니다. 사전 백업 스크립팅을 사용하면 스냅샷이 복제되기 전에 VM 상태를 제어하고 전환을 위해 VM을 준비할 수 있습니다. 예를 들어, 장애 조치 후 다른 스크립트를 사용하여 다시 마운트될 NFS 마운트를 마운트 해제하는 스크립트를 삽입할 수 있습니다.</block>
+  <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025년 11월 10일</block>
+  <block id="67d901d806b31ec45748075cf6b4b785" category="list-text">*VM 하드웨어 버전 다운그레이드 및 등록*: 대상 ESX 호스트 버전이 소스 버전보다 이전인 경우 등록 중에 일치하도록 이 옵션을 선택합니다.</block>
+  <block id="c41917a6c517c418de809b1e4f43f537" category="admonition">보호된 VM을 호스팅할 소스 및 대상 vCenter ESXi 호스트에만 볼륨 액세스를 제한하는 전용 내보내기 정책을 만드는 것이 좋습니다. 이렇게 하면 외부 엔터티가 NFS 내보내기에 액세스할 수 없습니다.</block>
 </blocks>
