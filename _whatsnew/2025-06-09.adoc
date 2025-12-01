@@ -10,4 +10,4 @@ Windows 로컬 관리자 암호 솔루션(Windows LAPS)은 Active Directory에�
 
 이제 도메인 컨트롤러 세부 정보를 제공하여 서브넷 매핑 옵션을 선택하고 LAPS 옵션을 확인할 수 있습니다.  이 옵션을 사용하면 각 가상 머신에 대한 비밀번호를 제공할 필요가 없습니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .

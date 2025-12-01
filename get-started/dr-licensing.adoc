@@ -16,7 +16,7 @@ NetApp Disaster Recovery 사용하면 무료 평가판, 사용량에 따른 지�
 
 *필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자 또는 재해 복구 애플리케이션 관리자 역할.
 
-link:../reference/dr-reference-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 액세스 역할에 대해 알아보세요"^] .
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 액세스 역할에 대해 알아보세요"^].
 
 *라이선스 옵션* 다음 라이선싱 옵션을 사용할 수 있습니다.
 
@@ -61,7 +61,7 @@ image:draas-landing6-free-trial.png["NetApp Disaster Recovery 랜딩 페이지 �
 
 . 다른 서비스에 대한 콘솔 에이전트를 아직 추가하지 않았다면 하나 추가하세요.
 +
-콘솔 에이전트를 추가하려면 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["콘솔 에이전트에 대해 알아보세요"^] .
+콘솔 에이전트를 추가하려면 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 에이전트에 대해 알아보세요"^] .
 
 . 에이전트를 설정한 후 NetApp Disaster Recovery 랜딩 페이지에서 에이전트를 추가하는 버튼이 무료 평가판을 시작하는 버튼으로 변경됩니다.  *무료 체험 시작*을 선택하세요.
 . vCenter를 추가하여 시작하세요.
@@ -88,7 +88,7 @@ image:dr-licensing-payment-methods.png["NetApp Disaster Recovery 지불 방법 �
 . AWS Marketplace 또는 Microsoft Azure Marketplace를 사용하여 * NetApp Disaster Recovery*를 구독하세요.
 . NetApp Disaster Recovery 로 돌아오면 구독이 완료되었다는 메시지가 표시됩니다.
 +
-NetApp Console 구독 페이지에서 구독 세부 정보를 볼 수 있습니다. link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-homepage.html["NetApp Console 사용하여 구독 관리에 대해 자세히 알아보세요."^] .
+NetApp Console 구독 페이지에서 구독 세부 정보를 볼 수 있습니다. link:https://docs.netapp.com/us-en/console-licenses-subscriptions/task-homepage.html["NetApp Console 사용하여 구독 관리에 대해 자세히 알아보세요."^].
 
 
 
@@ -102,7 +102,7 @@ NetApp Console 구독 페이지에서 구독 세부 정보를 볼 수 있습니�
 
 * NetApp Console 에 라이선스 추가 ** NetApp 영업 담당자로부터 NetApp Disaster Recovery 라이선스를 구매한 후 콘솔에서 라이선스를 관리할 수 있습니다.
 
-https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["NetApp Console 사용하여 라이선스를 추가하는 방법에 대해 알아보세요."^] .
+https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html["NetApp Console 사용하여 라이선스를 추가하는 방법에 대해 알아보세요."^].
 
 
 
@@ -111,9 +111,9 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-li
 라이선스 기간이 만료일에 가까워지거나 라이선스 용량이 한도에 도달하면 NetApp Disaster Recovery UI에서 알림을 받게 됩니다.  스캔한 데이터에 액세스하는 데 방해가 되지 않도록 NetApp Disaster Recovery 라이선스가 만료되기 전에 업데이트할 수 있습니다.
 
 
-TIP: 이 메시지는 NetApp Console 과 다음에도 나타납니다. https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["알림"] .
+TIP: 이 메시지는 NetApp Console 과 다음에도 나타납니다. https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["알림"] .
 
-https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["NetApp Console 사용하여 라이선스 업데이트에 대해 알아보세요"^] .
+https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html["NetApp Console 사용하여 라이선스 업데이트에 대해 알아보세요"^].
 
 
 

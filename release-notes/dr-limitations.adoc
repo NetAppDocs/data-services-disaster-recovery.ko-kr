@@ -33,7 +33,7 @@ NetApp Disaster Recovery 에서 ONTAP FSx 클러스터를 제거해야 하는 �
 . NetApp Console 에이전트에서 클라우드 공급자의 연결 옵션을 사용하고 콘솔 에이전트가 실행되는 Linux VM에 연결하고 다음을 사용하여 "occm" 서비스를 다시 시작합니다. `docker restart occm` 명령.
 
 
-참조하다 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["기존 콘솔 에이전트 관리"^] .
+참조하다 https://docs.netapp.com/us-en/console-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["기존 콘솔 에이전트 관리"^] .
 
 . NetApp Console 시스템 페이지에서 Amazon FSx for ONTAP 시스템을 다시 추가하고 FSx 자격 증명을 제공합니다.
 +
@@ -43,4 +43,12 @@ NetApp Disaster Recovery 에서 ONTAP FSx 클러스터를 제거해야 하는 �
 +
 이를 통해 데이터 저장소, 가상 머신 및 대상 관계가 다시 검색됩니다.
 
+
+
+
+
+== Google Cloud NetApp Volumes 의 제한 사항
+
+* 장애 조치 테스트를 실행한 후에는 최소 52시간을 기다려야 복제 볼륨이 삭제됩니다.  볼륨을 수동으로 삭제해야 합니다.  52시간 후에 장애 조치를 다시 테스트할 수 있습니다.
+* 마운트 작업의 어떤 부분이 실패하면 장애 조치가 성공하지 못하고 작업 시간이 초과됩니다.  Google에서 문제를 조사하는 데 최대 3일이 소요되며, 이 기간 동안 vCenter의 모든 데이터 저장소 관련 작업이 차단됩니다.
 

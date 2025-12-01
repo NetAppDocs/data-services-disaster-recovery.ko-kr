@@ -88,7 +88,7 @@ AWS를 사용하여 온프레미스에서 클라우드로의 보호를 위한 Ne
 * Amazon FSx for NetApp ONTAP 파일 시스템을 만듭니다.
 +
 ** ONTAP 에 대한 FSx를 프로비저닝하고 구성합니다.  Amazon FSx for NetApp ONTAP NetApp ONTAP 파일 시스템을 기반으로 높은 안정성, 확장성, 고성능, 다양한 기능을 갖춘 파일 스토리지를 제공하는 완전 관리형 서비스입니다.
-** 다음 단계를 따르세요 https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html["기술 보고서 ​​4938: VMware Cloud on AWS를 사용하여 Amazon FSx ONTAP NFS 데이터 저장소로 마운트"^] 그리고 https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/task-getting-started-fsx.html["Amazon FSx for NetApp ONTAP 빠른 시작"] FSx for ONTAP 을 프로비저닝하고 구성합니다.
+** 다음 단계를 따르세요 https://docs.netapp.com/us-en/netapp-solutions/ehc/aws/aws-native-overview.html["기술 보고서 ​​4938: VMware Cloud on AWS를 사용하여 Amazon FSx ONTAP NFS 데이터 저장소로 마운트"^] 그리고 https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/task-getting-started-fsx.html["Amazon FSx for NetApp ONTAP 빠른 시작"] FSx for ONTAP 프로비저닝하고 구성합니다.
 
 
 * 시스템에 Amazon FSx for ONTAP 을 추가하고 FSx for ONTAP 에 대한 AWS 자격 증명을 추가합니다.
@@ -149,4 +149,4 @@ NetApp Console 에이전트는 지능형 프록시를 지원합니다.  지능�
 
 NetApp Disaster Recovery 프록시 구현에는 HTTPS 프로토콜을 사용하여 콘솔 에이전트와 모든 vCenter 서버 및 ONTAP 어레이 간에 포트 443 통신이 필요합니다.  콘솔 에이전트 내의 NetApp Disaster Recovery 에이전트는 모든 작업을 수행할 때 VMware vSphere, VC 또는 ONTAP 과 직접 통신합니다.
 
-NetApp Console 에서 일반 프록시 설정에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["프록시 서버를 사용하도록 콘솔 에이전트 구성"^] .
+NetApp Console 에서 일반 프록시 설정에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/task-configuring-proxy.html["프록시 서버를 사용하도록 콘솔 에이전트 구성"^] .

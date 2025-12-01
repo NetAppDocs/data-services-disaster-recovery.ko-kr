@@ -16,7 +16,7 @@ NetApp Disaster Recovery 대시보드를 사용하면 재해 복구 사이트와
 
 *필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자, 재해 복구 애플리케이션 관리자 또는 재해 복구 뷰어 역할.
 
-link:../reference/dr-reference-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . 에 로그인하세요 https://console.netapp.com/["NetApp Console"^] .

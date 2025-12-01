@@ -12,11 +12,11 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 
 
 [role="lead"]
-vCenter 사이트를 추가한 후에는 재해 복구 또는 복제 계획을 만들 준비가 된 것입니다.  복제 계획은 VMware 인프라의 데이터 보호를 관리합니다.  소스 및 대상 vCenter를 선택하고, 리소스 그룹을 선택하고, 애플리케이션을 복원하고 전원을 켜는 방법을 그룹화합니다.  예를 들어, 하나의 애플리케이션과 연관된 가상 머신(VM)을 그룹화하거나 유사한 계층을 갖는 애플리케이션을 그룹화할 수 있습니다.  이러한 계획을 때로 _청사진_이라고 부르기도 합니다.
+vCenter 사이트를 추가한 후에는 재해 복구 또는 복제 계획을 만들 준비가 된 것입니다. 복제 계획은 VMware 인프라의 데이터 보호를 관리합니다. 소스 및 대상 vCenter를 선택하고, 리소스 그룹을 선택하고, 애플리케이션을 복원하고 전원을 켜는 방법을 그룹화합니다. 예를 들어, 하나의 애플리케이션과 연관된 가상 머신(VM)을 그룹화하거나 유사한 계층을 갖는 애플리케이션을 그룹화할 수 있습니다. 이러한 계획을 때로 _청사진_이라고 부르기도 합니다.
 
 *필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자, 재해 복구 장애 조치 관리자 또는 재해 복구 애플리케이션 관리자 역할.
 
-link:../reference/dr-reference-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 *이 작업에 관하여*
 
@@ -55,6 +55,8 @@ VM은 복제 계획이 다음 상태 중 하나인 경우에만 보호될 수 �
 SnapMirror 관계를 생성하기 전에 재해 복구 외부에서 클러스터와 SVM 피어링을 설정합니다.
 
 *모범 사례*: NetApp Disaster Recovery 배포하기 전에 VM을 구성하여 "데이터 저장소 확산"을 최소화하세요.  보호가 필요한 VM을 데이터 저장소 하위 집합에 배치하고, 보호하지 않을 VM을 다른 데이터 저장소 하위 집합에 배치합니다.  데이터 저장소 기반 보호를 사용하여 모든 데이터 저장소의 VM이 보호되도록 합니다.
+
+>[!중요] >Google Cloud를 사용하면 복제 계획에 볼륨이나 데이터 저장소를 하나만 추가할 수 있습니다.
 
 
 

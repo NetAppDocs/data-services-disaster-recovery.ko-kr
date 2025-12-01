@@ -23,7 +23,7 @@ NetApp Disaster Recovery 모든 리소스에 대한 개요와 보다 자세한 �
 
 작업에는 다양한 NetApp Console 역할이 필요합니다.  자세한 내용은 각 작업의 *필수 NetApp Console 역할* 섹션을 참조하세요.
 
-link:../reference/dr-reference-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 
 

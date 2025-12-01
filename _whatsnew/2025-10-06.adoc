@@ -14,7 +14,7 @@ BlueXP disaster recovery NetApp Disaster Recovery 로 이름이 변경되었습�
 
 강화되고 재구성된 BlueXP 기반을 기반으로 구축된 NetApp Console 엔터프라이즈급 온프레미스 및 클라우드 환경에서 NetApp 스토리지와 NetApp Data Services 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 간소화된 관리를 제공하며, 높은 보안성과 규정 준수를 보장합니다.
 
-변경된 사항에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp Console 릴리스 노트"] .
+변경된 사항에 대한 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp Console 릴리스 노트"].
 
 
 

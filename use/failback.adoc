@@ -16,7 +16,7 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 
 *필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자 또는 재해 복구 장애 조치 관리자 역할.
 
-link:../reference/dr-reference-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."] . https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 *이 작업에 관하여*
 

@@ -10,7 +10,7 @@ NetApp Disaster Recovery 24시간마다 검색을 수행합니다.  이번 릴�
 
 검색 일정을 예약하고 싶지 않으면 예약된 검색 옵션을 비활성화하고 언제든지 수동으로 검색을 새로 고칠 수 있습니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html["vCenter 서버 사이트 추가"] .
+자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/sites-add.html["vCenter 서버 사이트 추가"] .
 
 
 
@@ -24,7 +24,7 @@ NetApp Disaster Recovery 24시간마다 검색을 수행합니다.  이번 릴�
 * 복제 계획을 만들고 계획 내에서 리소스 그룹을 만들면 데이터 저장소에서 VM을 볼 수 있습니다.
 
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
 
 
 

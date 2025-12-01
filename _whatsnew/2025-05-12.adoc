@@ -22,7 +22,7 @@ VM1에는 NetworkA에 연결된 vNIC(10.1.1.50)가 있습니다.  NetworkA는 �
 
 요약하자면, 호스트 주소는 동일하게 유지되지만 네트워크 주소는 사이트 서브넷 매핑에 구성된 주소로 대체됩니다.  이를 통해 장애 조치 시 IP 주소 재할당을 보다 쉽게 관리할 수 있으며, 특히 관리해야 할 네트워크가 수백 개이고 VM이 수천 개일 경우 더욱 그렇습니다.
 
-사이트에 서브넷 매핑을 포함하는 방법에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html["vCenter 서버 사이트 추가"] .
+사이트에 서브넷 매핑을 포함하는 방법에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/sites-add.html["vCenter 서버 사이트 추가"] .
 
 
 
@@ -36,7 +36,7 @@ VM1에는 NetworkA에 연결된 vNIC(10.1.1.50)가 있습니다.  NetworkA는 �
 
 원래 소스 사이트가 다시 온라인 상태가 되면 복제 계획 작업 메뉴에서 *리소스 보호*를 선택하여 역방향 보호를 설정할 수 있습니다.  이는 계획의 각 볼륨에 대해 역방향 복제 관계를 생성하려고 시도합니다.  보호가 복구될 때까지 이 작업을 반복해서 실행할 수 있습니다.  보호가 복구되면 평소와 같은 방식으로 장애 복구를 시작할 수 있습니다.
 
-자세한 내용은 건너뛰기 보호에 대한 내용을 참조하세요. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["원격 사이트로 애플리케이션 장애 조치"] .
+자세한 내용은 건너뛰기 보호에 대한 내용을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/failover.html["원격 사이트로 애플리케이션 장애 조치"] .
 
 
 
@@ -50,4 +50,4 @@ NetApp Disaster Recovery 이제 기본 ONTAP SnapMirror 정책 스케줄러나 O
 
 이것이 구성된 후에는 서비스가 정기적으로 예약된 스냅샷을 찍지 않고 대신 외부 엔터티를 사용하여 해당 스냅샷을 찍고 업데이트합니다.
 
-복제 계획에서 외부 스냅샷 솔루션을 사용하는 방법에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+복제 계획에서 외부 스냅샷 솔루션을 사용하는 방법에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .

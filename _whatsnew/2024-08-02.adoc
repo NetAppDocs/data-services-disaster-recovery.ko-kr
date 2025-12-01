@@ -17,4 +17,4 @@ NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않
 
 이 릴리스에서는 이제 Job Monitor UI에서 작업을 취소할 수 있습니다.
 
-참조하다 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["작업 모니터링"] .
+참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/monitor-jobs.html["작업 모니터링"] .
