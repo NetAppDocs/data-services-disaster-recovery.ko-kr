@@ -1844,7 +1844,6 @@
   <block id="cab2138409405e17442c0b2913348b5c" category="doc">Google Cloud NetApp Volumes 사용하여 Google Cloud VMware Engine 지원</block>
   <block id="eccf4b156fba5109ca6b1ef2be2fd64e" category="paragraph">NetApp Disaster Recovery 이제 마이그레이션, 장애 조치, 장애 복구 및 테스트 작업을 위해 Google Cloud NetApp Volumes 사용하여 Google Cloud VMware Engine을 지원합니다.  이러한 통합을 통해 온프레미스 환경과 Google Cloud 간의 원활한 재해 복구 워크플로가 가능해집니다.</block>
   <block id="7984e947265cc8b94c06702adbf28865" category="inline-link-macro">제한 사항</block>
-  <block id="4fae34c4a960e8f2c583a66a68cf6fdc" category="paragraph">검토하세요<block ref="0b97dbd151642cb26d83aa16e8ffd9ce" category="inline-link-macro-rx"></block> 그리고<block ref="86229131b08ad70f4dd9ffc7440523ad" category="inline-link-macro-rx"></block> Google Cloud를 위해.</block>
   <block id="3c56503a9f48478890ac41e17395c762" category="list-text">Google Cloud NetApp Volumes 사용한 Google Cloud VMware Engine(GCVE)</block>
   <block id="1a90436cad6b2c834a6f0bf4b63bb676" category="paragraph">자세히 알아보세요<block ref="185be9890bef04443cd0fba90b4aff11" category="inline-link-rx"></block> .</block>
   <block id="9ad4327ee2b15571b0ae33cd44518465" category="list-text">여러 시점 복구 작업을 통해 vCenter에서 애플리케이션을 검색하고 복구하는 데 필요한 사용자 환경이 간소화되었습니다.</block>
@@ -1929,4 +1928,5 @@
   <block id="bae7a0a97273516d5296fb983700a411" category="paragraph"><block ref="31accac3325320cbdf81ca4694a5591c" category="inline-link-macro-rx"></block>. <block ref="e704c98551e5f8acdbf19af28a86dcf3" category="inline-link-rx"></block>.</block>
   <block id="a805fee248bed5144adc2fef83e46569" category="paragraph">vCenter 사이트를 추가한 후에는 재해 복구 또는 복제 계획을 만들 준비가 된 것입니다. 복제 계획은 VMware 인프라의 데이터 보호를 관리합니다. 소스 및 대상 vCenter를 선택하고, 리소스 그룹을 선택하고, 애플리케이션을 복원하고 전원을 켜는 방법을 그룹화합니다. 예를 들어, 하나의 애플리케이션과 연관된 가상 머신(VM)을 그룹화하거나 유사한 계층을 갖는 애플리케이션을 그룹화할 수 있습니다. 이러한 계획을 때로 _청사진_이라고 부르기도 합니다.</block>
   <block id="3cd914b858fef92fe1881cac0800b73b" category="paragraph">&gt;[!중요] &gt;Google Cloud를 사용하면 복제 계획에 볼륨이나 데이터 저장소를 하나만 추가할 수 있습니다.</block>
+  <block id="8497094e0d678632f29aeaad49708682" category="paragraph">검토하세요<block ref="0b97dbd151642cb26d83aa16e8ffd9ce" category="inline-link-macro-rx"></block> 그리고<block ref="9bbaf1e88d2981b5294528496eff27bf" category="inline-link-macro-rx"></block> Google Cloud를 위해.</block>
 </blocks>
