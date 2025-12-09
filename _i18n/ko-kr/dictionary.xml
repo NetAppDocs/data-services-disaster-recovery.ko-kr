@@ -1927,11 +1927,9 @@
   <block id="b706122b5735a672dec906da7d14b15c" category="doc">폴더 계층 구조 유지</block>
   <block id="c8d94434feabcd9486a228e1a7a02882" category="paragraph">기본적으로 재해 복구는 장애 조치 시 VM 인벤토리 계층 구조(폴더 구조)를 유지합니다.  복구 대상에 필요한 폴더가 없으면 재해 복구가 해당 폴더를 만듭니다.</block>
   <block id="5a54761f5d99470c8137218395b65ca5" category="paragraph">이제 새로운 부모 VM 폴더를 지정하거나 **원래 폴더 계층 구조 유지** 옵션의 선택을 취소하여 이 설정을 재정의할 수 있습니다.</block>
-  <block id="4b4839446c123b0f7cbb37cc05973b41" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="8ed6b1ab912526d5ffcc717e1a39851e" category="inline-link-macro-rx"></block>.</block>
   <block id="c1bacabdbdc0d5e57b5ead85a617b4b0" category="section-title">간소화된 콘솔 에이전트 업데이트</block>
   <block id="1220fc49240c9d2c58d7490c6c40ac65" category="paragraph">재해 복구는 이제 작업 환경에서 여러 콘솔 에이전트를 사용하기 위한 간소화된 프로세스를 지원합니다.  콘솔 에이전트 간에 전환하려면 vCenter 구성을 편집하고, 자격 증명을 다시 검색하고, 복제 계획을 새로 고쳐서 새 콘솔 에이전트를 사용해야 합니다.</block>
   <block id="d6155caa68c59478855dfa8342f87d18" category="inline-link-macro">스위치 콘솔 에이전트</block>
-  <block id="8c3cfaa540744075b83a947ed57c6f60" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="0905281a07a8919c4c92242f0cf75d65" category="inline-link-macro-rx"></block>.</block>
   <block id="5fbf922c777310b5aadba9b1dab4f7b0" category="summary">NetApp Disaster Recovery 에서 여러 콘솔 에이전트를 사용하기 위한 요구 사항에 대해 알아보세요.</block>
   <block id="ac340102b6e26791143e3212d85bb1dd" category="doc">NetApp Disaster Recovery 사용할 때 콘솔 에이전트 전환</block>
   <block id="5784bc747a9795446f48f40111e7bf58" category="paragraph">NetApp Console 단일 작업 환경에서 여러 콘솔 에이전트를 사용하는 것을 지원합니다.  여러 콘솔 에이전트를 사용하면 다른 콘솔 에이전트에서 유지 관리를 수행하는 동안 또는 콘솔 에이전트에 오류가 발생하는 경우 리소스에 대한 액세스를 유지하는 데 도움이 될 수 있습니다.  각 콘솔 에이전트에는 고유한 식별자가 있으므로 콘솔 에이전트를 부적절하게 전환하면 작업 환경에서 리소스 가용성이 손상될 수 있습니다.</block>
@@ -1965,4 +1963,6 @@
   <block id="ed5adefa93ed81ded190826eed4455dd" category="paragraph">원래 폴더 계층 구조를 무시하려면 이 상자의 선택을 취소하세요.</block>
   <block id="06596d9f3a6cac6c36599f4c1598f756" category="sidebar">재해 복구에 필요한 vCenter 권한</block>
   <block id="2b1806d17c0606f8caa4232aa6a3c113" category="sidebar">스위치 콘솔 에이전트</block>
+  <block id="98ade846ffa73dc9c6bcd3e3e84c38b7" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="1762f821178ef43810c03e86465a946d" category="inline-link-macro-rx"></block>.</block>
+  <block id="1df351797bd2540f3ec41bc24e67bf1f" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="2631c62a2ac2ec2e6a0ebc0352319a2c" category="inline-link-macro-rx"></block>.</block>
 </blocks>
