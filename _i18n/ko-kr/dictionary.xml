@@ -1959,10 +1959,9 @@
   <block id="7bcd913022459926bf1a00069a8fb8f6" category="admonition">NetApp Disaster Recovery 배포하기 전에 VM을 구성하여 "데이터 저장소 확산"을 최소화하세요. 보호가 필요한 VM을 데이터 저장소 하위 집합에 배치하고, 보호하지 않을 VM을 다른 데이터 저장소 하위 집합에 배치합니다. 데이터 저장소 기반 보호를 사용하여 모든 데이터 저장소의 VM이 보호되도록 합니다.</block>
   <block id="705a20699e1039fa52632f889e10a673" category="admonition">VMS가 동일한 IP 주소를 사용하여 프로덕션 네트워크에 연결되는 것을 방지하기 위해 장애 조치 테스트를 위한 별도의 전용 매핑 세트를 만듭니다.</block>
   <block id="5f4825a97c910dc2ee0d9eb1107f19d9" category="section-title">맵 리소스 &gt; 가상 머신 섹션</block>
-  <block id="782a5bda639e031f83212ac3e8bdb777" category="list-text">*원래 폴더 계층 구조 유지*: 이 옵션을 선택하면 재해 복구에서 장애 조치 시 VM 인벤토리 계층 구조(폴더 구조)를 유지합니다.  복구 대상에 원래 폴더 계층 구조가 없는 경우 재해 복구가 생성됩니다.</block>
-  <block id="ed5adefa93ed81ded190826eed4455dd" category="paragraph">원래 폴더 계층 구조를 무시하려면 이 상자의 선택을 취소하세요.</block>
   <block id="06596d9f3a6cac6c36599f4c1598f756" category="sidebar">재해 복구에 필요한 vCenter 권한</block>
   <block id="2b1806d17c0606f8caa4232aa6a3c113" category="sidebar">스위치 콘솔 에이전트</block>
-  <block id="98ade846ffa73dc9c6bcd3e3e84c38b7" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="1762f821178ef43810c03e86465a946d" category="inline-link-macro-rx"></block>.</block>
-  <block id="1df351797bd2540f3ec41bc24e67bf1f" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="2631c62a2ac2ec2e6a0ebc0352319a2c" category="inline-link-macro-rx"></block>.</block>
+  <block id="ad4891bd95428a3a61372e6cb7c1e8db" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="46afb87ea9ab52c50c55f4a3ee88e9ae" category="inline-link-macro-rx"></block>.</block>
+  <block id="8b398f79cbc8bafdd3d60b15c90e7f01" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="9816d86fb07a6c2043bc508d566ad539" category="inline-link-macro-rx"></block>.</block>
+  <block id="200e6bbe1011559dc78706a398152267" category="list-text">*원본 폴더 계층 구조 유지*: 이 옵션을 선택하면 재해 복구 시 장애 조치 시 VM 인벤토리 계층 구조(폴더 구조)가 유지됩니다. 복구 대상에 원래 폴더 계층 구조가 없는 경우 재해 복구는 해당 구조를 생성합니다. 폴더 계층 구조를 유지하려면 확인란을 선택하고, 원래 폴더 계층 구조를 무시하려면 선택을 해제하십시오.</block>
 </blocks>
