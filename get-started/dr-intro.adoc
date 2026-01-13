@@ -25,7 +25,7 @@ NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우
 
 NetApp Disaster Recovery ONTAP SnapMirror 기술과 통합된 기본 VMware 오케스트레이션을 사용하여 VMware VM과 관련 디스크 OS 이미지를 보호하는 동시에 ONTAP 의 모든 스토리지 효율성 이점을 유지합니다.  재해 복구는 이러한 기술을 재해 복구 사이트로의 복제 전송에 사용합니다.  이를 통해 기본 및 보조 사이트에서 업계 최고의 스토리지 효율성(압축 및 중복 제거)이 가능해집니다.
 
-image:../use/evs-bluexp-architecture.png["VMware용 NetApp Disaster Recovery 구성 요소를 보여주는 다이어그램"]
+image:../use/evs-console-architecture.png["VMware용 NetApp Disaster Recovery 구성 요소를 보여주는 다이어그램"]
 
 
 
