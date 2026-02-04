@@ -9,20 +9,41 @@ summary: NetApp Disaster Recovery 사용하여 Amazon EVS를 계속 구성하기
 
 
 [role="lead"]
-NetApp Disaster Recovery 사용하여 Amazon EVS를 계속 구성하기 전에 몇 가지 전제 조건이 충족되었는지 확인해야 합니다.
+Amazon EVS를 NetApp Disaster Recovery와 연동하여 구성하기 위한 요구 사항을 검토하고 충족했는지 확인하십시오.
 
-구체적으로 다음을 수행하세요.
-
+.필수 조건
+* link:../get-started/dr-prerequisites["Disaster Recovery를 위한 일반적인 전제 조건"]를 검토해 보세요.
 * NetApp Disaster Recovery 에 필요한 작업을 수행하는 데 필요한 특정 VMware 권한이 있는 vCenter 사용자 계정을 만듭니다.
 +
 
-NOTE: 기본 관리자 계정인 "\administrator@vsphere.com"은 사용하지 않는 것이 좋습니다.  대신, DR 프로세스에 참여할 모든 vCenter 클러스터에 NetApp Disaster Recovery 전용 사용자 계정을 만들어야 합니다.  필요한 특정 권한 목록은 다음을 참조하세요.link:vcenter-privileges.html["NetApp Disaster Recovery 에 필요한 vCenter 권한"] .
+NOTE: 기본 "\administrator@vsphere.com" 관리자 계정을 **사용하지 않는 것**을 권장합니다. 대신, 재해 복구 프로세스에 참여할 모든 vCenter 클러스터에 NetApp Disaster Recovery 전용 사용자 계정을 생성해야 합니다. 필요한 특정 권한 목록은 link:vcenter-privileges.html["NetApp Disaster Recovery 에 필요한 vCenter 권한"]를 참조하십시오.
 
-* NetApp Disaster Recovery 로 보호되는 VM을 호스팅할 모든 vCenter 데이터 저장소가 NetApp ONTAP 스토리지 리소스에 있는지 확인하세요.
+* 재해 복구로 보호되는 VM을 호스팅할 모든 vCenter 데이터스토어가 NetApp ONTAP 스토리지 리소스에 있는지 확인하십시오.
 +
-NetApp ONTAP 에서 Amazon FSx 사용할 경우 이 서비스는 iSCSI(FC는 아님)에서 NFS 및 VMFS를 지원합니다.  이 서비스는 FC를 지원하지만 Amazon FSx for NetApp ONTAP 지원하지 않습니다.
+재해 복구는 Amazon FSx for NetApp ONTAP을 사용할 때 iSCSI의 NFS 및 VMFS를 지원합니다(FC는 지원하지 않음). 재해 복구는 FC를 지원하지만 Amazon FSx for NetApp ONTAP은 지원하지 않습니다.
 
-* Amazon EVS vCenter가 Amazon FSx for NetApp ONTAP 스토리지 클러스터에 연결되어 있는지 확인하세요.
-* 모든 보호된 VM에 VMware 도구가 설치되어 있는지 확인하세요.
-* Amazon에서 승인한 연결 방법을 사용하여 온프레미스 네트워크가 AWS VPC 네트워크에 연결되어 있는지 확인하세요.  AWS Direct Connect, AWS Private Link 또는 AWS Site-to-Site VPN을 사용하는 것이 좋습니다.
+* Amazon EVS vCenter가 Amazon FSx for NetApp ONTAP 스토리지 클러스터에 연결되어 있는지 확인하십시오.
+* 보호 대상 가상 머신에 VMware Tools가 설치되어 있는지 확인하십시오.
+* 온프레미스 네트워크가 Amazon에서 승인한 연결 방식을 사용하여 AWS VPC 네트워크에 연결되어 있는지 확인하십시오. AWS Direct Connect, AWS Private Link 또는 AWS Site-to-Site VPN을 사용하는 것이 좋습니다.
+* Disaster Recovery를 사용하는 EVS의 연결 및 포트 요구 사항을 검토하고 준수하는지 확인하십시오.
++
+[cols="4"]
+|===
+| 소스 | 목적지 | 포트 | 세부 정보 
+
+
+| Amazon FSxN | 사내 ONTAP | TCP 11104, 11105, ICMP | SnapMirror 
+
+
+| 사내 ONTAP | Amazon FSxN | TCP 11104, 11105, ICMP | SnapMirror 
+
+
+| NetApp Console 에이전트 | 사내 ONTAP | TCP 443, ICMP만 해당 | API 호출 
+
+
+| NetApp Console 에이전트 | Amazon FSxN | TCP 441, ICMP 전용 | API 호출 
+
+
+| NetApp Console 에이전트 | vCenter(온프레미스, EVS), ESXi 호스트(온프레미스, EVS) | 443 | API 호출, 스크립트 실행 
+|===
 
