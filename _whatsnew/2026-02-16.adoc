@@ -1,0 +1,15 @@
+= 개선된 사용자 인터페이스
+:allow-uri-read: 
+
+
+
+
+=== 개선된 사용자 인터페이스
+
+피드백을 기반으로 성능 및 사용자 경험을 개선하기 위해 Disaster Recovery UI가 새롭게 단장되었습니다.
+
+
+
+=== API Swagger 문서
+
+이제 일반 브라우저에서 Disaster Recovery API Swagger 문서에 액세스할 수 있습니다. 더 이상 시크릿 모드가 필요하지 않습니다. API 문서에 액세스하려면 Disaster Recovery 대시보드로 이동하여 오른쪽 상단 컨텍스트 메뉴 image:../media/use/icon-vertical-dots.png["작업 아이콘"]를 선택한 다음 **API Documentation**을 선택하면 Swagger 문서가 열립니다. 또한 link:https://api.bluexp.netapp.com/v1/services/draas/api/api-doc/draas["URL을 즐겨찾기에 추가"^]를 통해서도 액세스할 수 있습니다.
