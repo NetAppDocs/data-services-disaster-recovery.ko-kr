@@ -119,8 +119,6 @@
   <block id="2b077b3d88dcc4adb54c2a11c5463fae" category="list-text">vCenter에서 VM이 삭제되면 이제 NetApp Disaster Recovery 복제 계획에서 자동으로 해당 VM을 제거합니다.</block>
   <block id="7fb8e5a4929cd35fd131ad1f5533d144" category="list-text">vCenter에서 데이터 저장소나 네트워크가 삭제되면 이제 NetApp Disaster Recovery 복제 계획 및 리소스 그룹에서도 해당 데이터 저장소나 네트워크를 삭제합니다.</block>
   <block id="1b838198508b4c30761cfb90615db038" category="list-text">vCenter에서 클러스터, 호스트 또는 데이터 센터가 삭제되면 이제 NetApp Disaster Recovery 복제 계획 및 리소스 그룹에서 해당 항목을 삭제합니다.</block>
-  <block id="24ed933119d9ba78138d2119f9ebbdac" category="inline-link">Swagger 문서</block>
-  <block id="cec5123afb166f0c68f7ddc85e5b41e4" category="list-text">이제 브라우저의 시크릿 모드에서도 Swagger 문서에 액세스할 수 있습니다. NetApp Disaster Recovery 에서 설정 옵션 &gt; API 설명서를 통해 액세스할 수 있으며, 브라우저의 시크릿 모드에서 다음 URL을 통해 직접 액세스할 수도 있습니다.<block ref="fbeb63b8afb1564cb8457db3650e3513" category="inline-link-rx"></block> .</block>
   <block id="07249132999164b31d31db024261d558" category="list-text">어떤 상황에서는 장애 복구 작업 후 작업이 완료된 후에도 iGroup이 남겨지는 경우가 있었습니다. 이 업데이트는 오래된 iGroup을 제거합니다.</block>
   <block id="5b6034f39325a10d9f5315c86847a208" category="list-text">복제 계획에 NFS FQDN이 사용된 경우 NetApp Disaster Recovery 이제 이를 IP 주소로 확인합니다. 이 업데이트는 재해 복구 사이트에서 FQDN을 확인할 수 없는 경우에 유용합니다.</block>
   <block id="bd9a0211a986e2ba720cbe54530cd5c5" category="list-text">UI 정렬 개선</block>
@@ -1146,42 +1144,23 @@
   <block id="d813bc25d25a7f816dde51c17f6c6ba0" category="list-text">소스 환경의 리소스가 대상 환경에 어떻게 매핑되는지 매핑합니다.</block>
   <block id="5971ed413328372ff42391caae30a427" category="list-text">계획이 실행되는 빈도를 설정하고, 게스트 호스팅 스크립트를 실행하고, 부팅 순서를 설정하고, 복구 지점 목표를 선택합니다.</block>
   <block id="1c10305a999dce53cb52dd4f6b8d89ff" category="list-text">계획을 검토하세요.</block>
-  <block id="50e34508d81a64564e31500b942aef1c" category="paragraph">계획을 세울 때는 다음 지침을 따라야 합니다.</block>
   <block id="05bbe166de3c0c72c8dde33285c35767" category="list-text">계획의 모든 VM에 대해 동일한 자격 증명을 사용합니다.</block>
   <block id="98ce844145386e78d8c9d936d1b8591b" category="list-text">계획에 있는 모든 VM에 동일한 스크립트를 사용합니다.</block>
   <block id="970b99aab999d5cc3afca09ebfb3ae92" category="list-text">계획에 있는 모든 VM에 대해 동일한 서브넷, DNS 및 게이트웨이를 사용합니다.</block>
   <block id="8705d6076cb452e919a6e22862427440" category="section-title">vCenter 서버 선택</block>
   <block id="c456b58190fd5c21d84750f126197baf" category="paragraph">먼저 소스 vCenter를 선택한 다음 대상 vCenter를 선택합니다.</block>
-  <block id="e7110f21716af9e270340e4ab663e36c" category="list-text">NetApp Disaster Recovery 메뉴에서 *복제 계획*을 선택하고 *추가*를 선택합니다.  또는 서비스를 처음 사용하는 경우 대시보드에서 *복제 계획 추가*를 선택하세요.</block>
-  <block id="d72f4a94d857178ae5cb1420995137e4" category="inline-image-macro">복제 계획 추가 &amp;gt; 계획 추가 페이지를 보여주는 스크린샷</block>
-  <block id="1f0f1a8ff517bead0b08cc0da5d50e4f" category="paragraph"><block ref="58b57a8b9c6929a404002fa01b315144" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="466ea193e548e9ef8d853f2da4829a3e" category="list-text">복제 계획의 이름을 만듭니다.</block>
-  <block id="ad05d9be76290e8ea731306ed4911c41" category="list-text">소스 및 대상 vCenter 목록에서 소스 및 대상 vCenter를 선택합니다.</block>
   <block id="f17de33c8bac2ab69dd89149aac16c6c" category="paragraph">다음 단계는 필요한 VM이나 데이터 저장소를 기능적 리소스 그룹으로 그룹화하는 것입니다.  리소스 그룹을 사용하면 공통 스냅샷으로 일련의 VM이나 데이터 저장소를 보호할 수 있습니다.</block>
-  <block id="418330af51c4a26653da43f1476e3d4f" category="paragraph">복제 계획에서 애플리케이션을 선택하면 계획에 있는 각 VM 또는 데이터 저장소의 운영 체제를 볼 수 있습니다.  이는 리소스 그룹에서 VM이나 데이터 저장소를 어떻게 그룹화할지 결정하는 데 유용합니다.</block>
   <block id="516dbf8e2c43d00664357bb38d1575a6" category="admonition">각 리소스 그룹에는 하나 이상의 VM이나 데이터 저장소가 포함될 수 있습니다.</block>
   <block id="5e90d93870eb5779de0b40ced0f92445" category="paragraph">리소스 그룹을 만들 때 다음 사항을 고려하세요.</block>
   <block id="de634b3bd311c5e5e1c0b9d53d9d242f" category="list-text">리소스 그룹에 데이터 저장소를 추가하기 전에 먼저 VM의 수동 검색이나 예약된 검색을 시작하세요.  이렇게 하면 VM이 검색되어 리소스 그룹에 나열됩니다.  수동 검색을 트리거하지 않으면 VM이 리소스 그룹에 나열되지 않을 수 있습니다.</block>
-  <block id="312258bdb1152123e04c06cf90952de2" category="list-text">데이터 저장소에 최소한 하나의 VM이 있는지 확인하세요.  데이터 저장소에 VM이 없으면 데이터 저장소가 검색되지 않습니다.</block>
   <block id="9fa2d89f680762c7614753f04e0aad6b" category="list-text">단일 데이터 저장소는 두 개 이상의 복제 계획으로 보호되는 VM을 호스팅해서는 안 됩니다.</block>
   <block id="dfbb0d3c710884104551edbd929afe76" category="list-text">동일한 데이터 저장소에 보호된 VM과 보호되지 않은 VM을 호스팅하지 마세요.  보호된 VM과 보호되지 않은 VM이 동일한 데이터 저장소에 호스팅되는 경우 다음과 같은 문제가 발생할 수 있습니다.</block>
   <block id="84c62302deac0be1dd475a0a0a91a4fa" category="list-text">NetApp Disaster Recovery SnapMirror 사용하고 시스템이 ONTAP 볼륨 전체를 복제하므로 해당 볼륨의 사용된 용량은 라이선싱 고려 사항에 사용됩니다.  이 경우 보호된 VM과 보호되지 않은 VM이 모두 사용하는 볼륨 공간이 이 계산에 포함됩니다.</block>
   <block id="4e7a12dab0e91d1fb0221d782eacf1e5" category="list-text">리소스 그룹과 연관된 데이터 저장소를 재해 복구 사이트로 장애 조치해야 하는 경우, 장애 조치 프로세스를 통해 보호되지 않은 VM(리소스 그룹에 속하지 않지만 ONTAP 볼륨에 호스팅된 VM)이 소스 사이트에 더 이상 존재하지 않게 되므로 소스 사이트의 보호되지 않은 VM이 실패하게 됩니다.  또한 NetApp Disaster Recovery 장애 조치 vCenter 사이트에서 보호되지 않은 VM을 시작하지 않습니다.</block>
   <block id="8a63c65b056310ba2a8c9f7b25cb1011" category="list-text">VM을 보호하려면 리소스 그룹에 포함되어야 합니다.</block>
-  <block id="6f9c40e36ae73e33332b46ebad53611b" category="list-text">*가상 머신* 또는 *데이터 저장소*를 선택하세요.</block>
-  <block id="1e37304672f6f6f473c93804e891eacb" category="list-text">선택적으로 특정 VM이나 데이터 저장소를 이름으로 검색할 수 있습니다.</block>
-  <block id="b3736de6232ff120d2109e988d051825" category="list-text">애플리케이션 페이지의 왼쪽에서 보호하려는 VM이나 데이터 저장소를 선택하고 선택한 그룹에 할당합니다.</block>
-  <block id="08c396946743aa0cf55cd76038c264b7" category="paragraph">선택한 리소스는 자동으로 그룹 1에 추가되고 새로운 그룹 2가 시작됩니다.  마지막 그룹에 리소스를 추가할 때마다 다른 그룹이 추가됩니다.</block>
   <block id="4039eb9aa82f9a49f8096e652825e9c9" category="inline-image-macro">복제 계획 추가 &amp;gt; 복제할 애플리케이션 페이지를 보여주는 스크린샷</block>
   <block id="0f71807fe3313792a56d8deaefc042cd" category="paragraph"><block ref="fe2b15a06d13ce51dd26ce76b278185c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9614731ca9a6da0007a983f0a2437843" category="paragraph">또는 데이터 저장소의 경우:</block>
   <block id="07445ca0ae375259d669e5ff34c73c99" category="paragraph"><block ref="0900e5e3c0a693c1efb9cc1c9f020053" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f60de6a7e37982bbcf6e675308bbbeb8" category="list-text">선택적으로 다음 중 하나를 수행하세요.</block>
-  <block id="caa1e25984e775c1ab44cfd42620d720" category="inline-image-macro">연필 아이콘</block>
-  <block id="bcc94af8bc9c7e6ef8fd57214884e7f1" category="list-text">그룹 이름을 변경하려면 그룹 *편집*을 클릭하세요.<block ref="8254d7ced29032ec76a59e7648759881" category="inline-image-macro-rx" type="image"></block> 상.</block>
-  <block id="8d2514ca702dd19c69d05151f9ca0dde" category="list-text">그룹에서 리소스를 제거하려면 리소스 옆에 있는 *X*를 선택하세요.</block>
-  <block id="f0a0692b11f1b8e73cde7a3fa59cce87" category="list-text">리소스를 다른 그룹으로 이동하려면 해당 리소스를 새 그룹으로 끌어다 놓으세요.</block>
-  <block id="d92fbdb4e21242a727db9edab622f2e7" category="admonition">데이터 저장소를 다른 리소스 그룹으로 이동하려면 원치 않는 데이터 저장소의 선택을 취소하고 복제 계획을 제출합니다.  그런 다음 다른 복제 계획을 만들거나 편집하고 데이터 저장소를 다시 선택합니다.</block>
   <block id="94884044f731a17cf6d266f3acc71d30" category="section-title">소스 리소스를 대상에 매핑합니다.</block>
   <block id="b09b7f24f5b2d0187b19263b47fb2cdf" category="paragraph">리소스 매핑 단계에서는 소스 환경의 리소스를 대상에 매핑하는 방법을 지정합니다.  복제 계획을 만들 때 계획에 있는 각 VM에 대한 부팅 지연과 순서를 설정할 수 있습니다.  이를 통해 VM이 시작되는 순서를 설정할 수 있습니다.</block>
   <block id="8347a9e8f0404960a1eb7ad71a74e635" category="paragraph">DR 계획의 일부로 테스트 장애 조치를 수행하려는 경우 장애 조치 테스트 중에 시작된 VM이 프로덕션 VM을 방해하지 않도록 테스트 장애 조치 매핑 세트를 제공해야 합니다.  테스트 VM에 다른 IP 주소를 제공하거나 테스트 VM의 가상 NIC를 프로덕션과 분리되어 있지만 IP 구성은 동일한 다른 네트워크(버블 또는 테스트 네트워크라고 함)에 매핑하여 이를 달성할 수 있습니다.</block>
@@ -1192,7 +1171,6 @@
   <block id="671f7938870f01967b2e491f4c0ea912" category="list-text">장애 조치 매핑 탭에서 각 리소스 오른쪽에 있는 아래쪽 화살표를 선택하고 각 섹션의 리소스를 매핑합니다.</block>
   <block id="137f19e6e2dc1219f33553b812627bc2" category="list-text">가상 머신</block>
   <block id="eff845e03ea7f765e5646b3de0aa3188" category="list-text">데이터 저장소</block>
-  <block id="ddbdc0fdada8e6466e651115cefbafee" category="section-title">맵 리소스 &gt; 컴퓨팅 리소스 섹션</block>
   <block id="7cf17a4502ca68d3226875e2a729fc55" category="paragraph">컴퓨팅 리소스 섹션은 장애 조치 후 VM이 복원될 위치를 정의합니다.  소스 vCenter 데이터 센터와 클러스터를 대상 데이터 센터와 클러스터에 매핑합니다.</block>
   <block id="5e076e09da1cdcb61e77ca7391027eed" category="paragraph">선택적으로 VM을 특정 vCenter ESXi 호스트에서 다시 시작할 수 있습니다.  VMWare DRS가 활성화된 경우, DR 구성 정책을 충족하기 위해 필요한 경우 VM을 자동으로 대체 호스트로 이동할 수 있습니다.</block>
   <block id="08f13ccfaa019ccfc0c98a80108c779a" category="paragraph">선택적으로, 이 복제 계획에 있는 모든 VM을 vCenter의 고유한 폴더에 넣을 수 있습니다.  이를 통해 vCenter 내에서 장애 조치된 VM을 빠르게 구성할 수 있는 쉬운 방법이 제공됩니다.</block>
@@ -1201,7 +1179,6 @@
   <block id="7067fdfe055fabd950bd45a1a17e1642" category="list-text">*대상 클러스터*</block>
   <block id="2c0a2cae30cf923c64bbed704e923521" category="list-text">*대상 호스트* (선택 사항): 클러스터를 선택한 후 이 정보를 설정할 수 있습니다.</block>
   <block id="4cf53d6d28e4261f2397f16ccd7a5a18" category="admonition">vCenter에 클러스터의 여러 호스트를 관리하도록 구성된 DRS(분산 리소스 스케줄러)가 있는 경우 호스트를 선택할 필요가 없습니다.  호스트를 선택하면 NetApp Disaster Recovery 모든 VM을 선택한 호스트에 배치합니다.  * *대상 VM 폴더* (선택 사항): 선택한 VM을 저장할 새 루트 폴더를 만듭니다.</block>
-  <block id="74b0088eeb9a4fc43afd0ad0e9f1ef57" category="section-title">맵 리소스 &gt; 가상 네트워크 섹션</block>
   <block id="d757ba122f1f3d62b9a13da2a3e1b64c" category="admonition">동일한 대상 가상 네트워크에 여러 개의 소스 가상 네트워크를 할당할 수 있습니다.  하지만 이로 인해 IP 네트워크 구성 충돌이 발생할 수 있습니다.  여러 개의 소스 네트워크를 단일 대상 네트워크에 매핑하여 모든 소스 네트워크가 동일한 구성을 갖도록 할 수 있습니다.</block>
   <block id="21538d8465027f7c4a2d65593552875c" category="paragraph">장애 조치 매핑 탭에서 *가상 네트워크* 옆에 있는 아래쪽 화살표를 선택합니다.  소스 가상 LAN과 대상 가상 LAN을 선택합니다.</block>
   <block id="02453bc953d0b6e10f85235da7a8cca7" category="paragraph">적절한 가상 LAN에 대한 네트워크 매핑을 선택합니다.  가상 LAN은 이미 프로비저닝되어 있으므로 VM을 매핑할 적절한 가상 LAN을 선택하세요.</block>
@@ -1236,17 +1213,11 @@
   <block id="642ce7c45318092be76df71ca359c694" category="paragraph">*Linux를 실행하는 VM*: VM에서 사용하는 Linux 버전에서 지원하는 모든 셸 스크립트(.sh)를 실행할 수 있습니다.  Linux 스크립트는 명령줄 인수를 사용할 수 있습니다.  세미콜론으로 구분된 값 목록으로 인수를 제공합니다.  명명된 인수는 지원되지 않습니다.  각 인수를 다음에 추가합니다.<block ref="cc0acde0fc5708ea40075a08730fb2e7" prefix=" " category="inline-code"></block> 인수 목록과 포인터를 사용하여 각 값을 참조합니다.<block ref="cc0acde0fc5708ea40075a08730fb2e7" prefix=" " category="inline-code"></block> 예를 들어 배열,<block ref="08af2426c7af475c1f6703fed4ed1dd0" prefix=" " category="inline-code"></block> .</block>
   <block id="6cc5c6ac8b3db105ac7cb142b8d8b7b2" category="list-text">*대상 VM 접두사 및 접미사*: 가상 머신 세부 정보에서 선택적으로 장애 조치된 각 VM 이름에 접두사와 접미사를 추가할 수 있습니다.  이는 동일한 vCenter 클러스터에서 실행되는 프로덕션 VM과 장애 조치된 VM을 구별하는 데 도움이 될 수 있습니다.  예를 들어, VM 이름에 "DR-" 접두사와 "-failover" 접미사를 추가할 수 있습니다.  일부 사람들은 재해 발생 시 다른 사이트에서 일시적으로 VM을 호스팅하기 위해 두 번째 프로덕션 vCenter를 추가합니다.  접두사나 접미사를 추가하면 장애 조치된 VM을 빠르게 식별하는 데 도움이 될 수 있습니다.  사용자 정의 스크립트에서도 접두사나 접미사를 사용할 수 있습니다.</block>
   <block id="fc8e3522d10b0e18c7fc7763ef0789a1" category="paragraph">컴퓨팅 리소스 섹션에서 대상 VM 폴더를 설정하는 대체 방법을 사용할 수 있습니다.</block>
-  <block id="230dc85a08275a2466390ae799703f92" category="list-text">*소스 VM CPU 및 RAM*: 가상 머신 세부 정보에서 선택적으로 VM CPU 및 RAM 매개변수의 크기를 조정할 수 있습니다.</block>
   <block id="cd9b7d7dfe576f566d279960505b56d9" category="admonition">DRAM은 기가바이트(GiB) 또는 메가바이트(MiB) 단위로 구성할 수 있습니다.  각 VM에는 최소 1MiB의 RAM이 필요하지만, 실제 용량은 VM 게스트 OS와 실행 중인 모든 애플리케이션이 효율적으로 작동할 수 있을 만큼 커야 합니다.</block>
-  <block id="97bbe2658500151382594a4fae0afc57" category="paragraph"><block ref="1dcb46a6f5cf6fb93122072f061a9e9e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="983a4203041e2ae3715f09be44011da8" category="list-text">*부팅 순서*: 리소스 그룹 전체에서 선택한 모든 가상 머신에 대한 장애 조치 후 부팅 순서를 수정할 수 있습니다.  기본적으로 모든 VM은 병렬로 부팅됩니다. 하지만 이 단계에서 변경할 수 있습니다.  이는 후속 우선순위 VM이 시작되기 전에 모든 우선순위 1 VM이 실행 중인지 확인하는 데 유용합니다.</block>
   <block id="354a69710d188806a2240038216a8fe4" category="list-text">순차 부팅: 각 VM에 고유한 번호를 지정하여 지정된 순서대로 부팅합니다(예: 1, 2, 3, 4, 5).</block>
   <block id="917743345c16934d4f46d0d5f7c82682" category="list-text">동시 부팅: 모든 VM에 동일한 번호를 할당하여 동시에 부팅합니다(예: 1,1,1,1,2,2,3,4,4).</block>
   <block id="8a1eaa44f33649f4a55add8e5df848ec" category="list-text">*부팅 지연*: 부팅 작업의 지연 시간을 분 단위로 조정합니다. 이는 VM이 전원 켜기 프로세스를 시작하기 전에 기다리는 시간을 나타냅니다.  0~10분 사이의 값을 입력하세요.</block>
-  <block id="517ed43dc67f057cadcb1c29ecbd75ef" category="admonition">부팅 순서를 기본값으로 재설정하려면 *VM 설정을 기본값으로 재설정*을 선택한 다음 기본값으로 다시 변경할 설정을 선택합니다.</block>
-  <block id="ac8444310c066ee8f680bbbaddb637cb" category="list-text">*애플리케이션 일관성 복제본 생성*: 애플리케이션 일관성 스냅샷 복사본을 생성할지 여부를 나타냅니다.  이 서비스는 애플리케이션을 정지시킨 다음 스냅샷을 찍어 애플리케이션의 일관된 상태를 얻습니다.  이 기능은 Windows 및 Linux에서 실행되는 Oracle과 Windows에서 실행되는 SQL Server에서 지원됩니다.  자세한 내용은 다음을 참조하세요.</block>
-  <block id="6262500729b6f197aa6e4ad6b2b8e85e" category="list-text">*Windows LAPS 사용*: Windows 로컬 관리자 암호 솔루션(Windows LAPS)을 사용하는 경우 이 상자를 선택하세요.  이 옵션은 *고정 IP* 옵션을 선택한 경우에만 사용할 수 있습니다.  이 상자를 선택하면 각 가상 머신에 대한 비밀번호를 제공할 필요가 없습니다.  대신 도메인 컨트롤러 세부 정보를 제공하세요.</block>
-  <block id="4fd3e179011cd215b45b25dbfb0cc8d2" category="paragraph">Windows LAPS를 사용하지 않는 경우 VM은 Windows VM이고 VM 행의 자격 증명 옵션이 활성화됩니다.  VM에 대한 자격 증명을 제공할 수 있습니다.</block>
   <block id="085a5b8a90c0ae4c360aae1b0abff664" category="section-title">애플리케이션과 일관된 복제본 생성</block>
   <block id="141df2d4721129ff39a3558ae90deae3" category="paragraph">많은 VM은 Oracle이나 Microsoft SQL Server와 같은 데이터베이스 서버를 호스팅합니다.  이러한 데이터베이스 서버에는 스냅샷이 생성될 때 데이터베이스가 일관된 상태를 유지하도록 애플리케이션과 일관된 스냅샷이 필요합니다.</block>
   <block id="a4b7a096ee2c331ab1151c62b05a14d7" category="paragraph">애플리케이션 일관성 스냅샷은 스냅샷이 생성될 때 데이터베이스가 일관된 상태임을 보장합니다.  이는 장애 조치 또는 장애 복구 작업 후에 데이터베이스를 일관된 상태로 복원할 수 있도록 보장하기 때문에 중요합니다.</block>
@@ -1265,7 +1236,6 @@
   <block id="3670d8f515aeb4d6181706c8e4bda00d" category="list-text">Windows VM의 경우, 서비스는 Microsoft 볼륨 섀도 복사본 서비스(VSS)를 사용하여 두 데이터베이스 서버와 조정합니다.</block>
   <block id="17118d5c40a4db7a930eaa6bd6772347" category="list-text">Linux VM의 경우, 이 서비스는 일련의 스크립트를 사용하여 Oracle 서버를 백업 모드로 전환합니다.</block>
   <block id="b023c75e908be8b918df8d4029c40bbb" category="paragraph">VM과 호스팅 데이터 저장소의 애플리케이션 일관성 복제본을 활성화하려면 각 VM에 대해 *애플리케이션 일관성 복제본 만들기* 옆의 상자를 선택하고 적절한 권한이 있는 게스트 로그인 자격 증명을 제공합니다.</block>
-  <block id="64a2a2b78e563e79f2c42c8e9d160e0e" category="section-title">맵 리소스 &gt; 데이터 저장소 섹션</block>
   <block id="848817103272774cc04857999310abc9" category="paragraph">VMware 데이터스토어는 ONTAP FlexVol 볼륨이나 VMware VMFS를 사용하는 ONTAP iSCSI 또는 FC LUN에 호스팅됩니다.  데이터 저장소 섹션을 사용하여 대상 ONTAP 클러스터, 스토리지 가상 머신(SVM), 볼륨 또는 LUN을 정의하여 디스크 데이터를 대상에 복제합니다.</block>
   <block id="923805befcdde4aa8fa4752b9e9a277f" category="paragraph">*데이터 저장소* 옆에 있는 아래쪽 화살표를 선택하세요. VM 선택에 따라 데이터 저장소 매핑이 자동으로 선택됩니다.</block>
   <block id="210dfd955522333f74e13d0843ab02ff" category="paragraph">이 섹션은 선택에 따라 활성화되거나 비활성화될 수 있습니다.</block>
@@ -1273,18 +1243,12 @@
   <block id="7b6735057ec599457ce14b0629d098bf" category="paragraph"><block ref="383fd741f178abe8be4920d498113a6c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="66567f18828dfaf896a5c34da4af6cbb" category="list-text">*플랫폼 관리 백업 및 보존 일정 사용*: 외부 스냅샷 관리 솔루션을 사용하는 경우 이 상자를 선택하세요.  NetApp Disaster Recovery 기본 ONTAP SnapMirror 정책 스케줄러나 타사 통합과 같은 외부 스냅샷 관리 솔루션의 사용을 지원합니다.  복제 계획의 모든 데이터 저장소(볼륨)에 이미 다른 곳에서 관리되는 SnapMirror 관계가 있는 경우 NetApp Disaster Recovery 에서 해당 스냅샷을 복구 지점으로 사용할 수 있습니다.</block>
   <block id="d22ee3234903873cb3dfd07b3999a93c" category="paragraph">이 옵션을 선택하면 NetApp Disaster Recovery 백업 일정을 구성하지 않습니다.  그러나 테스트, 장애 조치 및 장애 복구 작업을 위해 스냅샷이 계속 생성될 수 있으므로 보존 일정을 구성해야 합니다.</block>
-  <block id="23c4ec9f7f759cf6773cc360abd2a7ec" category="list-text">*시작 시간*: 백업 및 보존을 시작할 날짜와 시간을 입력합니다.</block>
-  <block id="7a565b2606e153ac342f6305eef26c26" category="list-text">*실행 간격*: 시간 간격을 시간과 분으로 입력하세요.  예를 들어, 1시간을 입력하면 서비스는 매 시간 스냅샷을 찍습니다.</block>
-  <block id="10936c8535aaede0ed75f5d8d4fa6aaf" category="list-text">*보존 횟수*: 보존하려는 스냅샷 수를 입력하세요.</block>
   <block id="a7cb9d7cf359ecc9e5cef81ecdd91cd1" category="admonition">각 스냅샷 간의 데이터 변경률과 함께 보관되는 스냅샷 수는 소스와 대상 모두에서 사용되는 저장 공간의 양을 결정합니다.  더 많은 스냅샷을 보관할수록 더 많은 저장 공간이 사용됩니다.</block>
   <block id="63882377431b20b814641f0190aa1986" category="list-text">*소스 및 대상 데이터 저장소*: 여러 개의 (팬아웃) SnapMirror 관계가 있는 경우 사용할 대상을 선택할 수 있습니다.  볼륨에 이미 SnapMirror 관계가 설정된 경우 해당 소스 및 대상 데이터 저장소가 나타납니다.  SnapMirror 관계가 없는 볼륨의 경우 대상 클러스터를 선택하고, 대상 SVM을 선택하고, 볼륨 이름을 제공하여 지금 SnapMirror 관계를 만들 수 있습니다.  이 서비스는 볼륨과 SnapMirror 관계를 생성합니다.</block>
   <block id="950fa88679103c3c7c4e449423d8bfcc" category="list-text">VM이 동일한 볼륨과 동일한 SVM에 속하는 경우 서비스는 표준 ONTAP 스냅샷을 수행하고 보조 대상을 업데이트합니다.</block>
   <block id="a47d6910008cc9bb73921a36d6609a08" category="list-text">VM이 서로 다른 볼륨에 있고 동일한 SVM에 있는 경우 서비스는 모든 볼륨을 포함하여 일관성 그룹 스냅샷을 만들고 보조 대상을 업데이트합니다.</block>
   <block id="3cc1e8e247fa51b1c7d6f2a7c029a515" category="list-text">VM이 서로 다른 볼륨과 SVM에 속하는 경우 서비스는 동일하거나 다른 클러스터에 있는 모든 볼륨을 포함하여 일관성 그룹 시작 단계와 커밋 단계 스냅샷을 수행하고 보조 대상을 업데이트합니다.</block>
   <block id="7fdb47d52c8257466211bbfeff754a21" category="list-text">장애 조치 중에 원하는 스냅샷을 선택할 수 있습니다.  최신 스냅샷을 선택하면 서비스는 주문형 백업을 생성하고, 대상을 업데이트하고, 해당 스냅샷을 장애 조치에 사용합니다.</block>
-  <block id="10c490bdf4b14320b22d49a659b33c9b" category="list-text">*선호하는 NFS LIF* 및 *내보내기 정책*: 일반적으로 서비스에서 선호하는 NFS LIF 및 내보내기 정책을 선택하게 합니다.  특정 NFS LIF 또는 내보내기 정책을 사용하려면 각 필드 옆에 있는 아래쪽 화살표를 선택하고 적절한 옵션을 선택하세요.</block>
-  <block id="3a34b1c612fbfa5151b5f75fa3b7f4d8" category="paragraph">장애 조치 이벤트 후에 볼륨에 대해 특정 데이터 인터페이스(LIF)를 선택적으로 사용할 수 있습니다.  대상 SVM에 여러 개의 LIF가 있는 경우 데이터 트래픽을 분산하는 데 유용합니다.</block>
-  <block id="80b4d61db95d764d9478be9bd5dce2ba" category="paragraph">NAS 데이터 액세스 보안에 대한 추가 제어를 위해 서비스는 다양한 데이터 저장소 볼륨에 특정 NAS 내보내기 정책을 할당할 수 있습니다.  내보내기 정책은 데이터 저장소 볼륨에 액세스하는 NFS 클라이언트에 대한 액세스 제어 규칙을 정의합니다.  내보내기 정책을 지정하지 않으면 서비스는 SVM에 대한 기본 내보내기 정책을 사용합니다.</block>
   <block id="49511806f0e60c638845968f2dbb17f7" category="section-title">테스트 장애 조치 매핑 추가</block>
   <block id="a8c55ad0456d667323e1ede0b2d4845d" category="list-text">테스트 환경에 대해 다른 매핑을 설정하려면 상자의 선택을 취소하고 *테스트 매핑* 탭을 선택합니다.</block>
   <block id="3d2d89948829d5041f9ae015297d638b" category="list-text">이전과 마찬가지로 각 탭을 살펴보겠습니다. 하지만 이번에는 테스트 환경입니다.</block>
@@ -1681,7 +1645,6 @@
   <block id="bb05f5a972177b632dbf8088c480f305" category="paragraph">이제 백업을 생성하기 전에 실행할 사용자 정의 스크립팅을 장애 조치 워크플로에 삽입할 수 있습니다. 사전 백업 스크립팅을 사용하면 스냅샷이 복제되기 전에 VM 상태를 제어하고 전환을 위해 VM을 준비할 수 있습니다. 예를 들어, 장애 조치 후 다른 스크립트를 사용하여 다시 마운트될 NFS 마운트를 마운트 해제하는 스크립트를 삽입할 수 있습니다.</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025년 11월 10일</block>
   <block id="67d901d806b31ec45748075cf6b4b785" category="list-text">*VM 하드웨어 버전 다운그레이드 및 등록*: 대상 ESX 호스트 버전이 소스 버전보다 이전인 경우 등록 중에 일치하도록 이 옵션을 선택합니다.</block>
-  <block id="c41917a6c517c418de809b1e4f43f537" category="admonition">보호된 VM을 호스팅할 소스 및 대상 vCenter ESXi 호스트에만 볼륨 액세스를 제한하는 전용 내보내기 정책을 만드는 것이 좋습니다. 이렇게 하면 외부 엔터티가 NFS 내보내기에 액세스할 수 없습니다.</block>
   <block id="11decf8e913c8fbeb5d947338d43e3b0" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="bf6dbdf786c7323ca961bfd2e12103c6" category="inline-link-macro-rx"></block>.</block>
   <block id="2feeca48692986e9cc471ec61f847fca" category="paragraph">NetApp 다양한 방법으로 NetApp Console 과 클라우드 서비스에 대한 지원을 제공합니다. 지식 기반(KB) 문서와 커뮤니티 포럼 등 광범위한 무료 셀프 지원 옵션을 24시간 연중무휴로 이용할 수 있습니다. 지원 등록 시 웹 티켓팅을 통한 원격 기술 지원이 제공됩니다.</block>
   <block id="317cbd2c4fdbfd06a6c66bcd3f57d7ad" category="paragraph">클라우드 공급자 파일 서비스, 해당 인프라 또는 서비스를 사용하는 솔루션과 관련된 기술 지원에 대해서는 해당 제품의 설명서를 참조하세요.</block>
@@ -1865,7 +1828,6 @@
   <block id="c0655d6a3a66f2180cdf2e00c1930e7c" category="list-text">Google Cloud를 사용하면 복제 계획에 볼륨이나 데이터 저장소를 하나만 추가할 수 있습니다.</block>
   <block id="7bcd913022459926bf1a00069a8fb8f6" category="admonition">NetApp Disaster Recovery 배포하기 전에 VM을 구성하여 "데이터 저장소 확산"을 최소화하세요. 보호가 필요한 VM을 데이터 저장소 하위 집합에 배치하고, 보호하지 않을 VM을 다른 데이터 저장소 하위 집합에 배치합니다. 데이터 저장소 기반 보호를 사용하여 모든 데이터 저장소의 VM이 보호되도록 합니다.</block>
   <block id="705a20699e1039fa52632f889e10a673" category="admonition">VMS가 동일한 IP 주소를 사용하여 프로덕션 네트워크에 연결되는 것을 방지하기 위해 장애 조치 테스트를 위한 별도의 전용 매핑 세트를 만듭니다.</block>
-  <block id="5f4825a97c910dc2ee0d9eb1107f19d9" category="section-title">맵 리소스 &gt; 가상 머신 섹션</block>
   <block id="06596d9f3a6cac6c36599f4c1598f756" category="sidebar">재해 복구에 필요한 vCenter 권한</block>
   <block id="ad4891bd95428a3a61372e6cb7c1e8db" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="46afb87ea9ab52c50c55f4a3ee88e9ae" category="inline-link-macro-rx"></block>.</block>
   <block id="8b398f79cbc8bafdd3d60b15c90e7f01" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="9816d86fb07a6c2043bc508d566ad539" category="inline-link-macro-rx"></block>.</block>
@@ -1897,7 +1859,6 @@
   <block id="2a5d29dc0e8c9fb1d01f9e388b1b0b74" category="paragraph">버전 4.2.9</block>
   <block id="0c798cc11f8ddc52d0bd3006eaa122fc" category="summary">NetApp 다양한 방식으로 콘솔을 지원합니다. 지식 기반(KB) 문서 및 커뮤니티 포럼과 같은 광범위한 무료 자가 지원 옵션을 연중무휴 24시간 이용할 수 있습니다. 고객 지원 등록에는 웹 티켓팅을 통한 원격 기술 지원이 포함됩니다.</block>
   <block id="512fd5eb37bb5d3f000a423886a72dd0" category="summary">NetApp 기술 지원에 지원 사례를 개설하려면 먼저 NetApp Console 에 NetApp 지원 사이트 계정을 추가한 다음 지원을 위해 등록해야 합니다.</block>
-  <block id="71e1bea6c178dd06aa64cb971b0a7ab6" category="paragraph">소스 vCenter는 온프레미스 vCenter에 있어야 합니다. 대상 vCenter는 동일 사이트 또는 원격 사이트에 있는 두 번째 온프레미스 vCenter이거나, VMware Cloud on AWS와 같은 클라우드 기반 소프트웨어 정의 데이터 센터(SDDC)일 수 있습니다. 두 vCenter 모두 재해 복구 작업 환경에 이미 추가되어 있어야 합니다.</block>
   <block id="5ac1f8de819731380d7b9bbae3ae1d60" category="list-text">리소스 매핑 페이지에서 장애 조치 및 테스트 작업 모두에 동일한 매핑을 사용하려면 확인란을 선택하십시오.</block>
   <block id="b48e099c4fc62f3d87b3ba0f45c91635" category="list-text">*스크립트*: 사용자 지정 게스트 OS 호스팅 스크립트를 .sh, .bat 또는 .ps1 형식으로 후처리로 포함할 수 있습니다. 사용자 지정 스크립트를 사용하면 재해 복구 시스템에서 장애 조치, 장애 복구 및 마이그레이션 프로세스 후에 해당 스크립트를 실행할 수 있습니다. 예를 들어, 사용자 지정 스크립트를 사용하여 장애 조치가 완료된 후 모든 데이터베이스 트랜잭션을 재개할 수 있습니다. 이 서비스는 명령줄 매개변수를 지원하는 Microsoft Windows 또는 지원되는 모든 Linux 변형 운영 체제를 실행하는 가상 머신 내에서 스크립트를 실행할 수 있습니다. 스크립트를 개별 VM에 할당하거나 복제 계획에 있는 모든 VM에 할당할 수 있습니다.</block>
   <block id="beab47c47d07d73986a2773b714728e8" category="list-text">*원본 폴더 계층 구조 유지*: 기본적으로 재해 복구는 장애 조치 시 VM 인벤토리 계층 구조(폴더 구조)를 유지합니다. 복구 대상에 원래 폴더 계층 구조가 없는 경우 재해 복구는 해당 계층 구조를 생성합니다.</block>
@@ -2108,7 +2069,6 @@
   <block id="699554d8d02429739cd0995ec1ec3ab8" category="paragraph">버전 4.3.0</block>
   <block id="b57381f68dbba13b31fa8aa68f6b0b91" category="doc">복제 계획에서 데이터 저장소 제외</block>
   <block id="97a6d5c9da6b211dcdf5d581e247e960" category="paragraph">Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어를 복제에서 제외할 수 있습니다. VM이 여러 데이터스토어를 사용하도록 구성된 경우 복제할 데이터스토어를 제한할 수 있습니다.</block>
-  <block id="1783ee76cf8532a6df415b4e239a23d9" category="paragraph">자세한 내용은 <block ref="c2741b2e4bc1013bb2e1908f9c4eb243" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="ec6c483e852913b786ae872f19efd121" category="section-title">vCenter 암호에서 암호 유효성 검사를 제거했습니다.</block>
   <block id="8cca1120916820e14384f393325831ff" category="paragraph">재해 복구 기능에서 vCenter 암호에 대한 암호 제한을 해제하여 공백이 포함된 암호를 허용하도록 했습니다.</block>
   <block id="32530c1a1edb0706f8c34b61bf263957" category="paragraph">자세한 내용은 <block ref="0d43ad8ffb310486762e1912aeac4ebc" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
@@ -2127,4 +2087,32 @@
   <block id="87c116e357fbcba643eb3c034af4b9f0" category="paragraph">vCenter 사이트를 추가한 후에는 리소스 그룹을 생성하여 VM 또는 데이터 저장소 그룹을 단일 단위로 묶을 수 있습니다. 리소스 그룹을 사용하면 종속 VM 세트를 요구 사항을 충족하는 논리적 그룹으로 구성할 수 있습니다. 예를 들어 하나의 애플리케이션과 연결된 VM을 그룹화하거나 유사한 계층이 있는 애플리케이션을 그룹화할 수 있습니다. 또 다른 예로, 그룹에는 복구 시 실행할 수 있는 지연된 부팅 순서가 포함될 수 있습니다.</block>
   <block id="637fada88b0b3ac0031b3d726a3ffa4c" category="paragraph">리소스 그룹을 사용하면 VM 또는 데이터 저장소를 단일 단위로 결합할 수 있습니다.</block>
   <block id="2273ca98b904e703bc39a6bc79871562" category="paragraph">NetApp 재해 복구를 처음 사용하는 경우 vCenter 정보를 추가해야 합니다. 이미 vCenter 정보를 추가한 경우 대시보드가 표시됩니다.</block>
+  <block id="855f6640322147511d2bad1c3ef67a01" category="paragraph">자세한 내용은 <block ref="5e71e4e6b8c5e7bff47e3e8fc9f8f4a2" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="a7f0ae2d9bf264f3b8a764e25f427249" category="paragraph">계획을 생성할 때는 다음 지침을 따르십시오.</block>
+  <block id="9c1fea18f8c5a2e7dbfc597cff63bcda" category="list-text">NetApp Disaster Recovery 메뉴에서 *복제 계획*을 선택하고 *추가*를 선택합니다. 복제 계획을 처음 생성하는 경우 대시보드에서 *복제 계획 추가*를 선택하십시오.</block>
+  <block id="a29968d7a7e40c3abadb4a3a66650aa2" category="list-text">복제 계획의 이름을 입력합니다.</block>
+  <block id="c8f30cd4b86e358883441ae183002de2" category="list-text">*소스 vCenter*에서 드롭다운 메뉴를 사용하여 데이터가 있는 vCenter를 선택합니다. *대상 vCenter*에서 드롭다운 메뉴를 사용하여 데이터를 복제할 vCenter를 선택합니다.</block>
+  <block id="8e1ca61f41962bbab3b0edc4e77ec792" category="inline-image-macro">vCenter 서버 페이지를 보여주는 스크린샷</block>
+  <block id="37fc88b8b1530f40d0ce4e2d7ca691dc" category="paragraph"><block ref="37fc88b8b1530f40d0ce4e2d7ca691dc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="10296271f8e5d29ec10e8b2edad00c6b" category="list-text">데이터스토어에 VM이 하나 이상 있는지 확인하십시오. 데이터스토어에 VM이 없으면 데이터스토어가 검색되지 않습니다.</block>
+  <block id="7c4632e0e4a0098db96e92264fac9557" category="list-text">보호된 VM과 보호되지 않은 VM을 동일한 데이터스토어에 호스팅하지 마십시오. 보호된 VM과 보호되지 않은 VM을 동일한 데이터스토어에 호스팅하면 다음과 같은 문제가 발생할 수 있습니다.</block>
+  <block id="d9cbe60deafc2c2262ab4d07b9131f6a" category="list-text">재해 복구에서 SnapMirror를 사용하므로 해당 볼륨의 사용된 용량이 라이센스 계산에 포함될 수 있습니다. 즉, 시스템이 전체 ONTAP 볼륨을 복제합니다. 이 경우 보호되는 VM과 보호되지 않는 VM 모두에서 사용되는 볼륨 공간이 이 계산에 포함됩니다.</block>
+  <block id="0995033be79b231587fd5dd53a2a94c9" category="list-text">기존 리소스 그룹이 있는 경우 **리소스 그룹**을 선택하고 리소스 그룹을 선택한 다음 **다음**을 선택합니다.</block>
+  <block id="ed4f95c7ecb7ed1087c4e69b67bc15c0" category="paragraph">기존 리소스 그룹이 없거나 리소스 그룹에 리소스를 추가해야 하는 경우 *Virtual machines* 또는 *Datastores*를 선택하십시오.</block>
+  <block id="9e789b98de8f3895acb993bdec773003" category="list-text">자동으로 생성된 목록에서 복제 계획에 추가할 가상 머신 또는 데이터스토어를 선택하십시오. 가상 머신의 경우 데이터스토어별로 필터링할 수 있습니다. 데이터스토어 또는 VM을 선택하면 리소스 그룹에 자동으로 추가됩니다.</block>
+  <block id="11fce3579cd1b24abe9062137cfd5016" category="list-text">페이지 오른쪽에서 선택한 VM 또는 데이터 저장소를 검토합니다.</block>
+  <block id="4fa21384871ccd830dad7c53fe8ad15a" category="list-text">VM 또는 데이터 저장소를 제거하려면 데이터 소스 이름 위로 마우스를 가져간 다음 *X*를 선택하십시오.</block>
+  <block id="9048a14e005d230c845b3098a8bdf4a4" category="list-text">리소스를 여러 리소스 그룹으로 구성하려면 *Click to add another resource group*을 선택합니다. 리소스 그룹을 추가한 후 그룹 간에 리소스를 끌어다 놓을 수 있습니다. 연필 아이콘*을 선택하여 리소스 그룹의 이름을 편집합니다.</block>
+  <block id="7ddea6f727802bf5d58c1c6fc1200d0b" category="section-title">컴퓨팅 리소스 섹션</block>
+  <block id="55290e3407e3be9abd668def1fc094f0" category="list-text">*폴더*(선택 사항)</block>
+  <block id="3327cd0621dd5ede196b9e097644e871" category="admonition">고급 설정을 켜서 *스크립트* 및 *애플리케이션 정합성 보장* 설정을 추가하세요.</block>
+  <block id="72391e5d470b580e6491b3647580e58f" category="list-text">*CPU* 및 *메모리(GB)*: 가상 머신 세부 정보에서 VM CPU 및 를 선택적으로 조정할 수 있습니다.</block>
+  <block id="5bb5f5ed113c90d31da88b6596b25520" category="list-text">*애플리케이션 정합성 보장*: 애플리케이션 정합성 보장 스냅샷 복사본을 생성할지 여부를 지정합니다. 서비스는 애플리케이션을 일시 중지한 다음 스냅샷을 생성하여 애플리케이션의 일관된 상태를 유지합니다. 이 기능은 Windows 및 Linux에서 실행되는 Oracle과 Windows에서 실행되는 SQL Server에서 지원됩니다. 자세한 내용은 다음을 참조하십시오.</block>
+  <block id="4207cdc216537468251be88bbe3d2194" category="paragraph">이 옵션을 사용하려면 *고급 설정* 토글 스위치를 켜야 합니다. 애플리케이션 정합성 보장을 활성화하는 경우 사용자 이름과 비밀번호 형식의 자격 증명을 제공해야 합니다.</block>
+  <block id="6ffba2842dbe195b31043c058ec4a8b1" category="inline-image-macro">리소스 매핑의 가상 머신 섹션을 보여주는 스크린샷</block>
+  <block id="19c52774fb01f872c0f95a233173a1de" category="paragraph"><block ref="19c52774fb01f872c0f95a233173a1de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7f78326f10957ba33aba302d329ac33e" category="section-title">데이터 저장소 섹션</block>
+  <block id="141ae0745aa19a71f0ba80e5ba754682" category="list-text">*백업 및 보존 시작 시간*: 백업 및 보존을 시작할 날짜와 시간을 입력합니다.</block>
+  <block id="92cd787be79720ebbf8f89f517b891c9" category="list-text">*백업 및 보존 주기*: 시간 간격을 시와 분 단위로 입력하십시오. 예를 들어 1시간을 입력하면 서비스는 매시간 스냅샷을 생성합니다.</block>
+  <block id="81b2d5bd2343a78b10f138613228f4b2" category="list-text">*모든 데이터 저장소에 대한 보존 개수*: 보존할 스냅샷 개수를 입력하십시오.</block>
 </blocks>

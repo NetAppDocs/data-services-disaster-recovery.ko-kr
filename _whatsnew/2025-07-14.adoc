@@ -42,7 +42,8 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 ** vCenter에서 클러스터, 호스트 또는 데이터 센터가 삭제되면 이제 NetApp Disaster Recovery 복제 계획 및 리소스 그룹에서 해당 항목을 삭제합니다.
 
 
-* 이제 브라우저의 시크릿 모드에서도 Swagger 문서에 액세스할 수 있습니다. NetApp Disaster Recovery 에서 설정 옵션 > API 설명서를 통해 액세스할 수 있으며, 브라우저의 시크릿 모드에서 다음 URL을 통해 직접 액세스할 수도 있습니다. https://snapcenter.cloudmanager.cloud.netapp.com/api/api-doc/draas["Swagger 문서"^] .
+
+
 * 어떤 상황에서는 장애 복구 작업 후 작업이 완료된 후에도 iGroup이 남겨지는 경우가 있었습니다. 이 업데이트는 오래된 iGroup을 제거합니다.
 * 복제 계획에 NFS FQDN이 사용된 경우 NetApp Disaster Recovery 이제 이를 IP 주소로 확인합니다. 이 업데이트는 재해 복구 사이트에서 FQDN을 확인할 수 없는 경우에 유용합니다.
 * UI 정렬 개선
