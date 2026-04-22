@@ -1822,7 +1822,6 @@
   <block id="c0655d6a3a66f2180cdf2e00c1930e7c" category="list-text">Google Cloud를 사용하면 복제 계획에 볼륨이나 데이터 저장소를 하나만 추가할 수 있습니다.</block>
   <block id="7bcd913022459926bf1a00069a8fb8f6" category="admonition">NetApp Disaster Recovery 배포하기 전에 VM을 구성하여 "데이터 저장소 확산"을 최소화하세요. 보호가 필요한 VM을 데이터 저장소 하위 집합에 배치하고, 보호하지 않을 VM을 다른 데이터 저장소 하위 집합에 배치합니다. 데이터 저장소 기반 보호를 사용하여 모든 데이터 저장소의 VM이 보호되도록 합니다.</block>
   <block id="705a20699e1039fa52632f889e10a673" category="admonition">VMS가 동일한 IP 주소를 사용하여 프로덕션 네트워크에 연결되는 것을 방지하기 위해 장애 조치 테스트를 위한 별도의 전용 매핑 세트를 만듭니다.</block>
-  <block id="06596d9f3a6cac6c36599f4c1598f756" category="sidebar">재해 복구에 필요한 vCenter 권한</block>
   <block id="ad4891bd95428a3a61372e6cb7c1e8db" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="46afb87ea9ab52c50c55f4a3ee88e9ae" category="inline-link-macro-rx"></block>.</block>
   <block id="8b398f79cbc8bafdd3d60b15c90e7f01" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="9816d86fb07a6c2043bc508d566ad539" category="inline-link-macro-rx"></block>.</block>
   <block id="6da53899225555a506524070f96e33df" category="doc">온프레미스 환경에서 여러 콘솔 에이전트 지원</block>
@@ -2128,4 +2127,73 @@
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026년 4월 13일</block>
   <block id="7a220dd27e25e08bf2217cc7bebbf755" category="paragraph">버전 4.3.2</block>
   <block id="4f6d1243da0297d0c471e4b8e1c253f1" category="list-text">오른쪽에서 *Actions* 옵션 <block ref="771645334c0631c5881bfc9858be7f5b" category="inline-image-macro-rx" type="image"></block>을 선택하고 *Recover* 위로 마우스를 가져간 다음 *Fail over*를 선택합니다.</block>
+  <block id="7d40af2723bf06859de76af9f198b76a" category="summary">NetApp Disaster Recovery를 사용할 때는 ONTAP에서 올바른 권한이 구성되어 있는지 확인하여 정상적인 작동을 보장하십시오.</block>
+  <block id="bee0de6585ac1ea0ad35e287ab014c6f" category="doc">NetApp Disaster Recovery를 위한 ONTAP 권한 구성</block>
+  <block id="8ad67216cdaef40fdcfdf442f9880d1a" category="section-title">최소 ONTAP 권한</block>
+  <block id="f53cfaf12220d1479bd7bc98f8fc61ae" category="paragraph">Disaster Recovery를 사용하려면 다음 ONTAP 권한이 필요합니다.</block>
+  <block id="db974238714ca8de634a7ce1d083a14f" category="cell">API</block>
+  <block id="72eb6abf9272757a5494f0d1f1c91658" category="cell">액세스 수준</block>
+  <block id="944da21c517df0c48dfbef7af28f3093" category="cell">/api</block>
+  <block id="d8bd6e60adcc01ce20f509ea6800de8f" category="cell">읽기 전용</block>
+  <block id="b46b834a97038e09aedf6c83d1aa6995" category="cell">/api/application/applications</block>
+  <block id="05cc0e531c89a2617c0047161c8a7ddd" category="cell">읽기/쓰기</block>
+  <block id="a32d5f9154a1277fa4a93d06188fad04" category="cell">/api/application/consistency-groups</block>
+  <block id="d48b8c7902dee00442e14d9b1af3af1b" category="cell">/api/cluster</block>
+  <block id="afc03d1a82dbecc47aa9f8732c12aace" category="cell">/api/cluster/jobs</block>
+  <block id="3adec5775bcf3ba9eb5df43ece1d882c" category="cell">/api/cluster/peers</block>
+  <block id="6bef4b7576b4a12f9d1e06561ec5df51" category="cell">읽기/생성/수정</block>
+  <block id="a2f315c73bdcda41c199bc98f4739ea2" category="cell">/api/cluster/schedules</block>
+  <block id="127472dce57e43d60473237cb646ac4a" category="cell">읽기/생성</block>
+  <block id="a00c50b90749f90a36742b8673eb5362" category="cell">/api/network/ip/interfaces</block>
+  <block id="ec5cbac63e885455cb75c29fba62e761" category="cell">/api/network/ipspaces</block>
+  <block id="27443e01eef5ddc50c059b3886b7e2ac" category="cell">/api/protocols/cifs/services</block>
+  <block id="035793b8ec669871e80b3444230fd065" category="cell">/api/protocols/nfs/export-policies</block>
+  <block id="921cb198f30e9e7592d21cf41d35f7e3" category="cell">/api/protocols/nfs/services</block>
+  <block id="5c879dec70d547596e57552c4f4f9eb1" category="cell">/api/protocols/san/igroups</block>
+  <block id="d2456199c653a781d11df900b8d1b311" category="cell">/api/protocols/san/iscsi/sessions</block>
+  <block id="943932cdd7f938ace06757f2ff8852ec" category="cell">/api/protocols/san/lun-maps</block>
+  <block id="b98bcec013a122e0040cd6f6e8f3de6a" category="cell">/api/security/certificates</block>
+  <block id="b7379195c91cc8e0ced572b2fce63ed6" category="cell">/api/snapmirror/policies</block>
+  <block id="0100d992071d5c1121847f70dbfc59b1" category="cell">/api/snapmirror/relationships</block>
+  <block id="9c00c4c82590637bd6e1c6cc201ec33f" category="cell">/api/storage/aggregates</block>
+  <block id="91443afe19221b584756b058dec25daa" category="cell">/api/storage/file/clone</block>
+  <block id="9231c0532ac35991440242417354a12e" category="cell">/api/storage/flexcache/flexcaches</block>
+  <block id="06b7e60de283e2e758b24eb1b37b804f" category="cell">/api/storage/luns</block>
+  <block id="acd96993edb256d739763832d3f9f184" category="cell">/api/storage/qtrees</block>
+  <block id="0bb0f595e81d92bf26bf4c1c0c52b57c" category="cell">읽기/수정</block>
+  <block id="d6111871e7cb4622142aa35fc122dcea" category="cell">/api/storage/snapshot-policies</block>
+  <block id="e4bda0100c995f1a022b02958516473a" category="cell">/api/storage/volumes</block>
+  <block id="b4d1abd13d22d7089694589c8b97f79b" category="cell">/api/svm/peers</block>
+  <block id="9c52661d131f07face38ff3baa271d09" category="cell">/api/svm/svms</block>
+  <block id="7376f33a273ec46f0b7a7d1460916640" category="section-title">ONTAP에서 권한 추가</block>
+  <block id="b295025ee0faa762a112e8b1ff4f6106" category="paragraph">ONTAP에서 권한을 추가하려면 필요한 권한을 가진 역할을 생성하고 해당 역할을 사용자에게 할당해야 합니다. 이 작업은 System Manager 또는 ONTAP CLI를 사용하여 ONTAP에서 수행할 수 있습니다.</block>
+  <block id="26ed02718973e705cd69ee6e109400e0" category="open-title">System Manager</block>
+  <block id="27623f36a095b5f5626aa6693f9f0545" category="paragraph">이 프로세스는 소스 클러스터와 타겟 클러스터에 대해 각각 별도로 수행해야 합니다.</block>
+  <block id="6598a6676741a382a437fbcee1a07f47" category="list-title">역할 생성</block>
+  <block id="ef4ead573c4d085bd2e947a33dd4e06a" category="list-text">관리자 자격 증명을 사용하여 ONTAP 클러스터에 로그인하십시오.</block>
+  <block id="770a9cb46cf6dc2aafe7ea25f8db86ee" category="list-text">*클러스터* &gt; *설정*으로 이동합니다.</block>
+  <block id="946d661dc3ca8e2867432a121edb5921" category="list-text">*보안*에서 *사용자 및 역할*을 선택합니다.</block>
+  <block id="af5a76d3d58f57953dc1468d3a8e774d" category="list-text">새 역할을 생성하려면 *+ 추가*를 선택합니다.</block>
+  <block id="aab9e1de16f38176f86d7a92ba337a8d" category="inline-link-macro">테이블</block>
+  <block id="1a258025167e9f9d764abf629ad7fb63" category="list-text">*역할 이름*을 입력하십시오. <block ref="1844c1d9c45ee6f22e6767b46f1ce4cf" category="inline-link-macro-rx"></block>에 따라 *REST API 경로*, *보조 경로* 및 *액세스 수준*을 할당하십시오.</block>
+  <block id="b7332e6d2bd81772fa469d097c0681ee" category="list-text">필요한 권한을 모두 추가한 후 *추가*를 선택하십시오.</block>
+  <block id="200899d014b914b6c3610b47f40d1b97" category="list-title">사용자에게 역할 할당</block>
+  <block id="908af9d2070650ed0d8956762a832a9e" category="list-text">섹션 메뉴의 *사용자 및 역할* 섹션으로 돌아갑니다.</block>
+  <block id="96a827c2d61a05cb12e7639d27b4344d" category="list-text">*Users*에서 *Add*를 선택합니다.</block>
+  <block id="5f57cad2aae18921379c19ce719f1e33" category="list-text">*사용자 이름*을 입력한 다음 이전에 생성한 *역할*을 선택합니다.</block>
+  <block id="8f07ab48943575279560dae8e5733204" category="list-text">사용자 로그인 방법에서 필요한 모든 로그인 방법이 구성될 때까지 추가를 클릭합니다.</block>
+  <block id="f7e38e2f34cbb4ca36919c2e953557c7" category="list-text">사용자의 *암호*를 생성한 다음 암호를 확인합니다.</block>
+  <block id="91af5705f16502125e8b2187e64202c0" category="open-title">CLI</block>
+  <block id="dee94e64e69fac9e251323ae149ab1e4" category="paragraph">ONTAP에서 역할 및 사용자를 생성하려면 관리자 자격 증명을 사용하여 해당 ONTAP 클러스터의 CLI에서 인증되어야 합니다. 이 과정은 소스 클러스터와 타겟 클러스터에 대해 각각 별도로 수행해야 합니다.</block>
+  <block id="96afd9f6d05a568df9d348bbe4d8bd68" category="list-title">필요한 권한을 가진 역할을 생성합니다</block>
+  <block id="a168d89dff4567041d524fa28c622b61" category="list-text">필요한 권한을 가진 역할을 생성하려면 명령<block ref="072c03d88a4d3699e0075c9ea4aed641" prefix=" " category="inline-code"></block>을 실행하세요. 전체 명령 세트를 복사하여 스크립트에서 역할<block ref="cd3c0664b72023a3db5e67c6cf6f89c1" prefix=" " category="inline-code"></block>을 생성하는 데 사용할 수 있습니다.</block>
+  <block id="ba4a9cd6fb5b572946d710f33f0fc386" category="list-title">사용자 생성</block>
+  <block id="54c29c1be4669b8b588bddf706e7f842" category="list-text">다음 명령을 실행하여 사용자를 생성합니다.</block>
+  <block id="e31777054702912eb1924599ba108a0f" category="paragraph"><block ref="d359c3f30b9d4a3d791370e87bf7f419" prefix="" category="inline-code"></block></block>
+  <block id="fe96b5a4676897def1e9f6519bb58b71" category="paragraph">메시지가 표시되면 사용자의 암호를 입력합니다.</block>
+  <block id="1237f2e321fe10a47285f61b2b2f8e60" category="list-text">필요한 모든 인증 방법을 추가하려면 다음 명령을 실행하십시오.</block>
+  <block id="849d5c470183dcdd6d3a0470a6b17559" category="section-title">재해 복구 구성</block>
+  <block id="682cb3d415af7ce02d9da4eb79ded765" category="inline-link-macro">콘솔에서 ONTAP 클러스터를 검색하십시오</block>
+  <block id="d7e286f47367b20bf6d60da61a7525c5" category="paragraph">ONTAP 역할을 생성한 후에는 <block ref="4e087b59ddbefd7d455fbc7b2c0ee722" category="inline-link-macro-rx"></block>. 클러스터를 검색할 때 ONTAP 클러스터의 IP 주소, 생성한 사용자 이름 및 이 단계의 암호가 필요합니다. NetApp Disaster Recovery의 경우 소스 클러스터와 타겟 클러스터 모두에서 검색을 수행해야 합니다.</block>
+  <block id="0cfffe93bea4d4c736df44a3ecd13d15" category="sidebar">필수 ONTAP 권한</block>
 </blocks>

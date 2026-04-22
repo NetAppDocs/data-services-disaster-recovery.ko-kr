@@ -1,0 +1,212 @@
+---
+sidebar: sidebar 
+permalink: reference/ontap-permissions.html 
+keywords: disaster recovery, ontap, requirements, configure permissions, roles, IAM 
+summary: NetApp Disaster Recovery를 사용할 때는 ONTAP에서 올바른 권한이 구성되어 있는지 확인하여 정상적인 작동을 보장하십시오. 
+---
+= NetApp Disaster Recovery를 위한 ONTAP 권한 구성
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+NetApp Disaster Recovery를 사용할 때는 ONTAP에서 올바른 권한이 구성되어 있는지 확인하여 정상적인 작동을 보장하십시오.
+
+
+
+== 최소 ONTAP 권한
+
+Disaster Recovery를 사용하려면 다음 ONTAP 권한이 필요합니다.
+
+[cols="3,1"]
+|===
+| API | 액세스 수준 
+
+
+| /api | 읽기 전용 
+
+
+| /api/application/applications | 읽기/쓰기 
+
+
+| /api/application/consistency-groups | 읽기/쓰기 
+
+
+| /api/cluster | 읽기 전용 
+
+
+| /api/cluster/jobs | 읽기 전용 
+
+
+| /api/cluster/peers | 읽기/생성/수정 
+
+
+| /api/cluster/schedules | 읽기/생성 
+
+
+| /api/network/ip/interfaces | 읽기 전용 
+
+
+| /api/network/ipspaces | 읽기 전용 
+
+
+| /api/protocols/cifs/services | 읽기/쓰기 
+
+
+| /api/protocols/nfs/export-policies | 읽기/쓰기 
+
+
+| /api/protocols/nfs/services | 읽기 전용 
+
+
+| /api/protocols/san/igroups | 읽기/쓰기 
+
+
+| /api/protocols/san/iscsi/sessions | 읽기 전용 
+
+
+| /api/protocols/san/lun-maps | 읽기/쓰기 
+
+
+| /api/security/certificates | 읽기 전용 
+
+
+| /api/snapmirror/policies | 읽기/생성/수정 
+
+
+| /api/snapmirror/relationships | 읽기/쓰기 
+
+
+| /api/storage/aggregates | 읽기 전용 
+
+
+| /api/storage/file/clone | 읽기/생성 
+
+
+| /api/storage/flexcache/flexcaches | 읽기/생성 
+
+
+| /api/storage/luns | 읽기/쓰기 
+
+
+| /api/storage/qtrees | 읽기/수정 
+
+
+| /api/storage/snapshot-policies | 읽기 전용 
+
+
+| /api/storage/volumes | 읽기/쓰기 
+
+
+| /api/svm/peers | 읽기/생성/수정 
+
+
+| /api/svm/svms | 읽기 전용 
+|===
+
+
+== ONTAP에서 권한 추가
+
+ONTAP에서 권한을 추가하려면 필요한 권한을 가진 역할을 생성하고 해당 역할을 사용자에게 할당해야 합니다. 이 작업은 System Manager 또는 ONTAP CLI를 사용하여 ONTAP에서 수행할 수 있습니다.
+
+[role="tabbed-block"]
+====
+.System Manager
+--
+이 프로세스는 소스 클러스터와 타겟 클러스터에 대해 각각 별도로 수행해야 합니다.
+
+.역할 생성
+. 관리자 자격 증명을 사용하여 ONTAP 클러스터에 로그인하십시오.
+. *클러스터* > *설정*으로 이동합니다.
+. *보안*에서 *사용자 및 역할*을 선택합니다.
+. 새 역할을 생성하려면 *+ 추가*를 선택합니다.
+. *역할 이름*을 입력하십시오. link:#minimum-ontap-permissions["테이블"]에 따라 *REST API 경로*, *보조 경로* 및 *액세스 수준*을 할당하십시오.
+. 필요한 권한을 모두 추가한 후 *추가*를 선택하십시오.
+
+
+.사용자에게 역할 할당
+. 섹션 메뉴의 *사용자 및 역할* 섹션으로 돌아갑니다.
+. *Users*에서 *Add*를 선택합니다.
+. *사용자 이름*을 입력한 다음 이전에 생성한 *역할*을 선택합니다.
+. 사용자 로그인 방법에서 필요한 모든 로그인 방법이 구성될 때까지 추가를 클릭합니다.
+. 사용자의 *암호*를 생성한 다음 암호를 확인합니다.
+. *저장*을 선택하세요.
+
+
+--
+.CLI
+--
+ONTAP에서 역할 및 사용자를 생성하려면 관리자 자격 증명을 사용하여 해당 ONTAP 클러스터의 CLI에서 인증되어야 합니다. 이 과정은 소스 클러스터와 타겟 클러스터에 대해 각각 별도로 수행해야 합니다.
+
+.필요한 권한을 가진 역할을 생성합니다
+. 필요한 권한을 가진 역할을 생성하려면 명령 `security login rest-role create -role <rolename> -api <api> -access <access>`을 실행하세요. 전체 명령 세트를 복사하여 스크립트에서 역할 `dr_privileges`을 생성하는 데 사용할 수 있습니다.
++
+[listing]
+----
+security login rest-role create -role dr_privileges -api /api -access readonly
+security login rest-role create -role dr_privileges -api /api/application/applications -access all
+security login rest-role create -role dr_privileges -api /api/application/consistency-groups -access all
+security login rest-role create -role dr_privileges -api /api/cluster -access readonly
+security login rest-role create -role dr_privileges -api /api/cluster/jobs -access readonly
+security login rest-role create -role dr_privileges -api /api/cluster/peers -access read_create_modify
+security login rest-role create -role dr_privileges -api /api/cluster/schedules -access read_create
+security login rest-role create -role dr_privileges -api /api/network/ip/interfaces -access readonly
+security login rest-role create -role dr_privileges -api /api/network/ipspaces -access readonly
+security login rest-role create -role dr_privileges -api /api/protocols/cifs/services -access all
+security login rest-role create -role dr_privileges -api /api/protocols/nfs/export-policies -access all
+security login rest-role create -role dr_privileges -api /api/protocols/nfs/services -access readonly
+security login rest-role create -role dr_privileges -api /api/protocols/san/igroups -access all
+security login rest-role create -role dr_privileges -api /api/protocols/san/iscsi/sessions -access readonly
+security login rest-role create -role dr_privileges -api /api/protocols/san/lun-maps -access all
+security login rest-role create -role dr_privileges -api /api/security/certificates -access readonly
+security login rest-role create -role dr_privileges -api /api/snapmirror/policies -access read_create_modify
+security login rest-role create -role dr_privileges -api /api/snapmirror/relationships -access all
+security login rest-role create -role dr_privileges -api /api/storage/aggregates -access readonly
+security login rest-role create -role dr_privileges -api /api/storage/file/clone -access read_create
+security login rest-role create -role dr_privileges -api /api/storage/flexcache/flexcaches -access read_create
+security login rest-role create -role dr_privileges -api /api/storage/luns -access all
+security login rest-role create -role dr_privileges -api /api/storage/qtrees -access read_modify
+security login rest-role create -role dr_privileges -api /api/storage/snapshot-policies -access readonly
+security login rest-role create -role dr_privileges -api /api/storage/volumes -access all
+security login rest-role create -role dr_privileges -api /api/svm/peers -access read_create_modify
+security login rest-role create -role dr_privileges -api /api/svm/svms -access readonly
+----
+
+
+.사용자 생성
+. 다음 명령을 실행하여 사용자를 생성합니다.
++
+`security login create -vserver <SVM> -user-or-group-name <user-name> -application amqp -authentication-method password -role <role-name>`
+
++
+메시지가 표시되면 사용자의 암호를 입력합니다.
+
+. 필요한 모든 인증 방법을 추가하려면 다음 명령을 실행하십시오.
++
+[listing]
+----
+security login create -vserver <SVM> -user-or-group-name <user-name> -application amqp -authentication-method password -role <role-name>
+
+security login create -vserver <SVM> -user-or-group-name <user-name> -application console -authentication-method password -role <role-name>
+
+security login create -vserver <SVM> -user-or-group-name <user-name> -application http -authentication-method password -role <role-name>
+
+security login create -vserver <SVM> -user-or-group-name <user-name> -application ontapi -authentication-method password -role <role-name>
+
+security login create -vserver <SVM> -user-or-group-name <user-name> -application rsh -authentication-method password -role <role-name>
+
+security login create -vserver <SVM> -user-or-group-name <user-name> -application ssh -authentication-method password -role <role-name>
+
+security login create -vserver <SVM> -user-or-group-name <user-name> -application telnet -authentication-method password -role <role-name>
+----
+
+
+--
+====
+
+
+== 재해 복구 구성
+
+ONTAP 역할을 생성한 후에는 link:https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-ontap.html#step-3-discover-a-cluster["콘솔에서 ONTAP 클러스터를 검색하십시오"^]. 클러스터를 검색할 때 ONTAP 클러스터의 IP 주소, 생성한 사용자 이름 및 이 단계의 암호가 필요합니다. NetApp Disaster Recovery의 경우 소스 클러스터와 타겟 클러스터 모두에서 검색을 수행해야 합니다.
