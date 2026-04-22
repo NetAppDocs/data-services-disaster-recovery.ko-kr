@@ -108,7 +108,7 @@ TIP: 장애 조치가 시작된 후 재해 복구 사이트의 vCenter에서 복
 .단계
 . NetApp Disaster Recovery 메뉴에서 *복제 계획*을 선택합니다.
 . 복제 계획을 선택하세요.
-. 오른쪽에서 *작업* 옵션을 선택하세요image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"] 그리고 *장애 조치*를 선택합니다.
+. 오른쪽에서 *Actions* 옵션 image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"]을 선택하고 *Recover* 위로 마우스를 가져간 다음 *Fail over*를 선택합니다.
 +
 image:dr-plan-failover3.png["장애 조치 페이지"]
 

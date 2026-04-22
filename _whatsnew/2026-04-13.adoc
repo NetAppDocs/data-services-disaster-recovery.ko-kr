@@ -1,0 +1,17 @@
+= Google Cloud VMware Engine(GCVE) 지원이 이제 정식 출시(GA)되었습니다.
+:allow-uri-read: 
+
+
+
+
+=== Google Cloud VMware Engine(GCVE) 지원이 이제 정식 출시(GA)되었습니다.
+
+NetApp Disaster Recovery의 GCVE 지원 기능이 이제 정식 출시(GA)되었습니다. GA 지원을 통해 GCVE용 Disaster Recovery는 다음을 지원합니다.
+
+* *플랫폼 관리형 스냅샷:* ONTAP 또는 Google Cloud Platform(GCP)을 통해 백업 및 보존 정책을 원활하게 관리합니다.
+* *복제 계획당 여러 데이터 저장소:* 여러 데이터 저장소를 단일 복제 전략으로 통합하여 Disaster Recovery 계획을 간소화하세요.
+* *사용할 수 없는 소스 사이트에 대한 강제 페일오버:* 소스를 사용할 수 없는 경우 재해 복구 사이트로 전환합니다.
+* *SnapMirror 재동기화 연기 및 필요에 따라 복제 복원:* "보호 건너뛰기" 옵션을 사용하여 운영량이 많은 시간대에 프로덕션 워크로드에 미치는 영향을 방지하기 위해 SnapMirror 재동기화를 연기하고, 나중에 재보호 옵션을 사용하여 필요에 따라 복제를 복원할 수 있습니다
+
+
+GCVE 지원에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/release-notes/dr-limitations.html["Disaster Recovery를 위한 지원 구성"^]을(를) 참조하십시오.

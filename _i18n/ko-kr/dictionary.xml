@@ -396,15 +396,12 @@
   <block id="01a7e7f1580e9ccf4f0275e9f79a32dd" category="inline-link-macro">재해 복구 작업 모니터링</block>
   <block id="899a3601f4e45edcb69bd9d82c68fbef" category="list-text"><block ref="698cc22cc758157d8f18359f8b528216" category="inline-link-macro-rx"></block> .</block>
   <block id="f908b1751b236e73d9e2a5a1506e778e" category="summary">NetApp Disaster Recovery 사용하려면 몇 가지 단계를 수행하여 설정하세요.</block>
-  <block id="e54ccdefb5dfc31454b15961127cb512" category="paragraph">NetApp Disaster Recovery 사용하려면 Amazon Web Services(AWS)와 NetApp Console 에서 몇 가지 단계를 수행하여 설정해야 합니다.</block>
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">전제 조건</block>
   <block id="c266abec3014ef58af380dae0b855a81" category="admonition">검토<block ref="92ab8b24e9e19913fbd62d38b5e3558b" category="inline-link-macro-rx"></block> 시스템이 준비되었는지 확인하세요.</block>
   <block id="414c3e433eb5c1851ae3a86b00f4ceb3" category="paragraph">다음 인프라에서 NetApp Disaster Recovery 사용할 수 있습니다.</block>
-  <block id="52737038ae7b3f37da8d52a547197b97" category="list-text">온프레미스 VMware 플러스 ONTAP 데이터 센터를 VMware Cloud on AWS 및 Amazon FSx for NetApp ONTAP 기반 AWS DR 인프라로 복제하는 하이브리드 클라우드 DR입니다.</block>
   <block id="d55e1af9ee418296c246b4085e868b14" category="list-text">온프레미스 VMware와 ONTAP vCenter를 다른 온프레미스 VMware와 ONTAP vCenter로 복제하는 프라이빗 클라우드 DR입니다.</block>
   <block id="3a2292ce550693108458d6b2a70159a5" category="section-title">Amazon FSx for NetApp ONTAP 활용한 하이브리드 클라우드</block>
   <block id="f95c7ab842d27a83ace1046a7ef13cba" category="paragraph">이 방법은 NFS 프로토콜을 사용하여 ONTAP FlexVol 볼륨에 호스팅된 데이터 저장소를 사용하는 온프레미스 프로덕션 vCenter 인프라로 구성됩니다.  DR 사이트는 NFS 프로토콜을 사용하는 하나 이상의 FSx for ONTAP 인스턴스에서 제공하는 FlexVol 볼륨에 호스팅된 데이터 저장소를 사용하는 하나 이상의 VMware Cloud SDDC 인스턴스로 구성됩니다.</block>
-  <block id="83521463ad83fdaf8f794f019da74b65" category="paragraph">프로덕션 사이트와 DR 사이트는 AWS 호환 보안 연결을 통해 연결됩니다.  일반적인 연결 유형은 보안 VPN(개인 또는 AWS 제공), AWS Direct Connect 또는 기타 승인된 상호 연결 방법입니다.</block>
   <block id="b75bd33081eb3ed22808f61894156d53" category="paragraph">AWS 클라우드 인프라와 관련된 재해 복구의 경우 AWS용 콘솔 에이전트를 사용해야 합니다.  에이전트는 FSx for ONTAP 인스턴스와 동일한 VPC에 설치해야 합니다.  다른 VPC에 추가 FSx for ONTAP 인스턴스가 배포된 경우, 에이전트를 호스팅하는 VPC는 ​​다른 VPC에 액세스할 수 있어야 합니다.</block>
   <block id="b368450b04bead726034d8d89e27a399" category="section-title">AWS 가용성 영역</block>
   <block id="88bb4c73bf361fedf7107f94d15ab629" category="paragraph">AWS는 특정 지역 내의 하나 이상의 가용성 영역(AZ)에 솔루션을 배포하는 것을 지원합니다.  재해 복구는 AWS에서 호스팅하는 두 가지 서비스인 VMware Cloud for AWS와 AWS FSx for NetApp ONTAP 사용합니다.</block>
@@ -413,9 +410,7 @@
   <block id="4f4bc7b1b73b3a9b248ab79f9fe4ab34" category="paragraph">*모범 사례*: AWS DR 사이트 구성의 경우 NetApp VMware Cloud와 AWS FSx for ONTAP 인스턴스 모두에 단일 AZ 배포를 사용할 것을 권장합니다.  AWS를 DR에 사용하기 때문에 여러 AZ를 도입하는 데 이점이 없습니다.  다중 AZ는 비용과 복잡성을 증가시킬 수 있습니다.</block>
   <block id="1e8f73e81b609f921369b61db9962ba0" category="section-title">온프레미스에서 AWS로</block>
   <block id="1b4220c693741db78edd086cf105c0a2" category="paragraph">AWS는 프라이빗 데이터 센터를 AWS 클라우드에 연결하기 위해 다음과 같은 방법을 제공합니다.  각 솔루션에는 이점과 비용 고려사항이 있습니다.</block>
-  <block id="2edef6867081f5c29915c6fb18c5c01b" category="list-text">*AWS Direct Connect*: 이는 AWS 파트너가 제공하는, 귀하의 개인 데이터 센터와 동일한 지리적 영역에 위치한 AWS 클라우드 상호 연결입니다.  이 솔루션은 공용 인터넷 연결이 필요 없이 로컬 데이터 센터와 AWS 클라우드 간에 안전하고 개인적인 연결을 제공합니다.  이는 AWS가 제공하는 가장 직접적이고 효율적인 연결 방법입니다.</block>
   <block id="53e59c58dc937b1664dff508b4e63986" category="list-text">*AWS 인터넷 게이트웨이*: AWS 클라우드 리소스와 외부 컴퓨팅 리소스 간의 공용 연결을 제공합니다.  이러한 유형의 연결은 일반적으로 보안이 필요하지 않은 HTTP/HTTPS 서비스와 같이 외부 고객에게 서비스를 제공하는 데 사용됩니다.  서비스 품질 제어, 보안, 연결 보장이 없습니다.  이러한 이유로 이 연결 방법은 프로덕션 데이터 센터를 클라우드에 연결하는 데 권장되지 않습니다.</block>
-  <block id="781c97b82b6a261b43aab079bc80abb2" category="list-text">*AWS 사이트 간 VPN*: 이 가상 사설망 연결은 공용 인터넷 서비스 제공자와 함께 안전한 액세스 연결을 제공하는 데 사용할 수 있습니다.  VPN은 AWS 클라우드에서 송수신되는 모든 데이터를 암호화하고 복호화합니다.  VPN은 소프트웨어 기반이거나 하드웨어 기반일 수 있습니다.  기업용 애플리케이션의 경우, 공용 인터넷 서비스 제공자(ISP)는 DR 복제에 적절한 대역폭과 지연 시간이 제공되도록 서비스 품질을 보장해야 합니다.</block>
   <block id="9a3de1fc98f937de84c79a7dd80dfcbd" category="paragraph">*모범 사례*: AWS DR 사이트 구성의 경우 NetApp AWS Direct Connect를 사용할 것을 권장합니다.  이 솔루션은 엔터프라이즈 애플리케이션에 최고의 성능과 보안을 제공합니다.  사용할 수 없는 경우 VPN과 함께 고성능 공용 ISP 연결을 사용해야 합니다.  ISP가 적절한 네트워크 성능을 보장하기 위해 상용 QoS 서비스 수준을 제공하는지 확인하세요.</block>
   <block id="db765aadec4d1aeb065102f4b7b8b139" category="section-title">VPC 간 상호 연결</block>
   <block id="5cc4b596e4f36712e12ccd6eb9c96042" category="paragraph">AWS는 다음과 같은 유형의 VPC-VPC 상호연결을 제공합니다.  각 솔루션에는 이점과 비용 고려사항이 있습니다.</block>
@@ -1325,7 +1320,6 @@
   <block id="8082ac657e40ca576105ceaf88cbda23" category="list-text">소스 vCenter가 여전히 활성 상태인 경우 장애 조치 중인 모든 소스 측 VM의 전원을 끕니다.</block>
   <block id="addf2cf8485a908b734a233a37ce94ab" category="list-text">소스 vCenter 및 ONTAP 클러스터가 여전히 활성 상태인 경우, 장애 조치 상태에서 모든 변경 사항을 원래 소스 사이트로 복제하기 위해 역방향 SnapMirror 관계를 생성합니다.  SnapMirror 관계는 대상 가상 머신에서 소스 가상 머신으로 반전됩니다.</block>
   <block id="49f91cfb44052240b763337c959a02fb" category="admonition">장애 조치가 시작된 후 재해 복구 사이트의 vCenter에서 복구된 VM(가상 머신, 네트워크, 데이터 저장소)을 볼 수 있습니다.  기본적으로 가상 머신은 워크로드 폴더로 복구됩니다.</block>
-  <block id="2daf88e8e899eb0e79ca31b1325a8026" category="list-text">오른쪽에서 *작업* 옵션을 선택하세요<block ref="771645334c0631c5881bfc9858be7f5b" category="inline-image-macro-rx" type="image"></block> 그리고 *장애 조치*를 선택합니다.</block>
   <block id="711c35de4b0430b043159f5d91f6752f" category="inline-image-macro">장애 조치 페이지</block>
   <block id="746c84b1b109b4fcfeb29ff36be21f14" category="paragraph"><block ref="746c84b1b109b4fcfeb29ff36be21f14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="51d5fa513676d68f3e574487650b021d" category="paragraph">장애 조치가 발생하기 전에 현재 소스의 스냅샷이 촬영되어 현재 대상에 복제됩니다.</block>
@@ -2115,4 +2109,23 @@
   <block id="141ae0745aa19a71f0ba80e5ba754682" category="list-text">*백업 및 보존 시작 시간*: 백업 및 보존을 시작할 날짜와 시간을 입력합니다.</block>
   <block id="92cd787be79720ebbf8f89f517b891c9" category="list-text">*백업 및 보존 주기*: 시간 간격을 시와 분 단위로 입력하십시오. 예를 들어 1시간을 입력하면 서비스는 매시간 스냅샷을 생성합니다.</block>
   <block id="81b2d5bd2343a78b10f138613228f4b2" category="list-text">*모든 데이터 저장소에 대한 보존 개수*: 보존할 스냅샷 개수를 입력하십시오.</block>
+  <block id="5701a00214d8cf532eb05ab4390dd83c" category="doc">Google Cloud VMware Engine(GCVE) 지원이 이제 정식 출시(GA)되었습니다.</block>
+  <block id="17eb3abfef8b1a9f92707a05bb82cb53" category="paragraph">NetApp Disaster Recovery의 GCVE 지원 기능이 이제 정식 출시(GA)되었습니다. GA 지원을 통해 GCVE용 Disaster Recovery는 다음을 지원합니다.</block>
+  <block id="6f9e9024f518a369b5759d900694f8b3" category="list-text">*플랫폼 관리형 스냅샷:* ONTAP 또는 Google Cloud Platform(GCP)을 통해 백업 및 보존 정책을 원활하게 관리합니다.</block>
+  <block id="045d30a52ce459f46c504234d025f4c3" category="list-text">*복제 계획당 여러 데이터 저장소:* 여러 데이터 저장소를 단일 복제 전략으로 통합하여 Disaster Recovery 계획을 간소화하세요.</block>
+  <block id="c4eadd4786334639a92ab9b1508f337f" category="list-text">*사용할 수 없는 소스 사이트에 대한 강제 페일오버:* 소스를 사용할 수 없는 경우 재해 복구 사이트로 전환합니다.</block>
+  <block id="a7772ec1948f1cd5c6087ddb93603474" category="list-text">*SnapMirror 재동기화 연기 및 필요에 따라 복제 복원:* "보호 건너뛰기" 옵션을 사용하여 운영량이 많은 시간대에 프로덕션 워크로드에 미치는 영향을 방지하기 위해 SnapMirror 재동기화를 연기하고, 나중에 재보호 옵션을 사용하여 필요에 따라 복제를 복원할 수 있습니다</block>
+  <block id="4a8a0c3493007142356e2bab5b977e96" category="inline-link-macro">Disaster Recovery를 위한 지원 구성</block>
+  <block id="fd6fb30ddd2582b6a9be2fbd297066cd" category="paragraph">GCVE 지원에 대한 자세한 내용은 <block ref="e93ab8cb254bacf15604af8d15ae8da4" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="9403a68744e5b91ec0e3309a60a08725" category="paragraph">NetApp Disaster Recovery를 사용하려면 NetApp Console과 지원되는 재해 복구 환경 모두에서 몇 가지 설정 단계를 수행해야 합니다.</block>
+  <block id="cda0283bbd4a4fb561a454be42b95e79" category="section-title">지원되는 인프라</block>
+  <block id="9753fdc07008742b97e2abeb69d97996" category="list-text">온프레미스 VMware plus ONTAP 데이터 센터를 VMware Cloud on AWS 또는 Elastic VMware Service(EVS) 및 Amazon FSx for NetApp ONTAP 기반 AWS DR 인프라에 복제하는 하이브리드 클라우드 DR입니다.</block>
+  <block id="1a3b0e646655d3e634f506335377b274" category="list-text">VMware Cloud on AWS 또는 EVS 기반의 AWS DR 인프라를 FSx for NetApp ONTAP를 사용하여 다른 AWS 기반 DR 인프라로 복제하는 Cloud DR입니다.</block>
+  <block id="9e44011b9e0a2de4c376eea05ca3b108" category="list-text">온프레미스 VMware Plus ONTAP 데이터센터를 Google Cloud VMware Engine 및 Google Cloud NetApp Volumes 기반의 Google DR 인프라로 복제하는 하이브리드 클라우드 재해 복구(DR) 솔루션입니다.</block>
+  <block id="1d1e533f25b0978157fd3d6581e3bfce" category="paragraph">운영 사이트와 DR 사이트는 AWS 호환 보안 연결로 연결됩니다. 일반적인 연결 유형으로는 보안 VPN(프라이빗 또는 AWS 제공), AWS Direct Connect 또는 기타 승인된 상호 연결 방식이 있습니다.</block>
+  <block id="6da123917575e59f72dab08a3d3c444b" category="list-text">*AWS Direct Connect*: 이는 사용자의 프라이빗 데이터 센터와 동일한 지리적 영역에 위치하고 AWS 파트너가 제공하는 AWS 클라우드 상호 연결입니다. 이 솔루션은 공용 인터넷 연결 없이 로컬 데이터 센터와 AWS 클라우드 간에 안전하고 프라이빗한 연결을 제공합니다. AWS에서 제공하는 가장 직접적이고 효율적인 연결 방식입니다.</block>
+  <block id="befc109880f1df3613fa6b68b938eea8" category="list-text">*AWS Site-Site VPN*: 이 가상 사설망 연결은 공용 인터넷 서비스 공급자와 함께 안전한 액세스 연결을 제공하는 데 사용할 수 있습니다. VPN은 AWS 클라우드로 오가는 모든 데이터를 암호화하고 복호화합니다. VPN은 소프트웨어 기반 또는 하드웨어 기반일 수 있습니다. 엔터프라이즈 애플리케이션의 경우, 공용 인터넷 서비스 공급자(ISP)는 DR 복제를 위해 적절한 대역폭과 지연 시간이 제공되도록 서비스 품질 보장을 제공해야 합니다.</block>
+  <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026년 4월 13일</block>
+  <block id="7a220dd27e25e08bf2217cc7bebbf755" category="paragraph">버전 4.3.2</block>
+  <block id="4f6d1243da0297d0c471e4b8e1c253f1" category="list-text">오른쪽에서 *Actions* 옵션 <block ref="771645334c0631c5881bfc9858be7f5b" category="inline-image-macro-rx" type="image"></block>을 선택하고 *Recover* 위로 마우스를 가져간 다음 *Fail over*를 선택합니다.</block>
 </blocks>
