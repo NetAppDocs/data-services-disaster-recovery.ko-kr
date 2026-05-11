@@ -152,39 +152,26 @@
   <block id="b3e4ed172be774a7750c54db8ee694c0" category="paragraph">* NetApp Disaster Recovery 사용하려면 라이선스가 필요합니까?*  전체 액세스를 위해서는 NetApp Disaster Recovery 라이선스가 필요합니다.  하지만 무료 체험판을 통해 직접 체험해 볼 수는 있습니다.</block>
   <block id="dd5a7130a9e4691912bd5e866f5f38d3" category="inline-link-macro">NetApp Disaster Recovery 라이선스 설정</block>
   <block id="8de8bf3c0e2312de770e9e57b5d7b618" category="paragraph">NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내용은 다음을 참조하세요.<block ref="dcc09fe94eaacf55e14028798bbcb75a" category="inline-link-macro-rx"></block> .</block>
-  <block id="0f1a95977eacd93733a8709423acce1c" category="paragraph">* NetApp Disaster Recovery 어떻게 액세스합니까?*  NetApp Disaster Recovery 어떠한 활성화도 필요하지 않습니다.  재해 복구 옵션은 NetApp Console 왼쪽 탐색 창에 자동으로 나타납니다.</block>
-  <block id="a81bd9962c48f4a51ee2a08f8b70bf27" category="summary">클라우드로의 재해 복구는 사이트 중단 및 데이터 손상 사고로부터 작업 부하를 보호하는 탄력적이고 비용 효율적인 방법입니다.  VMware용 NetApp Disaster Recovery 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 NetApp 클라우드 스토리지를 사용하여 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제하거나 ONTAP 스토리지를 사용하는 다른 온프레미스 VMware 환경으로 재해 복구 사이트로 복제할 수 있습니다.</block>
-  <block id="80a1a03679a72461e49380f11d9f9351" category="doc">VMware용 NetApp Disaster Recovery 에 대해 알아보세요</block>
-  <block id="2c8368bb169e5e97436981653d2e2eee" category="paragraph">클라우드로의 재해 복구는 사이트 중단 및 데이터 손상 사고로부터 작업 부하를 보호하는 탄력적이고 비용 효율적인 방법입니다.  VMware용 NetApp Disaster Recovery 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware VM 또는 데이터스토어 워크로드를 NetApp 클라우드 스토리지를 사용하여 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제하거나 ONTAP 스토리지를 사용하는 다른 온프레미스 VMware 환경으로 재해 복구 사이트로 복제할 수 있습니다.  재해 복구를 사용하여 VM 작업 부하를 한 사이트에서 다른 사이트로 마이그레이션할 수도 있습니다.</block>
-  <block id="da6b2f3a2124d375c735e38d42f2a145" category="paragraph">NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다.  NetApp Disaster Recovery 사용하면 온프레미스 NFS 기반 워크로드와 VMware vSphere 가상 머신 파일 시스템(VMFS) 데이터 저장소를 iSCSI 및 FC에서 실행되는 NetApp 스토리지를 다음 중 하나로 보호할 수 있습니다.</block>
   <block id="7d34f6a9b5c271fe76e07e48a0c0d2b1" category="list-text">Amazon FSx for NetApp ONTAP 사용한 AWS의 VMware Cloud(VMC)</block>
   <block id="8d381cd7e2ec5b3d8d12ea2af39acd02" category="list-text">Amazon FSx for NetApp ONTAP 사용한 Amazon Elastic VMware Service(EVS) 자세한 내용은 다음을 참조하세요.<block ref="d77dcab16ff9979356836b689cffd0ee" category="inline-link-macro-rx"></block> .</block>
   <block id="a4508b30b1ece8318f0401ea22ba314c" category="list-text">NetApp Cloud Volumes ONTAP (iSCSI)를 사용한 Azure VMware 솔루션(AVS)(비공개 미리보기)</block>
   <block id="052ce74479a9ceb3e214c30deb130ee3" category="list-text">ONTAP 스토리지를 갖춘 또 다른 온프레미스 NFS 및/또는 VMFS 기반(iSCSI/FC) VMware 환경</block>
   <block id="da60f0a986637eaee62ae347aab4f0e3" category="paragraph">NetApp Disaster Recovery ONTAP SnapMirror 기술과 통합된 기본 VMware 오케스트레이션을 사용하여 VMware VM과 관련 디스크 OS 이미지를 보호하는 동시에 ONTAP 의 모든 스토리지 효율성 이점을 유지합니다.  재해 복구는 이러한 기술을 재해 복구 사이트로의 복제 전송에 사용합니다.  이를 통해 기본 및 보조 사이트에서 업계 최고의 스토리지 효율성(압축 및 중복 제거)이 가능해집니다.</block>
-  <block id="806bf3894ecdc50c4d2694ee51766d82" category="inline-image-macro">VMware용 NetApp Disaster Recovery 구성 요소를 보여주는 다이어그램</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="section-title">NetApp Console</block>
   <block id="616ce84bf378a10ce41492e7361102ce" category="paragraph">NetApp Disaster Recovery NetApp Console 통해 액세스할 수 있습니다.</block>
   <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">NetApp Console 엔터프라이즈급 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지 및 데이터 서비스를 중앙에서 관리할 수 있는 기능을 제공합니다. NetApp 데이터 서비스에 액세스하고 사용하려면 콘솔이 필요합니다. 관리 인터페이스로서, 하나의 인터페이스에서 여러 스토리지 리소스를 관리할 수 있습니다. 콘솔 관리자는 기업 내 모든 시스템의 저장소와 서비스에 대한 액세스를 제어할 수 있습니다.</block>
-  <block id="7118a6b22768dabe4720d84710ea1e43" category="paragraph">NetApp Console 사용하려면 라이선스나 구독이 필요하지 않으며, 스토리지 시스템이나 NetApp 데이터 서비스에 대한 연결을 보장하기 위해 클라우드에 Console 에이전트를 배포해야 할 때만 요금이 부과됩니다. 그러나 콘솔에서 액세스할 수 있는 일부 NetApp 데이터 서비스는 라이선스 기반이거나 구독 기반입니다.</block>
-  <block id="93f490f610bd41da6de2c611374d8ef0" category="section-title">VMware용 NetApp Disaster Recovery 사용의 이점</block>
   <block id="9c8909695d59c2331ebbd096a98be570" category="paragraph">NetApp Disaster Recovery 다음과 같은 이점을 제공합니다.</block>
   <block id="093e9c8a453c519550f226d3d29e9b37" category="list-text">운영 비용이 절감되고 최소한의 리소스로 재해 복구 계획을 수립하고 조정할 수 있어 총 소유 비용이 낮아집니다.</block>
   <block id="d3a13ad4dd1e4d628df918e874d5e8c8" category="list-text">운영을 중단시키지 않고 가상 장애 조치 테스트를 통해 지속적인 재해 복구 준비를 갖춥니다.  운영 작업 부하에 영향을 주지 않고 정기적으로 DR 장애 조치 계획을 테스트할 수 있습니다.</block>
   <block id="01077bfd931662ce1ab00a202e5bf919" category="list-text">IT 환경의 역동적인 변화에 대응하고 재해 복구 계획에서 이를 해결할 수 있는 능력을 갖춰 가치 실현 시간을 단축하세요.</block>
   <block id="ec21f5153961eebdc61f370ad13dbb92" category="list-text">가상 서버 어플라이언스(VSA)를 배포하고 유지 관리할 필요 없이 ONTAP 과 VMware의 백엔드 오케스트레이션을 통해 스토리지와 가상 계층을 동시에 관리할 수 있는 기능입니다.</block>
   <block id="1c4e4012990854a1b74830ccb6fec18b" category="list-text">VMware용 DR 솔루션은 리소스를 많이 소모할 수 있습니다.  많은 DR 솔루션은 VSA를 사용하여 VMware 가상 계층에서 VM을 복제하는데, 이는 더 많은 컴퓨팅 리소스를 소모하고 ONTAP 의 귀중한 스토리지 효율성을 잃을 수 있습니다.  재해 복구는 ONTAP SnapMirror 기술을 사용하므로 ONTAP 의 모든 기본 데이터 압축 및 중복 제거 효율성을 갖춘 증분형 영구 복제 모델을 사용하여 프로덕션 데이터 저장소에서 재해 복구 사이트로 데이터를 복제할 수 있습니다.</block>
-  <block id="def438f415b4fa8f21a8a89c9b929bd0" category="section-title">VMware용 NetApp Disaster Recovery 로 할 수 있는 일</block>
   <block id="4ab8dd16a392a6b89edf0925879475c7" category="paragraph">NetApp Disaster Recovery 사용하면 다음과 같은 목표를 달성하기 위해 여러 NetApp 기술을 최대한 활용할 수 있습니다.</block>
   <block id="add8d69a5f7975ffd43124657fc5030d" category="list-text">SnapMirror 복제를 사용하여 온프레미스 프로덕션 사이트의 VMware 앱을 클라우드 또는 온프레미스의 재해 복구 원격 사이트로 복제합니다.</block>
   <block id="dcc9d99320099ed731ca2f05b3e501a7" category="list-text">VMware 워크로드를 원래 사이트에서 다른 사이트로 마이그레이션합니다.</block>
-  <block id="77458afdcd0f2e882e71645a6d507758" category="list-text">장애 조치 테스트를 수행합니다.  이렇게 하면 서비스가 임시 가상 머신을 생성합니다.  재해 복구는 선택된 스냅샷에서 새로운 FlexClone 볼륨을 만들고, FlexClone 볼륨에 의해 백업되는 임시 데이터 저장소를 ESXi 호스트에 매핑합니다.  이 프로세스는 온프레미스 ONTAP 스토리지나 AWS의 FSx for NetApp ONTAP 스토리지에서 추가적인 물리적 용량을 소모하지 않습니다.  원본 소스 볼륨은 수정되지 않으며 재해 복구 중에도 복제 작업을 계속할 수 있습니다.</block>
   <block id="ece6a9df8de79d152a543985204b6221" category="list-text">재해 발생 시 필요에 따라 기본 사이트를 재해 복구 사이트로 장애 조치할 수 있습니다. 재해 복구 사이트는 Amazon FSx for NetApp ONTAP 이 포함된 AWS의 VMware Cloud 또는 ONTAP 포함된 온프레미스 VMware 환경입니다.</block>
   <block id="665fccb70331e8dfa8afd40c0bbb51f0" category="list-text">재해가 해결된 후 재해 복구 사이트에서 기본 사이트로 필요에 따라 장애 복구합니다.</block>
   <block id="f43448b21f6e5bf95c4c9b57b7a13060" category="list-text">효율적인 관리를 위해 VM이나 데이터 저장소를 논리적 리소스 그룹으로 그룹화합니다.</block>
-  <block id="5f8a1557ef0f4f4cf65cb2de2ef61e7e" category="inline-image-macro">VMware용 NetApp Disaster Recovery 사용 사례를 보여주는 다이어그램</block>
-  <block id="018263fa29e11b076aa94025f663d232" category="paragraph"><block ref="018263fa29e11b076aa94025f663d232" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1c4fe9c45ef78c85146c600da191efec" category="admonition">vSphere 서버 구성은 vSphere Server의 NetApp Disaster Recovery 외부에서 수행됩니다.</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">비용</block>
   <block id="1052dee9d95f73d0a99fb04f5d6fbf58" category="paragraph">NetApp Disaster Recovery NetApp 라이선스 또는 Amazon Web Services를 통한 연간 구독 기반 플랜을 통해 사용할 수 있습니다.</block>
   <block id="d91f8d9cdc7fc66a71d44f83fa879b24" category="inline-link-macro">NetApp Disaster Recovery 의 새로운 기능</block>
@@ -195,23 +182,17 @@
   <block id="ae8251a7b4c0fab0673e14f4f9d000d1" category="list-text">Amazon Web Services(AWS) Marketplace 또는 Microsoft Azure Marketplace에서 사용량에 따라 지불하는(PAYGO) 구독을 구매하세요.  이 라이선스를 사용하면 장기 약정 없이 고정 보호 용량 라이선스를 구매할 수 있습니다.</block>
   <block id="c6f69d5df53a010be34f1bdca81f2d34" category="list-text">BYOL(Bring Your Own License)은 NetApp 영업 담당자로부터 받는 NetApp 라이선스 파일(NLF)입니다. NetApp Console 에서 라이선스 일련 번호를 사용하여 BYOL을 활성화할 수 있습니다.</block>
   <block id="f32471ef823f660bfa852ce10e9e5843" category="paragraph">모든 NetApp 데이터 서비스에 대한 라이선스는 NetApp Console 의 구독을 통해 관리됩니다.  BYOL을 설정한 후 콘솔에서 해당 서비스에 대한 활성 라이선스를 볼 수 있습니다.</block>
-  <block id="27146a9e481de4ec0c59af54c4336a16" category="paragraph">이 서비스는 보호된 ONTAP 볼륨에 호스팅된 데이터 양을 기준으로 라이센스가 부여됩니다.  이 서비스는 보호된 VM을 해당 vCenter 데이터 저장소에 매핑하여 어떤 볼륨을 라이선싱 목적으로 고려해야 하는지 결정합니다.  각 데이터스토어는 ONTAP 볼륨이나 LUN에 호스팅됩니다.  ONTAP 에서 해당 볼륨이나 LUN에 대해 보고한 사용 용량은 라이선스 결정에 사용됩니다.</block>
   <block id="924fd9d885c358418e2ee855de9a3281" category="paragraph">보호된 볼륨은 여러 개의 VM을 호스팅할 수 있습니다.  일부는 NetApp Disaster Recovery 리소스 그룹에 속하지 않을 수도 있습니다.  그럼에도 불구하고 해당 볼륨이나 LUN의 모든 VM이 사용하는 저장 용량은 라이선스 최대 용량에 포함됩니다.</block>
   <block id="619cba1c966eba204675a35c9acb1de2" category="admonition">NetApp Disaster Recovery 요금은 복제 계획이 있는 VM이 ​​하나 이상 있는 경우 소스 사이트의 데이터 저장소 사용 용량을 기준으로 부과됩니다.  장애 조치된 데이터 저장소의 용량은 용량 허용량에 포함되지 않습니다.  BYOL의 경우, 데이터가 허용된 용량을 초과하면 NetApp Console 에서 추가 용량 라이선스를 얻거나 라이선스를 업그레이드할 때까지 서비스 작업이 제한됩니다.</block>
-  <block id="c25a6b83d7ef4d16712026d6c3ad089d" category="paragraph">30일 무료 평가판을 통해 NetApp Disaster Recovery 체험해 보세요.</block>
-  <block id="2653bc3ce497c58d463194da74daede0" category="paragraph">30일 평가판 사용 기간이 끝난 후 계속 사용하려면 클라우드 공급업체에서 PAYGO(Pay-as-you-go) 구독을 받거나 NetApp 에서 BYOL 라이선스를 구매해야 합니다.</block>
   <block id="5ea3b0a3d2edc96d5ac390dd8d481432" category="paragraph">언제든지 라이선스를 구매할 수 있으며, 30일 평가판이 종료될 때까지 요금이 청구되지 않습니다.</block>
   <block id="f4c26d8a68cdf40d14080f9559987515" category="section-title">NetApp Disaster Recovery 작동 방식</block>
   <block id="054b9d944fc8c1e77911ebd63674bd3a" category="paragraph">NetApp Disaster Recovery NetApp Console 소프트웨어 서비스(SaaS) 환경 내에서 호스팅되는 서비스입니다.  재해 복구는 온프레미스 사이트에서 Amazon FSx for ONTAP 또는 다른 온프레미스 사이트로 복제된 워크로드를 복구할 수 있습니다.  이 서비스는 SnapMirror 수준에서 VMware Cloud on AWS에 가상 머신을 등록하고, VMware 네트워크 가상화 및 보안 플랫폼인 NSX-T에서 직접 네트워크 매핑을 통해 복구를 자동화합니다. 이 기능은 모든 Virtual Machine Cloud 환경에 포함되어 있습니다.</block>
   <block id="636cc1dedf67573b1e4305ca3091291a" category="paragraph">NetApp Disaster Recovery ONTAP SnapMirror 기술을 사용하여 매우 효율적인 복제를 제공하고 ONTAP 증분형 영구 스냅샷 효율성을 보존합니다.  SnapMirror 복제는 애플리케이션과 일관된 스냅샷 복사본이 항상 동기화되고 장애 조치 직후에 데이터를 즉시 사용할 수 있도록 보장합니다.</block>
-  <block id="61b3974347743fc98d4b058ca609215d" category="inline-image-macro">VMware 서비스 인프라를 위한 NetApp Disaster Recovery 아키텍처를 보여주는 다이어그램</block>
-  <block id="f8ff48f499331b1586761635007e2cb2" category="paragraph"><block ref="f8ff48f499331b1586761635007e2cb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="20099229ad21726312a6ff50740b0b57" category="paragraph">재해가 발생하면 이 서비스는 SnapMirror 관계를 끊고 대상 사이트를 활성화하여 다른 온프레미스 VMware 환경이나 VMC에 있는 가상 머신을 복구하는 데 도움을 줍니다.</block>
   <block id="7599cfdf730a164b0625ccc661508efa" category="list-text">이 서비스를 사용하면 가상 머신을 원래 소스 위치로 복구할 수도 있습니다.</block>
   <block id="a6d3ce8aba8914f5380d164c99d7dab0" category="list-text">원래 가상 머신을 방해하지 않고 재해 복구 장애 조치 프로세스를 테스트할 수 있습니다.  이 테스트는 볼륨의 FlexClone 생성하여 가상 머신을 격리된 네트워크로 복구합니다.</block>
   <block id="e626451f7ddf34243167a5b335e8772b" category="list-text">장애 조치 또는 테스트 장애 조치 프로세스의 경우 가상 머신을 복구할 최신(기본값) 스냅샷이나 선택한 스냅샷을 선택할 수 있습니다.</block>
   <block id="d81e380246b2962d1a78475dd6e6a0dd" category="paragraph">*재해 복구의 구성 요소*</block>
-  <block id="8981f8f863d2457311d97a6f3bfc621d" category="paragraph">재해 복구는 다음 구성 요소를 사용하여 VMware 워크로드에 대한 재해 복구를 제공합니다.</block>
   <block id="7e2cf61cdee3ce110378ffb6d4857256" category="list-text">* NetApp Console*: 재해 복구 계획을 관리하기 위한 사용자 인터페이스입니다.  NetApp Console 사용하면 온프레미스 및 클라우드 환경 전반에서 복제 계획, 리소스 그룹 및 장애 조치 작업을 만들고 관리할 수 있습니다.</block>
   <block id="d447631de1255b6c25242579ac8cc7f7" category="list-text">*콘솔 에이전트*: 클라우드 호스팅 네트워크나 온프레미스 VMware 환경에서 실행되는 가벼운 소프트웨어 구성 요소입니다.  NetApp Console 과 통신하고 온프레미스 환경과 재해 복구 사이트 간의 데이터 복제를 관리합니다.  콘솔 에이전트는 VMware 환경의 가상 머신에 설치됩니다.</block>
   <block id="36cd5fcfef4d2fe705f4645b377e9706" category="list-text">* ONTAP 스토리지 클러스터*: ONTAP 스토리지 클러스터는 VMware 워크로드를 호스팅하는 기본 스토리지 시스템입니다.  ONTAP 스토리지 클러스터는 재해 복구 계획을 위한 기본 스토리지 인프라를 제공합니다.  재해 복구는 ONTAP 스토리지 API를 사용하여 온프레미스 어레이와 Amazon FSx for NetApp ONTAP 과 같은 클라우드 기반 솔루션과 ONTAP 스토리지 클러스터를 관리합니다.</block>
@@ -268,9 +249,6 @@
   <block id="d2898ede4dd2058939d6e98d118ac9fa" category="list-text">다른 서비스에 대한 콘솔 에이전트를 아직 추가하지 않았다면 하나 추가하세요.</block>
   <block id="91e534d044a3d9c6a1c8575f89e73c9b" category="inline-link">콘솔 에이전트에 대해 알아보세요</block>
   <block id="611f4cdd6f9e4edab1d69e8c49266816" category="list-text">에이전트를 설정한 후 NetApp Disaster Recovery 랜딩 페이지에서 에이전트를 추가하는 버튼이 무료 평가판을 시작하는 버튼으로 변경됩니다.  *무료 체험 시작*을 선택하세요.</block>
-  <block id="4701248bbe25ed364a5f0c79467e9f29" category="list-text">vCenter를 추가하여 시작하세요.</block>
-  <block id="5be11c5dad3dd5860416e2978e91dae5" category="inline-link-macro">vCenter 사이트 추가</block>
-  <block id="d780b26d8f0dcbe5b2593febbaacdb60" category="paragraph">자세한 내용은 다음을 참조하십시오. <block ref="84d66f7662bc8a91a68e93706653efe2" category="inline-link-macro-rx"></block> .</block>
   <block id="919574c2e1cf45885dfdded4236ff487" category="section-title">체험 기간이 종료된 후 마켓플레이스 중 하나를 통해 구독하세요.</block>
   <block id="bcf9676a0e10268566bde64408935a14" category="paragraph">무료 평가판이 종료된 후에는 NetApp 에서 라이선스를 구매하거나 AWS Marketplace 또는 Microsoft Azure Marketplace를 통해 구독할 수 있습니다. 이 절차는 마켓플레이스 중 하나에서 직접 구독하는 방법에 대한 간략한 개요를 제공합니다.</block>
   <block id="681bffd3e5b8b791e7dd5f425e15a22a" category="list-text">NetApp Disaster Recovery 에서 무료 평가판이 만료된다는 메시지가 표시됩니다.  메시지에서 *구독 또는 라이선스 구매*를 선택하세요.</block>
@@ -295,7 +273,6 @@
   <block id="fc145d0284ba4e60c3b5f315355ac505" category="inline-image-macro">무료 체험 종료 페이지</block>
   <block id="be94b7e6fbf892064754b145ecdeb994" category="paragraph"><block ref="be94b7e6fbf892064754b145ecdeb994" category="inline-image-macro-rx" type="image"></block></block>
   <block id="70fdbb4fe1ac448b07e3ab48c5bd8bb1" category="list-text">모든 데이터를 삭제하려면 *무료 체험 종료 후 즉시 데이터 삭제*를 선택하세요.</block>
-  <block id="feb648e7590f1e1ac7ecc30b821c37d5" category="paragraph">이렇게 하면 모든 일정, 복제 계획, 리소스 그룹, vCenter 및 사이트가 삭제됩니다.  감사 데이터, 운영 로그, 작업 내역은 제품 수명이 끝날 때까지 보관됩니다.</block>
   <block id="4700756234737e21da996fb7e071325f" category="admonition">무료 평가판을 종료하고, 데이터 삭제를 요청하지 않았으며, 라이선스나 구독을 구매하지 않은 경우, NetApp Disaster Recovery 는 무료 평가판 종료 후 60일 후에 모든 데이터를 삭제합니다.</block>
   <block id="c3964fe08c9dd95815cc67d8aaee9323" category="list-text">텍스트 상자에 "체험판 종료"를 입력합니다.</block>
   <block id="44a320573c319d1f30b840c2d11a4e26" category="list-text">*끝*을 선택하세요.</block>
@@ -326,11 +303,9 @@
   <block id="08c703afa8c9adfa32f836f9f7b8049b" category="paragraph">사용 가능한 최신 버전</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="cell">Amazon FSx for NetApp ONTAP</block>
   <block id="d28c14a0fc5b1bfa37eb72dd0ac54a13" category="section-title">ONTAP 스토리지 전제 조건</block>
-  <block id="911d68300fa1a1a181b338683eb2e1b9" category="paragraph">이러한 필수 구성 요소는 NetApp ONTAP 인스턴스의 ONTAP 또는 Amazon FSX에 적용됩니다.</block>
   <block id="07a02bd33ebc759fa2827fd098fe4d5b" category="list-text">소스 클러스터와 대상 클러스터는 피어 관계가 있어야 합니다.</block>
   <block id="49a62cf19d5f5549f15f53e7cc0931a4" category="list-text">소스 SVM과 대상 SVM은 피어 관계가 있어야 합니다.</block>
   <block id="3c6fc169e2cb30ab2f19198ee948214f" category="list-text">Amazon FSx for NetApp ONTAP 사용하여 배포하는 경우 다음 필수 조건이 적용됩니다.</block>
-  <block id="78ac16e6d697b73a4da8c7145ce2ebf3" category="section-title">VMware vCenter 클러스터 필수 구성 요소</block>
   <block id="e43184d3dcdfbef8d9c719533929f538" category="paragraph">이러한 필수 구성 요소는 온프레미스 vCenter 클러스터와 VMware Cloud for AWS 소프트웨어 정의 데이터 센터(SDDC)에 모두 적용됩니다.</block>
   <block id="4fb2c1490deb1111ddde75358c461f13" category="inline-link-macro">vCenter 권한</block>
   <block id="b2169392be07dddda6f7a2aac2409a65" category="list-text">검토<block ref="e2308177194cd3965bd843f87b9fd0f9" category="inline-link-macro-rx"></block> NetApp Disaster Recovery 에 필요합니다.</block>
@@ -339,7 +314,6 @@
   <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="list-text">NFS</block>
   <block id="412e382a6d6d3bd8a3bfd94b856f9f4e" category="list-text">iSCSI 또는 FC 프로토콜을 사용하는 VMFS</block>
   <block id="6264bc70be3baed8dcf906aafe1dfe41" category="list-text">VMware vSphere 버전 7.0 업데이트 3(7.0v3) 이상</block>
-  <block id="b48bd09b37dbbe2233bba9ccc258e634" category="list-text">VMware Cloud SDDC를 사용하는 경우 다음 필수 구성 요소가 적용됩니다.</block>
   <block id="7fc6ed2196514db323edb5f8ee464448" category="inline-link">AWS FSx for NetApp ONTAP 설명서와 함께 VMware Cloud Foundations 사용</block>
   <block id="f2fc5fa158eeee58eae505a362a866b3" category="list-text">VMware Cloud Console에서 관리자 및 NSX Cloud 관리자 서비스 역할을 사용하세요.  조직 역할에는 조직 소유자도 사용합니다. 참조하다<block ref="87df9e87408172a2291d5738f3ae5f4f" category="inline-link-rx"></block> .</block>
   <block id="4e1ddb83fcf4e704fe454a7d694377b4" category="inline-link">Amazon FSx for NetApp ONTAP 배포 정보와 AWS의 VMware Cloud 통합</block>
@@ -840,7 +814,6 @@
   <block id="899e8836a0df2f53c58c4f92eeeb3ab0" category="summary">Amazon EVS와 Amazon FSxN을 사용한 NetApp Disaster Recovery 솔루션 개요.</block>
   <block id="2628b4207ed13a7d7671ac67472c5d72" category="doc">Amazon EVS 및 Amazon FS를 사용한 NetApp ONTAP 용 NetApp Disaster Recovery 솔루션 개요</block>
   <block id="9249112d594032957a419aea4d7bd42e" category="paragraph">NetApp Disaster Recovery NetApp Console 소프트웨어 즉 서비스 환경 내에서 호스팅되는 부가가치 서비스로, 핵심 NetApp Console 아키텍처에 따라 달라집니다.  콘솔 내 VMware 보호를 위한 DR 서비스는 여러 가지 주요 구성 요소로 구성됩니다.</block>
-  <block id="b7aaab277a1db255177860a88e680477" category="paragraph">NetApp Disaster Recovery 솔루션에 대한 전체 개요는 다음을 참조하세요.<block ref="ab21fa568fb5fa4fff8f911859db712b" category="inline-link-macro-rx"></block> .</block>
   <block id="dcf4eaae5b7bdb68e0250499844bbcb5" category="paragraph">온프레미스 VMware 호스팅 가상 머신을 Amazon AWS로 보호하려면 해당 서비스를 사용하여 Amazon FSx for NetApp ONTAP 스토리지 호스팅 데이터스토어를 통해 Amazon EVS로 백업하세요.</block>
   <block id="562f4ec7d85420cef97dbbe985cc8083" category="paragraph">다음 그림은 Amazon EVS를 사용하여 VM을 보호하는 서비스의 작동 방식을 보여줍니다.</block>
   <block id="0839d8084a64100ac04299db393f9e8b" category="inline-image-macro">Amazon EVS 및 FSx for ONTAP 사용한 NetApp Disaster Recovery 개요</block>
@@ -884,7 +857,6 @@
   <block id="fbd220a0dbfa02a2a5634c0c49871077" category="inline-image-macro">NetApp Disaster Recovery 의 작업 메뉴 아이콘</block>
   <block id="90669b3c948b70a01be3717e2ae973c7" category="list-text">NetApp Disaster Recovery 에서 *사이트*를 선택하고 vCenter 행에서 *작업* 옵션을 선택합니다.<block ref="ba988cdee92f0ccb4e792adadf6680ef" category="inline-image-macro-rx" type="image"></block> , 작업 메뉴에서 *새로 고침*을 선택하여 NetApp Disaster Recovery 에서 FSx 검색을 새로 고칩니다.</block>
   <block id="97f038e2f4284e7bd85ce8986351f37a" category="paragraph">이를 통해 데이터 저장소, 가상 머신 및 대상 관계가 다시 검색됩니다.</block>
-  <block id="6b2c385261ff0cb6c8365e9b2627a238" category="summary">NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다.  VMware용 NetApp Disaster Recovery 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 NetApp 클라우드 스토리지를 사용하여 재해 복구 사이트로 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제할 수 있습니다.</block>
   <block id="c11b69e74ac28288df478284e9a69a9e" category="doc">NetApp Disaster Recovery 의 새로운 기능</block>
   <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025년 10월 6일</block>
   <block id="3488d38349240c72f75d081c2a79fa3b" category="section-title">2025년 8월 4일</block>
@@ -1110,13 +1082,11 @@
   <block id="348a99edae23b1f4e21c5ce75d209a50" category="paragraph">자세한 내용을 보려면 각 항목 아래의 *보기* 링크를 선택하세요.</block>
   <block id="2ce874f5717134aa8a63e219f05d39f9" category="list-text">장애 조치, 테스트 장애 조치 및 마이그레이션의 수.  예를 들어, 두 개의 계획을 만들고 해당 목적지로 마이그레이션한 경우 마이그레이션 수는 "2"로 표시됩니다.</block>
   <block id="d26cf1f0512a50b32d5a10b931f5fbe0" category="list-text">활동 창에서 모든 작업을 검토합니다.  작업 모니터에서 모든 작업을 보려면 *모든 작업 보기*를 선택하세요.</block>
-  <block id="9299519b5b784ca0a2d9fd13dcb23201" category="summary">NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다.  vCenter 사이트를 추가한 후에는 재해 복구 또는 복제 계획을 만들 준비가 된 것입니다.</block>
   <block id="d15994bcf2411bb66762cdf4c58704b3" category="doc">NetApp Disaster Recovery 에서 복제 계획 만들기</block>
   <block id="5d69fbf6172766c9a9f097615bf01170" category="paragraph">*필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자, 재해 복구 장애 조치 관리자 또는 재해 복구 애플리케이션 관리자 역할.</block>
   <block id="78166ce4ccceeedfbf6aeb8682851072" category="paragraph">*이 작업에 관하여*</block>
   <block id="978c7c7ea4c54312c02456ee28acd332" category="paragraph">복제 계획을 만들고 규정 준수 및 테스트 일정을 편집할 수도 있습니다.  프로덕션 작업 부하에 영향을 주지 않고 VM의 테스트 장애 조치를 실행합니다.</block>
   <block id="fba54b7da5e3ceabe7362e860f7df87d" category="paragraph">여러 데이터 저장소에서 여러 VM을 보호할 수 있습니다.  NetApp Disaster Recovery 보호된 VM 데이터 저장소를 호스팅하는 모든 ONTAP 볼륨에 대한 ONTAP 일관성 그룹을 생성합니다.</block>
-  <block id="61e45ffabe7cc2e3542ca9a55a1a53bf" category="paragraph">VM은 복제 계획이 다음 상태 중 하나인 경우에만 보호될 수 있습니다.</block>
   <block id="e7d31fc0602fb2ede144d18cdffd816b" category="list-text">준비가 된</block>
   <block id="eca4b06cc957b067c25916bf563bfcb1" category="list-text">장애 복구가 커밋되었습니다.</block>
   <block id="55af57d923ed95c2495c25a0e4762077" category="list-text">테스트 장애 조치가 커밋되었습니다.</block>
@@ -1135,19 +1105,14 @@
   <block id="89dd75b1f79276c7e30e794e1c739f04" category="section-title">계획을 세우세요</block>
   <block id="4f27ef77939e5393adc6b44aec83a6b7" category="paragraph">마법사가 다음 단계를 안내합니다.</block>
   <block id="3baff38a392d31950fc8d4d62ea2adc0" category="list-text">vCenter 서버를 선택하세요.</block>
-  <block id="cffe0c1b9d43854c0d95a5d592e6102c" category="list-text">복제하려는 VM이나 데이터 저장소를 선택하고 리소스 그룹을 할당합니다.</block>
   <block id="d813bc25d25a7f816dde51c17f6c6ba0" category="list-text">소스 환경의 리소스가 대상 환경에 어떻게 매핑되는지 매핑합니다.</block>
   <block id="5971ed413328372ff42391caae30a427" category="list-text">계획이 실행되는 빈도를 설정하고, 게스트 호스팅 스크립트를 실행하고, 부팅 순서를 설정하고, 복구 지점 목표를 선택합니다.</block>
   <block id="1c10305a999dce53cb52dd4f6b8d89ff" category="list-text">계획을 검토하세요.</block>
-  <block id="05bbe166de3c0c72c8dde33285c35767" category="list-text">계획의 모든 VM에 대해 동일한 자격 증명을 사용합니다.</block>
-  <block id="98ce844145386e78d8c9d936d1b8591b" category="list-text">계획에 있는 모든 VM에 동일한 스크립트를 사용합니다.</block>
-  <block id="970b99aab999d5cc3afca09ebfb3ae92" category="list-text">계획에 있는 모든 VM에 대해 동일한 서브넷, DNS 및 게이트웨이를 사용합니다.</block>
   <block id="8705d6076cb452e919a6e22862427440" category="section-title">vCenter 서버 선택</block>
   <block id="c456b58190fd5c21d84750f126197baf" category="paragraph">먼저 소스 vCenter를 선택한 다음 대상 vCenter를 선택합니다.</block>
   <block id="f17de33c8bac2ab69dd89149aac16c6c" category="paragraph">다음 단계는 필요한 VM이나 데이터 저장소를 기능적 리소스 그룹으로 그룹화하는 것입니다.  리소스 그룹을 사용하면 공통 스냅샷으로 일련의 VM이나 데이터 저장소를 보호할 수 있습니다.</block>
   <block id="516dbf8e2c43d00664357bb38d1575a6" category="admonition">각 리소스 그룹에는 하나 이상의 VM이나 데이터 저장소가 포함될 수 있습니다.</block>
   <block id="5e90d93870eb5779de0b40ced0f92445" category="paragraph">리소스 그룹을 만들 때 다음 사항을 고려하세요.</block>
-  <block id="de634b3bd311c5e5e1c0b9d53d9d242f" category="list-text">리소스 그룹에 데이터 저장소를 추가하기 전에 먼저 VM의 수동 검색이나 예약된 검색을 시작하세요.  이렇게 하면 VM이 검색되어 리소스 그룹에 나열됩니다.  수동 검색을 트리거하지 않으면 VM이 리소스 그룹에 나열되지 않을 수 있습니다.</block>
   <block id="9fa2d89f680762c7614753f04e0aad6b" category="list-text">단일 데이터 저장소는 두 개 이상의 복제 계획으로 보호되는 VM을 호스팅해서는 안 됩니다.</block>
   <block id="dfbb0d3c710884104551edbd929afe76" category="list-text">동일한 데이터 저장소에 보호된 VM과 보호되지 않은 VM을 호스팅하지 마세요.  보호된 VM과 보호되지 않은 VM이 동일한 데이터 저장소에 호스팅되는 경우 다음과 같은 문제가 발생할 수 있습니다.</block>
   <block id="84c62302deac0be1dd475a0a0a91a4fa" category="list-text">NetApp Disaster Recovery SnapMirror 사용하고 시스템이 ONTAP 볼륨 전체를 복제하므로 해당 볼륨의 사용된 용량은 라이선싱 고려 사항에 사용됩니다.  이 경우 보호된 VM과 보호되지 않은 VM이 모두 사용하는 볼륨 공간이 이 계산에 포함됩니다.</block>
@@ -1190,7 +1155,6 @@
   <block id="04b2f4a0441b492909bf4cd55502f663" category="admonition">설정을 "소스와 다름"으로 변경하는 경우 VM 게스트 OS 자격 증명을 제공해야 합니다.</block>
   <block id="0a8bc9b2bb8f581fa27738fc437d64b3" category="paragraph">이 섹션에는 선택 사항에 따라 다양한 필드가 표시될 수 있습니다.</block>
   <block id="e7842ce79601ae65b57df11e56fbb985" category="paragraph">장애 조치된 각 VM에 할당된 가상 CPU 수를 늘리거나 줄일 수 있습니다.  하지만 각 VM에는 최소한 하나의 가상 CPU가 필요합니다.  각 VM에 할당된 가상 CPU와 가상 DRAM의 수를 변경할 수 있습니다.  기본 가상 CPU 및 가상 DRAM 설정을 변경하려는 가장 일반적인 이유는 대상 vCenter 클러스터 노드에 소스 vCenter 클러스터만큼 사용 가능한 리소스가 많지 않은 경우입니다.</block>
-  <block id="7fd140a0daad8ff98030ec25a0c74ca8" category="paragraph">*네트워크 설정* 재해 복구는 VM 네트워크에 대한 광범위한 구성 옵션을 지원합니다.  대상 사이트에 소스 사이트의 프로덕션 가상 네트워크와 다른 TCP/IP 설정을 사용하는 가상 네트워크가 있는 경우 이를 변경해야 할 수도 있습니다.</block>
   <block id="73f9d91494b10080b1f35c89ff3733ab" category="paragraph">가장 기본적인(기본) 수준에서 설정은 대상 사이트의 각 VM에 대해 소스 사이트에서 사용되는 것과 동일한 TCP/IP 네트워크 설정을 사용합니다.  이렇게 하려면 소스 및 대상 가상 네트워크에서 동일한 TCP/IP 설정을 구성해야 합니다.</block>
   <block id="9edbe0a36a129d4bb2718378f0600984" category="paragraph">이 서비스는 VM에 대한 정적 또는 동적 호스트 구성 프로토콜(DHCP) IP 구성의 네트워크 설정을 지원합니다.  DHCP는 호스트 네트워크 포트의 TCP/IP 설정을 동적으로 구성하는 표준 기반 방법을 제공합니다.  DHCP는 최소한 TCP/IP 주소를 제공해야 하며, 기본 게이트웨이 주소(외부 인터넷 연결로 라우팅하기 위한), 서브넷 마스크, DNS 서버 주소도 제공할 수 있습니다.  DHCP는 일반적으로 직원의 데스크톱, 노트북, 휴대폰 연결과 같은 최종 사용자 컴퓨팅 장치에 사용되지만 서버와 같은 모든 네트워킹 컴퓨팅 장치에도 사용될 수 있습니다.</block>
   <block id="9aaef1f7ac47e50dd9b9324dcc96eb17" category="list-text">*동일한 서브넷 마스크, DNS 및 게이트웨이 설정 사용* 옵션: 이러한 설정은 일반적으로 동일한 가상 네트워크에 연결된 모든 VM에서 동일하므로 한 번만 구성하고 재해 복구에서 복제 계획으로 보호되는 리소스 그룹의 모든 VM에 대한 설정을 사용하는 것이 더 쉬울 수 있습니다.  일부 VM이 다른 설정을 사용하는 경우 이 상자의 선택을 취소하고 각 VM에 대해 해당 설정을 제공해야 합니다.</block>
@@ -1200,7 +1164,6 @@
   <block id="13f51fa84ff64a1c633957d1dcf01637" category="paragraph">이 기능은 대규모 환경을 더 작은 대상 클러스터로 복구하거나 일대일 물리적 VMware 인프라를 프로비저닝하지 않고도 재해 복구 테스트를 수행할 때 매우 유용할 수 있습니다.</block>
   <block id="27469d5f3bff97989e2a320de315084a" category="inline-image-macro">복제 계획 추가 &amp;gt; 리소스 매핑 &amp;gt; 가상 머신을 보여주는 스크린샷</block>
   <block id="1883274b7afbbc2357cb15c15a1af17e" category="paragraph"><block ref="a690938170d1fae8a1d7e7ed3a6d014f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0285fd1b2f51318cc8adfeb8002249a7" category="paragraph">VM 게스트 OS에서 스크립트 실행을 활성화하려면 다음 조건을 충족해야 합니다.</block>
   <block id="c2ffebe75df83d8a5e4d0ab089e544e3" category="list-text">VM에 VMware Tools를 설치해야 합니다.</block>
   <block id="3bec001de0817436d65092198756c8eb" category="list-text">스크립트를 실행하려면 적절한 사용자 자격 증명과 적절한 게스트 OS 권한이 제공되어야 합니다.</block>
   <block id="39c096538930d0577bfaf3516cd274dc" category="list-text">선택적으로 스크립트에 대한 시간 초과 값을 초 단위로 포함합니다.</block>
@@ -1282,7 +1245,6 @@
   <block id="09643636b721247aeb09087c50a6dea7" category="list-text">복제를 되돌리려면 SnapMirror 관계를 다시 동기화합니다.</block>
   <block id="18675ae1b474c7c2e2d455f021125cef" category="list-text">소스 가상 머신의 전원을 켜고 등록한 후 소스에 볼륨을 마운트합니다.</block>
   <block id="e95b50cfb71995cd2a2c4c00f88795c2" category="list-text">복제 계획을 선택하세요.</block>
-  <block id="5b249efe090f5ab9439bcf685291f25a" category="list-text">오른쪽에서 *작업* 옵션을 선택하세요<block ref="771645334c0631c5881bfc9858be7f5b" category="inline-image-macro-rx" type="image"></block> 그리고 *장애 복구*를 선택하세요.</block>
   <block id="f5e8243ebb81b755b8553e29863f3183" category="list-text">진행 상황을 확인하려면 메뉴에서 *작업 모니터링*을 선택하세요.</block>
   <block id="c9ef31ddb0e164476a6e84e4781b7af3" category="doc">NetApp Disaster Recovery 사용하여 원격 사이트로 애플리케이션 장애 조치</block>
   <block id="74ba4c0b5e2da8a64b8dee1c0d8ba2eb" category="paragraph">재해 발생 시 온프레미스 VMware 사이트를 다른 온프레미스 VMware 사이트나 AWS의 VMware Cloud로 장애 조치합니다.  필요할 때 성공하는지 확인하기 위해 장애 조치 프로세스를 테스트할 수 있습니다.</block>
@@ -1290,15 +1252,11 @@
   <block id="7e0794f8e08750d2985bf8a42c37e0c0" category="list-text">소스 vCenter 또는 ONTAP 클러스터에 액세스할 수 없는 중요한 프로덕션 사이트 장애: NetApp Disaster Recovery 하면 복원할 사용 가능한 스냅샷을 선택할 수 있습니다.</block>
   <block id="5c23500391ed1ff22df3528a468b5a9e" category="list-text">프로덕션 환경이 정상입니다. "지금 스냅샷을 찍으세요" 또는 이전에 만든 스냅샷을 선택할 수 있습니다.</block>
   <block id="45412678755135d74955408e5c42d8aa" category="paragraph">이 절차는 복제 관계를 끊고, vCenter 소스 VM을 오프라인으로 전환하고, 재해 복구 vCenter에 볼륨을 데이터 저장소로 등록하고, 계획의 장애 조치 규칙을 사용하여 보호된 VM을 다시 시작하고, 대상 사이트에서 읽기/쓰기를 활성화합니다.</block>
-  <block id="386733f1fba6df33919f466a94320062" category="paragraph">장애 조치를 시작하기 전에 프로세스를 테스트할 수 있습니다.  이 테스트는 가상 머신을 오프라인으로 만들지 않습니다.</block>
-  <block id="41d102e0aefecc8e8cf5fb028eebff10" category="paragraph">테스트가 끝나면 *정리 테스트* 옵션을 사용하여 가상 머신을 재설정해야 합니다.  권장사항이지만 필수사항은 아닙니다.</block>
   <block id="8b4399d7029673ba83df4f916514230b" category="paragraph">테스트 장애 조치 작업은 프로덕션 워크로드, 테스트 사이트에서 사용되는 SnapMirror 관계, 그리고 정상적으로 작동을 계속해야 하는 보호 워크로드에는 영향을 미치지 않습니다.</block>
   <block id="2c9a87c2b3a393867fe2b3a4d024f0d5" category="paragraph">테스트 장애 조치의 경우 재해 복구는 다음 작업을 수행합니다.</block>
   <block id="77c19c19616ef8ca21deafb3f6e5a247" category="list-text">대상 클러스터와 SnapMirror 관계에 대한 사전 검사를 수행합니다.</block>
   <block id="3bcf170afa5fc2b20b59ac00f7a8420c" category="list-text">대상 사이트 ONTAP 클러스터의 각 보호된 ONTAP 볼륨에 대해 선택한 스냅샷에서 새 FlexClone 볼륨을 만듭니다.</block>
   <block id="4c7c9597c34298ced7ad3233fa62fa7b" category="list-text">데이터 저장소가 VMFS인 경우 각 LUN에 iGroup을 생성하여 매핑합니다.</block>
-  <block id="016936078c450b788702c9cb5dd1ef6f" category="list-text">vCenter 내에서 대상 가상 머신을 새로운 데이터 저장소로 등록합니다.</block>
-  <block id="740d8506d0a7df3f1aa2116e901d0a69" category="list-text">리소스 그룹 페이지에서 캡처한 부팅 순서에 따라 대상 가상 머신의 전원을 켭니다.</block>
   <block id="0e00f106592672a761fa0dcf1949901f" category="list-text">"애플리케이션 일관성"으로 표시된 VM에서 지원되는 모든 데이터베이스 애플리케이션을 취소합니다.</block>
   <block id="89b3318439959d14598bf04d917486ea" category="list-text">소스 vCenter 및 ONTAP 클러스터가 여전히 활성 상태인 경우, 장애 조치 상태에서 모든 변경 사항을 원래 소스 사이트로 복제하기 위해 역방향 SnapMirror 관계를 만듭니다.</block>
   <block id="262b346523c2b98a9b37923882f4fa94" category="list-text">오른쪽에서 *작업* 옵션을 선택하세요<block ref="771645334c0631c5881bfc9858be7f5b" category="inline-image-macro-rx" type="image"></block> *테스트 장애 조치*를 선택합니다.</block>
@@ -1311,20 +1269,13 @@
   <block id="f5a93054f0d69f6d7904ca9d2efa38f0" category="paragraph">장애 조치 프로세스에는 다음 작업이 포함됩니다.</block>
   <block id="6682a4ae7387f7df7c334b36315edd16" category="list-text">재해 복구는 대상 클러스터와 SnapMirror 관계에 대한 사전 검사를 수행합니다.</block>
   <block id="2b56dea239dc4c074a14290431d91d6a" category="list-text">최신 스냅샷을 선택한 경우 SnapMirror 업데이트가 수행되어 최신 변경 사항이 복제됩니다.</block>
-  <block id="14e6c9bc0f37651c006424bfafce5ae9" category="list-text">소스 가상 머신의 전원이 꺼졌습니다.</block>
-  <block id="98699ecbd563a31e2c5c4fbb9c9a84b3" category="list-text">SnapMirror 관계가 끊어지고 대상 볼륨이 읽기/쓰기가 가능해졌습니다.</block>
   <block id="e935faae451901d06e1096c19cac8457" category="list-text">스냅샷 선택에 따라 활성 파일 시스템은 지정된 스냅샷(최신 또는 선택)으로 복원됩니다.</block>
   <block id="85899d140b2c490b9793c31912367209" category="list-text">데이터스토어는 복제 계획에서 수집된 정보를 기반으로 VMware 또는 VMC 클러스터나 호스트에 생성되어 마운트됩니다.  데이터 저장소가 VMFS인 경우 각 LUN에 iGroup을 생성하여 매핑합니다.</block>
-  <block id="210fe13968e152dcc4aa00449329ce8e" category="list-text">대상 가상 머신은 vCenter에 새로운 데이터 저장소로 등록됩니다.</block>
-  <block id="2a2356425e3cb11243b548a3a35d3209" category="list-text">대상 가상 머신은 리소스 그룹 페이지에서 캡처한 부팅 순서에 따라 전원이 켜집니다.</block>
   <block id="8082ac657e40ca576105ceaf88cbda23" category="list-text">소스 vCenter가 여전히 활성 상태인 경우 장애 조치 중인 모든 소스 측 VM의 전원을 끕니다.</block>
   <block id="addf2cf8485a908b734a233a37ce94ab" category="list-text">소스 vCenter 및 ONTAP 클러스터가 여전히 활성 상태인 경우, 장애 조치 상태에서 모든 변경 사항을 원래 소스 사이트로 복제하기 위해 역방향 SnapMirror 관계를 생성합니다.  SnapMirror 관계는 대상 가상 머신에서 소스 가상 머신으로 반전됩니다.</block>
-  <block id="49f91cfb44052240b763337c959a02fb" category="admonition">장애 조치가 시작된 후 재해 복구 사이트의 vCenter에서 복구된 VM(가상 머신, 네트워크, 데이터 저장소)을 볼 수 있습니다.  기본적으로 가상 머신은 워크로드 폴더로 복구됩니다.</block>
   <block id="711c35de4b0430b043159f5d91f6752f" category="inline-image-macro">장애 조치 페이지</block>
   <block id="746c84b1b109b4fcfeb29ff36be21f14" category="paragraph"><block ref="746c84b1b109b4fcfeb29ff36be21f14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="51d5fa513676d68f3e574487650b021d" category="paragraph">장애 조치가 발생하기 전에 현재 소스의 스냅샷이 촬영되어 현재 대상에 복제됩니다.</block>
-  <block id="7d0da89e5c4df500c537ba4145ed8fae" category="list-text">선택적으로, 일반적으로 장애 조치가 발생하지 않도록 하는 오류가 감지된 경우에도 장애 조치가 발생하도록 하려면 *강제 장애 조치*를 선택합니다.</block>
-  <block id="50af42d54cb7a9dbbde8e8274cb00e99" category="list-text">선택적으로, 복제 계획 장애 조치 후 서비스가 자동으로 역방향 SnapMirror 보호 관계를 생성하지 않도록 하려면 *보호 건너뛰기*를 선택합니다.  NetApp Disaster Recovery 에서 다시 온라인으로 전환하기 전에 복원된 사이트에서 추가 작업을 수행하려는 경우 이 기능이 유용합니다.</block>
   <block id="c446892b6c8669077c04a02123055cec" category="admonition">복제 계획 작업 메뉴에서 *리소스 보호*를 선택하여 역방향 보호를 설정할 수 있습니다.  이는 계획의 각 볼륨에 대해 역방향 복제 관계를 생성하려고 시도합니다.  보호가 복구될 때까지 이 작업을 반복해서 실행할 수 있습니다.  보호가 복구되면 평소와 같은 방식으로 장애 복구를 시작할 수 있습니다.</block>
   <block id="544bb990c26b075198ab3593eb235cab" category="list-text">상자에 "장애 조치"를 입력합니다.</block>
   <block id="d84be8f4bd42528d316284b904e45288" category="summary">모든 NetApp Disaster Recovery 리소스를 빠르게 살펴보고 vCenter 사이트, 리소스 그룹 및 복제 계획을 관리할 수 있습니다.</block>
@@ -1424,8 +1375,6 @@
   <block id="68924c47e2eb51445ff8e93c1ce1bbc2" category="paragraph">VM 자체를 그룹화하거나 데이터 저장소의 VM을 그룹화할 수 있습니다.</block>
   <block id="142aa3cf2c56c4cee9658fbb7fa95634" category="paragraph">다음 방법을 사용하여 리소스 그룹을 만들 수 있습니다.</block>
   <block id="0df79d4419dfe51ffbc8e1bd534fa737" category="list-text">리소스 그룹 옵션에서</block>
-  <block id="29a34a7d63a066ce71bffd4a4d5c57dd" category="list-text">재해 복구 또는 복제 계획을 만드는 동안.  소스 vCenter 클러스터에서 호스팅되는 VM이 많은 경우 복제 계획을 만드는 동안 리소스 그룹을 만드는 것이 더 쉬울 수 있습니다.  복제 계획을 생성하는 동안 리소스 그룹을 생성하는 방법에 대한 지침은 다음을 참조하세요.<block ref="808c9323236f2ed48bff12970a5f1c49" category="inline-link-macro-rx"></block> .</block>
-  <block id="d9d4ae88e38b24479af2edb7b1d29c42" category="admonition">각 리소스 그룹에는 하나 이상의 VM이나 데이터 저장소가 포함될 수 있습니다.  VM은 복제 계획에 포함된 순서에 따라 전원이 켜집니다.  리소스 그룹 목록에서 VM이나 데이터 저장소를 위아래로 끌어서 순서를 변경할 수 있습니다.</block>
   <block id="ae21aa75d137aec3ba200318a51f9166" category="paragraph-title">리소스 그룹에 관하여</block>
   <block id="97903d5c0795f3bdf5f969416a7fd5c5" category="paragraph">예를 들어, 판매 시점 관리 애플리케이션은 데이터베이스, 비즈니스 로직, 매장을 위해 여러 개의 VM을 사용할 수 있습니다.  이러한 모든 VM을 하나의 리소스 그룹으로 관리할 수 있습니다.  애플리케이션에 필요한 모든 VM의 VM 시작 순서, 네트워크 연결 및 복구에 대한 복제 계획 규칙을 적용하기 위해 리소스 그룹을 설정합니다.</block>
   <block id="359f9e79e746fa9f684e5cda9e60ca2e" category="paragraph-title">어떻게 작동하나요?</block>
@@ -1438,11 +1387,9 @@
   <block id="244e1723989c81e9a2ce04f721a2db41" category="list-text">일관성 그룹의 스냅샷이 촬영되었습니다.</block>
   <block id="b73116544f9b4e58ae13b79847ef2c41" category="list-text">볼륨 범위 SnapMirror 복제가 수행되었습니다.</block>
   <block id="afb49150087c45237455b2d82f867be8" category="cell">여러 데이터 저장소 - *여러 SVM*의 FlexVol 볼륨</block>
-  <block id="669001397154a9e2d2d9e8a107cb041d" category="list-text">ONTAP API:<block ref="b5ab07cdecf9303ff94db49578282528" prefix=" " category="inline-code"></block> .  모든 볼륨을 정지하여 스냅샷을 찍을 수 있도록 하고 모든 리소스 그룹 볼륨의 볼륨 범위 스냅샷을 시작합니다.</block>
   <block id="87f2c3aeec6e1ba638ce1869ba610ea4" category="list-text">ONTAP API:<block ref="393c6bdee070ba1b7e80e63101108f36" prefix=" " category="inline-code"></block> .  모든 볼륨에서 I/O를 재개하고 스냅샷이 촬영된 후 볼륨 범위 SnapMirror 복제를 활성화합니다.</block>
   <block id="8786917b8c914193e9e88a5138c2963b" category="list-text">리소스 그룹에 데이터 저장소를 추가하기 전에 먼저 VM의 수동 검색이나 예약된 검색을 시작하세요.  이렇게 하면 VM이 검색되어 리소스 그룹에 나열됩니다.  수동 검색을 시작하지 않으면 VM이 리소스 그룹에 나열되지 않을 수 있습니다.</block>
   <block id="af5ea68f4150abdf1a83540d9448ab23" category="list-text">데이터 저장소에 최소한 하나의 VM이 있는지 확인하세요.  데이터 저장소에 VM이 없으면 재해 복구는 데이터 저장소를 검색하지 않습니다.</block>
-  <block id="efc980d13edefde7893f4940e996388b" category="paragraph">*모범 사례*: NetApp Disaster Recovery 배포하기 전에 VM을 구성하여 "데이터 저장소 확산"을 최소화하세요.  보호가 필요한 VM을 데이터 저장소 하위 집합에 배치하고, 보호하지 않을 VM을 다른 데이터 저장소 하위 집합에 배치합니다.  주어진 데이터 저장소의 VM이 서로 다른 복제 계획으로 보호되지 않도록 합니다.</block>
   <block id="3793f4712c0bbac2acd15ae0cc3f6c0c" category="list-text">NetApp Disaster Recovery 메뉴에서 *리소스 그룹*을 선택합니다.</block>
   <block id="fa4d1c967d467deb12174bc6b1b3355b" category="list-text">리소스 그룹의 이름을 입력하세요.</block>
   <block id="23a0cad5b0151418367a15f201a54ad3" category="list-text">VM이 있는 소스 vCenter 클러스터를 선택합니다.</block>
@@ -1454,29 +1401,18 @@
   <block id="20391328f727df103455848410020c4e" category="paragraph"><block ref="20391328f727df103455848410020c4e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c021ba8d319c1c5278738c67a531bc28" category="list-text">원하는 경우 목록에서 각 VM을 위나 아래로 끌어서 오른쪽에 있는 VM의 순서를 변경합니다.  VM은 포함된 순서에 따라 전원이 켜집니다.</block>
   <block id="75f45a60b91a561ea7d1f64f9804e2c4" category="summary">재해 복구 계획을 만들려면 먼저 NetApp Disaster Recovery 에서 기본 vCenter 사이트와 대상 vCenter 재해 복구 사이트를 추가해야 합니다.</block>
-  <block id="b3cb9f02cf2df1ec2382826a6ae6206c" category="doc">NetApp Disaster Recovery 에서 사이트에 vCenter 추가</block>
-  <block id="17523c441ebd56eef17e44b7eba8198b" category="paragraph">재해 복구 계획을 만들려면 먼저 NetApp Console 에서 기본 vCenter 서버를 사이트에 추가하고 대상 vCenter 재해 복구 사이트를 추가해야 합니다.</block>
-  <block id="32a674e571dce22fa691b37d8ce325ed" category="admonition">소스 및 대상 vCenter가 모두 동일한 NetApp Console 에이전트를 사용하는지 확인하세요.</block>
   <block id="47973fd1fc587dd92f28f71a84ba6850" category="paragraph">vCenter가 추가되면 NetApp Disaster Recovery vCenter 클러스터, ESXi 호스트, 데이터 저장소, 스토리지 공간, 가상 머신 세부 정보, SnapMirror 복제본, 가상 머신 네트워크를 포함하여 vCenter 환경에 대한 심층 검색을 수행합니다.</block>
   <block id="00a142c7e85a846d34e5eb7913c5aaa0" category="paragraph">*필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자.</block>
   <block id="fc548d74f5fe5eda5c2ac1776a3251d8" category="paragraph">이전 릴리스에서 vCenter를 추가하고 검색 일정을 사용자 지정하려면 vCenter 서버 사이트를 편집하고 일정을 설정해야 합니다.</block>
-  <block id="00b845f5313c98d953fbd40ba027d91c" category="admonition">NetApp Disaster Recovery 24시간마다 검색을 수행합니다.  사이트를 설정한 후에는 vCenter를 편집하여 필요에 맞게 검색 일정을 사용자 지정할 수 있습니다.  예를 들어, VM 수가 많은 경우 검색 일정을 23시간 59분마다 실행되도록 설정할 수 있습니다.  VM 수가 적은 경우 검색 일정을 12시간마다 실행되도록 설정할 수 있습니다.  최소 간격은 30분이고, 최대 간격은 24시간입니다.</block>
   <block id="b7d5167a5549f18425123ec0543e6e9d" category="paragraph">환경에 대한 최신 정보를 얻으려면 먼저 몇 가지 수동 검색을 수행해야 합니다.  그 후에는 일정을 자동으로 실행되도록 설정할 수 있습니다.</block>
   <block id="685a4b04fc3b29a8c5cc08baa9fe18fd" category="paragraph">이전 버전의 vCenter가 있고 검색이 실행되는 시점을 변경하려면 vCenter 서버 사이트를 편집하고 일정을 설정하세요.</block>
   <block id="89f2a6d4b35cc4d13e0976279d928bd2" category="paragraph">새로 추가되거나 삭제된 VM은 다음에 예약된 검색이나 즉각적인 수동 검색 중에 인식됩니다.</block>
   <block id="980117827ae085369601f0ac5c20b51c" category="paragraph">*사이트의 vCenter 클러스터* 각 사이트에는 하나 이상의 vCenter가 포함되어 있습니다.  이러한 vCenter는 하나 이상의 ONTAP 스토리지 클러스터를 사용하여 NFS 또는 VMFS 데이터 저장소를 호스팅합니다.</block>
-  <block id="de18d8f949f454da2ede489b3979469b" category="paragraph">vCenter 클러스터는 하나의 사이트에만 존재할 수 있습니다.  사이트에 vCenter 클러스터를 추가하려면 다음 정보가 필요합니다.</block>
   <block id="eecc1c046815522892ed1b8255f3f967" category="list-text">vCenter 관리 IP 주소 또는 FQDN</block>
   <block id="a0b1f7f83e512f18531427c30dfda111" category="inline-link-macro">필수 vCenter 권한</block>
   <block id="1f490ffa54a278cbe959d7caaf6de272" category="list-text">클라우드 호스팅 VMware 사이트의 경우 필요한 클라우드 액세스 키</block>
   <block id="03d24609520a8800132bd62fa4280091" category="list-text">vCenter에 액세스하기 위한 보안 인증서입니다.</block>
   <block id="06cb80959b7e29d23b7c09355933539d" category="admonition">이 서비스는 자체 서명된 보안 인증서 또는 중앙 인증 기관(CA)의 인증서를 지원합니다.</block>
-  <block id="1a575de6e97bed53905ae3b55c22dd29" category="admonition">추가하는 사이트 유형에 따라 다른 필드가 나타납니다.</block>
-  <block id="db5ad0ead9eeceb394e92d65f79adbfe" category="list-text">이미 vCenter 사이트가 있고 더 추가하려는 경우 메뉴에서 *사이트*를 선택한 다음 *추가*를 선택합니다.</block>
-  <block id="4a5eb18788b768b36f708c9617ffef9e" category="list-text">사이트 페이지에서 사이트를 선택하고 *vCenter 추가*를 선택합니다.</block>
-  <block id="901540dd7e45eaf2226327527c8d78b4" category="list-text">*소스*: 소스 vCenter 사이트에 대한 정보를 입력하려면 *vCenter 서버 검색*을 선택합니다.</block>
-  <block id="5a05572673bc07b0b94f07c482a67d13" category="inline-image-macro">vCenter 서버 스크린샷 추가</block>
-  <block id="c65c0c2ea94db5e745008fb8af0f7f2e" category="paragraph"><block ref="c65c0c2ea94db5e745008fb8af0f7f2e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1909b7ffbea69e2cc7b387ed9d255c18" category="admonition">자체 서명 인증서는 다른 인증서만큼 안전하지 않습니다.  vCenter가 인증 기관(CA) 인증서로 구성되지 *않은* 경우 이 상자를 선택해야 합니다. 그렇지 않으면 vCenter에 대한 연결이 작동하지 않습니다.</block>
   <block id="ecc10bfc44edd7abd754949b1bda0e4b" category="list-text">대상 vCenter에 대한 사이트를 다시 추가합니다.</block>
   <block id="0409428076b2c81e1f1d6d6bd331b296" category="list-text">다시 *vCenter 추가*를 선택하고 대상 vCenter 정보를 추가합니다.</block>
@@ -1487,7 +1423,6 @@
   <block id="df06aa418d44ef8725ac68927671ed66" category="paragraph">소스 및 대상 vCenter가 사이트 목록에 나타납니다.</block>
   <block id="d23a9d83c87c6eacef309f00a2beb5d3" category="inline-image-macro">사이트 페이지 스크린샷</block>
   <block id="15a58a3d11cafa89812a0ab9b55e93b0" category="paragraph"><block ref="15a58a3d11cafa89812a0ab9b55e93b0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ee4606c3a692f236dc98c95bcdc6dde1" category="list-text">작업 진행 상황을 보려면 메뉴에서 *작업 모니터링*을 선택하세요.</block>
   <block id="cd2cbb6fc58931677c030707b031e23e" category="section-title">vCenter 사이트에 대한 서브넷 매핑 추가</block>
   <block id="3708245426809420d58dd9c57973000e" category="paragraph">서브넷 매핑을 사용하면 장애 조치 작업 시 IP 주소를 관리할 수 있으며, 이를 통해 각 vCenter에 대한 서브넷을 추가할 수 있습니다.  이렇게 하면 각 가상 네트워크에 대한 IPv4 CIDR, 기본 게이트웨이, DNS가 정의됩니다.</block>
   <block id="7655c1ee2357698fb6ca7cd7be695203" category="paragraph">장애 조치 시 NetApp Disaster Recovery 매핑된 네트워크의 CIDR을 사용하여 각 vNIC에 새 IP 주소를 할당합니다.</block>
@@ -1535,25 +1470,11 @@
   <block id="0a13c13f2e21dfad18fe114c73576fce" category="doc">NetApp Disaster Recovery 개요 사용</block>
   <block id="07e1d0f6e00d901ca9ce64b9a8e00b58" category="paragraph">NetApp Disaster Recovery 사용하면 다음과 같은 목표를 달성할 수 있습니다.</block>
   <block id="9d8650f8b712e42ae65b817a2d362674" category="inline-link-macro">재해 복구 계획의 상태를 확인하세요</block>
-  <block id="ee3e1a92f28abbcd26a1a39655c0465a" category="list-text"><block ref="baed892bed9a88570cd5a5931581b00c" category="inline-link-macro-rx"></block> .</block>
-  <block id="8f07717a648b4fcf7565b22055caf33a" category="list-text"><block ref="84d66f7662bc8a91a68e93706653efe2" category="inline-link-macro-rx"></block> .</block>
-  <block id="1b98100fdedab345bec758f9fe534c9b" category="inline-link-macro">VM을 함께 구성하기 위해 리소스 그룹을 만듭니다.</block>
-  <block id="7d1ee868f80080dd430c4c762c071750" category="list-text"><block ref="7d1ee868f80080dd430c4c762c071750" category="inline-link-macro-rx"></block></block>
   <block id="9a0ab11cd9364c5c2dae1c85f73f88bc" category="inline-link-macro">재해 복구 계획 만들기</block>
-  <block id="0a7e1dbadb8525392c6021620d665b17" category="list-text"><block ref="5b9b6af71405b6088e90ae43f67c7803" category="inline-link-macro-rx"></block> .</block>
   <block id="975bd51387ba647a2ec64ceadc877674" category="inline-link-macro">VMware 앱 복제</block>
-  <block id="749631a04a1d534a6576d86a67895e07" category="list-text"><block ref="bc45819eee68deaddfdb62979db4ed0b" category="inline-link-macro-rx"></block>SnapMirror 복제를 사용하여 기본 사이트에서 클라우드의 재해 복구 원격 사이트로 데이터를 전송합니다.</block>
-  <block id="15d1e8fd5353c6a7e30202b501b639c3" category="inline-link-macro">VMware 앱 마이그레이션</block>
-  <block id="946772510dcd559e9d7d09458b2abd6f" category="list-text"><block ref="4c49990f7ea38fc4135c764bbfcd7786" category="inline-link-macro-rx"></block>기본 사이트에서 다른 사이트로.</block>
   <block id="ce73dc7b29306446e29ef94fab241864" category="inline-link-macro">장애 조치 테스트</block>
-  <block id="c2f1a6d25e419c9b90bca2c00970b55d" category="list-text"><block ref="1eb384da451aa1014bf5aa632cfa3987" category="inline-link-macro-rx"></block>원래 가상 머신을 방해하지 않고.</block>
   <block id="b1f0bf46829b4c6beb14d50bf487d856" category="inline-link-macro">기본 사이트를 장애 조치합니다</block>
-  <block id="de346c2b2291b2f2734e1f86e900ae99" category="list-text">재난 발생 시,<block ref="c6aafe8fbf5a24cb8116bdae71eb6c66" category="inline-link-macro-rx"></block> FSx for NetApp ONTAP 사용하여 AWS에서 VMware Cloud로 전환합니다.</block>
   <block id="e89ad820b169dd69e140ee0cd12bfc40" category="inline-link-macro">실패로 돌아가다</block>
-  <block id="c7cc26c4e9c0b4b79f46fea909937926" category="list-text">재난이 해결된 후,<block ref="34c4a51d8bf8a64dde44adbfd1be3850" category="inline-link-macro-rx"></block> 재해 복구 사이트에서 기본 사이트로.</block>
-  <block id="46da469bb05d1d3a2c620e2963f1531a" category="list-text"><block ref="698cc22cc758157d8f18359f8b528216" category="inline-link-macro-rx"></block>작업 모니터링 페이지에서.</block>
-  <block id="9fbd617f3524c7fe2cd8ca080ebdb362" category="sidebar">클라우드로의 재해 복구는 사이트 중단 및 데이터 손상 사건(예: 랜섬웨어)으로부터 작업 부하를 보호하는 탄력적이고 비용 효율적인 방법입니다.  VMware용 NetApp Disaster Recovery 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터나 재해 복구 사이트인 다른 온프레미스 사이트로 복제할 수 있습니다.</block>
-  <block id="6737756793b6614e40675a29787fc439" category="sidebar">VMware용 NetApp Disaster Recovery 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 NetApp 클라우드 스토리지를 사용하여 재해 복구 사이트로 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제할 수 있습니다.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하기</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">빠른 시작</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="sidebar">필수 조건</block>
@@ -1625,9 +1546,6 @@
   <block id="58777a5460ab56ac04a8fc9d5cb1b259" category="list-text">*데이터 저장소* 행에서 아래쪽 화살표를 선택하여 확장합니다.</block>
   <block id="2d3c0c55028659ea4dd39b2fd1ee9a30" category="list-text">**모든 데이터 저장소의 보존 횟수** 값을 변경합니다.</block>
   <block id="7a988fd1e6beb5a163334993a7364fab" category="list-text">작업을 수행하는 데 필요한 권한이 있는 vCenter 계정의 자격 증명입니다. 보다<block ref="0a23d475349d8b59d7b1d04d622e5f7f" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
-  <block id="a280f67014fa91a16b7bf85e07d4eb9f" category="admonition">vCenter 사이트를 더 추가하려면 *사이트*를 선택한 다음 *추가*를 선택합니다.</block>
-  <block id="c17db388b1bce3930a27ba26379fd97f" category="list-text">사이트를 선택한 다음 NetApp Console 에이전트를 선택하고 vCenter 자격 증명을 제공합니다.</block>
-  <block id="51f46f78f8aed3edc5be5baa188edfc3" category="list-text">**온프레미스 사이트에만 해당:** 소스 vCenter에 대한 자체 서명 인증서를 수락하려면 상자를 선택하세요.</block>
   <block id="3197d20854469510f60e5d3f44b0db4d" category="paragraph">다음으로 대상 vCenter를 추가합니다.</block>
   <block id="5b5de768a01e088dbab56f46d97b5a38" category="doc">계단식 장애 조치 지원</block>
   <block id="8115dd8449bd907d08f3347f6d04324a" category="paragraph">이제 ONTAP 에서 계단식 관계를 구성하고 해당 복제 관계의 모든 단계를 재해 복구에 사용할 수 있습니다.</block>
@@ -1786,7 +1704,6 @@
   <block id="727d2884239e62cf5ec5d59f2ae538a1" category="paragraph">이제 작업 모니터 페이지에 새로 고침 옵션이 포함되어 작업의 최신 상태를 확인할 수 있습니다. 참조하다<block ref="45f7b5a446086d3a895fd4d6d899ff32" category="inline-link-rx"></block> .</block>
   <block id="e6a35b0cc097a073b142d2f77dd698c4" category="paragraph"><block ref="5b01ddd771a87fa6b71f782d09b9b7b3" category="inline-link-macro-rx"></block>.</block>
   <block id="bae7a0a97273516d5296fb983700a411" category="paragraph"><block ref="31accac3325320cbdf81ca4694a5591c" category="inline-link-macro-rx"></block>. <block ref="e704c98551e5f8acdbf19af28a86dcf3" category="inline-link-rx"></block>.</block>
-  <block id="a805fee248bed5144adc2fef83e46569" category="paragraph">vCenter 사이트를 추가한 후에는 재해 복구 또는 복제 계획을 만들 준비가 된 것입니다. 복제 계획은 VMware 인프라의 데이터 보호를 관리합니다. 소스 및 대상 vCenter를 선택하고, 리소스 그룹을 선택하고, 애플리케이션을 복원하고 전원을 켜는 방법을 그룹화합니다. 예를 들어, 하나의 애플리케이션과 연관된 가상 머신(VM)을 그룹화하거나 유사한 계층을 갖는 애플리케이션을 그룹화할 수 있습니다. 이러한 계획을 때로 _청사진_이라고 부르기도 합니다.</block>
   <block id="8497094e0d678632f29aeaad49708682" category="paragraph">검토하세요<block ref="0b97dbd151642cb26d83aa16e8ffd9ce" category="inline-link-macro-rx"></block> 그리고<block ref="9bbaf1e88d2981b5294528496eff27bf" category="inline-link-macro-rx"></block> Google Cloud를 위해.</block>
   <block id="b706122b5735a672dec906da7d14b15c" category="doc">폴더 계층 구조 유지</block>
   <block id="c8d94434feabcd9486a228e1a7a02882" category="paragraph">기본적으로 재해 복구는 장애 조치 시 VM 인벤토리 계층 구조(폴더 구조)를 유지합니다.  복구 대상에 필요한 폴더가 없으면 재해 복구가 해당 폴더를 만듭니다.</block>
@@ -1820,8 +1737,6 @@
   <block id="3f66961d19507ff05406ca74e41b4060" category="paragraph">버전 4.2.6</block>
   <block id="c608ea51d7dfe4fc155f5ac91d002818" category="summary">NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다. vCenter 사이트를 추가한 후에는 재해 복구 또는 복제 계획을 만들 준비가 된 것입니다.</block>
   <block id="c0655d6a3a66f2180cdf2e00c1930e7c" category="list-text">Google Cloud를 사용하면 복제 계획에 볼륨이나 데이터 저장소를 하나만 추가할 수 있습니다.</block>
-  <block id="7bcd913022459926bf1a00069a8fb8f6" category="admonition">NetApp Disaster Recovery 배포하기 전에 VM을 구성하여 "데이터 저장소 확산"을 최소화하세요. 보호가 필요한 VM을 데이터 저장소 하위 집합에 배치하고, 보호하지 않을 VM을 다른 데이터 저장소 하위 집합에 배치합니다. 데이터 저장소 기반 보호를 사용하여 모든 데이터 저장소의 VM이 보호되도록 합니다.</block>
-  <block id="705a20699e1039fa52632f889e10a673" category="admonition">VMS가 동일한 IP 주소를 사용하여 프로덕션 네트워크에 연결되는 것을 방지하기 위해 장애 조치 테스트를 위한 별도의 전용 매핑 세트를 만듭니다.</block>
   <block id="ad4891bd95428a3a61372e6cb7c1e8db" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="46afb87ea9ab52c50c55f4a3ee88e9ae" category="inline-link-macro-rx"></block>.</block>
   <block id="8b398f79cbc8bafdd3d60b15c90e7f01" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="9816d86fb07a6c2043bc508d566ad539" category="inline-link-macro-rx"></block>.</block>
   <block id="6da53899225555a506524070f96e33df" category="doc">온프레미스 환경에서 여러 콘솔 에이전트 지원</block>
@@ -1860,8 +1775,6 @@
   <block id="9cabdbcec5dfdf1db5d332b3393b17ad" category="section-title">페일백에 관하여</block>
   <block id="85f4aa2693f893749b5fa2f3aa02c3c9" category="paragraph">페일백 시 NetApp Disaster Recovery 복제 방향을 반전하기 전에 모든 변경 사항을 원래 소스 가상 머신으로 복제(재동기화)합니다. 이 과정은 대상과의 관계 전환이 완료된 상태에서 시작되며 다음과 같은 단계를 포함합니다.</block>
   <block id="bb0ed7710e90e0c4808f99282563a54a" category="paragraph">데이터스토어 기반 보호를 사용하는 경우, 데이터스토어에 추가된 VM은 장애 조치 프로세스 중에 데이터스토어에 추가될 수 있습니다. 이러한 상황이 발생한 경우, 장애 복구를 시작하기 전에 해당 VM에 대한 추가 매핑 정보를 제공해야 합니다. 리소스 매핑을 편집하려면 다음을 참조하세요. <block ref="aae3ec9b67319c36c78ebcd18b670ec7" category="inline-link-macro-rx"></block>.</block>
-  <block id="faf21c316f92f3c1e63ff7bafbe90825" category="list-text">장애 복구를 시작하려면 복제 계획의 이름을 입력하십시오.</block>
-  <block id="32f24d9757a23193daf94210aff80ab1" category="list-text">복구할 데이터 저장소의 스냅샷을 선택합니다. 기본값은 최신입니다.</block>
   <block id="dd2b5eb32ae25f6832f202f5bce3d3b8" category="list-text">작업 진행 상황을 모니터링하려면 재해 복구 메뉴에서 *작업 모니터링*을 선택하십시오.</block>
   <block id="2e5d1936159a61f54effa4f1e367698f" category="paragraph">장애 조치 시 재해 복구는 기본적으로 가장 최근의 SnapMirror 스냅샷 복사본을 사용하지만, SnapMirror 의 보존 정책에 따라 특정 시점의 스냅샷을 선택할 수도 있습니다. 랜섬웨어 공격과 같이 가장 최근의 복제본이 손상된 경우 특정 시점 옵션을 사용하십시오.</block>
   <block id="d6e117113c3c735bb59d2f9765c1f8b2" category="paragraph">이 프로세스는 온프레미스 ONTAP 스토리지 또는 AWS의 NetApp ONTAP 스토리지용 FSx에 추가적인 물리적 용량을 소모하지 않습니다. 원본 소스 볼륨은 수정되지 않으며, 복제 작업은 재해 복구 중에도 계속될 수 있습니다.</block>
@@ -1869,7 +1782,6 @@
   <block id="a6701b6b4f098b920e9ad613536f4135" category="list-text">테스트 페일오버 페이지에서 "페일오버 정리"를 입력한 다음 "페일오버 테스트 정리"를 선택합니다.</block>
   <block id="e27d8a06ee52d6dc3adabdbe1c4e94a7" category="admonition">데이터스토어 기반 복제 계획의 경우, VM을 추가하고 검색했지만 매핑 세부 정보를 제공하지 않은 경우 해당 VM이 장애 조치에 포함됩니다. 장애 조치가 실패하면 작업에 알림이 표시됩니다. 장애 조치를 성공적으로 완료하려면 매핑 세부 정보를 제공해야 합니다.</block>
   <block id="3bb0ada53df5172b3b5e85e4ac853ba0" category="list-text">장애 조치 페이지에서 지금 새 스냅샷을 생성하거나 데이터 저장소의 기존 스냅샷을 선택하여 복구 기반으로 사용할 수 있습니다. 기본 설정은 최신 버전입니다.</block>
-  <block id="72bafc7b3ccd45a74377b78710dc0395" category="paragraph"><block ref="72bafc7b3ccd45a74377b78710dc0395" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">이는 귀하의 이메일에 매핑되는 시스템 생성 ID입니다. *NSS 관리* 페이지에서 이메일을 표시할 수 있습니다.<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> 메뉴.</block>
@@ -2075,21 +1987,12 @@
   <block id="3799161db3e63e5d2a3b42b85fddf7f9" category="paragraph">버전 4.3.1</block>
   <block id="f45c394885f028f16865fb03ca11a2b7" category="paragraph">VM은 가상 네트워크에 연결된 가상 NIC를 사용합니다. 장애 조치 프로세스에서 서비스는 이러한 가상 NIC를 대상 VMware 환경에 정의된 가상 네트워크에 연결합니다. 리소스 그룹의 VM에서 사용하는 각 소스 가상 네트워크에 대해 서비스는 대상 가상 네트워크 할당을 필요로 합니다.</block>
   <block id="5b4a982186aa83fb25cd3688e47b1e51" category="paragraph">규정 준수를 테스트하고 장애 조치 테스트가 성공적으로 완료되도록 복제 계획 일정을 수정할 수 있습니다.</block>
-  <block id="2235a7bfe51de515b57cc6d5bad37344" category="paragraph">장애 조치 테스트 중에 재해 복구는 임시로 가상 머신을 생성합니다. 재해 복구는 FlexClone 볼륨을 지원하는 임시 데이터 저장소를 ESXi 호스트에 매핑합니다.</block>
   <block id="9e1ac550ab4447ef223077131183a9f2" category="list-text">복제 계획에 대한 작업을 수행하려면 복제 계획 목록에서 해당 계획 오른쪽에 있는 *작업* 옵션 <block ref="771645334c0631c5881bfc9858be7f5b" category="inline-image-macro-rx" type="image"></block>을 선택한 다음 *일정 편집*, *장애 조치 테스트*, *장애 조치*, *페일백*, *마이그레이션*, *지금 스냅샷 생성*, *오래된 스냅샷 정리*, *사용 안 함*, *사용* 또는 *삭제* 중에서 원하는 작업을 선택하십시오.</block>
-  <block id="87c116e357fbcba643eb3c034af4b9f0" category="paragraph">vCenter 사이트를 추가한 후에는 리소스 그룹을 생성하여 VM 또는 데이터 저장소 그룹을 단일 단위로 묶을 수 있습니다. 리소스 그룹을 사용하면 종속 VM 세트를 요구 사항을 충족하는 논리적 그룹으로 구성할 수 있습니다. 예를 들어 하나의 애플리케이션과 연결된 VM을 그룹화하거나 유사한 계층이 있는 애플리케이션을 그룹화할 수 있습니다. 또 다른 예로, 그룹에는 복구 시 실행할 수 있는 지연된 부팅 순서가 포함될 수 있습니다.</block>
-  <block id="637fada88b0b3ac0031b3d726a3ffa4c" category="paragraph">리소스 그룹을 사용하면 VM 또는 데이터 저장소를 단일 단위로 결합할 수 있습니다.</block>
-  <block id="2273ca98b904e703bc39a6bc79871562" category="paragraph">NetApp 재해 복구를 처음 사용하는 경우 vCenter 정보를 추가해야 합니다. 이미 vCenter 정보를 추가한 경우 대시보드가 표시됩니다.</block>
   <block id="855f6640322147511d2bad1c3ef67a01" category="paragraph">자세한 내용은 <block ref="5e71e4e6b8c5e7bff47e3e8fc9f8f4a2" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
   <block id="a7f0ae2d9bf264f3b8a764e25f427249" category="paragraph">계획을 생성할 때는 다음 지침을 따르십시오.</block>
-  <block id="9c1fea18f8c5a2e7dbfc597cff63bcda" category="list-text">NetApp Disaster Recovery 메뉴에서 *복제 계획*을 선택하고 *추가*를 선택합니다. 복제 계획을 처음 생성하는 경우 대시보드에서 *복제 계획 추가*를 선택하십시오.</block>
   <block id="a29968d7a7e40c3abadb4a3a66650aa2" category="list-text">복제 계획의 이름을 입력합니다.</block>
-  <block id="c8f30cd4b86e358883441ae183002de2" category="list-text">*소스 vCenter*에서 드롭다운 메뉴를 사용하여 데이터가 있는 vCenter를 선택합니다. *대상 vCenter*에서 드롭다운 메뉴를 사용하여 데이터를 복제할 vCenter를 선택합니다.</block>
   <block id="8e1ca61f41962bbab3b0edc4e77ec792" category="inline-image-macro">vCenter 서버 페이지를 보여주는 스크린샷</block>
   <block id="37fc88b8b1530f40d0ce4e2d7ca691dc" category="paragraph"><block ref="37fc88b8b1530f40d0ce4e2d7ca691dc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="10296271f8e5d29ec10e8b2edad00c6b" category="list-text">데이터스토어에 VM이 하나 이상 있는지 확인하십시오. 데이터스토어에 VM이 없으면 데이터스토어가 검색되지 않습니다.</block>
-  <block id="7c4632e0e4a0098db96e92264fac9557" category="list-text">보호된 VM과 보호되지 않은 VM을 동일한 데이터스토어에 호스팅하지 마십시오. 보호된 VM과 보호되지 않은 VM을 동일한 데이터스토어에 호스팅하면 다음과 같은 문제가 발생할 수 있습니다.</block>
-  <block id="d9cbe60deafc2c2262ab4d07b9131f6a" category="list-text">재해 복구에서 SnapMirror를 사용하므로 해당 볼륨의 사용된 용량이 라이센스 계산에 포함될 수 있습니다. 즉, 시스템이 전체 ONTAP 볼륨을 복제합니다. 이 경우 보호되는 VM과 보호되지 않는 VM 모두에서 사용되는 볼륨 공간이 이 계산에 포함됩니다.</block>
   <block id="0995033be79b231587fd5dd53a2a94c9" category="list-text">기존 리소스 그룹이 있는 경우 **리소스 그룹**을 선택하고 리소스 그룹을 선택한 다음 **다음**을 선택합니다.</block>
   <block id="ed4f95c7ecb7ed1087c4e69b67bc15c0" category="paragraph">기존 리소스 그룹이 없거나 리소스 그룹에 리소스를 추가해야 하는 경우 *Virtual machines* 또는 *Datastores*를 선택하십시오.</block>
   <block id="9e789b98de8f3895acb993bdec773003" category="list-text">자동으로 생성된 목록에서 복제 계획에 추가할 가상 머신 또는 데이터스토어를 선택하십시오. 가상 머신의 경우 데이터스토어별로 필터링할 수 있습니다. 데이터스토어 또는 VM을 선택하면 리소스 그룹에 자동으로 추가됩니다.</block>
@@ -2099,7 +2002,6 @@
   <block id="7ddea6f727802bf5d58c1c6fc1200d0b" category="section-title">컴퓨팅 리소스 섹션</block>
   <block id="55290e3407e3be9abd668def1fc094f0" category="list-text">*폴더*(선택 사항)</block>
   <block id="3327cd0621dd5ede196b9e097644e871" category="admonition">고급 설정을 켜서 *스크립트* 및 *애플리케이션 정합성 보장* 설정을 추가하세요.</block>
-  <block id="72391e5d470b580e6491b3647580e58f" category="list-text">*CPU* 및 *메모리(GB)*: 가상 머신 세부 정보에서 VM CPU 및 를 선택적으로 조정할 수 있습니다.</block>
   <block id="5bb5f5ed113c90d31da88b6596b25520" category="list-text">*애플리케이션 정합성 보장*: 애플리케이션 정합성 보장 스냅샷 복사본을 생성할지 여부를 지정합니다. 서비스는 애플리케이션을 일시 중지한 다음 스냅샷을 생성하여 애플리케이션의 일관된 상태를 유지합니다. 이 기능은 Windows 및 Linux에서 실행되는 Oracle과 Windows에서 실행되는 SQL Server에서 지원됩니다. 자세한 내용은 다음을 참조하십시오.</block>
   <block id="4207cdc216537468251be88bbe3d2194" category="paragraph">이 옵션을 사용하려면 *고급 설정* 토글 스위치를 켜야 합니다. 애플리케이션 정합성 보장을 활성화하는 경우 사용자 이름과 비밀번호 형식의 자격 증명을 제공해야 합니다.</block>
   <block id="6ffba2842dbe195b31043c058ec4a8b1" category="inline-image-macro">리소스 매핑의 가상 머신 섹션을 보여주는 스크린샷</block>
@@ -2196,4 +2098,257 @@
   <block id="682cb3d415af7ce02d9da4eb79ded765" category="inline-link-macro">콘솔에서 ONTAP 클러스터를 검색하십시오</block>
   <block id="d7e286f47367b20bf6d60da61a7525c5" category="paragraph">ONTAP 역할을 생성한 후에는 <block ref="4e087b59ddbefd7d455fbc7b2c0ee722" category="inline-link-macro-rx"></block>. 클러스터를 검색할 때 ONTAP 클러스터의 IP 주소, 생성한 사용자 이름 및 이 단계의 암호가 필요합니다. NetApp Disaster Recovery의 경우 소스 클러스터와 타겟 클러스터 모두에서 검색을 수행해야 합니다.</block>
   <block id="0cfffe93bea4d4c736df44a3ecd13d15" category="sidebar">필수 ONTAP 권한</block>
+  <block id="08940f555ee07e4993dba0f9d919b955" category="doc">Kubernetes 기반 워크로드 지원(미리 보기)</block>
+  <block id="6d2babe4a7d28b244ea0243157a67baf" category="inline-link-macro">Trident Protect에서 현재 지원하는 모든 Kubernetes 버전</block>
+  <block id="f273ad1ac40fd6066b516be98e8466b7" category="paragraph">NetApp Disaster Recovery에 Kubernetes 기반 워크로드 지원이 추가되었습니다. Kubernetes 지원을 통해 OpenShift Virtualization 환경을 포함한 Kubernetes 클러스터에서 실행되는 애플리케이션을 보호할 수 있습니다. Disaster Recovery는 <block ref="ee3b2775270ba891227fbdcc3618242b" category="inline-link-macro-rx"></block>를 지원하여 컨테이너화된 애플리케이션에 대한 원활한 통합과 강력한 재해 복구 기능을 제공합니다.</block>
+  <block id="17e5366c4d700584180f9a88c40ddd7f" category="paragraph">Kubernetes 기반 워크로드 지원의 주요 기능:</block>
+  <block id="6e623252e9b1dfd44c03c706826c9dc2" category="list-text">**폭넓은 호환성**: Disaster Recovery는 Red Hat OpenShift Virtualization을 포함하여 Trident Protect와 호환되는 모든 Kubernetes 버전을 지원합니다.</block>
+  <block id="3dbc5485bf1aa588640ee699337e0892" category="list-text">**애플리케이션 중심 보호**: 이제 애플리케이션 수준에서 Kubernetes 워크로드를 보호하여 페일오버 이벤트 발생 시 중요한 서비스의 복구를 보장할 수 있습니다.</block>
+  <block id="6124980497de7eeb616c27d599b53c84" category="list-text">**간소화된 오케스트레이션**: Disaster Recovery는 VMware 환경에서 사용되는 것과 동일한 효율적인 SnapMirror 기술을 활용하여 Kubernetes 워크로드의 백업 및 복제를 자동화하는 직관적인 워크플로우를 제공합니다.</block>
+  <block id="082f6fbdb4843c5f374a215502f493b9" category="inline-link-macro">NetApp Disaster Recovery를 위한 Kubernetes 요구 사항</block>
+  <block id="84b0e3d023f875f2669a5f0d72922238" category="paragraph">Kubernetes 기반 워크로드 지원은 현재 미리 보기로 제공됩니다. Kubernetes 기반 워크로드 보호를 시작하려면 <block ref="343bf0d5acc46def5b744dcb13640f63" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="3723578e9eec661a364d573c9d930dd2" category="paragraph">*NetApp Disaster Recovery에 어떻게 액세스하나요?* NetApp Disaster Recovery는 별도의 활성화 과정이 필요하지 않습니다. Disaster Recovery는 NetApp Console의 왼쪽 탐색 메뉴에 자동으로 나타납니다.</block>
+  <block id="617eb16cadcea920c3756320dc74fccf" category="summary">클라우드 재해 복구는 사이트 장애 및 데이터 손상 사고로부터 워크로드를 보호하는 탄력적이고 비용 효율적인 방법입니다. NetApp Disaster Recovery를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 NetApp 클라우드 스토리지를 사용하는 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제하거나, ONTAP 스토리지를 사용하는 다른 온프레미스 VMware 환경을 재해 복구 사이트로 복제할 수 있습니다.</block>
+  <block id="3348cad21942b5f1082fd6256085c2ba" category="paragraph">클라우드 재해 복구는 사이트 장애 및 데이터 손상 사고로부터 워크로드를 보호하는 탄력적이고 비용 효율적인 방법입니다. NetApp Disaster Recovery를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware VM 또는 데이터스토어 워크로드를 NetApp 클라우드 스토리지를 사용하는 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제하거나, ONTAP 스토리지를 사용하는 다른 온프레미스 VMware 환경을 재해 복구 사이트로 복제할 수 있습니다. 또한 Disaster Recovery를 사용하여 VM 워크로드를 한 사이트에서 다른 사이트로 마이그레이션할 수도 있습니다.</block>
+  <block id="76c012e00737879df95c8c88e2b31de8" category="paragraph">NetApp Disaster Recovery는 재해 복구 워크플로우를 자동화하는 클라우드 기반 재해 복구 서비스입니다. NetApp Disaster Recovery를 사용하면 온프레미스 Kubernetes 클러스터, NFS 기반 워크로드, 그리고 NetApp 스토리지를 사용하는 iSCSI 및 FC용 VMware vSphere 가상 머신 파일 시스템(VMFS) 데이터스토어를 다음 중 하나로 보호할 수 있습니다:</block>
+  <block id="99768e8237948205202d18a652ffd119" category="inline-image-macro">NetApp Disaster Recovery의 구성 요소를 보여주는 다이어그램</block>
+  <block id="ba116452d0da87465a7f182425b0428a" category="paragraph"><block ref="ba116452d0da87465a7f182425b0428a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="874065797510ef71853078d085cab4b0" category="paragraph">NetApp Console을 사용하기 위해 라이선스나 구독이 필요한 것은 아니며, 스토리지 시스템 또는 NetApp 데이터 서비스와의 연결을 보장하기 위해 클라우드에 Console 에이전트를 배포해야 할 때만 비용이 발생합니다. 단, Console에서 액세스할 수 있는 일부 NetApp 데이터 서비스는 라이선스 또는 구독 기반입니다.</block>
+  <block id="dafb495943b078711687211cdf759a7f" category="section-title">NetApp Disaster Recovery 사용의 이점</block>
+  <block id="c1201b22fd6dafc2afed7e44d653d715" category="section-title">NetApp Disaster Recovery의 기능</block>
+  <block id="5571bdd1760c41f61a0e3b15ddfe62e0" category="list-text">장애 조치 테스트를 수행하십시오. 이 테스트를 수행하면 서비스에서 임시 가상 머신이 생성됩니다. Disaster Recovery는 선택한 스냅샷에서 새 FlexClone 볼륨을 생성하고, FlexClone 볼륨을 기반으로 하는 임시 데이터 저장소가 ESXi 호스트에 매핑됩니다. 이 프로세스는 온프레미스 ONTAP 스토리지 또는 AWS의 NetApp ONTAP 스토리지용 FSx에서 추가적인 물리적 용량을 사용하지 않습니다. 원본 소스 볼륨은 수정되지 않으며, 재해 복구 중에도 복제 작업이 계속될 수 있습니다.</block>
+  <block id="e39147ca66807564b69e5d423dba3bbf" category="inline-image-macro">NetApp Disaster Recovery의 사용 사례를 보여주는 다이어그램</block>
+  <block id="6cca11f2b23e93a297b1948449091a8e" category="paragraph"><block ref="6cca11f2b23e93a297b1948449091a8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8d743ec67129c396edcdc450f9b95c10" category="admonition">vSphere 서버는 vSphere Server에서 NetApp Disaster Recovery 외부에서 구성해야 합니다.</block>
+  <block id="b49aee83e65ec56d32c2b9fed1692f77" category="paragraph">재해 복구 서비스는 보호되는 ONTAP 볼륨에 저장된 데이터 용량을 기준으로 라이선스가 부여됩니다. 서비스는 보호되는 가상 머신(VM)을 vCenter 데이터스토어에 매핑하여 라이선스 산정에 고려해야 할 볼륨을 결정합니다. 각 데이터스토어는 ONTAP 볼륨 또는 LUN에 저장됩니다. 해당 볼륨 또는 LUN에 대해 ONTAP에서 보고하는 사용 용량이 라이선스 결정에 사용됩니다.</block>
+  <block id="ebe904d643c837fe4f6558dc29dc9bd4" category="paragraph">NetApp Disaster Recovery를 30일 무료 체험판으로 사용해 보실 수 있습니다.</block>
+  <block id="9d38de5ae862585720043c224b2b1bf3" category="paragraph">30일 평가 기간이 종료된 후에도 계속 사용하려면 클라우드 공급업체로부터 종량제(PAYGO) 구독을 구매하거나 NetApp에서 BYOL 라이센스를 구매해야 합니다.</block>
+  <block id="11c34434edb972fac6cd51114421f1a9" category="inline-image-macro">NetApp Disaster Recovery 서비스 인프라 아키텍처를 보여주는 다이어그램</block>
+  <block id="d495eefe35322794258797c1ae708e04" category="paragraph"><block ref="d495eefe35322794258797c1ae708e04" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d4596e81f92059790d8b032cdcadaa9c" category="paragraph">Disaster Recovery는 재해 복구 워크로드를 제공하기 위해 다음과 같은 구성 요소를 사용합니다.</block>
+  <block id="2d3f85eddbb71fa004646d204b7c03ae" category="list-text">먼저 운영 사이트와 재해 복구 사이트를 추가하세요.</block>
+  <block id="d58c5351fd0af7d37f30f9168a22f6eb" category="inline-link-macro">사이트 추가</block>
+  <block id="d25ceda793da5061e5e8521cf2a2a658" category="paragraph">자세한 내용은 <block ref="f2780a9eb3dd3fe744b96093f52bf61c" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="43d19def09b28ab8f76a87c2405c529f" category="paragraph">이렇게 하면 모든 스케줄, 복제 계획, 리소스 그룹, vCenters, Kubernetes 클러스터 및 사이트가 삭제됩니다. 감사 데이터, 작업 로그 및 작업 기록은 제품 지원 종료 시까지 보존됩니다.</block>
+  <block id="9c48088cdba448e5b8f59ebc5f539ae9" category="paragraph">이러한 필수 조건은 ONTAP 및 Amazon FSX for NetApp ONTAP 인스턴스에 적용됩니다.</block>
+  <block id="97dc41d6f4d03da0c863c2b10446bfb4" category="inline-link-macro">Kubernetes 클러스터에 대한 추가 요구 사항 검토</block>
+  <block id="37509eae9f8aafaeb99953e6bfcf69e7" category="list-text"><block ref="862299717aa339f7b39c635d6840a003" category="inline-link-macro-rx"></block>.</block>
+  <block id="0ca47b861835b86ebc97b4d4d1291bfe" category="inline-link-macro">VMware 클러스터 사전 요구 사항</block>
+  <block id="c48b0b717dba8d966df10f2b67f35b80" category="inline-link-macro">Kubernetes 클러스터 사전 요구 사항</block>
+  <block id="f7f454fbab694f60875a30298e8d4671" category="admonition">배포 유형에 따라 <block ref="2b1de46c6e3599c82d8b32eec3ea90f4" category="inline-link-macro-rx"></block> 및 <block ref="621146f6e5abe763d997392c046861ad" category="inline-link-macro-rx"></block>를 검토하십시오.</block>
+  <block id="ab7c7bc32e6c0795ff803f673d7249f4" category="summary">NetApp Disaster Recovery를 사용하기 전에 환경이 VMware vCenter 클러스터 요구 사항을 충족하는지 확인하십시오.</block>
+  <block id="8d1de37b8784f830de2147b8967d5d51" category="doc">VMware vCenter 클러스터의 NetApp Disaster Recovery 사전 요구 사항</block>
+  <block id="159c610e83bbaf1e083a2e86f8ec9bc8" category="section-title">일반 사전 요구 사항</block>
+  <block id="2ab7e27e532322c16dda4c1eb59d3c9e" category="section-title">VMware Cloud SDDC 사전 요구 사항</block>
+  <block id="265b5db3aaacf91c1fc792d5022d95b7" category="paragraph">VMware Cloud SDDC를 사용하는 경우 다음과 같은 추가 필수 조건이 적용됩니다.</block>
+  <block id="9aa66a327a3181a340b88cc81b7ac070" category="summary">NetApp Disaster Recovery를 사용하기 전에 Kubernetes 클러스터가 요구 사항을 충족하는지 확인하십시오.</block>
+  <block id="90e2c61883b995611cf3a865b7eefbbd" category="doc">NetApp Disaster Recovery를 위한 Kubernetes 클러스터 요구 사항</block>
+  <block id="4b5d42186048abc2e79d45b06cc5456e" category="paragraph">Kubernetes 클러스터용 NetApp Disaster Recovery를 구성하기 전에 각 Kubernetes 클러스터를 준비해야 합니다. 일반적으로 보호는 소스 클러스터와 별도의 타겟 클러스터에 적용되므로 이러한 절차는 쌍을 이루는 각 클러스터에 적용해야 합니다.</block>
+  <block id="870caf8c63b38657c754a6ae2bfdccfa" category="paragraph">Kubernetes 클러스터 요구 사항을 구성하기 전에 Kubernetes 클러스터와 ONTAP 클러스터를 구성했는지 확인하십시오.</block>
+  <block id="189edd980c131edf9d5711ed1e7b1d73" category="paragraph">재해 복구는 <block ref="ee3b2775270ba891227fbdcc3618242b" category="inline-link-macro-rx"></block>을(를) 지원합니다.</block>
+  <block id="85eb427901278daf26f132cb3e076914" category="section-title">Kubernetes 클러스터</block>
+  <block id="3db879f685c32ec1d391ee151f8cbbb3" category="paragraph">각 Kubernetes 클러스터에 대해 다음 사항을 확인하십시오.</block>
+  <block id="b6a170e7cec78934ee3380877053401e" category="list-text">각 Kubernetes 클러스터에 대한 관리자<block ref="0f12ee5c9f1dd90158580f1c292b0d37" prefix=" " category="inline-code"></block> 액세스 권한이 있습니다.</block>
+  <block id="8cc24d6d6766009f3bf7f5ee561dcd84" category="list-text">Helm 3는 설치 명령을 실행하는 곳에서 사용할 수 있습니다.</block>
+  <block id="1b6bc3125f482fcbcf029c833aea1290" category="section-title">ONTAP 요구 사항</block>
+  <block id="f65420480f6cfa80857a1a7e6be10161" category="paragraph">각 ONTAP 클러스터에 대해 다음 리소스를 구성했는지 확인하십시오.</block>
+  <block id="bb3abe43c4f063803c049a83f1bf1afe" category="list-text">**관리 LIF** - Trident가 관리 API 액세스에 사용합니다</block>
+  <block id="2fd8be000488ee9dfe84f3e999787099" category="list-text">**데이터(NFS) LIF** - 볼륨에 대한 NFS 트래픽에 사용됩니다</block>
+  <block id="d43cfb9d16100a76e6dd3d9709a42e37" category="list-text">**SVM 이름** - 볼륨을 호스팅하는 스토리지 VM</block>
+  <block id="c1b605b5f70c77e30ddef516562850d0" category="list-text">**자격 증명** - Trident가 사용할 계정(일반적으로<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> 또는 SVM 범위 계정)</block>
+  <block id="253c95f350b84a81f4614730fe0628cf" category="list-text">워커 노드는 ONTAP 관리 및 데이터 LIF에 접근할 수 있어야 합니다.</block>
+  <block id="f30275eeca65094a222238ae460a10ea" category="list-text">CIDR 제한과 함께 <block ref="323e871cfe2e70ead9c713e8f3164f8f" prefix=" " category="inline-code"></block>를 사용하는 경우 노드 서브넷을 포함하십시오.</block>
+  <block id="4ab6fb35bc2e18455152d8a0333cc802" category="section-title">NetApp Trident CSI 설치</block>
+  <block id="92601eac5d4e753f0d60f0e5ba9a27f1" category="inline-link-macro">_각_ 클러스터에 Trident 운영자를 설치하세요^.</block>
+  <block id="bd2bdca3f6b8a3f02b562505d50b41e2" category="paragraph"><block ref="bd2bdca3f6b8a3f02b562505d50b41e2" category="inline-link-macro-rx"></block></block>
+  <block id="ed5e6801d7e087345895d132f7e9d2dc" category="paragraph">Trident를 이미 설치한 경우 명령<block ref="8dd3e3fab389d3d56b4dbea697d52e91" prefix=" " category="inline-code"></block>을 사용하여 설치를 확인하십시오. 설치가 성공하면 몇 분 후 Trident 컨트롤러, 노드 파드(DaemonSet) 및 오퍼레이터의 상태가<block ref="5bda814c4aedb126839228f1a3d92f09" prefix=" " category="inline-code"></block> 상태로 표시됩니다.</block>
+  <block id="33c1ffdebe58ba196b293c23e0e2f697" category="section-title">ONTAP 백엔드 및 Trident StorageClass 구성</block>
+  <block id="ed6eabebedff09350cdabab556887c62" category="section-title">Kubernetes 시크릿 생성</block>
+  <block id="019a873bad5bd15622bc515c6deabc69" category="paragraph">네임스페이스에 Kubernetes 시크릿을 생성합니다.</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
+  <block id="5ba071686a692312a0fb9f74b88eacf4" category="inline-link-macro">네임스페이스에 Kubernetes 시크릿을 생성합니다</block>
+  <block id="c993acdada44e85561de19d50bfd1c2e" category="paragraph">자세한 내용은 <block ref="b7c8bb9d82644d93e03fda701bbc2ce8" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="69f450b842467c2340f16758ae34161f" category="section-title">TridentBackendConfig 생성</block>
+  <block id="15448ae485454ff114ffe66e737a0c38" category="inline-link-macro">SVM을 가리키는 &lt;block ref="913a4b06671d1e04e6582a85afe3abbe" prefix=" " category='inline-code'/&gt;를 적용하세요.</block>
+  <block id="482dff9df02c13a4d64615036def0c24" category="paragraph"><block ref="e61ff4cad4334c04f3d47cb110309b1b" category="inline-link-macro-rx"></block> 다음을 수행할 수 있습니다</block>
+  <block id="ee98171b045903553158664df3c71be8" category="inline-link-macro">자세한 내용 보기</block>
+  <block id="d3f5b529c0f88a5e256902ff076cf650" category="paragraph"><block ref="54ae69f0c8bee0f24f15e19df062025a" prefix=" " category="inline-code"></block> 명령을 사용하여 구성을 확인할 수 있습니다. 구성이 성공하면 <block ref="7ee7184c970537ea83afe7f9bae4c61f" prefix=" " category="inline-code"></block> 출력에 **Bound**가 표시되고 <block ref="9acb44549b41563697bb490144ec6258" prefix=" " category="inline-code"></block>에는 **Success**가 표시됩니다. 상태가 **Failed**인 경우 <block ref="2142c79a9533a62bd1d68ed55d8ff862" category="inline-link-macro-rx"></block> 단계를 검토한 다음 잘못된 자격 증명 또는 네트워크 연결 문제와 같은 문제를 해결하십시오.</block>
+  <block id="bf11113fdcad4005687c73dc0a5cd5e7" category="section-title">스토리지 클래스를 구성합니다</block>
+  <block id="e19d1ba1e634ce3c8815299bea5c6049" category="inline-link-macro">스토리지 클래스 객체를 생성합니다</block>
+  <block id="3bf00ea2e83b866c53bead1ad46fa948" category="paragraph"><block ref="9273daa89f19647098ceac89fae8c155" category="inline-link-macro-rx"></block>. 프로비저너를 사용하십시오<block ref="08044207e9f63bb0fd474dab347a776c" prefix=" " category="inline-code"></block>. 예를 들면 다음과 같습니다.</block>
+  <block id="f15513260ef5fe14bcce4be349e0b4e1" category="paragraph">선택적으로 스토리지 클래스 하나를 클러스터의 기본값으로 지정할 수 있습니다. 클러스터당 하나의 기본값만 지정할 수 있습니다.</block>
+  <block id="25e53f2b51386def9fa8f3c8c5dc43bd" category="paragraph">Trident Protect가 복제하는 애플리케이션 PVC는 Trident를 통해 프로비저닝된 스토리지를 사용해야 합니다(이 StorageClass 또는 올바른<block ref="c614017642b6cfd9e6a25c7df122d917" prefix=" " category="inline-code"></block> / 선택기로 정의한 다른 StorageClass).</block>
+  <block id="2626fdca6c782dfe24c83f53c3545c99" category="paragraph">Trident Protect에서 애플리케이션 데이터를 복제하려면 애플리케이션이 Trident에서 관리하는 ONTAP 볼륨의 스토리지를 사용해야 합니다. 이 스토리지 클래스 또는 다른 스토리지 클래스를 사용할 수 있지만, Trident를 통해 ONTAP 백엔드를 사용하도록 구성되어야 합니다.</block>
+  <block id="218855bd22e1cd4976854efc8b307aed" category="section-title">볼륨 그룹 스냅샷 사용자 정의 리소스 정의(CRD) 구성</block>
+  <block id="0d393cec9452a06175ffb8ef5e1bd7a6" category="inline-link-macro">스냅샷 CRD와 스냅샷 컨트롤러를 설치합니다.</block>
+  <block id="075bd589d397e6f79b373b25a4c4ba8a" category="paragraph"><block ref="3088ec5b893b9d33aebee291bf58b848" category="inline-link-macro-rx"></block>. Trident Protect에서 볼륨 스냅샷을 사용하려면 이러한 설치가 필요합니다.</block>
+  <block id="829b472d9c50a95a09159068ad254299" category="paragraph">다음 명령을 사용하여 사용자 정의 리소스 정의를 확인합니다.</block>
+  <block id="c6dbbb5834aeacb2b92820f96f0808da" category="section-title">볼륨 그룹 스냅샷 구성</block>
+  <block id="ea4e69b42f1348a516f1a48a48d5428d" category="inline-link-macro">Trident에 대한 VolumeSnapshotClass를 구성합니다.</block>
+  <block id="49624703b87408584a8de1a61475bda7" category="paragraph"><block ref="49624703b87408584a8de1a61475bda7" category="inline-link-macro-rx"></block></block>
+  <block id="cd8c285b96b445a0dfdec42cc117b2a1" category="paragraph">선택적으로 볼륨 스냅샷 클래스를 기본 클래스로 지정할 수 있습니다. 고아 Kubernetes 스냅샷 객체가 ONTAP에 스냅샷을 남겨야 하는 경우 <block ref="1eedbc73f299ecb164cd2c3cff6464e7" prefix=" " category="inline-code"></block>을(를) 사용하십시오.</block>
+  <block id="a604cb90ffd2612af3c3802788055dd7" category="section-title">검증 요약</block>
+  <block id="060bf2d587991d8f090a1309b285291c" category="cell">확인</block>
+  <block id="ee97be03cb04119af45014d815621ce1" category="cell">명령</block>
+  <block id="dc5e77e8271a90719f56728ca8904a65" category="cell">예상 출력</block>
+  <block id="724a392e5cd7368da406f44e0f45b9fc" category="cell">Trident가 실행 중입니다</block>
+  <block id="14df6ac68d24af5d33d7057acf69c271" category="cell"><block ref="8dd3e3fab389d3d56b4dbea697d52e91" prefix="" category="inline-code"></block></block>
+  <block id="5c7159fea8e4f180e696d0b7baec84c6" category="cell">Trident가 성공적으로 실행 중입니다</block>
+  <block id="14551a1c2b1f9d5749b2d7d230e328f3" category="cell">백엔드가 정상 작동합니다.</block>
+  <block id="940ae3f98966b4b8076b63691343ba7d" category="cell"><block ref="54ae69f0c8bee0f24f15e19df062025a" prefix="" category="inline-code"></block></block>
+  <block id="397290fdbf6a8392b591f455385bc914" category="cell">바인딩됨/성공</block>
+  <block id="44a5d9efff49e314bb8b3950f204be78" category="cell">스토리지가 노출되어 있습니다.</block>
+  <block id="f810d35e570b5f6aba4f7aacda1b2319" category="cell"><block ref="6c8dbf2986e91118b19341b89fa1a31d" prefix="" category="inline-code"></block></block>
+  <block id="856712570e802878ed20b0578b83ae89" category="cell">출력에는 Trident 클래스가 포함됩니다.</block>
+  <block id="7d7248d51ef650c5da5c3d5c9bd445be" category="cell">스냅샷 API</block>
+  <block id="24d0852d172dfa2dfd6f7f597180d2c6" category="cell"><block ref="21ba623e7f8a9b1016798618840e61fb" prefix="" category="inline-code"></block></block>
+  <block id="0b4d810b6c1e9eff46fd849fa4c3fe5b" category="cell">CRD가 존재합니다. Trident 드라이버 목록이 있습니다.</block>
+  <block id="f183fde1c1f409b21fc8463052ca49e5" category="inline-link-macro">마이그레이션</block>
+  <block id="4441ec99756a62032f3fa12d51cd16ab" category="inline-link-macro">사이트에 Kubernetes 클러스터 추가</block>
+  <block id="697338debb45d8295048530f0be60d24" category="paragraph">모든 리소스의 상태를 확인한 후 Trident StorageClass를 사용하여 워크로드를 배포하거나 <block ref="68347541ed049f893da85c888edbed6b" category="inline-link-macro-rx"></block>하십시오. <block ref="22b93c64fbc9543ea41f771920db4133" category="inline-link-macro-rx"></block>하면 Disaster Recovery에서 클러스터에 Trident Protect를 설치하고 Disaster Recovery 환경에 등록하는 방법에 대한 지침을 제공합니다.</block>
+  <block id="046de26b0fe90e8b1926945a4507307b" category="example-title">Trident Protect 설치 지침을 검토하십시오.</block>
+  <block id="c076baedc1ed7a5f075df5d2b9b318e3" category="list-text">Trident 보호 네임스페이스 생성:</block>
+  <block id="c7d2d7a8dd276ed8a4b92ebe65fcc996" category="paragraph"><block ref="8fba25b8fc8c173a3ee2d88eef187da3" prefix="" category="inline-code"></block></block>
+  <block id="07633676bb578cf8e9d385bc7f3970dc" category="list-text">클라이언트 ID와 클라이언트 시크릿을 사용하여 Kubernetes 시크릿을 생성하고 occm 인증 자격 증명을 생성합니다.</block>
+  <block id="50c35628eeb4e07a754443c82dad582a" category="paragraph"><block ref="9d4cf7fcc554969a626dcaac575641cf" prefix="" category="inline-code"></block></block>
+  <block id="5f5319ea9181dcb3e904447887309d17" category="list-text">Helm 저장소를 추가하거나 업데이트하십시오.</block>
+  <block id="b1c6bf3ff846fde296453414aa8dfe06" category="paragraph"><block ref="ed69513a6ebe9be7a44349c8aa51c247" prefix="" category="inline-code"></block></block>
+  <block id="cb359741a55519aaa9bcb4bcbfcee6da" category="list-text">Trident Protect 및 Trident Protect Connector를 설치하거나 업그레이드하십시오.<block ref="22e049d96b1ff2fb0c41fb3c84fcd651" prefix=" " category="inline-code"></block></block>
+  <block id="a1fc1c89153021eb03a34941e90a9ac8" category="inline-link-macro">Trident Protect에 대해 알아보십시오</block>
+  <block id="136d3210480cbb898afb6460c1efb7bb" category="list-text"><block ref="136d3210480cbb898afb6460c1efb7bb" category="inline-link-macro-rx"></block></block>
+  <block id="62e7309e716a637d8eb7f1bc50e6a30f" category="inline-link-macro">Disaster Recovery에 사이트 추가</block>
+  <block id="ec83ded0a983071f5ddfe6288e7832c9" category="list-text"><block ref="ec83ded0a983071f5ddfe6288e7832c9" category="inline-link-macro-rx"></block></block>
+  <block id="56b24cdd5dc24570f7e1dd2ee03d39ca" category="paragraph">NetApp Disaster Recovery 솔루션에 대한 전체 개요는 <block ref="ccfb532d2846c6e621e9709f67d9a040" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="264f41f7fda3caccf98196e21418201c" category="summary">NetApp Disaster Recovery는 재해 복구 워크플로우를 자동화하는 클라우드 기반 재해 복구 서비스입니다. NetApp Disaster Recovery를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 NetApp 클라우드 스토리지를 사용하는 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제하여 재해 복구 사이트로 활용할 수 있습니다.</block>
+  <block id="e26c1e1448bd5f685a679ff49e20338a" category="section-title">2026년 5월 15일</block>
+  <block id="12af18005a606ba97f9e606aa2b596b8" category="paragraph">버전 4.3.3</block>
+  <block id="1c42a04ac798111ed2c9388b25e2c237" category="paragraph">리소스와 사이트를 추가한 후에는 _복제 계획_을 생성할 준비가 된 것입니다. 복제 계획은 데이터 보호를 관리합니다. 복제를 생성하려면 소스 및 타겟 사이트를 지정하고, 리소스 그룹을 선택하고, 애플리케이션을 복원하고 전원을 켜는 방법을 선택해야 합니다. 예를 들어, 하나의 애플리케이션과 관련된 가상 머신(VM)을 그룹화하거나 유사한 계층을 가진 애플리케이션을 그룹화할 수 있습니다.</block>
+  <block id="e6301bcb4d20444817b4b66020da65f2" category="paragraph">복제 계획이 다음 상태 중 하나에 있는 경우에만 보호 기능을 활성화할 수 있습니다.</block>
+  <block id="1dcac87e1d1ecf3b185aa6f786836f02" category="admonition">NetApp Disaster Recovery를 배포하기 전에 VM 또는 Kubernetes 클러스터를 구성하여 확산을 최소화하십시오. 보호가 필요한 리소스는 데이터스토어의 하위 집합에 배치하고, 보호되지 않을 리소스는 다른 데이터스토어 하위 집합에 배치하십시오. 복제 계획을 생성하기 전에 리소스 그룹을 구성하는 방법에 대한 자세한 내용은 <block ref="2e9e1519a300bb9dc6a403652e82bcd7" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="c01931b5f1f8380283abe6d3df92ca6f" category="list-text">복제할 리소스(VM, 데이터 저장소, 네임스페이스)를 선택하고 리소스 그룹을 할당합니다.</block>
+  <block id="bf90755c2ea047da087c4a63f1fc78c9" category="list-text">플랜에 포함된 모든 VM 또는 Kubernetes 클러스터에 동일한 인증 자격 증명을 사용하십시오.</block>
+  <block id="380f93c4dd8d090d3c832d5c203c0d5d" category="list-text">계획에 포함된 모든 VM 또는 Kubernetes 클러스터에 동일한 스크립트를 사용하십시오.</block>
+  <block id="4338202b43230633ce5048f0f9976358" category="list-text">플랜에 포함된 모든 VM 또는 Kubernetes 클러스터에 동일한 서브넷, DNS 및 게이트웨이를 사용하십시오.</block>
+  <block id="093d6f91400a370bac9aa1c83e740f81" category="list-text">드롭다운 메뉴에서 복제 계획을 생성할 리소스 유형(*Kubernetes* 또는 *vCenter*)을 선택하세요.</block>
+  <block id="311b2fa5921a6c9a2aa01033767480ec" category="image-alt">사이트 유형 전환 스크린샷</block>
+  <block id="37122cc2fe905f2e0360abf372164fff" category="list-text">*소스*의 경우, 소스로 지정할 vCenter 또는 Kubernetes 클러스터를 선택하십시오.</block>
+  <block id="43a7950b62333edbe551379f15eab5c0" category="list-text">*소스 vCenter*에서 드롭다운 메뉴를 통해 데이터가 있는 vCenter를 선택합니다. *타겟*에서 재해 복구 대상으로 사용할 vCenter 또는 Kubernetes 클러스터를 선택합니다.</block>
+  <block id="5e703952c9af079ef1142f66865c7500" category="list-text">리소스 그룹에 리소스를 추가하기 전에 먼저 수동 검색 또는 예약된 검색을 시작하십시오. 이렇게 하면 리소스가 검색되어 리소스 그룹에 나열됩니다.</block>
+  <block id="772ed2d2e8d27e26ed13d7acb3d6f02e" category="list-text">데이터스토어에 VM이 하나 이상 있는지 확인하십시오. 데이터스토어에 VM이 없으면 데이터스토어가 검색되지 않습니다.</block>
+  <block id="0d0eb6146bdc3c63fd1e513b41de7377" category="list-text">보호된 리소스와 보호되지 않은 리소스를 동일한 데이터 저장소에 호스팅하지 마십시오. 보호된 리소스와 보호되지 않은 리소스를 동일한 데이터 저장소에 호스팅하면 다음과 같은 문제가 발생할 수 있습니다.</block>
+  <block id="6038f71182410bd3064b8601a7226ffe" category="list-text">재해 복구에서 SnapMirror를 사용하므로 시스템이 전체 ONTAP 볼륨을 복제하기 때문에 해당 볼륨의 사용 용량이 라이센스 계산에 영향을 미칠 수 있습니다. 이 경우 보호된 리소스와 보호되지 않은 리소스 모두에서 사용된 볼륨 공간이 이 계산에 포함됩니다.</block>
+  <block id="7d7a32b76fa0bc6f548a76459b1b3f8e" category="list-text">리소스 그룹 및 관련 리소스를 재해 복구 사이트로 페일오버해야 하는 경우, 페일오버 프로세스로 인해 소스 사이트에 보호되지 않은 리소스가 더 이상 존재하지 않게 되어 소스 사이트에서 보호되지 않은 VM이 실패하게 됩니다. 또한 NetApp Disaster Recovery는 페일오버 vCenter 사이트에서 해당 보호되지 않은 VM을 시작하지 않습니다.</block>
+  <block id="34891a55ff1532cfba6d7df6f11c7b55" category="admonition">장애 조치 테스트를 위해 별도의 전용 매핑 세트를 생성하여 리소스가 동일한 IP 주소를 사용하여 운영 네트워크에 연결되는 것을 방지하십시오.</block>
+  <block id="e10ca1adb349a5228f7573a244805247" category="open-title">vCenter</block>
+  <block id="30136395f01879792198317c11831ea4" category="open-title">Kubernetes</block>
+  <block id="028987cfad4c5202b071c406f366bf2c" category="paragraph">Kubernetes 클러스터용 복제 계획을 생성할 때 리소스 그룹의 Kubernetes 네임스페이스는 동일한 ONTAP 클러스터에 속해야 합니다.</block>
+  <block id="f60d0eb27727fe86f48ad03866c79309" category="list-text">기존 리소스 그룹이 있는 경우 목록에서 해당 그룹을 선택합니다.</block>
+  <block id="bcedbf6bc6f85b4f42469dbe9a695df3" category="inline-link-macro">리소스 그룹에 네임스페이스 추가</block>
+  <block id="6a6747a74fd027a47c06e1db3ff36fe2" category="paragraph">기존 리소스 그룹이 없거나 리소스 그룹에 리소스를 추가해야 하는 경우 *+ 새 리소스 그룹 만들기*를 선택하세요. <block ref="80758a5c9c6eff8c745b280c61df1488" category="inline-link-macro-rx"></block>의 지침을 따르세요.</block>
+  <block id="64fa2a13ae0cf6617ff8c1571c132795" category="paragraph">리소스 그룹의 이름을 지정할 때 지원되는 문자는 소문자와 숫자뿐입니다.</block>
+  <block id="7c8360c623f72c87d137fe47ca588b37" category="list-text">반대쪽 열에서 선택한 리소스 그룹을 검토합니다.</block>
+  <block id="c716b644cde6bcf010e93cdafcb078a0" category="list-text">**다음**을 선택합니다.</block>
+  <block id="bad89bf47ba4744f9ff7e353a9ef6c29" category="list-text">각 리소스 그룹의 각 네임스페이스에 대한 네임스페이스 매핑을 선택하십시오. 기본적으로 Disaster Recovery는 타겟을 소스와 동일하게 선택합니다. 타겟 클러스터에서 다른 네임스페이스를 선택할 수 있습니다.</block>
+  <block id="c1b3f13568e3ebabe7652fbf9be2a874" category="list-text">각 리소스 그룹에 대한 스토리지 클래스 매핑을 지정하십시오. 스토리지 클래스는 소스 환경과 피어링된 ONTAP 스토리지 VM에 연결되어야 합니다. 스토리지 클래스를 지정하지 않으면 클러스터의 기본 스토리지 클래스가 사용됩니다.</block>
+  <block id="ecc5c96e34177e9acd36b6d5a19b4316" category="admonition">네임스페이스에서 CLI 명령<block ref="958b58c53e75bae5abeaed4b1e734f52" prefix=" " category="inline-code"></block>을 실행하여 스토리지 클래스를 확인하세요.</block>
+  <block id="cecdc246749a954a3b820b31bc008db6" category="list-text">스냅샷 일정을 설정합니다.</block>
+  <block id="67b20a828985dfc5812f5168da4250b9" category="paragraph">*스냅샷 및 보존 시작 시간*(달력 날짜 및 시간), *스냅샷 및 보존 빈도*(스냅샷 생성 빈도), *스냅샷 보존 개수*(저장되는 스냅샷 개수)를 선택하십시오.</block>
+  <block id="7b7b4d8ed4d1bbf8a314fd5ccaa6477f" category="paragraph">스냅샷 빈도를 설정할 때 최소 허용 간격은 5분입니다.</block>
+  <block id="f60addf61c3485b1599b66a8eada52ab" category="list-text">*Add AppVault* 를 선택하여 보호 데이터가 저장될 AppVault를 생성하세요.</block>
+  <block id="f57e34b9733857c90f118e2860fdc560" category="list-text">*이름*을 입력하고 AppVault를 연결할 *콘솔 에이전트*를 선택하십시오.</block>
+  <block id="aefecf255872cb18999d61ebae9d0cdc" category="list-text">*AppVault*를 호스팅할 클라우드 *공급자*를 선택합니다.</block>
+  <block id="5ba549307f769710df5b050816497d71" category="list-text">공급자 선택을 기반으로 Disaster Recovery는 기존에 구성된 클라우드 구독을 채웁니다. 클라우드 공급자에 대한 *구독*, *리소스 그룹* 및 *스토리지 계정*을 선택합니다.</block>
+  <block id="7174ea6988f438d85266f06a4d178a79" category="list-text">**추가**를 선택합니다.</block>
+  <block id="f7f4a1655d3cbed36a9f4a3ac84a092d" category="list-text">페일오버 매핑을 검토한 다음 **추가**를 선택하여 복제 계획을 생성합니다.</block>
+  <block id="c96445b8b9cefea59b8c554a58c1449a" category="paragraph">추가를 선택한 후 **작업 모니터링**에서 다양한 작업을 모니터링할 수 있습니다.</block>
+  <block id="f8facadd6b1d552f3f648dc3bfbdb8fc" category="admonition">Kubernetes의 경우, 이는 복제본 생성의 마지막 단계입니다. vCenters의 경우 <block ref="fc900fdf57ed4db8c225ca75259b8e72" category="inline-xref-macro-rx"></block>로 계속 진행하십시오.</block>
+  <block id="b24fddbb2c061e7def99de8fb873e946" category="admonition">이 섹션은 vCenters에만 필요합니다. Kubernetes의 경우에는 작성할 필요가 없습니다.</block>
+  <block id="38024e76a2b64efa68a6d51d33e31f6e" category="paragraph">*네트워크 설정* NetApp Disaster Recovery는 VM 네트워크에 대한 광범위한 구성 옵션을 지원합니다. 타겟 사이트의 가상 네트워크가 소스 사이트의 운영 가상 네트워크와 다른 TCP/IP 설정을 사용하는 경우 이러한 설정을 변경해야 할 수 있습니다.</block>
+  <block id="b60fe3207297f056bd4af1c6f6939a13" category="paragraph">VM 게스트 OS에서 스크립트 실행을 활성화하려면 다음 조건을 충족해야 합니다.</block>
+  <block id="57106a45b6af39302ee18dd4ea2a5d43" category="list-text">*CPU* 및 *메모리(GB)*: 가상 머신 세부 정보에서 VM CPU 및 메모리 크기를 선택적으로 조정할 수 있습니다.</block>
+  <block id="b3fe661a3c700dfa71f4f3fed3393714" category="list-text">드롭다운 메뉴에서 필터를 *vCenter* 복제 계획으로 설정합니다.</block>
+  <block id="00e3eeebb15d92abc7bca95a0631a9b1" category="list-text">페일백할 복제 계획을 식별합니다. *작업* 옵션 <block ref="771645334c0631c5881bfc9858be7f5b" category="inline-image-macro-rx" type="image"></block>을 선택하고 *복구* 위로 마우스를 가져간 다음 *페일백*을 선택합니다.</block>
+  <block id="b9ae80d2354a2fdb8c5eab224a3c2793" category="list-text">복구할 데이터 저장소의 스냅샷을 선택하십시오. 새 스냅샷을 시작하려면 *지금 스냅샷 생성*을 선택하고, 사용 가능한 스냅샷 중에서 선택하려면 *선택*을 선택하십시오.</block>
+  <block id="7d72c133b3a80822e8d04e8e866579c1" category="inline-image-macro">페일백 대화 상자의 스크린샷</block>
+  <block id="fe2070975262fdb1507084ad02d139e7" category="paragraph"><block ref="fe2070975262fdb1507084ad02d139e7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ec5c6f08ada454e9670285c835649f45" category="list-text">작업을 확인하려면 "Failback"을 입력한 다음 *Failback*을 선택하십시오.</block>
+  <block id="2d518d2a0701e8e4560cbcf883ee4f3a" category="list-text">드롭다운 메뉴에서 *Kubernetes* 복구 계획으로 필터링합니다.</block>
+  <block id="a7c5e813e2adbedd130d6e17a7879d3b" category="list-text">복구할 데이터 저장소의 스냅샷을 선택하십시오. 새 스냅샷을 시작하려면 *지금 스냅샷 생성*을 선택하고, 가장 최근에 성공한 스냅샷을 사용하려면 *최신 스냅샷 사용*을 선택하십시오.</block>
+  <block id="cf3a1b459cc4424970f17bd247150364" category="paragraph">장애 조치를 시작하기 전에 프로세스를 테스트할 수 있습니다. 이 테스트는 VM을 오프라인 상태로 전환하지 않습니다.</block>
+  <block id="1125e3b29e278ae1d41547291cfcb9fb" category="paragraph">장애 조치 테스트 중에 Disaster Recovery는 임시로 VM을 생성합니다. Disaster Recovery는 FlexClone 볼륨을 지원하는 임시 데이터 저장소를 ESXi 호스트에 매핑합니다.</block>
+  <block id="1d235eca89fa1ce9ae2c129b3459f24d" category="paragraph">테스트를 완료한 후에는 *테스트 정리* 옵션을 사용하여 VM을 재설정해야 합니다. 이는 권장 사항이지만 필수 사항은 아닙니다.</block>
+  <block id="1ce56da10e5d8a1c98a950af6b3aa8f0" category="list-text">타겟 VM을 vCenter 내에 새 데이터스토어로 등록합니다.</block>
+  <block id="f326165e0bcf39de74831c9971e2ff8d" category="list-text">리소스 그룹 페이지에 캡처된 부팅 순서에 따라 타겟 VM의 전원을 켜십시오.</block>
+  <block id="89c15d1512e82b3587f3446115d01ca5" category="list-text">소스 VM의 전원이 꺼집니다.</block>
+  <block id="0fa7140c6f5e23fbf9be5db71b6ef86f" category="list-text">SnapMirror 관계가 끊어지고 타겟 볼륨이 읽기/쓰기 모드로 설정되었습니다.</block>
+  <block id="4ec9d1c26455d3d7d035e86303e5fb3f" category="list-text">타겟 VM은 vCenter 내에 새 데이터 저장소로 등록됩니다.</block>
+  <block id="58fd50d79b1074aedb086c285bb6c636" category="list-text">타겟 VM은 리소스 그룹 페이지에 기록된 부팅 순서에 따라 전원이 켜집니다.</block>
+  <block id="bbb1b16486e8f54306a7a02c2ea6a39c" category="admonition">장애 조치가 시작되면 재해 복구 사이트의 vCenter에서 복구된 VM(VM, 네트워크 및 데이터스토어)을 확인할 수 있습니다. 기본적으로 VM은 워크로드 폴더에 복구됩니다.</block>
+  <block id="cd3ff8e65cebdd7f0aa846632bbebcb2" category="list-text">드롭다운 메뉴에서 *vCenter* 복제 계획을 필터링합니다.</block>
+  <block id="a8a688b33b7d47c32955976522eda27c" category="list-text">일반적으로 페일오버가 발생하지 않도록 하는 오류가 감지되더라도 페일오버가 발생하도록 하려면 *강제 페일오버*를 선택하십시오.</block>
+  <block id="895a527b215871aa5fc33ec6c9b01c15" category="list-text">복제 계획 장애 조치 후 서비스에서 역방향 SnapMirror 보호 관계를 자동으로 생성하지 않도록 하려면 *보호 건너뛰기*를 선택하십시오. 이 옵션은 NetApp Disaster Recovery 환경에서 사이트를 다시 온라인 상태로 전환하기 전에 복원된 사이트에서 추가 작업을 수행하려는 경우에 유용합니다.</block>
+  <block id="baf0b4e105ebbfa84dd088a11896c49a" category="list-text">장애 조치에 사용할 스냅샷 복사본을 선택하십시오. *지금 스냅샷 생성*을 선택하면 타겟 클러스터에 복사될 새 스냅샷을 생성하거나 *최신 스냅샷 사용*을 선택하면 타겟 클러스터에서 사용 가능한 가장 최근 스냅샷을 사용할 수 있습니다.</block>
+  <block id="02531ddbf670fbb347701db90d4791ea" category="list-text">작업을 확인하려면 "Failover"를 입력한 다음 *Failover*를 선택하십시오.</block>
+  <block id="98bf814ae7ba9991db0d5988d6e83219" category="paragraph">작업 상태는 *Job monitoring* 또는 *Replication plans*에서 확인할 수 있습니다.</block>
+  <block id="33ba6a3e737be27e9a8af4b47c28cc82" category="paragraph">리소스 사이트를 추가한 후에는 VM, 데이터스토어 또는 Kubernetes 클러스터를 하나의 단위로 묶는 리소스 그룹을 생성할 수 있습니다. 리소스 그룹을 사용하면 종속 리소스 집합을 요구 사항에 맞는 논리적 그룹으로 구성할 수 있습니다. 예를 들어, 특정 애플리케이션과 관련된 VM을 그룹화하거나 유사한 계층을 가진 애플리케이션을 그룹화할 수 있습니다. 또 다른 예로, 그룹에는 복구 시 실행될 지연 부팅 순서를 포함할 수 있습니다.</block>
+  <block id="facae22154364c09b28633a1105255f1" category="list-text">재해 복구 또는 _복제 계획_을 생성하는 동안 소스 vCenter 클러스터에서 호스팅되는 VM이 많은 경우 복제 계획을 생성하는 동안 리소스 그룹을 생성하는 것이 더 쉬울 수 있습니다. 복제 계획을 생성하는 동안 리소스 그룹을 생성하는 방법에 대한 지침은 <block ref="808c9323236f2ed48bff12970a5f1c49" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="e36dbe09ccd10ebf6ef8295c41d76f16" category="admonition">각 리소스 그룹에는 하나 이상의 VM, 데이터스토어 또는 Kubernetes 클러스터가 포함될 수 있습니다. VM은 복구 계획에 포함된 순서에 따라 켜집니다. 리소스 그룹 목록에서 VM 또는 데이터스토어를 위아래로 드래그하여 순서를 변경할 수 있습니다.</block>
+  <block id="85c3e85b3061b8da1b16538c49af072b" category="paragraph">리소스 그룹을 사용하면 VM, 데이터 저장소 또는 Kubernetes 애플리케이션을 단일 단위로 결합할 수 있습니다.</block>
+  <block id="ab058379146e5279c74d4a29d48f0c6b" category="list-text">ONTAP API:<block ref="b5ab07cdecf9303ff94db49578282528" prefix=" " category="inline-code"></block>. 모든 볼륨을 정지시켜 스냅샷을 생성할 수 있도록 하고, 모든 리소스 그룹 볼륨에 대해 볼륨 범위의 스냅샷 생성을 시작합니다.</block>
+  <block id="b1303c478b38150c3baf597fdbe8c41c" category="paragraph">*모범 사례*: NetApp Disaster Recovery를 배포하기 전에 VM을 구성하여 데이터스토어 확산을 최소화하십시오. 보호가 필요한 VM은 데이터스토어의 일부에 배치하고, 보호되지 않을 VM은 다른 데이터스토어에 배치하십시오. 특정 데이터스토어에 있는 VM이 서로 다른 복제 계획의 보호를 받지 않도록 하십시오.</block>
+  <block id="8512ebbe1d362c6831db703766f01dd8" category="open-title">vCenters</block>
+  <block id="07f74765770169894653b2ad6e822052" category="list-text">Disaster Recovery에서 사이드바의 **리소스 그룹**을 선택합니다.</block>
+  <block id="4e31cf67e23a6ba729a9fe876ed26c20" category="list-text">드롭다운 메뉴에서 *vCenter* 리소스 그룹으로 필터링합니다.</block>
+  <block id="f98580b40a0f32088d8dce3c11717c21" category="list-text">드롭다운 메뉴에서 *Kubernetes* 사이트를 기준으로 필터링하세요.</block>
+  <block id="cf61db0e22494aae54580dda890a8ec9" category="list-text">리소스 그룹의 **이름**을 입력하고 드롭다운 메뉴에서 Kubernetes **클러스터**를 선택합니다.</block>
+  <block id="25bef131895313117ef9ee6959a6d4dd" category="list-text">리소스 그룹에 추가할 *네임스페이스*를 선택합니다.</block>
+  <block id="d788b2476308b6754a77d77365caa671" category="list-text">선택적으로 *Label selectors*를 포함할 수 있습니다.</block>
+  <block id="1d39c98bea56e1a5bf0f0410f83db1c4" category="inline-image-macro">Kubernetes 리소스 그룹 추가</block>
+  <block id="1b3f89bb5b2e87d1d85d112b7d7fe35a" category="paragraph"><block ref="1b3f89bb5b2e87d1d85d112b7d7fe35a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f6389d8fe4b792c93b8e1fce64ca8b90" category="list-text">선택적으로 *+ Cluster-scoped resources*를 선택하여 네임스페이스에 속하지 않는 리소스를 추가할 수 있습니다. 이 옵션을 선택하면 *Group*, *Version*, *Kind*를 선택하고 필요에 따라 레이블 선택기를 추가합니다. **Add resource**를 선택합니다.</block>
+  <block id="3bc4a4e3612ce92248802c21e699e973" category="doc">NetApp Disaster Recovery에 사이트 추가</block>
+  <block id="196615b89ae958963a3a284a2ab815b3" category="paragraph">재해 복구 계획을 생성하기 전에 Disaster Recovery에 사이트를 추가해야 합니다. 사이트는 vCenter 서버 또는 Kubernetes 클러스터(온프레미스 또는 클라우드)의 모음입니다. 기본 또는 운영 사이트와 재해 복구 사이트를 추가해야 합니다.</block>
+  <block id="810cc49812caca1c98643608a0be801e" category="admonition">소스와 대상 모두 동일한 NetApp Console 에이전트를 사용하고 있는지 확인하십시오.</block>
+  <block id="685264f986681135349a1c43fc1cee02" category="paragraph">재해 복구에 사이트를 추가할 때는 사이트에 있는 리소스 유형을 구분해야 합니다. vCenters 또는 Kubernetes 클러스터 중 하나를 추가할 수 있습니다.</block>
+  <block id="61abb06b6e1ebd33dc80ab11d584e408" category="list-text">Disaster Recovery에서 사이드바의 **사이트**를 선택합니다.</block>
+  <block id="1729b3f0a7b8f24d2e82c85c2b0c6b8c" category="list-text">드롭다운 메뉴에서 사이트 유형을 선택합니다. **vCenter** 또는 **Kubernetes**.</block>
+  <block id="17b326dede4f07a65e6eaeed2a4d3814" category="list-text">사이트에 **이름**을 지정하십시오. vCenters의 경우 사이트 위치도 선택해야 합니다.</block>
+  <block id="c0a60a5414023d619e867982c390a2a2" category="paragraph">Disaster Recovery에 사이트를 추가한 후에는 해당 사이트에 리소스를 연결해야 합니다.</block>
+  <block id="13ea096d969f89bcec343fc3cf395c84" category="section-title">사이트에 리소스 추가</block>
+  <block id="7abaaec8330e6093848e8ad2b5fc55ad" category="admonition">NetApp Disaster Recovery는 24시간마다 한 번씩 검색을 수행합니다. 사이트를 설정한 후에는 vCenter 또는 Kubernetes 클러스터를 편집하여 필요에 맞게 검색 일정을 사용자 지정할 수 있습니다. 예를 들어 VM 수가 많은 경우 검색 일정을 23시간 59분마다 실행되도록 설정할 수 있습니다. VM 수가 적은 경우에는 12시간마다 실행되도록 설정할 수 있습니다. 최소 간격은 30분이고 최대 간격은 24시간입니다.</block>
+  <block id="3df06dfecbba3cf48d3e0f796002cd30" category="paragraph">리소스는 복제 계획이 다음 상태 중 하나에 있는 경우에만 보호할 수 있습니다.</block>
+  <block id="3feb9d576508e0f0d5b31b94130afff9" category="paragraph">사이트에 vCenter 클러스터를 추가하려면 다음 정보가 필요합니다.</block>
+  <block id="95a40723328d7973d1b42377e4a9279b" category="list-text">드롭다운 메뉴에서 필터를 *Kubernetes*로 설정합니다.</block>
+  <block id="6ec607d90131ba368742b9a99a146722" category="list-text">Kubernetes 클러스터를 추가할 사이트를 선택합니다. 해당 사이트의 작업 메뉴를 선택한 다음 **클러스터 추가**를 선택합니다.</block>
+  <block id="7e592170164af97cef86b80a254c840b" category="list-text">사이트 페이지에서 해당 사이트의 작업 메뉴를 선택한 다음 *vCenter 추가*를 선택합니다.</block>
+  <block id="ff3b9c54386661390d0a394f4a1d50c4" category="list-text">*Site*가 올바른지 확인하십시오. 드롭다운 메뉴에서 *Console agent*를 선택하십시오.</block>
+  <block id="6624948a0e54002a3f1d635263f05a0b" category="list-text">*vCenter IP 주소*, *포트* 번호, *vCenter 사용자 이름* 및 *vCenter 암호*를 추가하십시오.</block>
+  <block id="b51a5e0538dbb0bc959f6bf2658efd1a" category="list-text">Google Cloud VMware Engine의 경우 드롭다운 메뉴에서 *Project*, *Zone*, *Private cloud* 및 *Subnet*을 선택하세요.</block>
+  <block id="0cf8f150ece172498b51b76239a2389d" category="list-text">AWS의 경우 VMC의 *API 토큰*과 *긴 조직 ID*를 제공하십시오.</block>
+  <block id="50a0d7853565af772351213d1b833aa4" category="list-text">소스 vCenter에 대한 자체 서명된 인증서를 수락하려면 확인란을 선택하십시오.</block>
+  <block id="3892c1729503e794278ab188431a7d73" category="list-text">**사이트** 옵션이 올바른지 확인하십시오. 드롭다운 메뉴에서 적절한 **콘솔 에이전트**를 선택한 다음 **클러스터 이름**을 지정하십시오.</block>
+  <block id="ed1e1cd30f54635f105f6af2aeab9a7a" category="paragraph">클러스터 이름을 지정할 때는 소문자(a-z), 숫자(0-9) 및 하이픈(-)만 사용할 수 있습니다. 이름은 반드시 문자로 시작해야 합니다.</block>
+  <block id="86f382db94e0ddb293c7cfc3320d2bf4" category="inline-image-macro">Kubernetes 클러스터 추가 옵션의 스크린샷.</block>
+  <block id="9f5c67b30c94ee064fdcffffd45f9159" category="paragraph"><block ref="9f5c67b30c94ee064fdcffffd45f9159" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e514fb4dcfc927a59b424257b847ee1f" category="list-text">클러스터에 Trident Protect를 설치했거나 클러스터가 Backup and Recovery로 관리되는 경우 **추가**를 선택하십시오.</block>
+  <block id="dc84984abc7de0d1dfdb34895d0f13bc" category="inline-xref-macro">Trident Protect를 설치하십시오</block>
+  <block id="71408a294bd14cd790febbcdccc485eb" category="paragraph">그렇지 않은 경우 <block ref="d6c8ef5049a779fa4709e8cc671d455c" category="inline-xref-macro-rx"></block></block>
+  <block id="c6636f0b1251e0847f9e5a79b45791e4" category="paragraph">리소스를 추가한 후 *Job Monitoring*을 선택하여 진행 상황을 추적하세요.</block>
+  <block id="baed892bed9a88570cd5a5931581b00c" category="list-text"><block ref="baed892bed9a88570cd5a5931581b00c" category="inline-link-macro-rx"></block></block>
+  <block id="5aeb73bd1cb8fb257e125a72bd8075b0" category="list-text"><block ref="5aeb73bd1cb8fb257e125a72bd8075b0" category="inline-link-macro-rx"></block></block>
+  <block id="f9887dec2d60dc74a69f0aa774dab58f" category="inline-link-macro">리소스 그룹을 생성하여 데이터 소스 구성</block>
+  <block id="c3768d294cd69953c1bdab7e12690597" category="list-text"><block ref="c3768d294cd69953c1bdab7e12690597" category="inline-link-macro-rx"></block></block>
+  <block id="5b9b6af71405b6088e90ae43f67c7803" category="list-text"><block ref="5b9b6af71405b6088e90ae43f67c7803" category="inline-link-macro-rx"></block></block>
+  <block id="5008ed36813c93ca58d7adc268d7e9c8" category="list-text"><block ref="bc45819eee68deaddfdb62979db4ed0b" category="inline-link-macro-rx"></block> SnapMirror 복제를 사용하여 기본 사이트에서 클라우드의 재해 복구 원격 사이트로</block>
+  <block id="5d23a9c0c55a80ece74daa65c04f1d66" category="inline-link-macro">애플리케이션 마이그레이션</block>
+  <block id="9385503dc8066e1d324cd4976b5581ad" category="list-text"><block ref="304f948cd52821579c2211010250c9bb" category="inline-link-macro-rx"></block> 기본 사이트에서 다른 사이트로</block>
+  <block id="bbe6ff2751cf0e0b5255fe8fb1c28eec" category="list-text"><block ref="1eb384da451aa1014bf5aa632cfa3987" category="inline-link-macro-rx"></block> 리소스를 중단하지 않고</block>
+  <block id="74771557228a2ccd6f4426626cddc198" category="list-text">재해 발생 시, <block ref="c6aafe8fbf5a24cb8116bdae71eb6c66" category="inline-link-macro-rx"></block></block>
+  <block id="6ee3c81b815a19f7a6df65064752bcf3" category="list-text">재해가 해결된 후 재해 복구 사이트에서 기본 사이트로 <block ref="34c4a51d8bf8a64dde44adbfd1be3850" category="inline-link-macro-rx"></block></block>
+  <block id="5588146c6fdf71a9e99382d108ca2b8d" category="list-text">작업 모니터링 페이지에서 <block ref="698cc22cc758157d8f18359f8b528216" category="inline-link-macro-rx"></block></block>
+  <block id="618dae2a240d24c2d00107a4853378a9" category="sidebar">클라우드로의 재해 복구는 사이트 중단 및 데이터 손상 이벤트(예: 랜섬웨어)로부터 워크로드를 보호하는 복원력 있고 비용 효율적인 방법입니다. NetApp Disaster Recovery를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터 또는 재해 복구 사이트로 사용할 다른 온프레미스 사이트로 복제할 수 있습니다.</block>
+  <block id="5adb1db4b988933a0c482d9652abcd2a" category="sidebar">NetApp Disaster Recovery를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 NetApp 클라우드 스토리지를 사용하는 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 재해 복구 사이트로 복제할 수 있습니다.</block>
+  <block id="5069d199ba6ca379f339c144214cb9f0" category="sidebar">시스템 사전 요구 사항</block>
+  <block id="a79ae1fa6b9efc331842efa8d96937c5" category="sidebar">VMware 사전 요구 사항</block>
+  <block id="ffc29f7e69eb606c4fc0ff797755e240" category="sidebar">Kubernetes 사전 요구 사항</block>
 </blocks>

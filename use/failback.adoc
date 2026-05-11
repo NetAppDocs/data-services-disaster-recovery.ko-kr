@@ -42,11 +42,40 @@ link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-re
 
 == 단계
 
-. NetApp Console 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
+[role="tabbed-block"]
+====
+.vCenter
+--
+.단계
 . NetApp Disaster Recovery 메뉴에서 *복제 계획*을 선택합니다.
-. 복제 계획을 선택하세요.
-. 오른쪽에서 *작업* 옵션을 선택하세요image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"] 그리고 *장애 복구*를 선택하세요.
-. 장애 복구를 시작하려면 복제 계획의 이름을 입력하십시오.
-. 복구할 데이터 저장소의 스냅샷을 선택합니다. 기본값은 최신입니다.
-. 작업 진행 상황을 모니터링하려면 재해 복구 메뉴에서 *작업 모니터링*을 선택하십시오.
+. 드롭다운 메뉴에서 필터를 *vCenter* 복제 계획으로 설정합니다.
++
+image::site-type-toggle.png[사이트 유형 전환 스크린샷]
 
+. 페일백할 복제 계획을 식별합니다. *작업* 옵션 image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"]을 선택하고 *복구* 위로 마우스를 가져간 다음 *페일백*을 선택합니다.
+. 복구할 데이터 저장소의 스냅샷을 선택하십시오. 새 스냅샷을 시작하려면 *지금 스냅샷 생성*을 선택하고, 사용 가능한 스냅샷 중에서 선택하려면 *선택*을 선택하십시오.
++
+image:failback.png["페일백 대화 상자의 스크린샷"]
+
+. 작업을 확인하려면 "Failback"을 입력한 다음 *Failback*을 선택하십시오.
+
+
+작업 진행 상황을 모니터링하려면 재해 복구 메뉴에서 *작업 모니터링*을 선택하십시오.
+
+--
+.Kubernetes
+--
+. NetApp Disaster Recovery 메뉴에서 *복제 계획*을 선택합니다.
+. 드롭다운 메뉴에서 *Kubernetes* 복구 계획으로 필터링합니다.
++
+image::site-type-toggle.png[사이트 유형 전환 스크린샷]
+
+. 페일백할 복제 계획을 식별합니다. *작업* 옵션 image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"]을 선택하고 *복구* 위로 마우스를 가져간 다음 *페일백*을 선택합니다.
+. 복구할 데이터 저장소의 스냅샷을 선택하십시오. 새 스냅샷을 시작하려면 *지금 스냅샷 생성*을 선택하고, 가장 최근에 성공한 스냅샷을 사용하려면 *최신 스냅샷 사용*을 선택하십시오.
+. 작업을 확인하려면 "Failback"을 입력한 다음 *Failback*을 선택하십시오.
+
+
+작업 진행 상황을 모니터링하려면 재해 복구 메뉴에서 *작업 모니터링*을 선택하십시오.
+
+--
+====

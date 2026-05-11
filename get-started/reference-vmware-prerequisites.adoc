@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: get-started/reference-vmware-prerequisites.html 
+keywords: vmware cluster prerequisites, vmware 
+summary: NetApp Disaster Recovery를 사용하기 전에 환경이 VMware vCenter 클러스터 요구 사항을 충족하는지 확인하십시오. 
+---
+= VMware vCenter 클러스터의 NetApp Disaster Recovery 사전 요구 사항
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/get-started/
+
+
+[role="lead"]
+NetApp Disaster Recovery를 사용하기 전에 환경이 VMware vCenter 클러스터 요구 사항을 충족하는지 확인하십시오.
+
+
+
+== 일반 사전 요구 사항
+
+이러한 필수 구성 요소는 온프레미스 vCenter 클러스터와 VMware Cloud for AWS 소프트웨어 정의 데이터 센터(SDDC)에 모두 적용됩니다.
+
+* 검토link:../reference/vcenter-privileges.html["vCenter 권한"] NetApp Disaster Recovery 에 필요합니다.
+* NetApp Disaster Recovery 관리하려는 모든 VMware 클러스터는 ONTAP 볼륨을 사용하여 보호하려는 모든 VM을 호스팅합니다.
+* NetApp Disaster Recovery 에서 관리하는 모든 VMware 데이터 저장소는 다음 프로토콜 중 하나를 사용해야 합니다.
++
+** NFS
+** iSCSI 또는 FC 프로토콜을 사용하는 VMFS
+
+
+* VMware vSphere 버전 7.0 업데이트 3(7.0v3) 이상
+
+
+
+
+== VMware Cloud SDDC 사전 요구 사항
+
+VMware Cloud SDDC를 사용하는 경우 다음과 같은 추가 필수 조건이 적용됩니다.
+
+* VMware Cloud Console에서 관리자 및 NSX Cloud 관리자 서비스 역할을 사용하세요.  조직 역할에는 조직 소유자도 사용합니다. 참조하다 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html["AWS FSx for NetApp ONTAP 설명서와 함께 VMware Cloud Foundations 사용"^] .
+* VMware Cloud SDDC를 Amazon FSx for NetApp ONTAP 인스턴스와 연결합니다. 참조하다 https://vmc.techzone.vmware.com/fsx-guide#overview["Amazon FSx for NetApp ONTAP 배포 정보와 AWS의 VMware Cloud 통합"^] .
+

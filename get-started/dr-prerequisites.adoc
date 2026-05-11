@@ -105,37 +105,15 @@ NetApp Console 사용자는 다음과 같은 역할을 가져야 합니다.
 
 == ONTAP 스토리지 전제 조건
 
-이러한 필수 구성 요소는 NetApp ONTAP 인스턴스의 ONTAP 또는 Amazon FSX에 적용됩니다.
+이러한 필수 조건은 ONTAP 및 Amazon FSX for NetApp ONTAP 인스턴스에 적용됩니다.
 
 * 소스 클러스터와 대상 클러스터는 피어 관계가 있어야 합니다.
 * 재해 복구 볼륨을 호스팅하는 SVM은 대상 클러스터에 있어야 합니다.
 * 소스 SVM과 대상 SVM은 피어 관계가 있어야 합니다.
+* link:task-kubernetes-requirements.html["Kubernetes 클러스터에 대한 추가 요구 사항 검토"].
 * Amazon FSx for NetApp ONTAP 사용하여 배포하는 경우 다음 필수 조건이 적용됩니다.
 +
 ** VMware DR 데이터 저장소를 호스팅하려면 Amazon FSx for NetApp ONTAP 인스턴스가 VPC에 있어야 합니다. 시작하려면 다음을 참조하세요.link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html["Amazon FSx for ONTAP 설명서"^] .
-
-
-
-
-
-
-== VMware vCenter 클러스터 필수 구성 요소
-
-이러한 필수 구성 요소는 온프레미스 vCenter 클러스터와 VMware Cloud for AWS 소프트웨어 정의 데이터 센터(SDDC)에 모두 적용됩니다.
-
-* 검토link:../reference/vcenter-privileges.html["vCenter 권한"] NetApp Disaster Recovery 에 필요합니다.
-* NetApp Disaster Recovery 관리하려는 모든 VMware 클러스터는 ONTAP 볼륨을 사용하여 보호하려는 모든 VM을 호스팅합니다.
-* NetApp Disaster Recovery 에서 관리하는 모든 VMware 데이터 저장소는 다음 프로토콜 중 하나를 사용해야 합니다.
-+
-** NFS
-** iSCSI 또는 FC 프로토콜을 사용하는 VMFS
-
-
-* VMware vSphere 버전 7.0 업데이트 3(7.0v3) 이상
-* VMware Cloud SDDC를 사용하는 경우 다음 필수 구성 요소가 적용됩니다.
-+
-** VMware Cloud Console에서 관리자 및 NSX Cloud 관리자 서비스 역할을 사용하세요.  조직 역할에는 조직 소유자도 사용합니다. 참조하다 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/vmware-cloud-ontap.html["AWS FSx for NetApp ONTAP 설명서와 함께 VMware Cloud Foundations 사용"^] .
-** VMware Cloud SDDC를 Amazon FSx for NetApp ONTAP 인스턴스와 연결합니다. 참조하다 https://vmc.techzone.vmware.com/fsx-guide#overview["Amazon FSx for NetApp ONTAP 배포 정보와 AWS의 VMware Cloud 통합"^] .
 
 
 
@@ -202,6 +180,9 @@ TIP: 온프레미스 간 연결의 경우 온프레미스 콘솔 에이전트를
 * Microsoft SQL Server, Oracle Database 또는 둘 다를 실행하는 Windows VM의 경우, 데이터베이스에서 VSS 작성기를 활성화해야 합니다.
 * Linux 운영 체제에서 실행되는 Oracle 데이터베이스의 경우 Oracle 데이터베이스 SYSDBA 역할에 대해 운영 체제 사용자 인증이 활성화되어 있어야 합니다.
 
+
+
+IMPORTANT: 배포 유형에 따라 link:reference-vmware-prerequisites.html["VMware 클러스터 사전 요구 사항"] 및 link:task-kubernetes-requirements.html["Kubernetes 클러스터 사전 요구 사항"]를 검토하십시오.
 
 
 
