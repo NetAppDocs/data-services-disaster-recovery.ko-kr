@@ -2219,7 +2219,6 @@
   <block id="ec83ded0a983071f5ddfe6288e7832c9" category="list-text"><block ref="ec83ded0a983071f5ddfe6288e7832c9" category="inline-link-macro-rx"></block></block>
   <block id="56b24cdd5dc24570f7e1dd2ee03d39ca" category="paragraph">NetApp Disaster Recovery 솔루션에 대한 전체 개요는 <block ref="ccfb532d2846c6e621e9709f67d9a040" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="264f41f7fda3caccf98196e21418201c" category="summary">NetApp Disaster Recovery는 재해 복구 워크플로우를 자동화하는 클라우드 기반 재해 복구 서비스입니다. NetApp Disaster Recovery를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 NetApp 클라우드 스토리지를 사용하는 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제하여 재해 복구 사이트로 활용할 수 있습니다.</block>
-  <block id="e26c1e1448bd5f685a679ff49e20338a" category="section-title">2026년 5월 15일</block>
   <block id="12af18005a606ba97f9e606aa2b596b8" category="paragraph">버전 4.3.3</block>
   <block id="1c42a04ac798111ed2c9388b25e2c237" category="paragraph">리소스와 사이트를 추가한 후에는 _복제 계획_을 생성할 준비가 된 것입니다. 복제 계획은 데이터 보호를 관리합니다. 복제를 생성하려면 소스 및 타겟 사이트를 지정하고, 리소스 그룹을 선택하고, 애플리케이션을 복원하고 전원을 켜는 방법을 선택해야 합니다. 예를 들어, 하나의 애플리케이션과 관련된 가상 머신(VM)을 그룹화하거나 유사한 계층을 가진 애플리케이션을 그룹화할 수 있습니다.</block>
   <block id="e6301bcb4d20444817b4b66020da65f2" category="paragraph">복제 계획이 다음 상태 중 하나에 있는 경우에만 보호 기능을 활성화할 수 있습니다.</block>
@@ -2351,4 +2350,5 @@
   <block id="a79ae1fa6b9efc331842efa8d96937c5" category="sidebar">VMware 사전 요구 사항</block>
   <block id="ffc29f7e69eb606c4fc0ff797755e240" category="sidebar">Kubernetes 사전 요구 사항</block>
   <block id="e5d56575e494e873c5ded63467d12e44" category="paragraph">Kubernetes 기반 워크로드 지원은 현재 미리 보기로 제공됩니다. Kubernetes 기반 워크로드 보호를 시작하려면 <block ref="d1415fee440f8c1c4acbcf4ee7535778" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026년 5월 11일</block>
 </blocks>
