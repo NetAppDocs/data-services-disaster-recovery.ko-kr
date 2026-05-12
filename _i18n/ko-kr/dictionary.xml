@@ -1110,8 +1110,6 @@
   <block id="1c10305a999dce53cb52dd4f6b8d89ff" category="list-text">계획을 검토하세요.</block>
   <block id="8705d6076cb452e919a6e22862427440" category="section-title">vCenter 서버 선택</block>
   <block id="c456b58190fd5c21d84750f126197baf" category="paragraph">먼저 소스 vCenter를 선택한 다음 대상 vCenter를 선택합니다.</block>
-  <block id="f17de33c8bac2ab69dd89149aac16c6c" category="paragraph">다음 단계는 필요한 VM이나 데이터 저장소를 기능적 리소스 그룹으로 그룹화하는 것입니다.  리소스 그룹을 사용하면 공통 스냅샷으로 일련의 VM이나 데이터 저장소를 보호할 수 있습니다.</block>
-  <block id="516dbf8e2c43d00664357bb38d1575a6" category="admonition">각 리소스 그룹에는 하나 이상의 VM이나 데이터 저장소가 포함될 수 있습니다.</block>
   <block id="5e90d93870eb5779de0b40ced0f92445" category="paragraph">리소스 그룹을 만들 때 다음 사항을 고려하세요.</block>
   <block id="9fa2d89f680762c7614753f04e0aad6b" category="list-text">단일 데이터 저장소는 두 개 이상의 복제 계획으로 보호되는 VM을 호스팅해서는 안 됩니다.</block>
   <block id="dfbb0d3c710884104551edbd929afe76" category="list-text">동일한 데이터 저장소에 보호된 VM과 보호되지 않은 VM을 호스팅하지 마세요.  보호된 VM과 보호되지 않은 VM이 동일한 데이터 저장소에 호스팅되는 경우 다음과 같은 문제가 발생할 수 있습니다.</block>
@@ -1341,7 +1339,6 @@
   <block id="e149f52ef3987c9798fc0b5e92f0d94c" category="doc">NetApp Disaster Recovery 사용하여 애플리케이션을 다른 사이트로 마이그레이션</block>
   <block id="427b3d4fa0ec0ef01e084ccc8c953cb5" category="admonition">복제 계획을 만들고 마법사에서 반복을 식별하고 마이그레이션을 시작하면 30분마다 NetApp Disaster Recovery 마이그레이션이 실제로 계획에 따라 발생하는지 확인합니다. 작업 모니터 페이지에서 진행 상황을 모니터링할 수 있습니다.</block>
   <block id="c7e296ab461bd699a5d9cbf0801b389c" category="paragraph">마이그레이션을 시작하기 전에 복제 계획을 만들고 앱을 마이그레이션하도록 선택해야 합니다.  그러면 작업 메뉴에 *마이그레이션* 옵션이 나타납니다.</block>
-  <block id="172b85ce390f386651d8bfdc17ece149" category="list-text">오른쪽에서 *작업* 옵션을 선택하세요<block ref="771645334c0631c5881bfc9858be7f5b" category="inline-image-macro-rx" type="image"></block> *마이그레이션*을 선택하세요.</block>
   <block id="c1845ff7083c49cb3022e9cb477f265b" category="summary">NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다.  모든 재해 복구 작업을 모니터링하고 진행 상황을 확인할 수 있습니다.</block>
   <block id="45b443b335251cfe162de8423d5b2021" category="doc">NetApp Disaster Recovery 작업 모니터링</block>
   <block id="d112f103569329954b57e42717e32021" category="paragraph">모든 NetApp Disaster Recovery 작업을 모니터링하고 진행 상황을 확인할 수 있습니다.</block>
@@ -1755,8 +1752,6 @@
   <block id="3097f5b876f89e830b96175a17c6ee35" category="list-text">직업 실패</block>
   <block id="8d6a4ba10a10e8034a89ce1a5220c738" category="list-text">면허 만료 또는 위반 사항</block>
   <block id="489ad675e0724931adc834fbc59bdeec" category="section-title">스웨거 개선 사항</block>
-  <block id="1749ad8b4bb22a316407bcdb543d7aeb" category="inline-link-macro"><block ref="1749ad8b4bb22a316407bcdb543d7aeb" category="inline-link-rx"></block></block>
-  <block id="0a476aea9bd42d70a5e646a38f779187" category="paragraph">이제 재해 복구 환경에서 Swagger 문서를 확인할 수 있습니다. 재해 복구에서 **설정**을 선택한 다음 **API 문서**를 선택하여 Swagger에 연결하거나 브라우저의 시크릿/개인 모드에서 다음 URL을 방문하세요. <block ref="dcecb9493ce135a9d2a96f8693efd425" category="inline-link-macro-rx"></block>.</block>
   <block id="df6f21ef230478b0b817e1303ba53264" category="section-title">개선된 사용자 인터페이스</block>
   <block id="ce620672d96c9599e9bfaa409968c7a6" category="paragraph">재해 복구 기능이 향상된 경고 및 오류 해결 기능을 제공합니다. 이번 릴리스에서는 취소된 작업이 사용자 인터페이스에 표시되지 않던 오류가 수정되었습니다. 취소된 작업이 이제 표시됩니다. 또한 동일한 대상 네트워크가 여러 개의 서로 다른 소스 네트워크에 매핑될 경우 새로운 경고 메시지가 표시됩니다.</block>
   <block id="edd2f7fa340d3324747878ea3a531288" category="section-title">복제 계획에 기본값으로 추가된 VM 폴더 구조를 유지합니다.</block>
@@ -1932,7 +1927,6 @@
   <block id="3c596c027e95d93780e84a69b6da660a" category="list-text"><block ref="3c596c027e95d93780e84a69b6da660a" category="inline-xref-macro-rx"></block></block>
   <block id="c4342fa27fe9324eb1ac1c89b0f10923" category="paragraph">Amazon EVS를 NetApp Disaster Recovery와 연동하여 구성하기 위한 요구 사항을 검토하고 충족했는지 확인하십시오.</block>
   <block id="c9eefbd632f55f15922ec2a67ceecd81" category="inline-link-macro">Disaster Recovery를 위한 일반적인 전제 조건</block>
-  <block id="8bc4be62934b53e69c9b81bff1de1f0d" category="list-text"><block ref="99d15c44c2397213a4572e5e72b0ce99" category="inline-link-macro-rx"></block>를 검토해 보세요.</block>
   <block id="b232b2686ea4af18cdf799d03f5c0709" category="admonition">기본 "\administrator@vsphere.com" 관리자 계정을 **사용하지 않는 것**을 권장합니다. 대신, 재해 복구 프로세스에 참여할 모든 vCenter 클러스터에 NetApp Disaster Recovery 전용 사용자 계정을 생성해야 합니다. 필요한 특정 권한 목록은 <block ref="efdd112b209053b66d06020632d7d4cc" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
   <block id="76c4a74ea7e2c38908b8f0de658cdf2c" category="list-text">재해 복구로 보호되는 VM을 호스팅할 모든 vCenter 데이터스토어가 NetApp ONTAP 스토리지 리소스에 있는지 확인하십시오.</block>
   <block id="fccca3a5829253b726912e9af8eccf51" category="paragraph">재해 복구는 Amazon FSx for NetApp ONTAP을 사용할 때 iSCSI의 NFS 및 VMFS를 지원합니다(FC는 지원하지 않음). 재해 복구는 FC를 지원하지만 Amazon FSx for NetApp ONTAP은 지원하지 않습니다.</block>
@@ -2108,8 +2102,6 @@
   <block id="082f6fbdb4843c5f374a215502f493b9" category="inline-link-macro">NetApp Disaster Recovery를 위한 Kubernetes 요구 사항</block>
   <block id="3723578e9eec661a364d573c9d930dd2" category="paragraph">*NetApp Disaster Recovery에 어떻게 액세스하나요?* NetApp Disaster Recovery는 별도의 활성화 과정이 필요하지 않습니다. Disaster Recovery는 NetApp Console의 왼쪽 탐색 메뉴에 자동으로 나타납니다.</block>
   <block id="617eb16cadcea920c3756320dc74fccf" category="summary">클라우드 재해 복구는 사이트 장애 및 데이터 손상 사고로부터 워크로드를 보호하는 탄력적이고 비용 효율적인 방법입니다. NetApp Disaster Recovery를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 NetApp 클라우드 스토리지를 사용하는 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제하거나, ONTAP 스토리지를 사용하는 다른 온프레미스 VMware 환경을 재해 복구 사이트로 복제할 수 있습니다.</block>
-  <block id="3348cad21942b5f1082fd6256085c2ba" category="paragraph">클라우드 재해 복구는 사이트 장애 및 데이터 손상 사고로부터 워크로드를 보호하는 탄력적이고 비용 효율적인 방법입니다. NetApp Disaster Recovery를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware VM 또는 데이터스토어 워크로드를 NetApp 클라우드 스토리지를 사용하는 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제하거나, ONTAP 스토리지를 사용하는 다른 온프레미스 VMware 환경을 재해 복구 사이트로 복제할 수 있습니다. 또한 Disaster Recovery를 사용하여 VM 워크로드를 한 사이트에서 다른 사이트로 마이그레이션할 수도 있습니다.</block>
-  <block id="76c012e00737879df95c8c88e2b31de8" category="paragraph">NetApp Disaster Recovery는 재해 복구 워크플로우를 자동화하는 클라우드 기반 재해 복구 서비스입니다. NetApp Disaster Recovery를 사용하면 온프레미스 Kubernetes 클러스터, NFS 기반 워크로드, 그리고 NetApp 스토리지를 사용하는 iSCSI 및 FC용 VMware vSphere 가상 머신 파일 시스템(VMFS) 데이터스토어를 다음 중 하나로 보호할 수 있습니다:</block>
   <block id="99768e8237948205202d18a652ffd119" category="inline-image-macro">NetApp Disaster Recovery의 구성 요소를 보여주는 다이어그램</block>
   <block id="ba116452d0da87465a7f182425b0428a" category="paragraph"><block ref="ba116452d0da87465a7f182425b0428a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="874065797510ef71853078d085cab4b0" category="paragraph">NetApp Console을 사용하기 위해 라이선스나 구독이 필요한 것은 아니며, 스토리지 시스템 또는 NetApp 데이터 서비스와의 연결을 보장하기 위해 클라우드에 Console 에이전트를 배포해야 할 때만 비용이 발생합니다. 단, Console에서 액세스할 수 있는 일부 NetApp 데이터 서비스는 라이선스 또는 구독 기반입니다.</block>
@@ -2124,7 +2116,6 @@
   <block id="9d38de5ae862585720043c224b2b1bf3" category="paragraph">30일 평가 기간이 종료된 후에도 계속 사용하려면 클라우드 공급업체로부터 종량제(PAYGO) 구독을 구매하거나 NetApp에서 BYOL 라이센스를 구매해야 합니다.</block>
   <block id="11c34434edb972fac6cd51114421f1a9" category="inline-image-macro">NetApp Disaster Recovery 서비스 인프라 아키텍처를 보여주는 다이어그램</block>
   <block id="d495eefe35322794258797c1ae708e04" category="paragraph"><block ref="d495eefe35322794258797c1ae708e04" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d4596e81f92059790d8b032cdcadaa9c" category="paragraph">Disaster Recovery는 재해 복구 워크로드를 제공하기 위해 다음과 같은 구성 요소를 사용합니다.</block>
   <block id="2d3f85eddbb71fa004646d204b7c03ae" category="list-text">먼저 운영 사이트와 재해 복구 사이트를 추가하세요.</block>
   <block id="d58c5351fd0af7d37f30f9168a22f6eb" category="inline-link-macro">사이트 추가</block>
   <block id="d25ceda793da5061e5e8521cf2a2a658" category="paragraph">자세한 내용은 <block ref="f2780a9eb3dd3fe744b96093f52bf61c" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
@@ -2136,7 +2127,6 @@
   <block id="c48b0b717dba8d966df10f2b67f35b80" category="inline-link-macro">Kubernetes 클러스터 사전 요구 사항</block>
   <block id="f7f454fbab694f60875a30298e8d4671" category="admonition">배포 유형에 따라 <block ref="2b1de46c6e3599c82d8b32eec3ea90f4" category="inline-link-macro-rx"></block> 및 <block ref="621146f6e5abe763d997392c046861ad" category="inline-link-macro-rx"></block>를 검토하십시오.</block>
   <block id="ab7c7bc32e6c0795ff803f673d7249f4" category="summary">NetApp Disaster Recovery를 사용하기 전에 환경이 VMware vCenter 클러스터 요구 사항을 충족하는지 확인하십시오.</block>
-  <block id="8d1de37b8784f830de2147b8967d5d51" category="doc">VMware vCenter 클러스터의 NetApp Disaster Recovery 사전 요구 사항</block>
   <block id="159c610e83bbaf1e083a2e86f8ec9bc8" category="section-title">일반 사전 요구 사항</block>
   <block id="2ab7e27e532322c16dda4c1eb59d3c9e" category="section-title">VMware Cloud SDDC 사전 요구 사항</block>
   <block id="265b5db3aaacf91c1fc792d5022d95b7" category="paragraph">VMware Cloud SDDC를 사용하는 경우 다음과 같은 추가 필수 조건이 적용됩니다.</block>
@@ -2204,43 +2194,34 @@
   <block id="0b4d810b6c1e9eff46fd849fa4c3fe5b" category="cell">CRD가 존재합니다. Trident 드라이버 목록이 있습니다.</block>
   <block id="f183fde1c1f409b21fc8463052ca49e5" category="inline-link-macro">마이그레이션</block>
   <block id="4441ec99756a62032f3fa12d51cd16ab" category="inline-link-macro">사이트에 Kubernetes 클러스터 추가</block>
-  <block id="697338debb45d8295048530f0be60d24" category="paragraph">모든 리소스의 상태를 확인한 후 Trident StorageClass를 사용하여 워크로드를 배포하거나 <block ref="68347541ed049f893da85c888edbed6b" category="inline-link-macro-rx"></block>하십시오. <block ref="22b93c64fbc9543ea41f771920db4133" category="inline-link-macro-rx"></block>하면 Disaster Recovery에서 클러스터에 Trident Protect를 설치하고 Disaster Recovery 환경에 등록하는 방법에 대한 지침을 제공합니다.</block>
   <block id="046de26b0fe90e8b1926945a4507307b" category="example-title">Trident Protect 설치 지침을 검토하십시오.</block>
-  <block id="c076baedc1ed7a5f075df5d2b9b318e3" category="list-text">Trident 보호 네임스페이스 생성:</block>
   <block id="c7d2d7a8dd276ed8a4b92ebe65fcc996" category="paragraph"><block ref="8fba25b8fc8c173a3ee2d88eef187da3" prefix="" category="inline-code"></block></block>
   <block id="07633676bb578cf8e9d385bc7f3970dc" category="list-text">클라이언트 ID와 클라이언트 시크릿을 사용하여 Kubernetes 시크릿을 생성하고 occm 인증 자격 증명을 생성합니다.</block>
-  <block id="50c35628eeb4e07a754443c82dad582a" category="paragraph"><block ref="9d4cf7fcc554969a626dcaac575641cf" prefix="" category="inline-code"></block></block>
   <block id="5f5319ea9181dcb3e904447887309d17" category="list-text">Helm 저장소를 추가하거나 업데이트하십시오.</block>
   <block id="b1c6bf3ff846fde296453414aa8dfe06" category="paragraph"><block ref="ed69513a6ebe9be7a44349c8aa51c247" prefix="" category="inline-code"></block></block>
   <block id="cb359741a55519aaa9bcb4bcbfcee6da" category="list-text">Trident Protect 및 Trident Protect Connector를 설치하거나 업그레이드하십시오.<block ref="22e049d96b1ff2fb0c41fb3c84fcd651" prefix=" " category="inline-code"></block></block>
   <block id="a1fc1c89153021eb03a34941e90a9ac8" category="inline-link-macro">Trident Protect에 대해 알아보십시오</block>
   <block id="136d3210480cbb898afb6460c1efb7bb" category="list-text"><block ref="136d3210480cbb898afb6460c1efb7bb" category="inline-link-macro-rx"></block></block>
   <block id="62e7309e716a637d8eb7f1bc50e6a30f" category="inline-link-macro">Disaster Recovery에 사이트 추가</block>
-  <block id="ec83ded0a983071f5ddfe6288e7832c9" category="list-text"><block ref="ec83ded0a983071f5ddfe6288e7832c9" category="inline-link-macro-rx"></block></block>
   <block id="56b24cdd5dc24570f7e1dd2ee03d39ca" category="paragraph">NetApp Disaster Recovery 솔루션에 대한 전체 개요는 <block ref="ccfb532d2846c6e621e9709f67d9a040" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="264f41f7fda3caccf98196e21418201c" category="summary">NetApp Disaster Recovery는 재해 복구 워크플로우를 자동화하는 클라우드 기반 재해 복구 서비스입니다. NetApp Disaster Recovery를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 워크로드를 NetApp 클라우드 스토리지를 사용하는 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터로 복제하여 재해 복구 사이트로 활용할 수 있습니다.</block>
   <block id="12af18005a606ba97f9e606aa2b596b8" category="paragraph">버전 4.3.3</block>
-  <block id="1c42a04ac798111ed2c9388b25e2c237" category="paragraph">리소스와 사이트를 추가한 후에는 _복제 계획_을 생성할 준비가 된 것입니다. 복제 계획은 데이터 보호를 관리합니다. 복제를 생성하려면 소스 및 타겟 사이트를 지정하고, 리소스 그룹을 선택하고, 애플리케이션을 복원하고 전원을 켜는 방법을 선택해야 합니다. 예를 들어, 하나의 애플리케이션과 관련된 가상 머신(VM)을 그룹화하거나 유사한 계층을 가진 애플리케이션을 그룹화할 수 있습니다.</block>
   <block id="e6301bcb4d20444817b4b66020da65f2" category="paragraph">복제 계획이 다음 상태 중 하나에 있는 경우에만 보호 기능을 활성화할 수 있습니다.</block>
-  <block id="1dcac87e1d1ecf3b185aa6f786836f02" category="admonition">NetApp Disaster Recovery를 배포하기 전에 VM 또는 Kubernetes 클러스터를 구성하여 확산을 최소화하십시오. 보호가 필요한 리소스는 데이터스토어의 하위 집합에 배치하고, 보호되지 않을 리소스는 다른 데이터스토어 하위 집합에 배치하십시오. 복제 계획을 생성하기 전에 리소스 그룹을 구성하는 방법에 대한 자세한 내용은 <block ref="2e9e1519a300bb9dc6a403652e82bcd7" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
   <block id="c01931b5f1f8380283abe6d3df92ca6f" category="list-text">복제할 리소스(VM, 데이터 저장소, 네임스페이스)를 선택하고 리소스 그룹을 할당합니다.</block>
   <block id="bf90755c2ea047da087c4a63f1fc78c9" category="list-text">플랜에 포함된 모든 VM 또는 Kubernetes 클러스터에 동일한 인증 자격 증명을 사용하십시오.</block>
   <block id="380f93c4dd8d090d3c832d5c203c0d5d" category="list-text">계획에 포함된 모든 VM 또는 Kubernetes 클러스터에 동일한 스크립트를 사용하십시오.</block>
   <block id="4338202b43230633ce5048f0f9976358" category="list-text">플랜에 포함된 모든 VM 또는 Kubernetes 클러스터에 동일한 서브넷, DNS 및 게이트웨이를 사용하십시오.</block>
   <block id="093d6f91400a370bac9aa1c83e740f81" category="list-text">드롭다운 메뉴에서 복제 계획을 생성할 리소스 유형(*Kubernetes* 또는 *vCenter*)을 선택하세요.</block>
   <block id="311b2fa5921a6c9a2aa01033767480ec" category="image-alt">사이트 유형 전환 스크린샷</block>
-  <block id="37122cc2fe905f2e0360abf372164fff" category="list-text">*소스*의 경우, 소스로 지정할 vCenter 또는 Kubernetes 클러스터를 선택하십시오.</block>
   <block id="43a7950b62333edbe551379f15eab5c0" category="list-text">*소스 vCenter*에서 드롭다운 메뉴를 통해 데이터가 있는 vCenter를 선택합니다. *타겟*에서 재해 복구 대상으로 사용할 vCenter 또는 Kubernetes 클러스터를 선택합니다.</block>
   <block id="5e703952c9af079ef1142f66865c7500" category="list-text">리소스 그룹에 리소스를 추가하기 전에 먼저 수동 검색 또는 예약된 검색을 시작하십시오. 이렇게 하면 리소스가 검색되어 리소스 그룹에 나열됩니다.</block>
   <block id="772ed2d2e8d27e26ed13d7acb3d6f02e" category="list-text">데이터스토어에 VM이 하나 이상 있는지 확인하십시오. 데이터스토어에 VM이 없으면 데이터스토어가 검색되지 않습니다.</block>
   <block id="0d0eb6146bdc3c63fd1e513b41de7377" category="list-text">보호된 리소스와 보호되지 않은 리소스를 동일한 데이터 저장소에 호스팅하지 마십시오. 보호된 리소스와 보호되지 않은 리소스를 동일한 데이터 저장소에 호스팅하면 다음과 같은 문제가 발생할 수 있습니다.</block>
   <block id="6038f71182410bd3064b8601a7226ffe" category="list-text">재해 복구에서 SnapMirror를 사용하므로 시스템이 전체 ONTAP 볼륨을 복제하기 때문에 해당 볼륨의 사용 용량이 라이센스 계산에 영향을 미칠 수 있습니다. 이 경우 보호된 리소스와 보호되지 않은 리소스 모두에서 사용된 볼륨 공간이 이 계산에 포함됩니다.</block>
-  <block id="7d7a32b76fa0bc6f548a76459b1b3f8e" category="list-text">리소스 그룹 및 관련 리소스를 재해 복구 사이트로 페일오버해야 하는 경우, 페일오버 프로세스로 인해 소스 사이트에 보호되지 않은 리소스가 더 이상 존재하지 않게 되어 소스 사이트에서 보호되지 않은 VM이 실패하게 됩니다. 또한 NetApp Disaster Recovery는 페일오버 vCenter 사이트에서 해당 보호되지 않은 VM을 시작하지 않습니다.</block>
   <block id="34891a55ff1532cfba6d7df6f11c7b55" category="admonition">장애 조치 테스트를 위해 별도의 전용 매핑 세트를 생성하여 리소스가 동일한 IP 주소를 사용하여 운영 네트워크에 연결되는 것을 방지하십시오.</block>
   <block id="e10ca1adb349a5228f7573a244805247" category="open-title">vCenter</block>
   <block id="30136395f01879792198317c11831ea4" category="open-title">Kubernetes</block>
   <block id="028987cfad4c5202b071c406f366bf2c" category="paragraph">Kubernetes 클러스터용 복제 계획을 생성할 때 리소스 그룹의 Kubernetes 네임스페이스는 동일한 ONTAP 클러스터에 속해야 합니다.</block>
-  <block id="f60d0eb27727fe86f48ad03866c79309" category="list-text">기존 리소스 그룹이 있는 경우 목록에서 해당 그룹을 선택합니다.</block>
   <block id="bcedbf6bc6f85b4f42469dbe9a695df3" category="inline-link-macro">리소스 그룹에 네임스페이스 추가</block>
   <block id="6a6747a74fd027a47c06e1db3ff36fe2" category="paragraph">기존 리소스 그룹이 없거나 리소스 그룹에 리소스를 추가해야 하는 경우 *+ 새 리소스 그룹 만들기*를 선택하세요. <block ref="80758a5c9c6eff8c745b280c61df1488" category="inline-link-macro-rx"></block>의 지침을 따르세요.</block>
   <block id="64fa2a13ae0cf6617ff8c1571c132795" category="paragraph">리소스 그룹의 이름을 지정할 때 지원되는 문자는 소문자와 숫자뿐입니다.</block>
@@ -2264,14 +2245,12 @@
   <block id="38024e76a2b64efa68a6d51d33e31f6e" category="paragraph">*네트워크 설정* NetApp Disaster Recovery는 VM 네트워크에 대한 광범위한 구성 옵션을 지원합니다. 타겟 사이트의 가상 네트워크가 소스 사이트의 운영 가상 네트워크와 다른 TCP/IP 설정을 사용하는 경우 이러한 설정을 변경해야 할 수 있습니다.</block>
   <block id="b60fe3207297f056bd4af1c6f6939a13" category="paragraph">VM 게스트 OS에서 스크립트 실행을 활성화하려면 다음 조건을 충족해야 합니다.</block>
   <block id="57106a45b6af39302ee18dd4ea2a5d43" category="list-text">*CPU* 및 *메모리(GB)*: 가상 머신 세부 정보에서 VM CPU 및 메모리 크기를 선택적으로 조정할 수 있습니다.</block>
-  <block id="b3fe661a3c700dfa71f4f3fed3393714" category="list-text">드롭다운 메뉴에서 필터를 *vCenter* 복제 계획으로 설정합니다.</block>
   <block id="00e3eeebb15d92abc7bca95a0631a9b1" category="list-text">페일백할 복제 계획을 식별합니다. *작업* 옵션 <block ref="771645334c0631c5881bfc9858be7f5b" category="inline-image-macro-rx" type="image"></block>을 선택하고 *복구* 위로 마우스를 가져간 다음 *페일백*을 선택합니다.</block>
   <block id="b9ae80d2354a2fdb8c5eab224a3c2793" category="list-text">복구할 데이터 저장소의 스냅샷을 선택하십시오. 새 스냅샷을 시작하려면 *지금 스냅샷 생성*을 선택하고, 사용 가능한 스냅샷 중에서 선택하려면 *선택*을 선택하십시오.</block>
   <block id="7d72c133b3a80822e8d04e8e866579c1" category="inline-image-macro">페일백 대화 상자의 스크린샷</block>
   <block id="fe2070975262fdb1507084ad02d139e7" category="paragraph"><block ref="fe2070975262fdb1507084ad02d139e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec5c6f08ada454e9670285c835649f45" category="list-text">작업을 확인하려면 "Failback"을 입력한 다음 *Failback*을 선택하십시오.</block>
   <block id="2d518d2a0701e8e4560cbcf883ee4f3a" category="list-text">드롭다운 메뉴에서 *Kubernetes* 복구 계획으로 필터링합니다.</block>
-  <block id="a7c5e813e2adbedd130d6e17a7879d3b" category="list-text">복구할 데이터 저장소의 스냅샷을 선택하십시오. 새 스냅샷을 시작하려면 *지금 스냅샷 생성*을 선택하고, 가장 최근에 성공한 스냅샷을 사용하려면 *최신 스냅샷 사용*을 선택하십시오.</block>
   <block id="cf3a1b459cc4424970f17bd247150364" category="paragraph">장애 조치를 시작하기 전에 프로세스를 테스트할 수 있습니다. 이 테스트는 VM을 오프라인 상태로 전환하지 않습니다.</block>
   <block id="1125e3b29e278ae1d41547291cfcb9fb" category="paragraph">장애 조치 테스트 중에 Disaster Recovery는 임시로 VM을 생성합니다. Disaster Recovery는 FlexClone 볼륨을 지원하는 임시 데이터 저장소를 ESXi 호스트에 매핑합니다.</block>
   <block id="1d235eca89fa1ce9ae2c129b3459f24d" category="paragraph">테스트를 완료한 후에는 *테스트 정리* 옵션을 사용하여 VM을 재설정해야 합니다. 이는 권장 사항이지만 필수 사항은 아닙니다.</block>
@@ -2288,28 +2267,21 @@
   <block id="baf0b4e105ebbfa84dd088a11896c49a" category="list-text">장애 조치에 사용할 스냅샷 복사본을 선택하십시오. *지금 스냅샷 생성*을 선택하면 타겟 클러스터에 복사될 새 스냅샷을 생성하거나 *최신 스냅샷 사용*을 선택하면 타겟 클러스터에서 사용 가능한 가장 최근 스냅샷을 사용할 수 있습니다.</block>
   <block id="02531ddbf670fbb347701db90d4791ea" category="list-text">작업을 확인하려면 "Failover"를 입력한 다음 *Failover*를 선택하십시오.</block>
   <block id="98bf814ae7ba9991db0d5988d6e83219" category="paragraph">작업 상태는 *Job monitoring* 또는 *Replication plans*에서 확인할 수 있습니다.</block>
-  <block id="33ba6a3e737be27e9a8af4b47c28cc82" category="paragraph">리소스 사이트를 추가한 후에는 VM, 데이터스토어 또는 Kubernetes 클러스터를 하나의 단위로 묶는 리소스 그룹을 생성할 수 있습니다. 리소스 그룹을 사용하면 종속 리소스 집합을 요구 사항에 맞는 논리적 그룹으로 구성할 수 있습니다. 예를 들어, 특정 애플리케이션과 관련된 VM을 그룹화하거나 유사한 계층을 가진 애플리케이션을 그룹화할 수 있습니다. 또 다른 예로, 그룹에는 복구 시 실행될 지연 부팅 순서를 포함할 수 있습니다.</block>
-  <block id="facae22154364c09b28633a1105255f1" category="list-text">재해 복구 또는 _복제 계획_을 생성하는 동안 소스 vCenter 클러스터에서 호스팅되는 VM이 많은 경우 복제 계획을 생성하는 동안 리소스 그룹을 생성하는 것이 더 쉬울 수 있습니다. 복제 계획을 생성하는 동안 리소스 그룹을 생성하는 방법에 대한 지침은 <block ref="808c9323236f2ed48bff12970a5f1c49" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="e36dbe09ccd10ebf6ef8295c41d76f16" category="admonition">각 리소스 그룹에는 하나 이상의 VM, 데이터스토어 또는 Kubernetes 클러스터가 포함될 수 있습니다. VM은 복구 계획에 포함된 순서에 따라 켜집니다. 리소스 그룹 목록에서 VM 또는 데이터스토어를 위아래로 드래그하여 순서를 변경할 수 있습니다.</block>
   <block id="85c3e85b3061b8da1b16538c49af072b" category="paragraph">리소스 그룹을 사용하면 VM, 데이터 저장소 또는 Kubernetes 애플리케이션을 단일 단위로 결합할 수 있습니다.</block>
   <block id="ab058379146e5279c74d4a29d48f0c6b" category="list-text">ONTAP API:<block ref="b5ab07cdecf9303ff94db49578282528" prefix=" " category="inline-code"></block>. 모든 볼륨을 정지시켜 스냅샷을 생성할 수 있도록 하고, 모든 리소스 그룹 볼륨에 대해 볼륨 범위의 스냅샷 생성을 시작합니다.</block>
   <block id="b1303c478b38150c3baf597fdbe8c41c" category="paragraph">*모범 사례*: NetApp Disaster Recovery를 배포하기 전에 VM을 구성하여 데이터스토어 확산을 최소화하십시오. 보호가 필요한 VM은 데이터스토어의 일부에 배치하고, 보호되지 않을 VM은 다른 데이터스토어에 배치하십시오. 특정 데이터스토어에 있는 VM이 서로 다른 복제 계획의 보호를 받지 않도록 하십시오.</block>
   <block id="8512ebbe1d362c6831db703766f01dd8" category="open-title">vCenters</block>
   <block id="07f74765770169894653b2ad6e822052" category="list-text">Disaster Recovery에서 사이드바의 **리소스 그룹**을 선택합니다.</block>
-  <block id="4e31cf67e23a6ba729a9fe876ed26c20" category="list-text">드롭다운 메뉴에서 *vCenter* 리소스 그룹으로 필터링합니다.</block>
-  <block id="f98580b40a0f32088d8dce3c11717c21" category="list-text">드롭다운 메뉴에서 *Kubernetes* 사이트를 기준으로 필터링하세요.</block>
   <block id="cf61db0e22494aae54580dda890a8ec9" category="list-text">리소스 그룹의 **이름**을 입력하고 드롭다운 메뉴에서 Kubernetes **클러스터**를 선택합니다.</block>
   <block id="25bef131895313117ef9ee6959a6d4dd" category="list-text">리소스 그룹에 추가할 *네임스페이스*를 선택합니다.</block>
   <block id="d788b2476308b6754a77d77365caa671" category="list-text">선택적으로 *Label selectors*를 포함할 수 있습니다.</block>
-  <block id="1d39c98bea56e1a5bf0f0410f83db1c4" category="inline-image-macro">Kubernetes 리소스 그룹 추가</block>
-  <block id="1b3f89bb5b2e87d1d85d112b7d7fe35a" category="paragraph"><block ref="1b3f89bb5b2e87d1d85d112b7d7fe35a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6389d8fe4b792c93b8e1fce64ca8b90" category="list-text">선택적으로 *+ Cluster-scoped resources*를 선택하여 네임스페이스에 속하지 않는 리소스를 추가할 수 있습니다. 이 옵션을 선택하면 *Group*, *Version*, *Kind*를 선택하고 필요에 따라 레이블 선택기를 추가합니다. **Add resource**를 선택합니다.</block>
   <block id="3bc4a4e3612ce92248802c21e699e973" category="doc">NetApp Disaster Recovery에 사이트 추가</block>
   <block id="196615b89ae958963a3a284a2ab815b3" category="paragraph">재해 복구 계획을 생성하기 전에 Disaster Recovery에 사이트를 추가해야 합니다. 사이트는 vCenter 서버 또는 Kubernetes 클러스터(온프레미스 또는 클라우드)의 모음입니다. 기본 또는 운영 사이트와 재해 복구 사이트를 추가해야 합니다.</block>
   <block id="810cc49812caca1c98643608a0be801e" category="admonition">소스와 대상 모두 동일한 NetApp Console 에이전트를 사용하고 있는지 확인하십시오.</block>
   <block id="685264f986681135349a1c43fc1cee02" category="paragraph">재해 복구에 사이트를 추가할 때는 사이트에 있는 리소스 유형을 구분해야 합니다. vCenters 또는 Kubernetes 클러스터 중 하나를 추가할 수 있습니다.</block>
   <block id="61abb06b6e1ebd33dc80ab11d584e408" category="list-text">Disaster Recovery에서 사이드바의 **사이트**를 선택합니다.</block>
-  <block id="1729b3f0a7b8f24d2e82c85c2b0c6b8c" category="list-text">드롭다운 메뉴에서 사이트 유형을 선택합니다. **vCenter** 또는 **Kubernetes**.</block>
   <block id="17b326dede4f07a65e6eaeed2a4d3814" category="list-text">사이트에 **이름**을 지정하십시오. vCenters의 경우 사이트 위치도 선택해야 합니다.</block>
   <block id="c0a60a5414023d619e867982c390a2a2" category="paragraph">Disaster Recovery에 사이트를 추가한 후에는 해당 사이트에 리소스를 연결해야 합니다.</block>
   <block id="13ea096d969f89bcec343fc3cf395c84" category="section-title">사이트에 리소스 추가</block>
@@ -2340,7 +2312,6 @@
   <block id="5008ed36813c93ca58d7adc268d7e9c8" category="list-text"><block ref="bc45819eee68deaddfdb62979db4ed0b" category="inline-link-macro-rx"></block> SnapMirror 복제를 사용하여 기본 사이트에서 클라우드의 재해 복구 원격 사이트로</block>
   <block id="5d23a9c0c55a80ece74daa65c04f1d66" category="inline-link-macro">애플리케이션 마이그레이션</block>
   <block id="9385503dc8066e1d324cd4976b5581ad" category="list-text"><block ref="304f948cd52821579c2211010250c9bb" category="inline-link-macro-rx"></block> 기본 사이트에서 다른 사이트로</block>
-  <block id="bbe6ff2751cf0e0b5255fe8fb1c28eec" category="list-text"><block ref="1eb384da451aa1014bf5aa632cfa3987" category="inline-link-macro-rx"></block> 리소스를 중단하지 않고</block>
   <block id="74771557228a2ccd6f4426626cddc198" category="list-text">재해 발생 시, <block ref="c6aafe8fbf5a24cb8116bdae71eb6c66" category="inline-link-macro-rx"></block></block>
   <block id="6ee3c81b815a19f7a6df65064752bcf3" category="list-text">재해가 해결된 후 재해 복구 사이트에서 기본 사이트로 <block ref="34c4a51d8bf8a64dde44adbfd1be3850" category="inline-link-macro-rx"></block></block>
   <block id="5588146c6fdf71a9e99382d108ca2b8d" category="list-text">작업 모니터링 페이지에서 <block ref="698cc22cc758157d8f18359f8b528216" category="inline-link-macro-rx"></block></block>
@@ -2351,4 +2322,40 @@
   <block id="ffc29f7e69eb606c4fc0ff797755e240" category="sidebar">Kubernetes 사전 요구 사항</block>
   <block id="e5d56575e494e873c5ded63467d12e44" category="paragraph">Kubernetes 기반 워크로드 지원은 현재 미리 보기로 제공됩니다. Kubernetes 기반 워크로드 보호를 시작하려면 <block ref="d1415fee440f8c1c4acbcf4ee7535778" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026년 5월 11일</block>
+  <block id="e299976cf6ad72e9cd6eac4265aadae9" category="inline-link-macro">링크</block>
+  <block id="26f7347ecc3b1295fe31090cb112bdb5" category="paragraph">이제 Disaster Recovery 내에서 Swagger 문서에 액세스할 수 있습니다. Disaster Recovery에서 **Settings**를 선택한 다음 **API documentation**을 선택합니다. <block ref="8cdb7c51b5c45fe08a1b8d62e1d74e33" category="inline-link-macro-rx"></block>에 액세스하려면 비공개 또는 시크릿 모드여야 합니다.</block>
+  <block id="b5239b8cd4669d32ae59552af8c49683" category="paragraph">클라우드 재해 복구는 사이트 장애 및 데이터 손상 사고로부터 워크로드를 보호하는 탄력적이고 비용 효율적인 방법입니다. NetApp Disaster Recovery는 재해 복구 워크플로우를 자동화하는 클라우드 기반 재해 복구 서비스입니다. NetApp Disaster Recovery를 사용하면 온프레미스 Kubernetes 클러스터, NFS 기반 워크로드, 그리고 NetApp 스토리지를 사용하는 iSCSI 및 FC용 VMware vSphere 가상 머신 파일 시스템(VMFS) 데이터스토어를 다음 중 하나로 보호할 수 있습니다:</block>
+  <block id="657a981b21b02b21fc3db30667df960f" category="paragraph">Disaster Recovery에는 다음과 같은 구성 요소가 사용됩니다.</block>
+  <block id="ab049a02d3fa173979253b98a8351c47" category="doc">NetApp Disaster Recovery에서 VMware vCenter 클러스터의 사전 요구 사항</block>
+  <block id="433e2600c60703529973a0e64aad73fc" category="paragraph">모든 리소스의 상태를 확인한 후 Trident StorageClass를 사용하여 워크로드를 배포하거나 <block ref="68347541ed049f893da85c888edbed6b" category="inline-link-macro-rx"></block>하십시오. <block ref="66e946638b4e178eb6fcb04a7d9c48bb" category="inline-link-macro-rx"></block>하면 Disaster Recovery에서 클러스터에 Trident Protect를 설치하고 Disaster Recovery 환경에 등록하는 방법에 대한 지침을 제공합니다.</block>
+  <block id="a826d76dfc673a7582fc47b877c0294c" category="list-text">Trident 보호 네임스페이스를 생성합니다.</block>
+  <block id="fd41d6f681fcde1d5668de60a04c0563" category="paragraph"><block ref="fa5ae6d9db1798cb96b18ea5809b60d9" prefix="" category="inline-code"></block></block>
+  <block id="83e1151ac17b113708a4a8f22a39063c" category="list-text"><block ref="83e1151ac17b113708a4a8f22a39063c" category="inline-link-macro-rx"></block></block>
+  <block id="d1078d331fc762f6c1e11445777639f1" category="list-text"><block ref="e169d85ddc666c008a7e023ca382e5b3" category="inline-link-macro-rx"></block>를 검토해 보세요.</block>
+  <block id="3e2600f2f1048cf9d96b25b85a3b12b5" category="paragraph">리소스와 사이트를 추가했으면 이제 _복제 계획_을 생성할 준비가 되었습니다. 복제 계획은 데이터 보호를 관리합니다. 복제를 생성하려면 소스 및 대상 사이트를 지정하고, 리소스 그룹을 선택하고, 애플리케이션을 복원하고 전원을 켜는 방법을 선택해야 합니다. 예를 들어, 하나의 애플리케이션과 관련된 가상 머신(VM)을 그룹화하거나 유사한 계층을 가진 애플리케이션을 그룹화할 수 있습니다.</block>
+  <block id="fd0863d0dc188b339645e359055610e4" category="admonition">NetApp Disaster Recovery를 배포하기 전에 VM 또는 Kubernetes 클러스터를 구성하여 확산을 최소화하십시오. 보호가 필요한 리소스는 데이터스토어의 하위 집합에 배치하고, 보호되지 않을 리소스는 다른 데이터스토어 하위 집합에 배치하십시오. 복제 계획을 생성하기 전에 리소스 그룹을 구성하는 방법에 대한 자세한 내용은 <block ref="2e9e1519a300bb9dc6a403652e82bcd7" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="65dea983a95654f072023e3fd251790f" category="list-text">*소스*의 경우, 소스로 지정할 vCenter 또는 Kubernetes 클러스터를 선택하십시오.</block>
+  <block id="56da8dc4cd41826eefa46f92a1310a8b" category="paragraph">다음 단계는 필요한 VM, 데이터스토어 또는 Kubernetes 클러스터를 기능별 리소스 그룹으로 묶는 것입니다. 리소스 그룹을 사용하면 Kubernetes 클러스터 또는 VM과 같은 리소스 집합을 공통 스냅샷으로 보호할 수 있습니다.</block>
+  <block id="8c6c4a8e0b08b14aecab6da50e79b7f2" category="list-text">리소스 그룹 및 관련 리소스를 재해 복구 사이트로 페일오버해야 하는 경우, 페일오버 프로세스로 인해 소스 사이트에서 보호되지 않은 리소스가 더 이상 존재하지 않게 되어 소스 사이트에서 보호되지 않은 리소스에 장애가 발생합니다. 또한 NetApp Disaster Recovery는 페일오버 사이트에서 해당 보호되지 않은 리소스를 시작하지 않습니다.</block>
+  <block id="cff026a3d3441091dbeb69e012c6d135" category="list-text">기존 리소스 그룹이 있는 경우 목록에서 해당 그룹을 선택하세요.</block>
+  <block id="3fcd520a36c25a041d54e0345e5120b7" category="inline-image-macro">Kubernetes용 스토리지 클래스 매핑 스크린샷</block>
+  <block id="09eabfe208687918794424252212771f" category="paragraph"><block ref="09eabfe208687918794424252212771f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2fb0abcc11fd1c402b6f55d47dcbaeab" category="list-text">드롭다운 메뉴에서 필터를 *VMware*로 설정합니다.</block>
+  <block id="b73065c440ad6a0d00e6f46ef35ac022" category="list-text">복구할 클러스터의 스냅샷을 선택하십시오. 새 스냅샷을 시작하려면 *Take snapshot now*를 선택하고, 가장 최근에 성공한 스냅샷을 사용하려면 *Use latest snapshot*을 선택하십시오.</block>
+  <block id="476e6adf9c7b2d36849db7f40220a91b" category="admonition">현재 Kubernetes 기반 워크로드에 대한 마이그레이션은 지원되지 않습니다.</block>
+  <block id="09ab8e5a1a2c8097b6247f02e034df79" category="list-text">오른쪽에서 *작업* 옵션 <block ref="771645334c0631c5881bfc9858be7f5b" category="inline-image-macro-rx" type="image"></block>을 선택하고 *복구* 위로 마우스를 가져간 다음 *마이그레이션*을 선택합니다.</block>
+  <block id="63b59bd3005c3190b412de0de60c524e" category="list-text">대화 상자에서 마이그레이션을 위한 새 스냅샷을 생성하려면 *지금 스냅샷 생성*을 선택하고, 마이그레이션을 위해 기존 스냅샷을 선택하려면 *선택*을 선택합니다.</block>
+  <block id="57f6d80656e4ee0b5b2e9b08fa6a8df5" category="list-text">텍스트 상자에 "Migrate"를 입력하여 작업을 확인한 다음 *Migrate*를 선택하십시오.</block>
+  <block id="cb6d2304c273a613ee84cbcf942b2248" category="summary">리소스 그룹을 사용하면 종속 리소스 집합을 요구 사항에 맞는 논리적 그룹으로 구성할 수 있습니다.</block>
+  <block id="bd24faf1a27806861f804599d5c5a471" category="paragraph">사이트에 리소스를 추가한 후에는 리소스 그룹을 생성하여 VM, 데이터스토어 또는 Kubernetes 클러스터를 단일 단위로 구성할 수 있습니다. 리소스 그룹을 사용하면 종속 리소스 집합을 요구 사항에 맞는 논리적 그룹으로 구성할 수 있습니다. 예를 들어, 특정 애플리케이션과 관련된 VM을 그룹화하거나 유사한 계층을 가진 애플리케이션을 그룹화할 수 있습니다. 또 다른 예로, 그룹에는 복구 시 실행될 지연 부팅 순서를 포함할 수 있습니다.</block>
+  <block id="9789de497fc858b2322a60bdd76e1464" category="list-text">재해 복구 또는 복제 계획을 생성하는 동안 소스 vCenter 클러스터에서 호스팅되는 VM이 많은 경우 복제 계획을 생성하는 동안 리소스 그룹을 생성하는 것이 더 쉬울 수 있습니다. 복제 계획을 생성하는 동안 리소스 그룹을 생성하는 방법에 대한 지침은 <block ref="808c9323236f2ed48bff12970a5f1c49" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="0be7e7dbe0652c5800b5e340ea30596b" category="list-text">드롭다운 메뉴에서 *VMware*로 필터링합니다.</block>
+  <block id="3d997e375337e35b4a4477c4b8a2d1bb" category="list-text">드롭다운 메뉴에서 *Kubernetes*로 필터링합니다.</block>
+  <block id="8d168d84a223f1021f96c84b6fbf5702" category="list-text">*리소스 유형*을 분류하세요. 기본적으로 선택 항목은 "모두 포함"이며, 이는 여러 리소스 유형을 나타냅니다.</block>
+  <block id="ac5bc7127ecda6b1ac8785f4ee0f6c12" category="inline-image-macro">Kubernetes 리소스 그룹 추가 스크린샷</block>
+  <block id="5190dc0de46dcc38b30faed0a6298aa4" category="paragraph"><block ref="5190dc0de46dcc38b30faed0a6298aa4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="124be83325d64e9c766bbde1f52f7b93" category="inline-image-macro">클러스터 범위 Kubernetes 리소스 추가 스크린샷</block>
+  <block id="839097294e2dbfd7824e255a28981f0a" category="paragraph"><block ref="839097294e2dbfd7824e255a28981f0a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe0436b2b4ffe08414ea0169e1f3e16f" category="list-text">드롭다운 메뉴에서 사이트 유형(**VMware** 또는 **Kubernetes**)을 선택합니다.</block>
+  <block id="c5e2dee9838723e4e75bbdc5c8ddc473" category="list-text"><block ref="1eb384da451aa1014bf5aa632cfa3987" category="inline-link-macro-rx"></block> 리소스를 중단하지 않고</block>
 </blocks>

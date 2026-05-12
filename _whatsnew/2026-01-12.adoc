@@ -36,7 +36,7 @@
 
 === 스웨거 개선 사항
 
-이제 재해 복구 환경에서 Swagger 문서를 확인할 수 있습니다. 재해 복구에서 **설정**을 선택한 다음 **API 문서**를 선택하여 Swagger에 연결하거나 브라우저의 시크릿/개인 모드에서 다음 URL을 방문하세요. link:https://snapcenter.cloudmanager.cloud.netapp.com/api/api-doc/draas["https://snapcenter.cloudmanager.cloud.netapp.com/api/api-doc/draas"^].
+이제 Disaster Recovery 내에서 Swagger 문서에 액세스할 수 있습니다. Disaster Recovery에서 **Settings**를 선택한 다음 **API documentation**을 선택합니다. link:https://api.bluexp.netapp.com/v1/services/draas/api/api-doc/draas["링크"^]에 액세스하려면 비공개 또는 시크릿 모드여야 합니다.
 
 
 

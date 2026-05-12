@@ -181,18 +181,18 @@ kubectl patch volumesnapshotclasses.snapshot.storage.k8s.io trident-snapshotclas
 
 | 스냅샷 API | `kubectl get volumesnapshotclass` | CRD가 존재합니다. Trident 드라이버 목록이 있습니다. 
 |===
-모든 리소스의 상태를 확인한 후 Trident StorageClass를 사용하여 워크로드를 배포하거나 link:https://docs.netapp.com/us-en/trident/trident-protect/trident-protect-migrate-apps.html#migrate-applications-from-one-storage-class-to-another-storage-class["마이그레이션"^]하십시오. link:../use/sites-add.adoc["사이트에 Kubernetes 클러스터 추가"]하면 Disaster Recovery에서 클러스터에 Trident Protect를 설치하고 Disaster Recovery 환경에 등록하는 방법에 대한 지침을 제공합니다.
+모든 리소스의 상태를 확인한 후 Trident StorageClass를 사용하여 워크로드를 배포하거나 link:https://docs.netapp.com/us-en/trident/trident-protect/trident-protect-migrate-apps.html#migrate-applications-from-one-storage-class-to-another-storage-class["마이그레이션"^]하십시오. link:../use/sites-add.html["사이트에 Kubernetes 클러스터 추가"]하면 Disaster Recovery에서 클러스터에 Trident Protect를 설치하고 Disaster Recovery 환경에 등록하는 방법에 대한 지침을 제공합니다.
 
 .Trident Protect 설치 지침을 검토하십시오.
 [%collapsible]
 ====
-. Trident 보호 네임스페이스 생성:
+. Trident 보호 네임스페이스를 생성합니다.
 +
 `kubectl create namespace trident-protect`
 
 . 클라이언트 ID와 클라이언트 시크릿을 사용하여 Kubernetes 시크릿을 생성하고 occm 인증 자격 증명을 생성합니다.
 +
-`kubectl create secret generic occmauthcreds --namespace=trident-protect --from-literal=client_id=<clidentID> --from-literal=<clientSecret>`
+`kubectl create secret generic occmauthcreds --namespace=trident-protect --from-literal=client_id=<clientID> --from-literal=<clientSecret>`
 
 . Helm 저장소를 추가하거나 업데이트하십시오.
 +
@@ -209,5 +209,5 @@ kubectl patch volumesnapshotclasses.snapshot.storage.k8s.io trident-snapshotclas
 == 더 많은 정보
 
 * link:https://docs.netapp.com/us-en/trident/trident-protect/learn-about-trident-protect.html["Trident Protect에 대해 알아보십시오"^]
-* link:../use/sites-add.adoc["Disaster Recovery에 사이트 추가"]
+* link:../use/sites-add.html["Disaster Recovery에 사이트 추가"]
 
