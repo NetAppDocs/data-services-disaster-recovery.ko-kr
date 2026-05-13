@@ -140,6 +140,9 @@ NetApp Console 사용자는 다음과 같은 역할을 가져야 합니다.
 
 
 
+TIP: Amazon Elastic VMware Service(EVS)에서 재해 복구를 사용하려면 link:../reference/evs-deploy-guide-config-prereqs.html["추가 필수 조건 및 구성 지침"^]을(를) 참조하십시오.
+
+
 
 === NetApp Console 에이전트 만들기
 
