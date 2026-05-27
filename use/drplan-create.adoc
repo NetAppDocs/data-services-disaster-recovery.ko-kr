@@ -14,7 +14,7 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 [role="lead"]
 리소스와 사이트를 추가했으면 이제 _복제 계획_을 생성할 준비가 되었습니다. 복제 계획은 데이터 보호를 관리합니다. 복제를 생성하려면 소스 및 대상 사이트를 지정하고, 리소스 그룹을 선택하고, 애플리케이션을 복원하고 전원을 켜는 방법을 선택해야 합니다. 예를 들어, 하나의 애플리케이션과 관련된 가상 머신(VM)을 그룹화하거나 유사한 계층을 가진 애플리케이션을 그룹화할 수 있습니다.
 
-*필수 NetApp Console 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 재해 복구 관리자, 재해 복구 장애 조치 관리자 또는 재해 복구 애플리케이션 관리자 역할.
+*필수 NetApp Console 역할* 슈퍼 관리자, 재해 복구 관리자, 재해 복구 페일오버 관리자 또는 재해 복구 애플리케이션 관리자 역할.
 
 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
