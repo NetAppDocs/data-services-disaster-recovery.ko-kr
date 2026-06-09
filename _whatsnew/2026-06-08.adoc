@@ -1,0 +1,61 @@
+= Kubernetes 업데이트
+:allow-uri-read: 
+
+
+
+
+=== Kubernetes 업데이트
+
+재해 복구 기능은 Kubernetes 기반 워크로드에 대해 다음과 같은 변경 사항을 도입했습니다.
+
+
+
+==== Kubernetes 워크로드에 대한 페일오버 지원 테스트
+
+재해 복구 기능이 이제 Kubernetes 워크로드에 대한 페일오버 프로세스 테스트를 지원합니다. 페일오버 테스트를 통해 재해 복구 계획의 유효성을 검증할 수 있습니다. 테스트가 완료되면 테스트 페일오버를 정리할 수 있으며, 시스템이 자동으로 테스트 리소스를 정리하여 오버헤드를 줄이고 환경의 일관성을 유지합니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/failover.html#test-the-failover-process["장애 조치 프로세스 테스트"^]를 참조하십시오.
+
+
+
+==== 예약된 테스트 페일오버
+
+이제 테스트 페일오버 일정을 설정하여 재해 복구 테스트를 자동화할 수 있습니다. 반복적인 테스트 페일오버 일정을 설정하여 수동 개입 없이 복구 계획을 지속적으로 검증하고, 복구 목표에 대한 신뢰도를 유지하며 규정 준수 요건을 충족할 수 있습니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/manage.html#manage-replication-plans["복제 계획 관리"^]를 참조하십시오.
+
+
+
+==== Kubernetes 워크로드의 예약된 검색
+
+예약된 검색 기능을 사용하면 Disaster Recovery가 새로운 Kubernetes 워크로드를 검색하는 빈도를 제어할 수 있습니다. 운영 주기에 맞춰 검색 간격을 구성하면 불필요한 시스템 오버헤드를 줄이는 동시에 새로운 워크로드를 적시에 감지하고 보호할 수 있습니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/sites-add.html#edit-the-site-and-customize-the-discovery-schedule["검색 일정 사용자 지정"^]를 참조하십시오.
+
+
+
+=== VMware 업데이트
+
+
+
+==== 빈 데이터 저장소 보호
+
+재해 복구 기능을 통해 이제 가상 머신(VM)이 없는 데이터스토어에 대한 보호 설정을 구성할 수 있습니다. 데이터스토어에 추가되는 모든 VM은 재해 복구 기능에 의해 자동으로 감지되며, 이때 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/sites-add.html#add-subnet-mapping-for-a-vcenter-site["매핑 정보"^]을(를) 제공해야 합니다.
+
+보호 계획에 빈 데이터 저장소를 추가하는 경우, 장애 조치를 수행하기 전에 보호 계획에서 데이터 저장소를 제거하거나 강제 장애 조치를 수행해야 합니다. 자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/failover.html["원격 사이트로 페일오버"^]를 참조하십시오.
+
+
+
+==== 이전에 제외된 데이터 저장소를 보호 플랜으로 복원합니다
+
+이전에는 보호 대상에서 제외되었던 데이터 저장소를 이제 다시 포함할 수 있습니다. 이 개선 사항은 시간이 지남에 따라 재해 복구 구성을 관리하고 업데이트할 때 더 큰 유연성을 제공합니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/manage.html["사이트, 리소스 그룹 및 복제 계획 관리"^]를 참조하십시오.
+
+
+
+==== VMFS 기반 데이터 저장소의 더 빠른 페일오버
+
+재해 복구 기능이 VMFS 기반 데이터스토어의 페일오버 성능을 향상시켰습니다. Host Bus Adapter(HBA) 재검색 및 데이터스토어 마운트 작업이 이제 병렬로 실행되어 전체 페일오버 시간이 단축되고 복구 이벤트 중 다운타임이 최소화됩니다.
+
+페일오버에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/failover.html["재해 복구를 통한 페일오버"^]을 참조하십시오.
