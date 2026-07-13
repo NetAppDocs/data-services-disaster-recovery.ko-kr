@@ -36,6 +36,7 @@ image:evs-create-rp-wiz-c0.png["복제 계획, 리소스 매핑 페이지 생성
 
 
 
+[[compute-resource-mapping]]
 == 컴퓨팅 리소스 매핑
 
 사이트는 여러 개의 가상 데이터 센터와 여러 개의 vCenter 클러스터를 호스팅할 수 있으므로 장애 조치(failover) 발생 시 VM을 복구할 vCenter 클러스터를 식별해야 합니다.
@@ -58,6 +59,7 @@ image:evs-create-rp-wiz-c-compute-resources-1-4.png["복제 계획, 컴퓨팅 �
 
 
 
+[[map-virtual-network-resources]]
 == 가상 네트워크 리소스 매핑
 
 각 VM은 vCenter 네트워크 인프라 내의 가상 네트워크에 연결된 하나 이상의 가상 NIC를 가질 수 있습니다.  DR 사이트에서 재시작 시 각 VM이 원하는 네트워크에 제대로 연결되었는지 확인하려면 이러한 VM을 연결할 DR 사이트 가상 네트워크를 식별합니다.  이를 위해 온프레미스 사이트의 각 가상 네트워크를 DR 사이트의 연결된 네트워크에 매핑합니다.
@@ -72,6 +74,7 @@ image:evs-create-rp-wiz-c-network-resources-1-2.png["복제 계획, 네트워크
 
 
 
+[[define-options-for-vm-reconfiguration-during-failover]]
 == 장애 조치 중 VM 재구성에 대한 옵션 정의
 
 각 VM은 DR vCenter 사이트에서 올바르게 작동하려면 수정이 필요할 수 있습니다.  가상 머신 섹션에서는 필요한 변경 사항을 제공할 수 있습니다.
@@ -80,6 +83,7 @@ image:evs-create-rp-wiz-c-network-resources-1-2.png["복제 계획, 네트워크
 
 
 
+[[network-reconfiguration]]
 === 네트워크 재구성
 
 지원되는 IP 주소 유형은 정적 및 DHCP입니다.  고정 IP 주소의 경우 다음과 같은 대상 IP 설정이 있습니다.
@@ -103,6 +107,7 @@ image:evs-create-rp-wiz-c-vm-resources-network-1-2.png["복제 계획, 네트워
 
 
 
+[[vm-compute-resource-reconfiguration]]
 === VM 컴퓨팅 리소스 재구성
 
 VM 컴퓨팅 리소스를 재구성하는 데에는 여러 가지 옵션이 있습니다.  NetApp Disaster Recovery 가상 CPU 수, 가상 DRAM 양, VM 이름 변경을 지원합니다.
@@ -117,6 +122,7 @@ image:evs-create-rp-wiz-c-vm-resources-cpu-mem-1-2.png["복제 계획, VM 리소
 
 
 
+[[boot-order]]
 === 부팅 순서
 
 NetApp Disaster Recovery 부팅 순서 필드를 기반으로 VM의 순서화된 재시작을 지원합니다.  부팅 순서 필드는 각 리소스 그룹의 VM이 시작되는 방식을 나타냅니다.  부팅 순서 필드에 동일한 값이 있는 VM은 병렬로 부팅됩니다.
@@ -131,6 +137,7 @@ image:evs-create-rp-wiz-c-vm-resources-boot-delay-1-2.png["복제 계획, 부팅
 
 
 
+[[custom-guest-os-operations]]
 === 사용자 정의 게스트 OS 작업
 
 NetApp Disaster Recovery 각 VM에 대해 일부 게스트 OS 작업을 수행하는 것을 지원합니다.
@@ -154,6 +161,7 @@ image:evs-create-rp-wiz-c-vm-resources-ac-scripts-creds-1-2.png["복제 계획, 
 
 
 
+[[map-datastores]]
 == 지도 데이터 저장소
 
 복제 계획을 만드는 마지막 단계는 ONTAP 데이터 저장소를 어떻게 보호해야 하는지 식별하는 것입니다.  이러한 설정은 복제 계획 복구 지점 목표(RPO), 유지해야 하는 백업 수, 각 vCenter 데이터스토어의 호스팅 ONTAP 볼륨을 복제할 위치를 정의합니다.

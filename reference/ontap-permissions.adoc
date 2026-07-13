@@ -16,6 +16,7 @@ NetApp Disaster Recovery를 사용할 때는 ONTAP에서 올바른 권한이 구
 
 
 
+[[minimum-ontap-permissions]]
 == 최소 ONTAP 권한
 
 Disaster Recovery를 사용하려면 다음 ONTAP 권한이 필요합니다.
@@ -107,6 +108,7 @@ Disaster Recovery를 사용하려면 다음 ONTAP 권한이 필요합니다.
 |===
 
 
+[[add-permissions-in-ontap]]
 == ONTAP에서 권한 추가
 
 ONTAP에서 권한을 추가하려면 필요한 권한을 가진 역할을 생성하고 해당 역할을 사용자에게 할당해야 합니다. 이 작업은 System Manager 또는 ONTAP CLI를 사용하여 ONTAP에서 수행할 수 있습니다.
@@ -207,6 +209,7 @@ security login create -vserver <SVM> -user-or-group-name <user-name> -applicatio
 ====
 
 
+[[configure-disaster-recovery]]
 == 재해 복구 구성
 
 ONTAP 역할을 생성한 후에는 link:https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-ontap.html#step-3-discover-a-cluster["콘솔에서 ONTAP 클러스터를 검색하십시오"^]. 클러스터를 검색할 때 ONTAP 클러스터의 IP 주소, 생성한 사용자 이름 및 이 단계의 암호가 필요합니다. NetApp Disaster Recovery의 경우 소스 클러스터와 타겟 클러스터 모두에서 검색을 수행해야 합니다.

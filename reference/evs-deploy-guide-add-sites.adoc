@@ -19,6 +19,7 @@ VM 인프라를 보호하기 전에 보호할 VM을 호스팅하는 VMware vCent
 
 
 
+[[create-on-premises-sites]]
 == 온프레미스 사이트 만들기
 
 프로덕션 vCenter 사이트를 만듭니다.
@@ -45,6 +46,7 @@ image:evs-create-site-op-3-5.png["사이트 만들기 대화 상자"]
 
 
 
+[[create-amazon-cloud-sites]]
 == Amazon 클라우드 사이트 만들기
 
 Amazon FSx for NetApp ONTAP 스토리지를 사용하여 Amazon EVS에 대한 DR 사이트를 만듭니다.

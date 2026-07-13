@@ -16,12 +16,73 @@ NetApp Disaster Recovery 의 새로운 기능을 알아보세요.
 
 
 
+[[13-july-2026]]
+== 2026년 7월 13일
+
+버전 4.3.5
+
+
+
+[[kubernetes-updates]]
+=== Kubernetes 업데이트
+
+재해 복구 기능은 Kubernetes 기반 워크로드에 대해 다음과 같은 변경 사항을 도입했습니다.
+
+
+
+==== 사이트 메뉴에서 Trident Protect 관리
+
+이제 재해 복구 UI의 사이트 메뉴에서 Trident Protect를 직접 관리할 수 있습니다. Trident Protect를 업그레이드하거나 재해 복구에서 제거하여 Kubernetes 리소스 관리를 간소화할 수 있습니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/manage.html["사이트 관리"^]을 참조하십시오.
+
+
+
+[[vmware-updates]]
+=== VMware 업데이트
+
+재해 복구 기능은 VMware 기반 워크로드에 대해 다음과 같은 변경 사항을 도입했습니다.
+
+
+
+==== 빈 데이터스토어 장애 조치
+
+이제 빈 데이터스토어를 포함하는 복제 계획을 해당 데이터스토어를 계획에서 제외하거나 강제로 장애 조치를 수행하지 않고도 성공적으로 장애 조치를 수행할 수 있습니다. 장애 조치 시 Disaster Recovery는 재해 복구 사이트에 빈 데이터스토어를 자동으로 마운트하여 VM을 추가하고 장애 복구 작업을 위해 보호할 수 있도록 합니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/failover.html["원격 사이트로 페일오버"^]을 참조하십시오.
+
+
+
+==== vCenter 네트워크 자동 매핑
+
+이제 vCenter 수준에서(즉, 복제 계획 대화 상자 외부에서) 네트워크 매핑 관계를 구성할 수 있습니다. 구성이 완료되면 Disaster Recovery에서 복제 계획을 추가하거나 편집할 때 이러한 네트워크 매핑을 자동으로 적용하여 복제 계획 관리를 간소화합니다.
+
+재해 복구는 계획별 재정의를 계속 지원합니다. 복제 계획에 정의된 기존 네트워크 매핑은 네트워크별로 편집할 수 있으며, 이러한 매핑은 vCenter 수준의 정의보다 우선 적용됩니다.
+
+
+
+[[disaster-recovery-viewer-role-tightening]]
+=== 재해 복구 뷰어 역할 강화
+
+재해 복구 뷰어 역할에서 '시스템 업그레이드' 탭을 볼 수 있는 기능이 제거되었습니다. 이러한 변경 사항은 읽기 전용 사용자에게 더 적합한 환경에 맞춰 역할을 조정하기 위한 것입니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^].
+
+
+
+[[system-performance-enhancements]]
+=== 시스템 성능 향상
+
+재해 복구에는 시스템 리소스 소비를 줄이고 운영 전반의 성능을 향상시키기 위한 변경 사항이 도입되었습니다.
+
+
+
+[[08-june-2026]]
 == 2026년 6월 8일
 
 버전 4.3.4
 
 
 
+[[kubernetes-updates]]
 === Kubernetes 업데이트
 
 재해 복구 기능은 Kubernetes 기반 워크로드에 대해 다음과 같은 변경 사항을 도입했습니다.
@@ -52,6 +113,7 @@ NetApp Disaster Recovery 의 새로운 기능을 알아보세요.
 
 
 
+[[vmware-updates]]
 === VMware 업데이트
 
 
@@ -80,12 +142,14 @@ NetApp Disaster Recovery 의 새로운 기능을 알아보세요.
 
 
 
+[[11-may-2026]]
 == 2026년 5월 11일
 
 버전 4.3.3
 
 
 
+[[kubernetes-based-workload-support-preview]]
 === Kubernetes 기반 워크로드 지원(미리 보기)
 
 NetApp Disaster Recovery에 Kubernetes 기반 워크로드 지원이 추가되었습니다. Kubernetes 지원을 통해 OpenShift Virtualization 환경을 포함한 Kubernetes 클러스터에서 실행되는 애플리케이션을 보호할 수 있습니다. Disaster Recovery는 link:https://docs.netapp.com/us-en/trident/trident-protect/trident-protect-requirements.html["Trident Protect에서 현재 지원하는 모든 Kubernetes 버전"^]를 지원하여 컨테이너화된 애플리케이션에 대한 원활한 통합과 강력한 재해 복구 기능을 제공합니다.
@@ -101,12 +165,14 @@ Kubernetes 기반 워크로드 지원은 현재 미리 보기로 제공됩니다
 
 
 
+[[13-april-2026]]
 == 2026년 4월 13일
 
 버전 4.3.2
 
 
 
+[[google-cloud-vmware-engine-gcve-support-is-now-generally-available-ga]]
 === Google Cloud VMware Engine(GCVE) 지원이 이제 정식 출시(GA)되었습니다.
 
 NetApp Disaster Recovery의 GCVE 지원 기능이 이제 정식 출시(GA)되었습니다. GA 지원을 통해 GCVE용 Disaster Recovery는 다음을 지원합니다.
@@ -121,12 +187,14 @@ GCVE 지원에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/dat
 
 
 
+[[09-march-2026]]
 == 2026년 3월 9일
 
 버전 4.3.1
 
 
 
+[[exclude-a-datastore-from-replication-plans]]
 === 복제 계획에서 데이터 저장소 제외
 
 Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어를 복제에서 제외할 수 있습니다. VM이 여러 데이터스토어를 사용하도록 구성된 경우 복제할 데이터스토어를 제한할 수 있습니다.
@@ -135,6 +203,7 @@ Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어�
 
 
 
+[[removed-password-validation-from-vcenter-password]]
 === vCenter 암호에서 암호 유효성 검사를 제거했습니다.
 
 재해 복구 기능에서 vCenter 암호에 대한 암호 제한을 해제하여 공백이 포함된 암호를 허용하도록 했습니다.
@@ -143,6 +212,7 @@ Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어�
 
 
 
+[[new-replication-plan-submenu]]
 === 새로운 복제 계획 하위 메뉴
 
 재해 복구 기능에 이제 복제 계획 대시보드에서 vCenter 새로 고침을 트리거하는 새로운 메뉴 옵션이 포함되어 있습니다. 복제 계획 대시보드의 작업 메뉴에서 하위 메뉴에 액세스할 수 있습니다. **계획 상태**를 선택한 다음 **원본 vCenter 새로 고침 / 대상 vCenter 새로 고침**을 선택하십시오.
@@ -151,36 +221,42 @@ Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어�
 
 
 
+[[improved-network-discovery]]
 === 향상된 네트워크 검색
 
 재해 복구 기능에 향상된 네트워크 검색 기능이 포함되어 더욱 다양한 네트워크 구성을 지원합니다.
 
 
 
+[[16-february-2026]]
 == 2026년 2월 16일
 
 버전 4.3.0
 
 
 
+[[improved-user-interface]]
 === 개선된 사용자 인터페이스
 
 피드백을 기반으로 성능 및 사용자 경험을 개선하기 위해 Disaster Recovery UI가 새롭게 단장되었습니다.
 
 
 
+[[api-swagger-documentation]]
 === API Swagger 문서
 
 이제 일반 브라우저에서 Disaster Recovery API Swagger 문서에 액세스할 수 있습니다. 더 이상 시크릿 모드가 필요하지 않습니다. API 문서에 액세스하려면 Disaster Recovery 대시보드로 이동하여 오른쪽 상단 컨텍스트 메뉴 image:../media/use/icon-vertical-dots.png["작업 아이콘"]를 선택한 다음 **API Documentation**을 선택하면 Swagger 문서가 열립니다. 또한 link:https://api.bluexp.netapp.com/v1/services/draas/api/api-doc/draas["URL을 즐겨찾기에 추가"^]를 통해서도 액세스할 수 있습니다.
 
 
 
+[[12-january-2026]]
 == 2026년 1월 12일
 
 버전 4.2.9
 
 
 
+[[support-for-multiple-console-agents-in-on-premises-environments]]
 === 온프레미스 환경에서 여러 콘솔 에이전트 지원
 
 온프레미스 재해 복구를 사용하는 경우 이제 각 vCenter 인스턴스에 콘솔 에이전트를 배포하여 복원력을 향상시킬 수 있습니다.
@@ -191,6 +267,7 @@ Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어�
 
 
 
+[[add-vms-after-failover-for-replication-plans-using-datastore-based-protection]]
 === 데이터스토어 기반 보호를 사용하는 복제 계획에 대해 장애 조치 후 VM을 추가합니다.
 
 장애 조치가 발생하면 데이터스토어 기반 보호를 사용하는 모든 복제 계획에는 데이터스토어에 추가된 VM이 포함됩니다. 단, 해당 VM이 검색된 경우에 한합니다. 장애 조치가 완료되기 전에 추가된 VM에 대한 매핑 세부 정보를 제공해야 합니다.
@@ -199,6 +276,7 @@ Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어�
 
 
 
+[[new-email-notifications]]
 === 새 이메일 알림
 
 재해 복구 시스템은 이제 다음과 같은 이벤트에 대한 이메일 알림을 제공합니다.
@@ -211,18 +289,21 @@ Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어�
 
 
 
+[[swagger-improvements]]
 === 스웨거 개선 사항
 
 이제 Disaster Recovery 내에서 Swagger 문서에 액세스할 수 있습니다. Disaster Recovery에서 **Settings**를 선택한 다음 **API documentation**을 선택합니다. link:https://api.bluexp.netapp.com/v1/services/draas/api/api-doc/draas["링크"^]에 액세스하려면 비공개 또는 시크릿 모드여야 합니다.
 
 
 
+[[improved-user-interfaces]]
 === 개선된 사용자 인터페이스
 
 재해 복구 기능이 향상된 경고 및 오류 해결 기능을 제공합니다. 이번 릴리스에서는 취소된 작업이 사용자 인터페이스에 표시되지 않던 오류가 수정되었습니다. 취소된 작업이 이제 표시됩니다. 또한 동일한 대상 네트워크가 여러 개의 서로 다른 소스 네트워크에 매핑될 경우 새로운 경고 메시지가 표시됩니다.
 
 
 
+[[retain-vm-folder-structure-added-as-default-in-replication-plans]]
 === 복제 계획에 기본값으로 추가된 VM 폴더 구조를 유지합니다.
 
 복제본을 생성할 때, 새로운 기본 설정은 VM 폴더 구조를 유지하는 것입니다. 복구 대상에 원래 폴더 계층 구조가 없는 경우 재해 복구 기능이 이를 생성합니다. 원래 폴더 계층 구조를 무시하려면 이 옵션을 선택 해제하면 됩니다.
@@ -231,12 +312,14 @@ Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어�
 
 
 
+[[09-december-2025]]
 == 2025년 12월 9일
 
 버전 4.2.8P1
 
 
 
+[[folder-hierarchy-retention]]
 === 폴더 계층 구조 유지
 
 기본적으로 재해 복구는 장애 조치 시 VM 인벤토리 계층 구조(폴더 구조)를 유지합니다.  복구 대상에 필요한 폴더가 없으면 재해 복구가 해당 폴더를 만듭니다.
@@ -247,6 +330,7 @@ Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어�
 
 
 
+[[streamlined-console-agent-updating]]
 === 간소화된 콘솔 에이전트 업데이트
 
 재해 복구는 이제 작업 환경에서 여러 콘솔 에이전트를 사용하기 위한 간소화된 프로세스를 지원합니다.  콘솔 에이전트 간에 전환하려면 vCenter 구성을 편집하고, 자격 증명을 다시 검색하고, 복제 계획을 새로 고쳐서 새 콘솔 에이전트를 사용해야 합니다.
@@ -255,12 +339,14 @@ Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어�
 
 
 
+[[01-december-2025]]
 == 2025년 12월 1일
 
 버전 4.2.8
 
 
 
+[[support-for-google-cloud-vmware-engine-using-google-cloud-netapp-volumes]]
 === Google Cloud NetApp Volumes 사용하여 Google Cloud VMware Engine 지원
 
 NetApp Disaster Recovery 이제 마이그레이션, 장애 조치, 장애 복구 및 테스트 작업을 위해 Google Cloud NetApp Volumes 사용하여 Google Cloud VMware Engine을 지원합니다.  이러한 통합을 통해 온프레미스 환경과 Google Cloud 간의 원활한 재해 복구 워크플로가 가능해집니다.
@@ -269,18 +355,21 @@ NetApp Disaster Recovery 이제 마이그레이션, 장애 조치, 장애 복구
 
 
 
+[[10-november-2025]]
 == 2025년 11월 10일
 
 버전 4.2.7
 
 
 
+[[cascading-failover-support]]
 === 계단식 장애 조치 지원
 
 이제 ONTAP 에서 계단식 관계를 구성하고 해당 복제 관계의 모든 단계를 재해 복구에 사용할 수 있습니다.
 
 
 
+[[downgrade-vmware-hardware-support-during-registration]]
 === 등록 중 VMware 하드웨어 지원 다운그레이드
 
 재해 복구는 이제 등록 중에 VMware 하드웨어를 이전 버전의 vSphere로 다운그레이드하는 것을 지원합니다. 이 기능은 소스 ESX 호스트가 재해 복구 사이트보다 최신 버전을 실행하는 경우에 유용합니다.
@@ -289,12 +378,14 @@ NetApp Disaster Recovery 이제 마이그레이션, 장애 조치, 장애 복구
 
 
 
+[[graceful-shutdown]]
 === 우아한 종료
 
 재해 복구 기능은 이제 VM의 전원을 끄는 대신 정상적으로 종료합니다. VM의 전원을 끄는 데 10분 이상 걸리는 경우 재해 복구 기능이 해당 VM의 전원을 끕니다.
 
 
 
+[[pre-backup-scripting-support]]
 === 사전 백업 스크립팅 지원
 
 이제 백업을 생성하기 전에 실행할 사용자 정의 스크립팅을 장애 조치 워크플로에 삽입할 수 있습니다. 사전 백업 스크립팅을 사용하면 스냅샷이 복제되기 전에 VM 상태를 제어하고 전환을 위해 VM을 준비할 수 있습니다. 예를 들어, 장애 조치 후 다른 스크립트를 사용하여 다시 마운트될 NFS 마운트를 마운트 해제하는 스크립트를 삽입할 수 있습니다.
@@ -303,18 +394,21 @@ NetApp Disaster Recovery 이제 마이그레이션, 장애 조치, 장애 복구
 
 
 
+[[06-october-2025]]
 == 2025년 10월 6일
 
 버전 4.2.6
 
 
 
+[[bluexp-disaster-recovery-is-now-netapp-disaster-recovery]]
 === BlueXP disaster recovery 이제 NetApp Disaster Recovery 입니다.
 
 BlueXP disaster recovery NetApp Disaster Recovery 로 이름이 변경되었습니다.
 
 
 
+[[bluexp-is-now-netapp-console]]
 === BlueXP 는 이제 NetApp Console 입니다.
 
 강화되고 재구성된 BlueXP 기반을 기반으로 구축된 NetApp Console 엔터프라이즈급 온프레미스 및 클라우드 환경에서 NetApp 스토리지와 NetApp Data Services 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 간소화된 관리를 제공하며, 높은 보안성과 규정 준수를 보장합니다.
@@ -323,6 +417,7 @@ BlueXP disaster recovery NetApp Disaster Recovery 로 이름이 변경되었습�
 
 
 
+[[other-updates]]
 === 기타 업데이트
 
 * Amazon FSx for NetApp ONTAP 통한 Amazon Elastic VMware Service(EVS) 지원은 공개 미리 보기 단계에 있었습니다. 이번 릴리스를 통해 이제 일반적으로 사용할 수 있게 되었습니다. 자세한 내용은 다음을 참조하세요.link:../reference/evs-deploy-guide-introduction.html["Amazon Elastic VMware Service 및 Amazon FSx for NetApp ONTAP 사용한 NetApp Disaster Recovery 소개"] .
@@ -333,12 +428,14 @@ BlueXP disaster recovery NetApp Disaster Recovery 로 이름이 변경되었습�
 
 
 
+[[04-august-2025]]
 == 2025년 8월 4일
 
 버전 4.2.5P2
 
 
 
+[[netapp-disaster-recovery-updates]]
 === NetApp Disaster Recovery 업데이트
 
 이 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
@@ -356,12 +453,14 @@ BlueXP disaster recovery NetApp Disaster Recovery 로 이름이 변경되었습�
 
 
 
+[[14-july-2025]]
 == 2025년 7월 14일
 
 버전 4.2.5
 
 
 
+[[user-roles-in-netapp-disaster-recovery]]
 === NetApp Disaster Recovery 의 사용자 역할
 
 NetApp Disaster Recovery 이제 각 사용자가 특정 기능과 작업에 대해 갖는 액세스를 관리하는 역할을 사용합니다.
@@ -382,6 +481,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[other-updates-in-netapp-disaster-recovery]]
 === NetApp Disaster Recovery 의 기타 업데이트
 
 * 향상된 네트워크 검색
@@ -410,36 +510,42 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[30-june-2025]]
 == 2025년 6월 30일
 
 버전 4.2.4P2
 
 
 
+[[discovery-improvements]]
 === 발견 개선
 
 이 업데이트는 검색 프로세스를 개선하여 검색에 필요한 시간을 줄여줍니다.
 
 
 
+[[23-june-2025]]
 == 2025년 6월 23일
 
 버전 4.2.4P1
 
 
 
+[[subnet-mapping-improvements]]
 === 서브넷 매핑 개선
 
 이 업데이트에서는 새로운 검색 기능을 통해 서브넷 매핑 추가 및 편집 대화 상자가 개선되었습니다.  이제 검색어를 입력하여 특정 서브넷을 빠르게 찾을 수 있어 서브넷 매핑을 더 쉽게 관리할 수 있습니다.
 
 
 
+[[09-june-2025]]
 == 2025년 6월 9일
 
 버전 4.2.4
 
 
 
+[[windows-local-administrator-password-solution-laps-support]]
 === Windows 로컬 관리자 암호 솔루션(LAPS) 지원
 
 Windows 로컬 관리자 암호 솔루션(Windows LAPS)은 Active Directory에서 로컬 관리자 계정의 암호를 자동으로 관리하고 백업하는 Windows 기능입니다.
@@ -450,12 +556,14 @@ Windows 로컬 관리자 암호 솔루션(Windows LAPS)은 Active Directory에�
 
 
 
+[[13-may-2025]]
 == 2025년 5월 13일
 
 버전 4.2.3
 
 
 
+[[subnet-mapping]]
 === 서브넷 매핑
 
 이 릴리스에서는 서브넷 매핑을 사용하여 새로운 방식으로 장애 조치 시 IP 주소를 관리할 수 있으며, 이를 통해 각 vCenter에 대한 서브넷을 추가할 수 있습니다.  이렇게 하면 각 가상 네트워크에 대한 IPv4 CIDR, 기본 게이트웨이, DNS가 정의됩니다.
@@ -478,6 +586,7 @@ VM1에는 NetworkA에 연결된 vNIC(10.1.1.50)가 있습니다.  NetworkA는 �
 
 
 
+[[skip-protection]]
 === 스킵 보호
 
 이제 복제 계획 장애 조치 후 서비스가 자동으로 역방향 보호 관계를 생성하지 않도록 보호를 건너뛸 수 있습니다.  NetApp Disaster Recovery 에서 다시 온라인으로 전환하기 전에 복원된 사이트에서 추가 작업을 수행하려는 경우 이 기능이 유용합니다.
@@ -492,6 +601,7 @@ VM1에는 NetworkA에 연결된 vNIC(10.1.1.50)가 있습니다.  NetworkA는 �
 
 
 
+[[snapmirror-schedule-updates-in-the-replication-plan]]
 === SnapMirror 복제 계획에서 업데이트를 일정에 추가합니다.
 
 NetApp Disaster Recovery 이제 기본 ONTAP SnapMirror 정책 스케줄러나 ONTAP 과의 타사 통합과 같은 외부 스냅샷 관리 솔루션을 사용할 수 있도록 지원합니다.  복제 계획의 모든 데이터 저장소(볼륨)에 이미 다른 곳에서 관리되는 SnapMirror 관계가 있는 경우 NetApp Disaster Recovery 에서 해당 스냅샷을 복구 지점으로 사용할 수 있습니다.
@@ -506,12 +616,14 @@ NetApp Disaster Recovery 이제 기본 ONTAP SnapMirror 정책 스케줄러나 O
 
 
 
+[[16-april-2025]]
 == 2025년 4월 16일
 
 버전 4.2.2
 
 
 
+[[scheduled-discovery-for-vms]]
 === VM에 대한 예약된 검색
 
 NetApp Disaster Recovery 24시간마다 검색을 수행합니다.  이번 릴리스를 통해 이제 필요에 맞게 검색 일정을 사용자 지정하고 필요할 때 성능에 미치는 영향을 줄일 수 있습니다.  예를 들어, VM 수가 많은 경우 검색 일정을 48시간마다 실행되도록 설정할 수 있습니다.  VM 수가 적은 경우 검색 일정을 12시간마다 실행되도록 설정할 수 있습니다.
@@ -522,6 +634,7 @@ NetApp Disaster Recovery 24시간마다 검색을 수행합니다.  이번 릴�
 
 
 
+[[resource-group-datastore-support]]
 === 리소스 그룹 데이터 저장소 지원
 
 이전에는 VM별로만 리소스 그룹을 만들 수 있었습니다.  이 릴리스에서는 데이터 저장소별로 리소스 그룹을 만들 수 있습니다.  복제 계획을 만들고 해당 계획에 대한 리소스 그룹을 만들면 데이터 저장소의 모든 VM이 나열됩니다.  이 기능은 다수의 VM이 있고 이를 데이터 저장소별로 그룹화하려는 경우에 유용합니다.
@@ -536,24 +649,28 @@ NetApp Disaster Recovery 24시간마다 검색을 수행합니다.  이번 릴�
 
 
 
+[[notifications-of-free-trial-or-license-expiration]]
 === 무료 체험판 또는 라이센스 만료 알림
 
 이 릴리스에서는 무료 평가판이 60일 후에 만료된다는 알림을 제공하여 라이선스를 받을 시간을 확보할 수 있도록 합니다.  이 릴리스에서는 라이센스가 만료되는 날에 대한 알림도 제공합니다.
 
 
 
+[[notification-of-service-updates]]
 === 서비스 업데이트 알림
 
 이번 릴리스에서는 서비스가 업그레이드되고 서비스가 유지 관리 모드로 전환되었음을 나타내는 배너가 상단에 나타납니다.  배너는 서비스가 업그레이드될 때 나타나고 업그레이드가 완료되면 사라집니다.  업그레이드가 진행되는 동안 UI에서 작업을 계속할 수 있지만 새로운 작업을 제출할 수는 없습니다.  업데이트가 완료되고 서비스가 프로덕션 모드로 돌아온 후에 예약된 작업이 실행됩니다.
 
 
 
+[[10-march-2025]]
 == 2025년 3월 10일
 
 버전 4.2.1
 
 
 
+[[intelligent-proxy-support]]
 === 지능형 프록시 지원
 
 NetApp Console 에이전트는 지능형 프록시를 지원합니다.  지능형 프록시는 온프레미스 시스템을 NetApp Disaster Recovery 에 연결하는 가볍고 안전하며 효율적인 방법입니다.  VPN이나 ​​직접 인터넷 접속이 필요 없이 시스템과 NetApp Disaster Recovery 간의 안전한 연결을 제공합니다.  이 최적화된 프록시 구현은 로컬 네트워크 내의 API 트래픽을 오프로드합니다.
@@ -568,6 +685,7 @@ NetApp Console 에서 일반 프록시 설정에 대한 자세한 내용은 다�
 
 
 
+[[end-the-free-trial-any-time]]
 === 언제든지 무료 체험을 종료하세요
 
 언제든지 무료 체험을 중단할 수 있으며, 체험 기간이 만료될 때까지 기다릴 수도 있습니다.
@@ -576,12 +694,14 @@ NetApp Console 에서 일반 프록시 설정에 대한 자세한 내용은 다�
 
 
 
+[[19-february-2025]]
 == 2025년 2월 19일
 
 버전 4.2
 
 
 
+[[asa-r2-support-for-vms-and-datastores-on-vmfs-storage]]
 === VMFS 스토리지의 VM 및 데이터 저장소에 대한 ASA r2 지원
 
 NetApp Disaster Recovery 의 이 릴리스에서는 VMFS 스토리지의 VM 및 데이터 저장소에 대한 ASA r2에 대한 지원을 제공합니다.  ASA r2 시스템에서 ONTAP 소프트웨어는 SAN 환경에서 지원되지 않는 기능을 제거하는 동시에 필수적인 SAN 기능을 지원합니다.
@@ -598,10 +718,12 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 
 
+[[30-october-2024]]
 == 2024년 10월 30일
 
 
 
+[[reporting]]
 === 보고
 
 이제 풍경을 분석하는 데 도움이 되는 보고서를 생성하고 다운로드할 수 있습니다.  사전 설계된 보고서는 장애 조치(failover)와 장애 복구(failback)를 요약하고, 모든 사이트의 복제 세부 정보를 표시하며, 지난 7일간의 작업 세부 정보를 표시합니다.
@@ -610,6 +732,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 
 
+[[30-day-free-trial]]
 === 30일 무료 체험
 
 이제 NetApp Disaster Recovery 의 30일 무료 평가판에 등록할 수 있습니다.  이전에는 무료 체험 기간이 90일이었습니다.
@@ -618,6 +741,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 
 
+[[disable-and-enable-replication-plans]]
 === 복제 계획 비활성화 및 활성화
 
 이전 릴리스에는 일일 및 주간 일정을 지원하는 데 필요한 장애 조치 테스트 일정 구조에 대한 업데이트가 포함되었습니다.  이 업데이트를 적용하려면 새로운 일일 및 주간 장애 조치 테스트 일정을 사용할 수 있도록 모든 기존 복제 계획을 비활성화했다가 다시 활성화해야 합니다.  이는 일회성 요구 사항입니다.
@@ -632,6 +756,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 
 
+[[folder-mapping]]
 === 폴더 매핑
 
 복제 계획을 생성하고 컴퓨팅 리소스를 매핑할 때 이제 폴더를 매핑하여 데이터 센터, 클러스터 및 호스트에 대해 지정한 폴더에 VM을 복구할 수 있습니다.
@@ -640,6 +765,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 
 
+[[vm-details-available-for-failover-failback-and-test-failover]]
 === 장애 조치, 장애 복구 및 테스트 장애 조치에 사용할 수 있는 VM 세부 정보
 
 장애가 발생하고 장애 조치를 시작하거나, 장애 복구를 수행하거나, 장애 조치를 테스트하는 경우 이제 VM의 세부 정보를 확인하고 다시 시작되지 않은 VM을 식별할 수 있습니다.
@@ -648,6 +774,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 
 
+[[vm-boot-delay-with-ordered-boot-sequence]]
 === 순서가 지정된 부팅 시퀀스를 사용한 VM 부팅 지연
 
 복제 계획을 만들 때 이제 계획에 있는 각 VM에 대한 부팅 지연을 설정할 수 있습니다.  이를 통해 VM이 시작될 순서를 설정하여 후속 우선순위 VM이 시작되기 전에 모든 우선순위 1 VM이 실행되도록 할 수 있습니다.
@@ -656,6 +783,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 
 
+[[vm-operating-system-information]]
 === VM 운영 체제 정보
 
 복제 계획을 만들면 이제 계획에 있는 각 VM의 운영 체제를 볼 수 있습니다.  이는 리소스 그룹에서 VM을 어떻게 그룹화할지 결정하는 데 유용합니다.
@@ -664,6 +792,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 
 
+[[vm-name-aliasing]]
 === VM 이름 별칭
 
 복제 계획을 만들 때 이제 재해 복구 사이트의 VM 이름에 접두사와 접미사를 추가할 수 있습니다.  이를 통해 계획에 있는 VM에 대해 보다 설명적인 이름을 사용할 수 있습니다.
@@ -672,6 +801,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 
 
+[[clean-up-old-snapshots]]
 === 오래된 스냅샷 정리
 
 지정한 보존 기간을 넘어서 더 이상 필요하지 않은 스냅샷은 삭제할 수 있습니다.  스냅샷 보존 횟수를 줄이면 시간이 지남에 따라 스냅샷이 누적될 수 있으며, 이제 스냅샷을 제거하여 공간을 확보할 수 있습니다.  이 작업은 언제든지 필요할 때 수행할 수 있으며, 복제 계획을 삭제할 때도 수행할 수 있습니다.
@@ -680,6 +810,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 
 
+[[reconcile-snapshots]]
 === 스냅샷 조정
 
 이제 소스와 대상 간에 동기화되지 않은 스냅샷을 조정할 수 있습니다.  이는 NetApp Disaster Recovery 외부의 대상에서 스냅샷이 삭제된 경우 발생할 수 있습니다.  이 서비스는 24시간마다 소스의 스냅샷을 자동으로 삭제합니다.  하지만 필요에 따라 이를 수행할 수도 있습니다.  이 기능을 사용하면 모든 사이트에서 스냅샷이 일관성을 유지하도록 할 수 있습니다.
@@ -688,10 +819,12 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 
 
+[[20-september-2024]]
 == 2024년 9월 20일
 
 
 
+[[support-for-on-premises-to-on-premises-vmware-vmfs-datastores]]
 === 온프레미스 간 VMware VMFS 데이터 저장소 지원
 
 이 릴리스에는 온프레미스 스토리지로 보호되는 iSCSI 및 FC를 위한 VMware vSphere 가상 머신 파일 시스템(VMFS) 데이터 저장소에 마운트된 VM에 대한 지원이 포함됩니다.  이전에는 이 서비스에서 iSCSI 및 FC에 대한 VMFS 데이터 저장소를 지원하는 _기술 미리보기_가 제공되었습니다.
@@ -705,10 +838,12 @@ iSCSI 및 FC 프로토콜과 관련된 추가 고려 사항은 다음과 같습�
 
 
 
+[[02-august-2024]]
 == 2024년 8월 2일
 
 
 
+[[support-for-on-premises-to-on-premises-vmware-vmfs-datastores-for-fc]]
 === FC용 온프레미스 간 VMware VMFS 데이터 저장소 지원
 
 이 릴리스에는 FC로 보호되는 온프레미스 스토리지를 위한 VMware vSphere 가상 머신 파일 시스템(VMFS) 데이터 저장소에 마운트된 VM에 대한 지원에 대한 _기술 미리보기_가 포함되어 있습니다.  이전에는 이 서비스에서 iSCSI용 VMFS 데이터 저장소를 지원하는 기술 미리보기가 제공되었습니다.
@@ -718,6 +853,7 @@ NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않
 
 
 
+[[job-cancel]]
 === 작업 취소
 
 이 릴리스에서는 이제 Job Monitor UI에서 작업을 취소할 수 있습니다.
@@ -726,10 +862,12 @@ NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않
 
 
 
+[[17-july-2024]]
 == 2024년 7월 17일
 
 
 
+[[failover-test-schedules]]
 === 장애 조치 테스트 일정
 
 이 릴리스에는 일일 및 주간 일정을 지원하는 데 필요한 장애 조치 테스트 일정 구조에 대한 업데이트가 포함되어 있습니다.  이 업데이트를 적용하려면 새로운 일일 및 주간 장애 조치 테스트 일정을 사용할 수 있도록 모든 기존 복제 계획을 비활성화했다가 다시 활성화해야 합니다.  이는 일회성 요구 사항입니다.
@@ -744,6 +882,7 @@ NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않
 
 
 
+[[replication-plan-updates]]
 === 복제 계획 업데이트
 
 이 릴리스에는 복제 계획 데이터에 대한 업데이트가 포함되어 있어 "스냅샷을 찾을 수 없음" 문제가 해결되었습니다.  이렇게 하려면 모든 복제 계획에서 보존 횟수를 1로 변경하고 주문형 스냅샷을 시작해야 합니다.  이 프로세스는 새로운 백업을 만들고 이전 백업을 모두 제거합니다.
@@ -762,18 +901,21 @@ NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않
 
 
 
+[[05-july-2024]]
 == 2024년 7월 5일
 
 이 NetApp Disaster Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
+[[support-for-aff-a-series]]
 === AFF A 시리즈 지원
 
 이 릴리스는 NetApp AFF A 시리즈 하드웨어 플랫폼을 지원합니다.
 
 
 
+[[support-for-on-premises-to-on-premises-vmware-vmfs-datastores]]
 === 온프레미스 간 VMware VMFS 데이터 저장소 지원
 
 이 릴리스에는 온프레미스 스토리지로 보호되는 VMware vSphere 가상 머신 파일 시스템(VMFS) 데이터 저장소에 마운트된 VM에 대한 지원에 대한 _기술 미리보기_가 포함되어 있습니다.  이 릴리스에서는 온프레미스 VMware 워크로드에서 VMFS 데이터 저장소가 있는 온프레미스 VMware 환경으로의 재해 복구가 기술 미리 보기에서 지원됩니다.
@@ -783,12 +925,14 @@ NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않
 
 
 
+[[replication-plan-updates]]
 === 복제 계획 업데이트
 
 애플리케이션 페이지에서 데이터 저장소별로 VM을 필터링하고 리소스 매핑 페이지에서 추가 대상 세부 정보를 선택하면 복제 계획을 더 쉽게 추가할 수 있습니다. 참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
 
 
 
+[[edit-replication-plans]]
 === 복제 계획 편집
 
 이번 릴리스에서는 장애 조치 매핑 페이지가 개선되어 명확성이 향상되었습니다.
@@ -797,6 +941,7 @@ NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않
 
 
 
+[[edit-vms]]
 === VM 편집
 
 이번 릴리스에서는 계획에서 VM을 편집하는 프로세스에 몇 가지 사소한 UI 개선 사항이 포함되었습니다.
@@ -805,6 +950,7 @@ NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않
 
 
 
+[[fail-over-updates]]
 === 업데이트 장애 조치
 
 장애 조치를 시작하기 전에 이제 VM의 상태와 전원이 켜져 있는지 꺼져 있는지 확인할 수 있습니다.  이제 장애 조치 프로세스를 통해 지금 스냅샷을 찍거나 스냅샷을 선택할 수 있습니다.
@@ -813,6 +959,7 @@ NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않
 
 
 
+[[failover-test-schedules]]
 === 장애 조치 테스트 일정
 
 이제 장애 조치 테스트를 편집하고 장애 조치 테스트에 대한 일일, 주간, 월간 일정을 설정할 수 있습니다.
@@ -821,6 +968,7 @@ NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않
 
 
 
+[[updates-to-prerequisite-information]]
 === 필수 정보 업데이트
 
 NetApp Disaster Recovery 필수 구성 요소 정보가 업데이트되었습니다.
@@ -829,18 +977,21 @@ NetApp Disaster Recovery 필수 구성 요소 정보가 업데이트되었습니
 
 
 
+[[15-may-2024]]
 == 2024년 5월 15일
 
 이 NetApp Disaster Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
+[[replicating-vmware-workloads-from-on-premises-to-on-premises]]
 === 온프레미스에서 온프레미스로 VMware 워크로드 복제
 
 이 기능은 이제 일반 공급 기능으로 출시되었습니다.  이전에는 기능이 제한된 기술 미리보기였습니다.
 
 
 
+[[licensing-updates]]
 === 라이센스 업데이트
 
 NetApp Disaster Recovery 사용하면 90일 무료 평가판에 가입하거나 Amazon Marketplace에서 사용량에 따라 지불하는(PAYGO) 구독을 구매하거나 NetApp 영업 담당자나 NetApp 지원 사이트(NSS)에서 얻을 수 있는 NetApp 라이선스 파일(NLF)인 Bring Your Own License(BYOL)를 사용할 수 있습니다.
@@ -851,12 +1002,14 @@ https://docs.netapp.com/us-en/data-services-disaster-recovery/get-started/dr-int
 
 
 
+[[05-march-2024]]
 == 2024년 3월 5일
 
 이는 NetApp Disaster Recovery 의 일반 공급 릴리스로, 다음 업데이트가 포함되어 있습니다.
 
 
 
+[[licensing-updates]]
 === 라이센스 업데이트
 
 NetApp Disaster Recovery 사용하면 90일 무료 평가판에 가입하거나 NetApp 영업 담당자로부터 받는 NetApp 라이선스 파일(NLF)인 BYOL(Bring Your Own License)을 사용할 수 있습니다.  NetApp Console 구독에서 BYOL을 활성화하려면 라이선스 일련 번호를 사용할 수 있습니다.  NetApp Disaster Recovery 요금은 데이터 저장소의 프로비저닝된 용량을 기준으로 합니다.
@@ -867,6 +1020,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 
 
+[[edit-schedules]]
 === 일정 편집
 
 이 릴리스를 사용하면 규정 준수 및 장애 조치 테스트를 위한 일정을 설정하여 필요할 경우 해당 테스트가 올바르게 작동하는지 확인할 수 있습니다.
@@ -875,12 +1029,14 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 
 
+[[01-february-2024]]
 == 2024년 2월 1일
 
 이 NetApp Disaster Recovery 미리 보기 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
+[[network-enhancement]]
 === 네트워크 강화
 
 이 릴리스에서는 이제 VM CPU 및 RAM 값의 크기를 조정할 수 있습니다.  이제 VM에 대한 네트워크 DHCP 또는 정적 IP 주소를 선택할 수도 있습니다.
@@ -893,6 +1049,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 
 
+[[custom-scripts]]
 === 사용자 정의 스크립트
 
 이제 장애 조치 후 프로세스에 포함될 수 있습니다.  사용자 정의 스크립트를 사용하면 장애 조치 프로세스 후에 NetApp Disaster Recovery 스크립트를 실행하도록 할 수 있습니다.  예를 들어, 장애 조치가 완료된 후 사용자 정의 스크립트를 사용하여 모든 데이터베이스 트랜잭션을 재개할 수 있습니다.
@@ -901,6 +1058,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 
 
+[[snapmirror-relationship]]
 === SnapMirror 관계
 
 이제 복제 계획을 개발하는 동안 SnapMirror 관계를 만들 수 있습니다.  이전에는 NetApp Disaster Recovery 외부에서 관계를 만들어야 했습니다.
@@ -909,6 +1067,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 
 
+[[consistency-groups]]
 === 일관성 그룹
 
 복제 계획을 만들 때 서로 다른 볼륨과 서로 다른 SVM에 속한 VM을 포함할 수 있습니다.  NetApp Disaster Recovery 모든 볼륨을 포함하여 일관성 그룹 스냅샷을 만들고 모든 보조 위치를 업데이트합니다.
@@ -917,6 +1076,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 
 
+[[vm-power-on-delay-option]]
 === VM 전원 켜짐 지연 옵션
 
 복제 계획을 만들 때 리소스 그룹에 VM을 추가할 수 있습니다.  리소스 그룹을 사용하면 각 VM에 지연 시간을 설정하여 지연된 순서로 전원이 켜지도록 할 수 있습니다.
@@ -925,6 +1085,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 
 
+[[application-consistent-snapshot-copies]]
 === 애플리케이션 일관성 스냅샷 복사본
 
 애플리케이션과 일관된 스냅샷 복사본을 생성하도록 지정할 수 있습니다.  이 서비스는 애플리케이션을 정지시킨 다음 스냅샷을 찍어 애플리케이션의 일관된 상태를 얻습니다.
@@ -933,12 +1094,14 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 
 
+[[11-january-2024]]
 == 2024년 1월 11일
 
 NetApp Disaster Recovery 의 이 미리 보기 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
+[[dashboard-more-quickly]]
 === 대시보드를 더 빠르게
 
 이번 릴리스를 통해 대시보드의 다른 페이지에 있는 정보에 더 빠르게 액세스할 수 있습니다.
@@ -947,12 +1110,14 @@ https://docs.netapp.com/us-en/data-services-disaster-recovery/get-started/dr-int
 
 
 
+[[20-october-2023]]
 == 2023년 10월 20일
 
 NetApp Disaster Recovery 의 이 미리 보기 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
+[[protect-on-premises-nfs-based-vmware-workloads]]
 === 온프레미스 NFS 기반 VMware 워크로드 보호
 
 이제 NetApp Disaster Recovery 사용하면 퍼블릭 클라우드뿐만 아니라 온프레미스 NFS 기반 VMware 환경의 재해로부터 온프레미스 NFS 기반 VMware 워크로드를 보호할 수 있습니다.  NetApp Disaster Recovery 재해 복구 계획의 완료를 조율합니다.
@@ -964,12 +1129,14 @@ https://docs.netapp.com/us-en/data-services-disaster-recovery/get-started/dr-int
 
 
 
+[[27-september-2023]]
 == 2023년 9월 27일
 
 NetApp Disaster Recovery 의 이 미리 보기 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
+[[dashboard-updates]]
 === 대시보드 업데이트
 
 이제 대시보드에서 옵션을 선택하여 정보를 더 빠르고 쉽게 검토할 수 있습니다. 또한 대시보드에는 이제 장애 조치 및 마이그레이션 상태가 표시됩니다.
@@ -978,6 +1145,7 @@ NetApp Disaster Recovery 의 이 미리 보기 릴리스에는 다음과 같은 
 
 
 
+[[replication-plan-updates]]
 === 복제 계획 업데이트
 
 * *RPO*: 이제 복제 계획의 데이터 저장소 섹션에 복구 지점 목표(RPO)와 보존 횟수를 입력할 수 있습니다. 이는 설정된 시간보다 오래되지 않은 데이터의 양을 나타냅니다. 예를 들어, 5분으로 설정하면 비즈니스에 중요한 요구 사항에 영향을 미치지 않고도 재해가 발생해도 시스템은 최대 5분 동안의 데이터를 잃을 수 있습니다.
@@ -1007,10 +1175,12 @@ NetApp Disaster Recovery 의 이 미리 보기 릴리스에는 다음과 같은 
 
 
 
+[[01-august-2023]]
 == 2023년 8월 1일
 
 
 
+[[netapp-disaster-recovery-preview]]
 === NetApp Disaster Recovery 미리보기
 
 NetApp Disaster Recovery 미리보기는 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다.  NetApp Disaster Recovery 미리 보기를 사용하면 Amazon FSx for ONTAP 을 사용하여 AWS의 VMware Cloud(VMC)에서 NetApp 스토리지를 실행하는 온프레미스 NFS 기반 VMware 워크로드를 보호할 수 있습니다.
@@ -1024,36 +1194,42 @@ https://docs.netapp.com/us-en/data-services-disaster-recovery/get-started/dr-int
 
 
 
+[[resource-groups-update-for-boot-order]]
 === 부팅 순서에 대한 리소스 그룹 업데이트
 
 재해 복구 또는 복제 계획을 만들 때 가상 머신을 기능적 리소스 그룹에 추가할 수 있습니다. 리소스 그룹을 사용하면 요구 사항을 충족하는 논리적 그룹에 종속된 가상 머신 세트를 넣을 수 있습니다. 예를 들어, 그룹에는 복구 시 실행할 수 있는 부팅 순서가 포함될 수 있습니다. 이 릴리스에서는 각 리소스 그룹에 하나 이상의 가상 머신을 포함할 수 있습니다. 가상 머신은 계획에 포함한 순서에 따라 전원이 켜집니다. 참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["복제할 애플리케이션을 선택하고 리소스 그룹을 할당합니다."] .
 
 
 
+[[replication-verification]]
 === 복제 검증
 
 재해 복구 또는 복제 계획을 만들고 마법사에서 재발을 식별하고 재해 복구 사이트로 복제를 시작하면 30분마다 NetApp Disaster Recovery 복제가 실제로 계획에 따라 발생하는지 확인합니다. 작업 모니터 페이지에서 진행 상황을 모니터링할 수 있습니다. 참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/replicate.html["다른 사이트에 애플리케이션 복제"] .
 
 
 
+[[replication-plan-shows-recovery-point-objective-rpo-transfer-schedules]]
 === 복제 계획은 RPO(복구 지점 목표) 전송 일정을 보여줍니다.
 
 재해 복구 또는 복제 계획을 만들 때 VM을 선택합니다. 이 릴리스에서는 이제 데이터 저장소 또는 VM에 연결된 각 볼륨과 연관된 SnapMirror 볼 수 있습니다. SnapMirror 일정과 연결된 RPO 전송 일정도 볼 수 있습니다. RPO는 재해 발생 후 복구에 백업 일정이 충분한지 여부를 판단하는 데 도움이 됩니다. 참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
 
 
 
+[[job-monitor-update]]
 === 작업 모니터 업데이트
 
 이제 작업 모니터 페이지에 새로 고침 옵션이 포함되어 작업의 최신 상태를 확인할 수 있습니다. 참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/monitor-jobs.html["재해 복구 작업 모니터링"] .
 
 
 
+[[18-may-2023]]
 == 2023년 5월 18일
 
 이는 NetApp Disaster Recovery 의 최초 릴리스입니다.
 
 
 
+[[cloud-based-disaster-recovery-service]]
 === 클라우드 기반 재해 복구 서비스
 
 NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다.  NetApp Disaster Recovery 미리 보기를 사용하면 Amazon FSx for ONTAP 을 사용하여 AWS의 VMware Cloud(VMC)에서 NetApp 스토리지를 실행하는 온프레미스 NFS 기반 VMware 워크로드를 보호할 수 있습니다.

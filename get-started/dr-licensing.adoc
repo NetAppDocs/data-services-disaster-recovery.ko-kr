@@ -37,6 +37,7 @@ link:https://docs.netapp.com/us-en/console-licenses-subscriptions/concept-licens
 
 
 
+[[try-it-out-using-a-30-day-free-trial]]
 == 30일 무료 체험판을 이용해 보세요
 
 30일 무료 평가판을 통해 NetApp Disaster Recovery 사용해 보세요.
@@ -70,6 +71,7 @@ image:draas-landing6-free-trial.png["NetApp Disaster Recovery 랜딩 페이지 �
 
 
 
+[[after-the-trial-ends-subscribe-through-one-of-the-marketplaces]]
 == 체험 기간이 종료된 후 마켓플레이스 중 하나를 통해 구독하세요.
 
 무료 평가판이 종료된 후에는 NetApp 에서 라이선스를 구매하거나 AWS Marketplace 또는 Microsoft Azure Marketplace를 통해 구독할 수 있습니다. 이 절차는 마켓플레이스 중 하나에서 직접 구독하는 방법에 대한 간략한 개요를 제공합니다.
@@ -92,6 +94,7 @@ NetApp Console 구독 페이지에서 구독 세부 정보를 볼 수 있습니�
 
 
 
+[[after-the-trial-ends-purchase-a-byol-license-through-netapp]]
 == 평가판이 종료된 후 NetApp 통해 BYOL 라이선스를 구매하세요.
 
 평가판이 종료된 후에는 NetApp 영업 담당자를 통해 라이선스를 구매할 수 있습니다.
@@ -104,6 +107,7 @@ https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-se
 
 
 
+[[update-your-license-when-it-expires]]
 == 라이센스가 만료되면 업데이트하세요
 
 라이선스 기간이 만료일에 가까워지거나 라이선스 용량이 한도에 도달하면 NetApp Disaster Recovery UI에서 알림을 받게 됩니다.  스캔한 데이터에 액세스하는 데 방해가 되지 않도록 NetApp Disaster Recovery 라이선스가 만료되기 전에 업데이트할 수 있습니다.
@@ -115,6 +119,7 @@ https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-se
 
 
 
+[[end-the-free-trial]]
 == 무료 체험 종료
 
 언제든지 무료 체험을 중단할 수 있으며, 체험 기간이 만료될 때까지 기다릴 수도 있습니다.

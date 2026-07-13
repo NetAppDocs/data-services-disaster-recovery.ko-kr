@@ -4,6 +4,7 @@
 
 
 
+[[windows-local-administrator-password-solution-laps-support]]
 === Windows 로컬 관리자 암호 솔루션(LAPS) 지원
 
 Windows 로컬 관리자 암호 솔루션(Windows LAPS)은 Active Directory에서 로컬 관리자 계정의 암호를 자동으로 관리하고 백업하는 Windows 기능입니다.

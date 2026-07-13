@@ -27,6 +27,7 @@ image:../use/evs-console-architecture.png["NetApp Disaster Recovery의 구성 �
 
 
 
+[[netapp-console]]
 == NetApp Console
 
 NetApp Disaster Recovery NetApp Console 통해 액세스할 수 있습니다.
@@ -39,6 +40,7 @@ NetApp Console을 사용하기 위해 라이선스나 구독이 필요한 것은
 
 
 
+[[benefits-of-using-netapp-disaster-recovery]]
 == NetApp Disaster Recovery 사용의 이점
 
 NetApp Disaster Recovery 다음과 같은 이점을 제공합니다.
@@ -53,6 +55,7 @@ NetApp Disaster Recovery 다음과 같은 이점을 제공합니다.
 
 
 
+[[capabilities-of-netapp-disaster-recovery]]
 == NetApp Disaster Recovery의 기능
 
 NetApp Disaster Recovery 사용하면 다음과 같은 목표를 달성하기 위해 여러 NetApp 기술을 최대한 활용할 수 있습니다.
@@ -72,6 +75,7 @@ NOTE: vSphere 서버는 vSphere Server에서 NetApp Disaster Recovery 외부에�
 
 
 
+[[cost]]
 == 비용
 
 NetApp NetApp Disaster Recovery 평가판 사용에 대해 요금을 청구하지 않습니다.
@@ -83,6 +87,7 @@ IMPORTANT: 일부 릴리스에는 기술 미리보기가 포함되어 있습니�
 
 
 
+[[licensing]]
 == 라이센스
 
 다음 라이선스 유형을 사용할 수 있습니다.
@@ -105,6 +110,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 
 
+[[30-day-free-trial]]
 == 30일 무료 체험
 
 NetApp Disaster Recovery를 30일 무료 체험판으로 사용해 보실 수 있습니다.
@@ -115,6 +121,7 @@ NetApp Disaster Recovery를 30일 무료 체험판으로 사용해 보실 수 �
 
 
 
+[[how-netapp-disaster-recovery-works]]
 == NetApp Disaster Recovery 작동 방식
 
 NetApp Disaster Recovery NetApp Console 소프트웨어 서비스(SaaS) 환경 내에서 호스팅되는 서비스입니다.  재해 복구는 온프레미스 사이트에서 Amazon FSx for ONTAP 또는 다른 온프레미스 사이트로 복제된 워크로드를 복구할 수 있습니다.  이 서비스는 SnapMirror 수준에서 VMware Cloud on AWS에 가상 머신을 등록하고, VMware 네트워크 가상화 및 보안 플랫폼인 NSX-T에서 직접 네트워크 매핑을 통해 복구를 자동화합니다. 이 기능은 모든 Virtual Machine Cloud 환경에 포함되어 있습니다.
@@ -166,6 +173,7 @@ Disaster Recovery에는 다음과 같은 구성 요소가 사용됩니다.
 
 
 
+[[supported-protection-targets-and-datastore-types]]
 == 지원되는 보호 대상 및 데이터 저장소 유형
 
 *지원되는 데이터 저장소 유형* NetApp Disaster Recovery 다음 데이터 저장소 유형을 지원합니다.
@@ -185,6 +193,7 @@ Disaster Recovery에는 다음과 같은 구성 요소가 사용됩니다.
 
 
 
+[[terms-that-might-help-you-with-netapp-disaster-recovery]]
 == NetApp Disaster Recovery 에 도움이 될 수 있는 용어
 
 재해 복구와 관련된 용어를 이해하면 도움이 될 수 있습니다.

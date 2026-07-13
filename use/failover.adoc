@@ -30,6 +30,7 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 
 
 
+[[test-the-failover-process]]
 == 장애 조치 프로세스 테스트
 
 실제 장애 조치를 수행하기 전에 테스트를 통해 준비 상태를 확인할 수 있습니다. 테스트 과정 동안 워크로드는 온라인 상태를 유지합니다.
@@ -68,6 +69,7 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 
 
 
+[[clean-up-the-test-environment-after-a-failover-test]]
 == 장애 조치 테스트 후 테스트 환경 정리
 
 장애 조치 테스트가 완료되면 테스트 환경을 정리해야 합니다.  이 프로세스에서는 테스트 위치에서 임시 VM, FlexClone 및 임시 데이터 저장소를 제거합니다.
@@ -81,6 +83,7 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 
 
 
+[[fail-over-the-source-site-to-a-disaster-recovery-site]]
 == 소스 사이트를 재해 복구 사이트로 장애 조치합니다.
 
 재해 발생 시 FSx for NetApp ONTAP 사용하여 온프레미스 VMware 사이트를 다른 온프레미스 VMware 사이트나 AWS의 VMware Cloud로 필요에 따라 장애 조치합니다.
@@ -108,9 +111,6 @@ TIP: 장애 조치가 시작되면 재해 복구 사이트의 vCenter에서 복�
 .vCenter
 --
 데이터스토어 기반 복제 계획의 경우, VM을 추가하고 검색했지만 매핑 세부 정보를 제공하지 않은 경우 해당 VM이 장애 조치에 포함됩니다. 장애 조치가 실패하면 작업에 알림이 표시됩니다. 장애 조치를 성공적으로 완료하려면 매핑 세부 정보를 제공해야 합니다.
-
-
-IMPORTANT: 복제 계획에 빈 데이터 저장소가 포함된 경우 먼저 계획에서 빈 데이터 저장소를 제거하거나 빈 데이터 저장소를 건너뛰는 **강제 페일오버** 옵션을 사용해야 합니다.
 
 .단계
 . NetApp Disaster Recovery 메뉴에서 *복제 계획*을 선택합니다.

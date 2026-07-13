@@ -19,6 +19,7 @@ TIP: 검토link:../get-started/dr-prerequisites.html["전제 조건"] 시스템�
 
 
 
+[[supported-infrastructures]]
 == 지원되는 인프라
 
 다음 인프라에서 NetApp Disaster Recovery 사용할 수 있습니다.
@@ -31,6 +32,7 @@ TIP: 검토link:../get-started/dr-prerequisites.html["전제 조건"] 시스템�
 
 
 
+[[hybrid-cloud-with-vmware-cloud-and-amazon-fsx-for-netapp-ontap]]
 == Amazon FSx for NetApp ONTAP 활용한 하이브리드 클라우드
 
 이 방법은 NFS 프로토콜을 사용하여 ONTAP FlexVol 볼륨에 호스팅된 데이터 저장소를 사용하는 온프레미스 프로덕션 vCenter 인프라로 구성됩니다.  DR 사이트는 NFS 프로토콜을 사용하는 하나 이상의 FSx for ONTAP 인스턴스에서 제공하는 FlexVol 볼륨에 호스팅된 데이터 저장소를 사용하는 하나 이상의 VMware Cloud SDDC 인스턴스로 구성됩니다.
@@ -41,6 +43,7 @@ AWS 클라우드 인프라와 관련된 재해 복구의 경우 AWS용 콘솔 �
 
 
 
+[[aws-availability-zones]]
 === AWS 가용성 영역
 
 AWS는 특정 지역 내의 하나 이상의 가용성 영역(AZ)에 솔루션을 배포하는 것을 지원합니다.  재해 복구는 AWS에서 호스팅하는 두 가지 서비스인 VMware Cloud for AWS와 AWS FSx for NetApp ONTAP 사용합니다.
@@ -53,6 +56,7 @@ AWS는 특정 지역 내의 하나 이상의 가용성 영역(AZ)에 솔루션�
 
 
 
+[[on-premises-to-aws]]
 === 온프레미스에서 AWS로
 
 AWS는 프라이빗 데이터 센터를 AWS 클라우드에 연결하기 위해 다음과 같은 방법을 제공합니다.  각 솔루션에는 이점과 비용 고려사항이 있습니다.
@@ -66,6 +70,7 @@ AWS는 프라이빗 데이터 센터를 AWS 클라우드에 연결하기 위해 
 
 
 
+[[vpc-to-vpc-interconnections]]
 === VPC 간 상호 연결
 
 AWS는 다음과 같은 유형의 VPC-VPC 상호연결을 제공합니다.  각 솔루션에는 이점과 비용 고려사항이 있습니다.
@@ -79,6 +84,7 @@ AWS는 다음과 같은 유형의 VPC-VPC 상호연결을 제공합니다.  각 
 
 
 
+[[get-ready-for-on-premises-to-cloud-protection-using-aws]]
 === AWS를 사용하여 온프레미스에서 클라우드로의 보호를 준비하세요
 
 AWS를 사용하여 온프레미스에서 클라우드로의 보호를 위한 NetApp Disaster Recovery 설정하려면 다음을 설정해야 합니다.
@@ -114,6 +120,7 @@ AWS에서 VMware Cloud 환경을 구성하려면 다음 단계를 따르세요. 
 
 
 
+[[private-cloud]]
 == 프라이빗 클라우드
 
 NetApp Disaster Recovery 사용하면 하나 이상의 vCenter 클러스터에 호스팅된 VMware VM을 보호할 수 있습니다. 즉, VM 데이터 저장소를 동일한 개인 데이터 센터에 있는 다른 vCenter 클러스터나 원격 개인 또는 공동 배치된 데이터 센터에 복제할 수 있습니다.
@@ -124,6 +131,7 @@ NetApp Disaster Recovery 사용하면 하나 이상의 vCenter 클러스터에 �
 
 
 
+[[get-ready-for-on-premises-to-on-premises-protection]]
 === 온프레미스 간 보호를 준비하세요
 
 온프레미스 간 보호를 위해 NetApp Disaster Recovery 설정하기 전에 다음 요구 사항이 충족되는지 확인하세요.
@@ -147,6 +155,7 @@ NetApp Disaster Recovery 사용하면 하나 이상의 vCenter 클러스터에 �
 
 
 
+[[intelligent-proxy-support]]
 === 지능형 프록시 지원
 
 NetApp Console 에이전트는 지능형 프록시를 지원합니다.  지능형 프록시는 온프레미스 환경을 NetApp Console 에 연결하는 가볍고 안전하며 효율적인 방법입니다.  VPN이나 ​​직접 인터넷 접속이 필요 없이 시스템과 콘솔 서비스 간의 안전한 연결을 제공합니다.  이 최적화된 프록시 구현은 로컬 네트워크 내의 API 트래픽을 오프로드합니다.

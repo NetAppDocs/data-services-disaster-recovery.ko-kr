@@ -4,6 +4,7 @@
 
 
 
+[[support-for-on-premises-to-on-premises-vmware-vmfs-datastores]]
 === 온프레미스 간 VMware VMFS 데이터 저장소 지원
 
 이 릴리스에는 온프레미스 스토리지로 보호되는 iSCSI 및 FC를 위한 VMware vSphere 가상 머신 파일 시스템(VMFS) 데이터 저장소에 마운트된 VM에 대한 지원이 포함됩니다.  이전에는 이 서비스에서 iSCSI 및 FC에 대한 VMFS 데이터 저장소를 지원하는 _기술 미리보기_가 제공되었습니다.

@@ -19,6 +19,7 @@ NetApp Disaster Recovery 사용하기 전에 온프레미스 및 클라우드 �
 
 
 
+[[add-on-premises-storage-arrays-to-netapp-console-system]]
 == NetApp Console 시스템에 온프레미스 스토리지 어레이 추가
 
 NetApp Console 시스템에 온프레미스 ONTAP 스토리지 리소스를 추가합니다.
@@ -51,6 +52,7 @@ image:evs-canvas-add-working-env-4-5.png["시스템 이미지 추가"]
 
 
 
+[[add-amazon-fsx-for-netapp-ontap-storage-instances-to-netapp-console-system]]
 == NetApp Console 시스템에 Amazon FSx for NetApp ONTAP 스토리지 인스턴스 추가
 
 다음으로, NetApp Console 시스템에 Amazon FSx for NetApp ONTAP 스토리지 리소스를 추가합니다.

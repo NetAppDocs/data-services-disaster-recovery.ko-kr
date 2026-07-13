@@ -1082,12 +1082,10 @@
   <block id="d26cf1f0512a50b32d5a10b931f5fbe0" category="list-text">활동 창에서 모든 작업을 검토합니다.  작업 모니터에서 모든 작업을 보려면 *모든 작업 보기*를 선택하세요.</block>
   <block id="d15994bcf2411bb66762cdf4c58704b3" category="doc">NetApp Disaster Recovery 에서 복제 계획 만들기</block>
   <block id="78166ce4ccceeedfbf6aeb8682851072" category="paragraph">*이 작업에 관하여*</block>
-  <block id="978c7c7ea4c54312c02456ee28acd332" category="paragraph">복제 계획을 만들고 규정 준수 및 테스트 일정을 편집할 수도 있습니다.  프로덕션 작업 부하에 영향을 주지 않고 VM의 테스트 장애 조치를 실행합니다.</block>
   <block id="fba54b7da5e3ceabe7362e860f7df87d" category="paragraph">여러 데이터 저장소에서 여러 VM을 보호할 수 있습니다.  NetApp Disaster Recovery 보호된 VM 데이터 저장소를 호스팅하는 모든 ONTAP 볼륨에 대한 ONTAP 일관성 그룹을 생성합니다.</block>
   <block id="e7d31fc0602fb2ede144d18cdffd816b" category="list-text">준비가 된</block>
   <block id="eca4b06cc957b067c25916bf563bfcb1" category="list-text">장애 복구가 커밋되었습니다.</block>
   <block id="55af57d923ed95c2495c25a0e4762077" category="list-text">테스트 장애 조치가 커밋되었습니다.</block>
-  <block id="2cd55dfb5ccc1ffae31967c7321620ec" category="paragraph">*복제 계획 스냅샷*</block>
   <block id="65dd859759570a8a07801053fcf54421" category="paragraph">재해 복구는 소스 및 대상 클러스터에서 동일한 수의 스냅샷을 유지합니다.  기본적으로 이 서비스는 24시간마다 스냅샷 조정 프로세스를 수행하여 소스 및 대상 클러스터의 스냅샷 수가 동일한지 확인합니다.</block>
   <block id="4e5a9a818385822100abb8be4a2ef9c3" category="paragraph">다음과 같은 상황에서는 소스 클러스터와 대상 클러스터 간의 스냅샷 수가 달라질 수 있습니다.</block>
   <block id="44dfcfef8dbab15db411756f3ccc6b01" category="list-text">일부 상황에서는 재해 복구 외부의 ONTAP 작업이 볼륨에서 스냅샷을 추가하거나 제거할 수 있습니다.</block>
@@ -1096,10 +1094,7 @@
   <block id="4a72656aa601ed9d31033e4be368a919" category="list-text">복제 계획의 스냅샷 보존 횟수가 감소하면 서비스는 새로 줄어든 보존 횟수를 충족하기 위해 소스 사이트와 대상 사이트에서 가장 오래된 스냅샷을 삭제하게 됩니다.</block>
   <block id="49ff95b6dcd137f59a6acecf04a4c3b1" category="inline-image-macro">수평 점 작업 메뉴</block>
   <block id="7639ea3b77d367f127d70d668027673c" category="paragraph">이러한 경우 재해 복구는 다음 일관성 검사 시 소스 및 대상 클러스터에서 이전 스냅샷을 제거합니다.  또는 관리자는 *작업*을 선택하여 즉시 스냅샷 정리를 수행할 수 있습니다.<block ref="6b4b871445179eda383c81faf6cf5a92" category="inline-image-macro-rx" type="image"></block> 복제 계획에서 아이콘을 선택하고 *스냅샷 정리*를 선택합니다.</block>
-  <block id="3f1d340403a26ed0ad46982a91385d32" category="paragraph">이 서비스는 24시간마다 스냅샷 대칭 검사를 수행합니다.</block>
-  <block id="17e2d63e3b45ecbfe13bcc32fec929d0" category="paragraph">*시작하기 전에*</block>
   <block id="1059d7b16ffe2236c36ae0e8c15872ca" category="paragraph">SnapMirror 관계를 생성하기 전에 재해 복구 외부에서 클러스터와 SVM 피어링을 설정합니다.</block>
-  <block id="89dd75b1f79276c7e30e794e1c739f04" category="section-title">계획을 세우세요</block>
   <block id="4f27ef77939e5393adc6b44aec83a6b7" category="paragraph">마법사가 다음 단계를 안내합니다.</block>
   <block id="3baff38a392d31950fc8d4d62ea2adc0" category="list-text">vCenter 서버를 선택하세요.</block>
   <block id="d813bc25d25a7f816dde51c17f6c6ba0" category="list-text">소스 환경의 리소스가 대상 환경에 어떻게 매핑되는지 매핑합니다.</block>
@@ -1319,7 +1314,6 @@
   <block id="ee9e0fb0a09a468f33fa6f2dabc4ff49" category="inline-image-macro">장애 조치 매핑 페이지 편집</block>
   <block id="2aef38b97efb9369d3e496e8d062d8fd" category="paragraph"><block ref="2aef38b97efb9369d3e496e8d062d8fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e3a15d734e1eafd89e04f5eb526ec5cc" category="list-text">복제 계획을 선택한 후 작업 메뉴를 선택한 다음 *오래된 스냅샷 정리*를 선택하여 대상에서 오래된 스냅샷을 제거하여 새 보존 횟수와 일치시킵니다.</block>
-  <block id="a6dcfee4cd10f2ad60c3d81bc2a3b8ad" category="section-title">데이터 저장소 정보 보기</block>
   <block id="432624070ae1b8a0b19fd42c048a224c" category="paragraph">소스와 대상에 얼마나 많은 데이터 저장소가 있는지에 대한 정보를 볼 수 있습니다.</block>
   <block id="7e551addf2432bb9127be36e3a23db1c" category="list-text">메뉴에서 *대시보드*를 선택합니다.</block>
   <block id="5e141a758f792ce4ad7e1b2107b1f7a4" category="list-text">사이트 행에서 vCenter를 선택합니다.</block>
@@ -2319,7 +2313,6 @@
   <block id="fd41d6f681fcde1d5668de60a04c0563" category="paragraph"><block ref="fa5ae6d9db1798cb96b18ea5809b60d9" prefix="" category="inline-code"></block></block>
   <block id="83e1151ac17b113708a4a8f22a39063c" category="list-text"><block ref="83e1151ac17b113708a4a8f22a39063c" category="inline-link-macro-rx"></block></block>
   <block id="d1078d331fc762f6c1e11445777639f1" category="list-text"><block ref="e169d85ddc666c008a7e023ca382e5b3" category="inline-link-macro-rx"></block>를 검토해 보세요.</block>
-  <block id="3e2600f2f1048cf9d96b25b85a3b12b5" category="paragraph">리소스와 사이트를 추가했으면 이제 _복제 계획_을 생성할 준비가 되었습니다. 복제 계획은 데이터 보호를 관리합니다. 복제를 생성하려면 소스 및 대상 사이트를 지정하고, 리소스 그룹을 선택하고, 애플리케이션을 복원하고 전원을 켜는 방법을 선택해야 합니다. 예를 들어, 하나의 애플리케이션과 관련된 가상 머신(VM)을 그룹화하거나 유사한 계층을 가진 애플리케이션을 그룹화할 수 있습니다.</block>
   <block id="fd0863d0dc188b339645e359055610e4" category="admonition">NetApp Disaster Recovery를 배포하기 전에 VM 또는 Kubernetes 클러스터를 구성하여 확산을 최소화하십시오. 보호가 필요한 리소스는 데이터스토어의 하위 집합에 배치하고, 보호되지 않을 리소스는 다른 데이터스토어 하위 집합에 배치하십시오. 복제 계획을 생성하기 전에 리소스 그룹을 구성하는 방법에 대한 자세한 내용은 <block ref="2e9e1519a300bb9dc6a403652e82bcd7" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
   <block id="65dea983a95654f072023e3fd251790f" category="list-text">*소스*의 경우, 소스로 지정할 vCenter 또는 Kubernetes 클러스터를 선택하십시오.</block>
   <block id="56da8dc4cd41826eefa46f92a1310a8b" category="paragraph">다음 단계는 필요한 VM, 데이터스토어 또는 Kubernetes 클러스터를 기능별 리소스 그룹으로 묶는 것입니다. 리소스 그룹을 사용하면 Kubernetes 클러스터 또는 VM과 같은 리소스 집합을 공통 스냅샷으로 보호할 수 있습니다.</block>
@@ -2404,10 +2397,48 @@
   <block id="7aa7ac5ef00e37e99f8bb57b253d37ed" category="paragraph">실제 장애 조치를 수행하기 전에 테스트를 통해 준비 상태를 확인할 수 있습니다. 테스트 과정 동안 워크로드는 온라인 상태를 유지합니다.</block>
   <block id="f5fa15f6901bb980064f0a1e081fbfb7" category="list-text">테스트 페일오버 페이지에서 테스트 페일오버에 사용할 스냅샷을 선택합니다. **지금 스냅샷 생성**을 선택하거나 기존 스냅샷을 선택하려면 **선택**을 선택합니다. **선택**을 선택하는 경우 기존 스냅샷을 선택하십시오.</block>
   <block id="0a07084d59200e5f62afd96db98a68b5" category="paragraph">그런 다음 "Test failover"를 입력하고 *Test fail over*를 선택합니다.</block>
-  <block id="962e92831673929912f04cd68819059b" category="admonition">복제 계획에 빈 데이터 저장소가 포함된 경우 먼저 계획에서 빈 데이터 저장소를 제거하거나 빈 데이터 저장소를 건너뛰는 **강제 페일오버** 옵션을 사용해야 합니다.</block>
   <block id="919dfe02d5a57784fd83bb645e8f8b8e" category="paragraph">보존 수를 변경하면 저장되는 스냅샷 수를 늘리거나 줄일 수 있습니다.</block>
   <block id="e363882b79ccd237ac1f4dd679c679c2" category="paragraph">진행 중이거나 대기 중인 작업이 중단된 경우 또는 보류 중인 작업의 우선 순위를 지정하기 위해 해당 작업을 취소할 수 있습니다.</block>
   <block id="caf5841d5a0afa8a150bf6da9c22fc2f" category="list-text">워크로드 드롭다운 메뉴에서 필터를 *Kubernetes*로 설정합니다.</block>
   <block id="86839797735bfc02dea42929601e887a" category="list-text">설정 창에서 필요에 따라 필드를 편집합니다.</block>
   <block id="83cfc8bb47b46515d41842fa32fa608b" category="list-text">검색 일정을 사용자 지정하려면 *예약된 검색 사용* 확인란을 선택하십시오. 검색 시작 날짜와 검색 간격(시간 및 분)을 선택하십시오.</block>
+  <block id="a3385cf694f169469155cf608126cc13" category="section-title">사이트 메뉴에서 Trident Protect 관리</block>
+  <block id="d108f39d7ac8db7fc5eab434cd7df7fc" category="paragraph">이제 재해 복구 UI의 사이트 메뉴에서 Trident Protect를 직접 관리할 수 있습니다. Trident Protect를 업그레이드하거나 재해 복구에서 제거하여 Kubernetes 리소스 관리를 간소화할 수 있습니다.</block>
+  <block id="ceb6da856e73533ddb08cf15abe120b7" category="inline-link-macro">사이트 관리</block>
+  <block id="cee9739236651212176e7c87838bb2d3" category="paragraph">자세한 내용은 <block ref="b4c4c365d924dbf2ff79378d36f70a71" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="cc6fa95b1e18a1fb7c53cf32734ead26" category="paragraph">재해 복구 기능은 VMware 기반 워크로드에 대해 다음과 같은 변경 사항을 도입했습니다.</block>
+  <block id="7f2d139bc27153ad07daea80fab0a433" category="section-title">빈 데이터스토어 장애 조치</block>
+  <block id="bfea9e3d533bac76e79429a83d38837c" category="paragraph">이제 빈 데이터스토어를 포함하는 복제 계획을 해당 데이터스토어를 계획에서 제외하거나 강제로 장애 조치를 수행하지 않고도 성공적으로 장애 조치를 수행할 수 있습니다. 장애 조치 시 Disaster Recovery는 재해 복구 사이트에 빈 데이터스토어를 자동으로 마운트하여 VM을 추가하고 장애 복구 작업을 위해 보호할 수 있도록 합니다.</block>
+  <block id="d3835be5f3c2a797d5fc948f95289e0c" category="paragraph">자세한 내용은 <block ref="a16180f75826879573c72d14ccfccc18" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="0fddd8fb8cd772934e1e5021d105b7fb" category="section-title">vCenter 네트워크 자동 매핑</block>
+  <block id="07efa6bd1ca4b90d1c4eb002786f661b" category="paragraph">이제 vCenter 수준에서(즉, 복제 계획 대화 상자 외부에서) 네트워크 매핑 관계를 구성할 수 있습니다. 구성이 완료되면 Disaster Recovery에서 복제 계획을 추가하거나 편집할 때 이러한 네트워크 매핑을 자동으로 적용하여 복제 계획 관리를 간소화합니다.</block>
+  <block id="1eee5c19633b811fc646be143dcd283f" category="paragraph">재해 복구는 계획별 재정의를 계속 지원합니다. 복제 계획에 정의된 기존 네트워크 매핑은 네트워크별로 편집할 수 있으며, 이러한 매핑은 vCenter 수준의 정의보다 우선 적용됩니다.</block>
+  <block id="d315df6836105d6791cc83a6539ee7e9" category="section-title">재해 복구 뷰어 역할 강화</block>
+  <block id="266377e44a916fdf2cc18bfbb23cf6bf" category="paragraph">재해 복구 뷰어 역할에서 '시스템 업그레이드' 탭을 볼 수 있는 기능이 제거되었습니다. 이러한 변경 사항은 읽기 전용 사용자에게 더 적합한 환경에 맞춰 역할을 조정하기 위한 것입니다. <block ref="8100c1fe7b8d110e1492908ee1d65a0c" category="inline-link-macro-rx"></block>.</block>
+  <block id="3ddd9403dd985627a83f357af005a768" category="section-title">시스템 성능 향상</block>
+  <block id="baa35064269b3904d8b57c0745ca18f8" category="paragraph">재해 복구에는 시스템 리소스 소비를 줄이고 운영 전반의 성능을 향상시키기 위한 변경 사항이 도입되었습니다.</block>
+  <block id="de2e4685966d24481dfab35c95ad44dc" category="section-title">2026년 7월 13일</block>
+  <block id="17d61647c38ceaeec784c2ea23dd1f02" category="paragraph">버전 4.3.5</block>
+  <block id="460dfd853a44f41cd7e36e73abb3183d" category="paragraph">리소스와 사이트를 추가한 후에는 데이터 보호를 관리하기 위해 복제 계획을 생성해야 합니다. 복제 계획을 생성하려면 소스 및 대상 사이트를 지정하고, 리소스 그룹을 선택하고, 애플리케이션을 복원하고 다시 시작하는 방법을 선택해야 합니다. 예를 들어, 하나의 애플리케이션과 관련된 가상 머신(VM)을 그룹화하거나 유사한 계층을 가진 애플리케이션을 그룹화할 수 있습니다.</block>
+  <block id="64a6f997b6cbcf26c538dbf71179cfe3" category="paragraph">복제 계획을 생성할 때 규정 준수 및 테스트 일정을 편집하고, 운영 데이터에 영향을 주지 않고 테스트 페일오버를 수행할 수 있습니다.</block>
+  <block id="aa0c550dfb503c90e6b173a0a07f63e0" category="section-title">복제 계획 정보</block>
+  <block id="70e9daad0ce38ec31033633e81624571" category="section-title">복제 계획 스냅샷</block>
+  <block id="f4cbef5ca3f18eff6d1ab043a838c42d" category="paragraph">재해 복구는 24시간마다 스냅샷 대칭성 검사를 수행합니다.</block>
+  <block id="0199f8e45e93965175d2ac0013366462" category="list-text">vCenter 수준에서 네트워크 매핑을 구성하면 재해 복구에서 복제 계획을 생성할 때 해당 매핑을 인식합니다. 복제 계획을 생성한 후 vCenter 수준에서 네트워크 매핑을 수정하거나 추가하면 재해 복구에서 복제 계획을 수동으로 편집할 때 해당 매핑을 인식합니다.</block>
+  <block id="8545a0d7cdafff8da2dece1a851630dc" category="section-title">Trident Protect 관리</block>
+  <block id="3609f175bfca3663a769d710b6693940" category="paragraph">재해 복구 UI에서 Trident Protect를 업그레이드하거나 제거할 수 있습니다.</block>
+  <block id="516ee22feede3bac94e552d7d7d47c7a" category="list-title">Trident Protect 업그레이드</block>
+  <block id="852fd4e3ec5d4c29fa8a8cefa3c21471" category="list-text">재해 복구에서 사이드바의 **사이트**를 선택합니다.</block>
+  <block id="8cfefefc34bbe900b668594477ef4ad5" category="list-text">드롭다운 메뉴에서 **Kubernetes**를 선택합니다.</block>
+  <block id="78804847b12a6563801a02b538c145df" category="list-text">수정하려는 클러스터의 작업 메뉴에서 **클러스터 업그레이드**를 선택합니다.</block>
+  <block id="d67cab9a5414e00a7ccf215f2d7dbd33" category="inline-link-macro">Trident 릴리스 노트</block>
+  <block id="2a5efaa429a3a54de621dd8d0ad21ea4" category="list-text">**대상 버전 선택** 드롭다운 메뉴에서 업그레이드할 Trident Protect 버전을 선택하십시오. 업그레이드하기 전에 <block ref="135c4f4ed1782a7c491e834c1b93041f" category="inline-link-macro-rx"></block>을 검토하여 각 버전의 세부 사항과 클러스터에 미치는 영향을 이해하는 것이 좋습니다.</block>
+  <block id="38f32ced896e30548fa0f6bcfbba01a5" category="list-text">업그레이드를 시작하려면 **업그레이드**를 선택합니다.</block>
+  <block id="b402cd35b5fb9a57addd459fc4b1882a" category="list-title">Trident Protect 제거</block>
+  <block id="b97f5202b0568bf1ab06be0a84b05837" category="list-text">수정하려는 사이트의 작업 메뉴에서 **클러스터 제거**를 선택합니다.</block>
+  <block id="f4721b43df8877d17946e2b9dd373ced" category="list-text">대화 상자를 검토한 다음 Trident Protect를 제거하려는 클러스터에서 제거 명령을 실행하십시오:<block ref="e32e94385e578bc57593f18c76552bb7" prefix=" " category="inline-code"></block></block>
+  <block id="d7d19228040ec612e692641319a73229" category="list-text">Trident Protect 제거를 완료하려면 재해 복구 UI로 돌아가서 **사이트 제거**를 선택하십시오.</block>
+  <block id="8527638a378e1869ef948cf228cb1967" category="list-title">사이트에서 클러스터 제거</block>
+  <block id="2e6e87ad0d5bb097a11e43a094522ce3" category="list-text">대화 상자를 검토한 후 **사이트에서 제거**를 선택하십시오. Trident Protect 작동을 계속하려면 올바른 옵션을 선택했는지 확인하십시오.</block>
+  <block id="4c6f2ecfa631674b204ee705d90449fe" category="section-title">데이터 저장소 정보 보기</block>
 </blocks>

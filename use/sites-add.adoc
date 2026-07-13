@@ -21,6 +21,7 @@ TIP: 소스와 대상 모두 동일한 NetApp Console 에이전트를 사용하�
 
 
 
+[[add-a-site]]
 == 사이트 추가
 
 재해 복구에 사이트를 추가할 때는 사이트에 있는 리소스 유형을 구분해야 합니다. vCenters 또는 Kubernetes 클러스터 중 하나를 추가할 수 있습니다.
@@ -40,6 +41,7 @@ Disaster Recovery에 사이트를 추가한 후에는 해당 사이트에 리소
 
 
 
+[[add-resources-to-a-site]]
 == 사이트에 리소스 추가
 
 이전 릴리스에서 vCenter를 추가하고 검색 일정을 사용자 지정하려면 vCenter 서버 사이트를 편집하고 일정을 설정해야 합니다.
@@ -153,6 +155,7 @@ image:add-kubernetes-cluster.png["Kubernetes 클러스터 추가 옵션의 스�
 
 
 
+[[add-subnet-mapping-for-a-vcenter-site]]
 == vCenter 사이트에 대한 서브넷 매핑 추가
 
 서브넷 매핑을 사용하면 장애 조치 작업 시 IP 주소를 관리할 수 있으며, 이를 통해 각 vCenter에 대한 서브넷을 추가할 수 있습니다.  이렇게 하면 각 가상 네트워크에 대한 IPv4 CIDR, 기본 게이트웨이, DNS가 정의됩니다.
@@ -205,6 +208,7 @@ TIP: CIDR 표기법은 IP 주소와 네트워크 마스크를 지정하는 방�
 
 
 
+[[select-subnet-mapping-for-a-replication-plan]]
 === 복제 계획에 대한 서브넷 매핑 선택
 
 복제 계획을 생성할 때 복제 계획에 대한 서브넷 매핑을 선택할 수 있습니다.
@@ -233,6 +237,7 @@ NOTE: VM이 두 개 있는 경우(예: 하나는 Linux이고 다른 하나는 Wi
 
 
 
+[[edit-the-vcenter-server-site-and-customize-the-discovery-schedule]]
 == vCenter 서버 사이트를 편집하고 검색 일정을 사용자 정의합니다.
 
 vCenter 서버 사이트를 편집하여 검색 일정을 사용자 지정할 수 있습니다.  예를 들어, VM 수가 많은 경우 검색 일정을 23시간 59분마다 실행되도록 설정할 수 있습니다.  VM 수가 적은 경우 검색 일정을 12시간마다 실행되도록 설정할 수 있습니다.
@@ -257,6 +262,7 @@ image:sites-edit-schedule.png["검색 일정 스크린샷 편집"]
 
 
 
+[[refresh-discovery-manually]]
 == 검색을 수동으로 새로 고침
 
 언제든지 수동으로 검색 내용을 새로 고칠 수 있습니다.  이 기능은 VM을 추가하거나 제거한 후 NetApp Disaster Recovery 에서 정보를 업데이트하려는 경우에 유용합니다.

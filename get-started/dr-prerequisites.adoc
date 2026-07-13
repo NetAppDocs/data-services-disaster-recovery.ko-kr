@@ -16,6 +16,7 @@ NetApp Disaster Recovery 사용하기 전에 해당 환경이 ONTAP 스토리지
 
 
 
+[[software-versions]]
 == 소프트웨어 버전
 
 [cols="35,55a"]
@@ -49,6 +50,7 @@ ONTAP 9.10.0 이상
 |===
 
 
+[[google-cloud-prerequisites-and-considerations]]
 == Google Cloud 필수 구성 요소 및 고려 사항
 
 Google Cloud NetApp Volumes 사용하여 Google Cloud VMware Engine에서 재해 복구를 수행하는 경우 올바른 권한을 구성하고 언급된 고려 사항을 준수해야 합니다.
@@ -80,6 +82,7 @@ Google Cloud NetApp Volumes 사용하여 Google Cloud VMware Engine에서 재해
 
 
 
+[[google-cloud-permissions]]
 === Google Cloud 권한
 
 Google Cloud의 서비스 주체에는 다음 역할이나 동등한 권한이 할당되어야 합니다.
@@ -92,6 +95,7 @@ Google Cloud의 서비스 주체에는 다음 역할이나 동등한 권한이 �
 
 
 
+[[netapp-console-permissions]]
 === NetApp Console 권한
 
 NetApp Console 사용자는 다음과 같은 역할을 가져야 합니다.
@@ -103,6 +107,7 @@ NetApp Console 사용자는 다음과 같은 역할을 가져야 합니다.
 
 
 
+[[ontap-storage-prerequisites]]
 == ONTAP 스토리지 전제 조건
 
 이러한 필수 조건은 ONTAP 및 Amazon FSX for NetApp ONTAP 인스턴스에 적용됩니다.
@@ -120,16 +125,19 @@ NetApp Console 사용자는 다음과 같은 역할을 가져야 합니다.
 
 
 
+[[netapp-console-prerequisites]]
 == NetApp Console 필수 구성 요소
 
 
 
+[[get-started-with-the-netapp-console]]
 === NetApp Console 시작하기
 
 아직 하지 않았다면, https://docs.netapp.com/us-en/console-setup-admin/task-sign-up-saas.html["NetApp Console 에 가입하고 조직을 만드세요"^] .
 
 
 
+[[gather-credentials-for-ontap-and-vmware]]
 === ONTAP 및 VMware에 대한 자격 증명 수집
 
 * Amazon FSx for ONTAP 및 AWS 자격 증명은 NetApp Disaster Recovery 관리하는 NetApp Console 프로젝트 내의 시스템에 추가되어야 합니다.
@@ -144,6 +152,7 @@ TIP: Amazon Elastic VMware Service(EVS)에서 재해 복구를 사용하려면 l
 
 
 
+[[create-the-netapp-console-agent]]
 === NetApp Console 에이전트 만들기
 
 콘솔 에이전트는 콘솔이 ONTAP 스토리지 및 VMware vCenter 클러스터와 통신할 수 있도록 하는 소프트웨어 구성 요소입니다. 재해 복구가 제대로 작동하려면 이것이 필요합니다. 에이전트는 개인 네트워크(온프레미스 데이터 센터 또는 클라우드 VPC)에 상주하며 ONTAP 스토리지 인스턴스와 추가 서버 및 애플리케이션 구성 요소와 통신합니다. 재해 복구의 경우 이는 관리되는 vCenter 클러스터에 대한 액세스입니다.
@@ -175,6 +184,7 @@ TIP: 온프레미스 간 연결의 경우 온프레미스 콘솔 에이전트를
 
 
 
+[[workload-prerequisites]]
 == 작업량 전제 조건
 
 애플리케이션 일관성 프로세스가 성공적으로 수행되도록 하려면 다음 전제 조건을 적용하세요.
@@ -189,6 +199,7 @@ IMPORTANT: 배포 유형에 따라 link:reference-vmware-prerequisites.html["VMw
 
 
 
+[[more-information]]
 == 더 많은 정보
 
 * xref:../reference/vcenter-privileges.html[필요한 vCenter 권한]

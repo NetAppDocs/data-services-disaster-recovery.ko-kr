@@ -4,6 +4,7 @@
 
 
 
+[[support-for-multiple-console-agents-in-on-premises-environments]]
 === 온프레미스 환경에서 여러 콘솔 에이전트 지원
 
 온프레미스 재해 복구를 사용하는 경우 이제 각 vCenter 인스턴스에 콘솔 에이전트를 배포하여 복원력을 향상시킬 수 있습니다.
@@ -14,6 +15,7 @@
 
 
 
+[[add-vms-after-failover-for-replication-plans-using-datastore-based-protection]]
 === 데이터스토어 기반 보호를 사용하는 복제 계획에 대해 장애 조치 후 VM을 추가합니다.
 
 장애 조치가 발생하면 데이터스토어 기반 보호를 사용하는 모든 복제 계획에는 데이터스토어에 추가된 VM이 포함됩니다. 단, 해당 VM이 검색된 경우에 한합니다. 장애 조치가 완료되기 전에 추가된 VM에 대한 매핑 세부 정보를 제공해야 합니다.
@@ -22,6 +24,7 @@
 
 
 
+[[new-email-notifications]]
 === 새 이메일 알림
 
 재해 복구 시스템은 이제 다음과 같은 이벤트에 대한 이메일 알림을 제공합니다.
@@ -34,18 +37,21 @@
 
 
 
+[[swagger-improvements]]
 === 스웨거 개선 사항
 
 이제 Disaster Recovery 내에서 Swagger 문서에 액세스할 수 있습니다. Disaster Recovery에서 **Settings**를 선택한 다음 **API documentation**을 선택합니다. link:https://api.bluexp.netapp.com/v1/services/draas/api/api-doc/draas["링크"^]에 액세스하려면 비공개 또는 시크릿 모드여야 합니다.
 
 
 
+[[improved-user-interfaces]]
 === 개선된 사용자 인터페이스
 
 재해 복구 기능이 향상된 경고 및 오류 해결 기능을 제공합니다. 이번 릴리스에서는 취소된 작업이 사용자 인터페이스에 표시되지 않던 오류가 수정되었습니다. 취소된 작업이 이제 표시됩니다. 또한 동일한 대상 네트워크가 여러 개의 서로 다른 소스 네트워크에 매핑될 경우 새로운 경고 메시지가 표시됩니다.
 
 
 
+[[retain-vm-folder-structure-added-as-default-in-replication-plans]]
 === 복제 계획에 기본값으로 추가된 VM 폴더 구조를 유지합니다.
 
 복제본을 생성할 때, 새로운 기본 설정은 VM 폴더 구조를 유지하는 것입니다. 복구 대상에 원래 폴더 계층 구조가 없는 경우 재해 복구 기능이 이를 생성합니다. 원래 폴더 계층 구조를 무시하려면 이 옵션을 선택 해제하면 됩니다.

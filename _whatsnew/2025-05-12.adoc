@@ -4,6 +4,7 @@
 
 
 
+[[subnet-mapping]]
 === 서브넷 매핑
 
 이 릴리스에서는 서브넷 매핑을 사용하여 새로운 방식으로 장애 조치 시 IP 주소를 관리할 수 있으며, 이를 통해 각 vCenter에 대한 서브넷을 추가할 수 있습니다.  이렇게 하면 각 가상 네트워크에 대한 IPv4 CIDR, 기본 게이트웨이, DNS가 정의됩니다.
@@ -26,6 +27,7 @@ VM1에는 NetworkA에 연결된 vNIC(10.1.1.50)가 있습니다.  NetworkA는 �
 
 
 
+[[skip-protection]]
 === 스킵 보호
 
 이제 복제 계획 장애 조치 후 서비스가 자동으로 역방향 보호 관계를 생성하지 않도록 보호를 건너뛸 수 있습니다.  NetApp Disaster Recovery 에서 다시 온라인으로 전환하기 전에 복원된 사이트에서 추가 작업을 수행하려는 경우 이 기능이 유용합니다.
@@ -40,6 +42,7 @@ VM1에는 NetworkA에 연결된 vNIC(10.1.1.50)가 있습니다.  NetworkA는 �
 
 
 
+[[snapmirror-schedule-updates-in-the-replication-plan]]
 === SnapMirror 복제 계획에서 업데이트를 일정에 추가합니다.
 
 NetApp Disaster Recovery 이제 기본 ONTAP SnapMirror 정책 스케줄러나 ONTAP 과의 타사 통합과 같은 외부 스냅샷 관리 솔루션을 사용할 수 있도록 지원합니다.  복제 계획의 모든 데이터 저장소(볼륨)에 이미 다른 곳에서 관리되는 SnapMirror 관계가 있는 경우 NetApp Disaster Recovery 에서 해당 스냅샷을 복구 지점으로 사용할 수 있습니다.

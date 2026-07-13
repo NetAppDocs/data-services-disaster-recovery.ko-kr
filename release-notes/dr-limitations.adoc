@@ -16,12 +16,14 @@ summary: 알려진 제한 사항은 이 서비스 릴리스에서 지원하지 �
 
 
 
+[[wait-until-failback-completes-before-running-discovery]]
 == 검색을 실행하기 전에 장애 복구가 완료될 때까지 기다리십시오.
 
 장애 조치가 완료된 후에는 소스 vCenter에서 수동으로 검색을 시작하지 마세요.  장애 복구가 완료될 때까지 기다린 다음 소스 vCenter에서 검색을 시작합니다.
 
 
 
+[[netapp-console-might-not-discover-amazon-fsx-for-netapp-ontap]]
 == NetApp Console Amazon FSx for NetApp ONTAP 검색하지 못할 수 있습니다.
 
 때로는 NetApp Console Amazon FSx for NetApp ONTAP 클러스터를 검색하지 못하는 경우가 있습니다.  FSx 자격 증명이 올바르지 않기 때문일 수 있습니다.
@@ -47,6 +49,7 @@ NetApp Disaster Recovery 에서 ONTAP FSx 클러스터를 제거해야 하는 �
 
 
 
+[[limitations-with-google-cloud-netapp-volumes]]
 == Google Cloud NetApp Volumes 의 제한 사항
 
 * 장애 조치 테스트를 실행한 후에는 최소 52시간을 기다려야 복제 볼륨이 삭제됩니다.  볼륨을 수동으로 삭제해야 합니다.  52시간 후에 장애 조치를 다시 테스트할 수 있습니다.

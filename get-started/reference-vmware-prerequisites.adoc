@@ -16,6 +16,7 @@ NetApp Disaster Recovery를 사용하기 전에 환경이 VMware vCenter 클러�
 
 
 
+[[general-prerequisites]]
 == 일반 사전 요구 사항
 
 이러한 필수 구성 요소는 온프레미스 vCenter 클러스터와 VMware Cloud for AWS 소프트웨어 정의 데이터 센터(SDDC)에 모두 적용됩니다.
@@ -33,6 +34,7 @@ NetApp Disaster Recovery를 사용하기 전에 환경이 VMware vCenter 클러�
 
 
 
+[[vmware-cloud-sddc-prerequisites]]
 == VMware Cloud SDDC 사전 요구 사항
 
 VMware Cloud SDDC를 사용하는 경우 다음과 같은 추가 필수 조건이 적용됩니다.

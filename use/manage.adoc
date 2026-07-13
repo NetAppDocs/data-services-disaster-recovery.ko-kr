@@ -27,6 +27,7 @@ link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-re
 
 
 
+[[manage-vcenter-sites]]
 == vCenter 사이트 관리
 
 vCenter 사이트 이름과 사이트 유형(온프레미스 또는 AWS)을 편집할 수 있습니다.
@@ -41,6 +42,7 @@ vCenter 사이트 이름과 사이트 유형(온프레미스 또는 AWS)을 편�
 
 
 
+[[manage-resource-groups]]
 == 리소스 그룹 관리
 
 VM 또는 데이터 저장소별로 리소스 그룹을 만들 수 있습니다.  복제 계획을 생성할 때나 생성한 후에 추가할 수 있습니다.
@@ -71,6 +73,7 @@ VM 또는 데이터 저장소별로 리소스 그룹을 만들 수 있습니다.
 
 
 
+[[manage-replication-plans]]
 == 복제 계획 관리
 
 복제 계획을 비활성화, 활성화 및 삭제할 수 있습니다.  일정을 변경할 수 있습니다.
@@ -108,6 +111,7 @@ image:../use/dr-plan-list.png["복제 계획 목록"]
 
 
 
+[[reconcile-snapshots-on-demand]]
 === 필요에 따라 스냅샷 조정
 
 재해 복구는 24시간마다 소스의 스냅샷을 자동으로 삭제합니다.  소스와 대상 간의 스냅샷이 동기화되지 않은 것을 발견하면 사이트 간 일관성을 유지하기 위해 스냅샷 간의 불일치를 해결해야 합니다.
@@ -126,6 +130,7 @@ image:../use/dr-plan-list.png["복제 계획 목록"]
 
 
 
+[[delete-a-replication-plan]]
 === 복제 계획 삭제
 
 복제 계획을 삭제하면 해당 계획에서 생성된 기본 및 보조 스냅샷도 삭제할 수 있습니다.
@@ -142,6 +147,7 @@ image:../use/dr-plan-list.png["복제 계획 목록"]
 
 
 
+[[change-retention-count-for-failover-schedules]]
 === 장애 조치 일정에 대한 보존 횟수 변경
 
 보존 수를 변경하면 저장되는 스냅샷 수를 늘리거나 줄일 수 있습니다.
@@ -161,6 +167,37 @@ image:../use/dr-plan-failover-edit.png["장애 조치 매핑 페이지 편집"]
 
 
 
+[[manage-trident-protect]]
+== Trident Protect 관리
+
+재해 복구 UI에서 Trident Protect를 업그레이드하거나 제거할 수 있습니다.
+
+.Trident Protect 업그레이드
+. 재해 복구에서 사이드바의 **사이트**를 선택합니다.
+. 드롭다운 메뉴에서 **Kubernetes**를 선택합니다.
+. 수정하려는 클러스터의 작업 메뉴에서 **클러스터 업그레이드**를 선택합니다.
+. **대상 버전 선택** 드롭다운 메뉴에서 업그레이드할 Trident Protect 버전을 선택하십시오. 업그레이드하기 전에 link:https://docs.netapp.com/us-en/trident/trident-rn.html["Trident 릴리스 노트"^]을 검토하여 각 버전의 세부 사항과 클러스터에 미치는 영향을 이해하는 것이 좋습니다.
+. 업그레이드를 시작하려면 **업그레이드**를 선택합니다.
+
+
+.Trident Protect 제거
+. 재해 복구에서 사이드바의 **사이트**를 선택합니다.
+. 드롭다운 메뉴에서 **Kubernetes**를 선택합니다.
+. 수정하려는 사이트의 작업 메뉴에서 **클러스터 제거**를 선택합니다.
+. 대화 상자를 검토한 다음 Trident Protect를 제거하려는 클러스터에서 제거 명령을 실행하십시오: `helm uninstall trident-protect -n trident-protect`
+. Trident Protect 제거를 완료하려면 재해 복구 UI로 돌아가서 **사이트 제거**를 선택하십시오.
+
+
+.사이트에서 클러스터 제거
+. 재해 복구에서 사이드바의 **사이트**를 선택합니다.
+. 드롭다운 메뉴에서 **Kubernetes**를 선택합니다.
+. 수정하려는 사이트의 작업 메뉴에서 **클러스터 제거**를 선택합니다.
+. 대화 상자를 검토한 후 **사이트에서 제거**를 선택하십시오. Trident Protect 작동을 계속하려면 올바른 옵션을 선택했는지 확인하십시오.
+
+
+
+
+[[view-datastore-information]]
 == 데이터 저장소 정보 보기
 
 소스와 대상에 얼마나 많은 데이터 저장소가 있는지에 대한 정보를 볼 수 있습니다.
@@ -176,6 +213,7 @@ image:../use/dr-plan-failover-edit.png["장애 조치 매핑 페이지 편집"]
 
 
 
+[[view-virtual-machines-information]]
 == 가상 머신 정보 보기
 
 소스와 대상에 존재하는 가상 머신의 수와 CPU, 메모리, 사용 가능한 용량에 대한 정보를 볼 수 있습니다.

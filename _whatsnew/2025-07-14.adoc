@@ -4,6 +4,7 @@
 
 
 
+[[user-roles-in-netapp-disaster-recovery]]
 === NetApp Disaster Recovery 의 사용자 역할
 
 NetApp Disaster Recovery 이제 각 사용자가 특정 기능과 작업에 대해 갖는 액세스를 관리하는 역할을 사용합니다.
@@ -24,6 +25,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[other-updates-in-netapp-disaster-recovery]]
 === NetApp Disaster Recovery 의 기타 업데이트
 
 * 향상된 네트워크 검색

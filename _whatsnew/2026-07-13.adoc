@@ -1,0 +1,55 @@
+= Kubernetes 업데이트
+:allow-uri-read: 
+
+
+
+
+[[kubernetes-updates]]
+=== Kubernetes 업데이트
+
+재해 복구 기능은 Kubernetes 기반 워크로드에 대해 다음과 같은 변경 사항을 도입했습니다.
+
+
+
+==== 사이트 메뉴에서 Trident Protect 관리
+
+이제 재해 복구 UI의 사이트 메뉴에서 Trident Protect를 직접 관리할 수 있습니다. Trident Protect를 업그레이드하거나 재해 복구에서 제거하여 Kubernetes 리소스 관리를 간소화할 수 있습니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/manage.html["사이트 관리"^]을 참조하십시오.
+
+
+
+[[vmware-updates]]
+=== VMware 업데이트
+
+재해 복구 기능은 VMware 기반 워크로드에 대해 다음과 같은 변경 사항을 도입했습니다.
+
+
+
+==== 빈 데이터스토어 장애 조치
+
+이제 빈 데이터스토어를 포함하는 복제 계획을 해당 데이터스토어를 계획에서 제외하거나 강제로 장애 조치를 수행하지 않고도 성공적으로 장애 조치를 수행할 수 있습니다. 장애 조치 시 Disaster Recovery는 재해 복구 사이트에 빈 데이터스토어를 자동으로 마운트하여 VM을 추가하고 장애 복구 작업을 위해 보호할 수 있도록 합니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/failover.html["원격 사이트로 페일오버"^]을 참조하십시오.
+
+
+
+==== vCenter 네트워크 자동 매핑
+
+이제 vCenter 수준에서(즉, 복제 계획 대화 상자 외부에서) 네트워크 매핑 관계를 구성할 수 있습니다. 구성이 완료되면 Disaster Recovery에서 복제 계획을 추가하거나 편집할 때 이러한 네트워크 매핑을 자동으로 적용하여 복제 계획 관리를 간소화합니다.
+
+재해 복구는 계획별 재정의를 계속 지원합니다. 복제 계획에 정의된 기존 네트워크 매핑은 네트워크별로 편집할 수 있으며, 이러한 매핑은 vCenter 수준의 정의보다 우선 적용됩니다.
+
+
+
+[[disaster-recovery-viewer-role-tightening]]
+=== 재해 복구 뷰어 역할 강화
+
+재해 복구 뷰어 역할에서 '시스템 업그레이드' 탭을 볼 수 있는 기능이 제거되었습니다. 이러한 변경 사항은 읽기 전용 사용자에게 더 적합한 환경에 맞춰 역할을 조정하기 위한 것입니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^].
+
+
+
+[[system-performance-enhancements]]
+=== 시스템 성능 향상
+
+재해 복구에는 시스템 리소스 소비를 줄이고 운영 전반의 성능을 향상시키기 위한 변경 사항이 도입되었습니다.
