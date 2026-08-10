@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: use/reports.html 
-keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, monitor, bluexp, protection, reports 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, monitor, bluexp, protection, reports, kubernetes 
 summary: 재해 복구 보고서를 검토하면 재해 복구 준비 상태를 분석하는 데 도움이 될 수 있습니다.  사전 설계된 보고서에는 장애 조치 및 장애 복구 요약, 모든 사이트의 복제 세부 정보, 지난 1년간의 작업 세부 정보가 포함됩니다. 
 ---
-= NetApp Disaster Recovery 보고서 만들기
+= NetApp Disaster Recovery에서 보고서 생성
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,22 +12,26 @@ summary: 재해 복구 보고서를 검토하면 재해 복구 준비 상태를 
 
 
 [role="lead"]
-NetApp Disaster Recovery 보고서를 검토하면 재해 복구 준비 상태를 분석하는 데 도움이 될 수 있습니다.  사전 설계된 보고서에는 지난 7일 동안 계정 내 모든 사이트에 대한 테스트 장애 조치 요약, 복제 계획 세부 정보, 작업 세부 정보가 포함됩니다.
+NetApp Disaster Recovery 보고서는 재해 복구 준비 상태를 분석하는 데 도움이 됩니다. 보고서는 리소스 그룹, VM 또는 Kubernetes 클러스터, 데이터스토어 수 등 복제 계획에 대한 정보를 제공합니다. 또한 규정 준수 상태, 작업 요약, 복구 시점 목표(RPO) 및 보존 기간을 포함한 백업 설정도 표시합니다.
 
 PDF, HTML 또는 JSON 형식으로 보고서를 다운로드할 수 있습니다.
 
-다운로드 링크는 6시간 동안 유효합니다.
+보고서 다운로드 링크는 생성 후 6시간 동안 유효합니다.
 
 .단계
-. 에 로그인하세요 https://console.netapp.com/["NetApp Console"^] .
+. link:https://console.netapp.com/["NetApp Console"^]에 로그인하십시오.
 . NetApp Console 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
 . NetApp Console 왼쪽 탐색 모음에서 *복제 계획*을 선택합니다.
 . *보고서 만들기*를 선택하세요.
-. 파일 형식 유형과 지난 7일 이내의 기간을 선택하세요.
-. *만들기*를 선택하세요.
+. 보고서 범위를 Kubernetes, VMware 또는 전체 중 어떤 *워크로드*로 지정할지 선택합니다.
+. 보고서에서 다룰 *파일 형식*(PDF, HTML 또는 JSON)과 *기간*(최근 1일~7일)을 선택합니다.
++
+image::report.png[보고서 생성 화면 캡처]
+
+. 보고서를 생성하려면 *생성*을 선택합니다.
 +
 
-NOTE: 보고서가 표시되려면 몇 분 정도 걸릴 수 있습니다.
+NOTE: 보고서를 생성하는 데 몇 분 정도 소요될 수 있습니다.
 
-. 보고서를 다운로드하려면 *보고서 다운로드*를 선택하고 관리자의 다운로드 폴더에서 보고서를 선택하세요.
+. 복제 계획 대시보드에서 *보고서 다운로드*를 선택합니다.
 

@@ -1062,24 +1062,11 @@
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">이 옵션을 사용하면 다시 로그인하라는 메시지가 표시됩니다. 이 계정의 토큰은 90일 후에 만료됩니다. 이에 대한 알림이 게시됩니다.</block>
   <block id="c3533d0746cb1de0d34486c00ae36990" category="summary">NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다.</block>
   <block id="d1a664c22b47275444c9a34501c2aac2" category="doc">대시보드에서 NetApp Disaster Recovery 계획의 상태를 확인하세요.</block>
-  <block id="f236d43ec0e67c4b89d0afe52b6b6a75" category="paragraph">NetApp Disaster Recovery 대시보드를 사용하면 재해 복구 사이트와 복제 계획의 상태를 확인할 수 있습니다.  어떤 사이트와 계획이 정상인지, 연결이 끊겼는지, 성능이 저하되었는지 빠르게 확인할 수 있습니다.</block>
   <block id="f23e4fbac73cf601cee1add8b6e11922" category="list-text">NetApp Disaster Recovery 메뉴에서 *대시보드*를 선택합니다.</block>
-  <block id="04edaa59dc99bd9193a5ad37083cc900" category="list-text">대시보드에서 다음 정보를 검토하세요.</block>
   <block id="b845a02ab309809100805f1256a064e8" category="list-text">*사이트*: 사이트의 상태를 확인하세요.  사이트는 다음 상태 중 하나를 가질 수 있습니다.</block>
-  <block id="0e17ce70dd39a8a056cb5ca0081d4526" category="list-text">*실행 중*: vCenter가 연결되고 정상 작동하며 실행 중입니다.</block>
-  <block id="ed4bdaafb191f860f256d0b1e88eb50e" category="list-text">*다운*: vCenter에 접근할 수 없거나 연결 문제가 있습니다.</block>
-  <block id="45fa526b7f7589c94a8a5911f187838f" category="list-text">*문제*: vCenter에 접근할 수 없거나 연결 문제가 있습니다.</block>
-  <block id="e2438a3d730fa8490b06524ee1d8b0ed" category="paragraph">사이트 세부 정보를 보려면 상태에 대해 *모두 보기*를 선택하거나 모든 사이트를 보려면 *사이트 보기*를 선택하세요.</block>
   <block id="18c8e34abace1973ab5a4468dba74870" category="list-text">*복제 계획*: 계획의 상태를 확인합니다.  계획은 다음 상태 중 하나를 가질 수 있습니다.</block>
   <block id="ddc1e4c30a24a09d9ea40b7e332147a4" category="list-text">*준비가 된*</block>
   <block id="f44027b669999f97854e8ef8c8215f16" category="list-text">*실패한*</block>
-  <block id="71fa181482da7d95240895b60c1654ee" category="paragraph">복제 계획 세부 정보를 검토하려면 상태에 대해 *모두 보기*를 선택하거나, 모두 보려면 *복제 계획 보기*를 선택하세요.</block>
-  <block id="42ad006ef72ab8b86610109a75d3073b" category="list-text">*리소스 그룹*: 리소스 그룹의 상태를 확인합니다.  리소스 그룹은 다음 상태 중 하나를 가질 수 있습니다.</block>
-  <block id="44cd3c457f12a5322db95c67eb00d629" category="list-text">*보호된 VM*: VM은 리소스 그룹의 일부입니다.</block>
-  <block id="8a5ac28d6ec264c5863fb5328c2943db" category="list-text">*보호되지 않은 VM*: VM이 리소스 그룹의 일부가 아닙니다.</block>
-  <block id="348a99edae23b1f4e21c5ce75d209a50" category="paragraph">자세한 내용을 보려면 각 항목 아래의 *보기* 링크를 선택하세요.</block>
-  <block id="2ce874f5717134aa8a63e219f05d39f9" category="list-text">장애 조치, 테스트 장애 조치 및 마이그레이션의 수.  예를 들어, 두 개의 계획을 만들고 해당 목적지로 마이그레이션한 경우 마이그레이션 수는 "2"로 표시됩니다.</block>
-  <block id="d26cf1f0512a50b32d5a10b931f5fbe0" category="list-text">활동 창에서 모든 작업을 검토합니다.  작업 모니터에서 모든 작업을 보려면 *모든 작업 보기*를 선택하세요.</block>
   <block id="d15994bcf2411bb66762cdf4c58704b3" category="doc">NetApp Disaster Recovery 에서 복제 계획 만들기</block>
   <block id="78166ce4ccceeedfbf6aeb8682851072" category="paragraph">*이 작업에 관하여*</block>
   <block id="fba54b7da5e3ceabe7362e860f7df87d" category="paragraph">여러 데이터 저장소에서 여러 VM을 보호할 수 있습니다.  NetApp Disaster Recovery 보호된 VM 데이터 저장소를 호스팅하는 모든 ONTAP 볼륨에 대한 ONTAP 일관성 그룹을 생성합니다.</block>
@@ -1331,13 +1318,11 @@
   <block id="d112f103569329954b57e42717e32021" category="paragraph">모든 NetApp Disaster Recovery 작업을 모니터링하고 진행 상황을 확인할 수 있습니다.</block>
   <block id="b2885babde6f690716af50f947f38fa4" category="list-text">메뉴에서 *작업 모니터링*을 선택합니다.</block>
   <block id="a658e38fe05c1b71ade8529d73e083db" category="list-text">운영과 관련된 모든 직무를 탐색하고 타임스탬프와 상태를 검토합니다.</block>
-  <block id="a2628e207373ba02728e8a48a677eca6" category="list-text">특정 직업의 세부 정보를 보려면 해당 행을 선택하세요.</block>
   <block id="19a2cef623f0e702dd97e37e1bddd114" category="list-text">정보를 새로 고치려면 *새로 고침*을 선택하세요.</block>
   <block id="24391a0c4e58147fa07febdb32887a1a" category="section-title">작업 취소</block>
   <block id="860b70267867fe6caf0f4adfd247b3e2" category="list-text">NetApp Console 왼쪽 탐색 모음에서 *보호* &gt; *재해 복구*를 선택합니다.</block>
   <block id="26abc41be60bda806b144bd6ecedad10" category="list-text">작업 모니터 페이지에서 취소하려는 작업의 ID를 기록해 둡니다.</block>
   <block id="49e474835558193a9bed54c7dadf777e" category="paragraph">작업은 "진행 중" 또는 "대기 중" 상태여야 합니다.</block>
-  <block id="fa463eaf10ea5f2243e402c5c574ce96" category="list-text">작업 열에서 *작업 취소*를 선택합니다.</block>
   <block id="73f285b2a2d2e36caf8a2b3dceba3bff" category="summary">NetApp Disaster Recovery 사용하면 SnapMirror 복제를 사용하여 소스 사이트의 VMware 앱을 클라우드의 재해 복구 원격 사이트로 복제할 수 있습니다.</block>
   <block id="5542a31575b0db973ecf1e27638145e5" category="doc">NetApp Disaster Recovery 사용하여 다른 사이트에 애플리케이션 복제</block>
   <block id="f198c3ed2ffa46dda182aca950d079a7" category="admonition">재해 복구 계획을 만들고 마법사에서 재발을 식별하고 재해 복구 사이트로 복제를 시작하면 NetApp Disaster Recovery 30분마다 복제가 실제로 계획에 따라 발생하는지 확인합니다. 작업 모니터 페이지에서 진행 상황을 모니터링할 수 있습니다.</block>
@@ -1345,15 +1330,9 @@
   <block id="860a7c0767c6d5a81c5c68c072b88c23" category="list-text">오른쪽에서 *작업* 옵션을 선택하세요<block ref="771645334c0631c5881bfc9858be7f5b" category="inline-image-macro-rx" type="image"></block> 그리고 *복제*를 선택하세요.</block>
   <block id="4fcb591c27b70823ff71112c0db6af4f" category="summary">재해 복구 보고서를 검토하면 재해 복구 준비 상태를 분석하는 데 도움이 될 수 있습니다.  사전 설계된 보고서에는 장애 조치 및 장애 복구 요약, 모든 사이트의 복제 세부 정보, 지난 1년간의 작업 세부 정보가 포함됩니다.</block>
   <block id="a82244df08ebf8974422f7646e0239a4" category="doc">NetApp Disaster Recovery 보고서 만들기</block>
-  <block id="840e9ba54a3eb4b6ca1ba64036216f73" category="paragraph">NetApp Disaster Recovery 보고서를 검토하면 재해 복구 준비 상태를 분석하는 데 도움이 될 수 있습니다.  사전 설계된 보고서에는 지난 7일 동안 계정 내 모든 사이트에 대한 테스트 장애 조치 요약, 복제 계획 세부 정보, 작업 세부 정보가 포함됩니다.</block>
   <block id="8c0063a0e5fb937e4b6c45cefbf9765b" category="paragraph">PDF, HTML 또는 JSON 형식으로 보고서를 다운로드할 수 있습니다.</block>
-  <block id="cd463f7ca5dbc8268a82ea8d8f5e4281" category="paragraph">다운로드 링크는 6시간 동안 유효합니다.</block>
   <block id="d034750cd0fb1d447a3cf19d364332e1" category="list-text">NetApp Console 왼쪽 탐색 모음에서 *복제 계획*을 선택합니다.</block>
   <block id="3b0a91a5ea7b77db2fb83f740b7d1303" category="list-text">*보고서 만들기*를 선택하세요.</block>
-  <block id="32e3f74f58555c69fe922de2e2c5a1fb" category="list-text">파일 형식 유형과 지난 7일 이내의 기간을 선택하세요.</block>
-  <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">*만들기*를 선택하세요.</block>
-  <block id="5da6bcdd6ceb1c5910fb17277177402d" category="admonition">보고서가 표시되려면 몇 분 정도 걸릴 수 있습니다.</block>
-  <block id="ab6b0c72784c216662673e59f1357cc1" category="list-text">보고서를 다운로드하려면 *보고서 다운로드*를 선택하고 관리자의 다운로드 폴더에서 보고서를 선택하세요.</block>
   <block id="c52bb35ab590385850c5a43aeeb51966" category="doc">NetApp Disaster Recovery 에서 VM을 함께 구성하기 위한 리소스 그룹 생성</block>
   <block id="68924c47e2eb51445ff8e93c1ce1bbc2" category="paragraph">VM 자체를 그룹화하거나 데이터 저장소의 VM을 그룹화할 수 있습니다.</block>
   <block id="142aa3cf2c56c4cee9658fbb7fa95634" category="paragraph">다음 방법을 사용하여 리소스 그룹을 만들 수 있습니다.</block>
@@ -2441,4 +2420,45 @@
   <block id="8527638a378e1869ef948cf228cb1967" category="list-title">사이트에서 클러스터 제거</block>
   <block id="2e6e87ad0d5bb097a11e43a094522ce3" category="list-text">대화 상자를 검토한 후 **사이트에서 제거**를 선택하십시오. Trident Protect 작동을 계속하려면 올바른 옵션을 선택했는지 확인하십시오.</block>
   <block id="4c6f2ecfa631674b204ee705d90449fe" category="section-title">데이터 저장소 정보 보기</block>
+  <block id="63459ccd5f56d025aab8953dda2cac89" category="doc">개선된 대시보드</block>
+  <block id="f682318aec1bd156e47f27a6821a89a5" category="paragraph">Disaster Recovery 대시보드가 새롭게 개선되어 전체 Disaster Recovery 환경을 한눈에 파악할 수 있는 향상된 사용자 경험을 제공합니다. 새로운 대시보드에는 다음이 포함되어 있습니다.</block>
+  <block id="9823d8b117c3e7a42545ab50cbf51e42" category="list-text">*통합 워크로드 가시성* — 단일 화면에서 VMware 및 Kubernetes 워크로드와 기본 인프라 상태를 모두 모니터링할 수 있습니다.</block>
+  <block id="cb6d28fda9538aed2308a2a41da8fef6" category="list-text">*사전 예방적 문제 표시* — 대시보드가 이제 환경 문제를 자동으로 강조 표시하여 더 빠른 진단과 문제 해결 시간 단축을 지원합니다.</block>
+  <block id="4682c01fd7e04d919efdbb898660b551" category="list-text">*용량 활용률* — 용량 관련 지표가 이제 대시보드에 직접 표시되어 리소스 소비량을 더 쉽게 파악할 수 있습니다.</block>
+  <block id="83ffc188b91ae4a820fc973dcb4f2932" category="paragraph">자세한 내용은 <block ref="8f765f2bdeedf185243a86837c41ce64" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="1b89eeafa349152b4736736033fd9afa" category="section-title">개선된 보고서</block>
+  <block id="0dc7dafa2af4e7002cfea0adec9f9574" category="paragraph">환경 전반의 Disaster Recovery 활동에 대한 보다 심층적인 인사이트를 제공하도록 보고 기능이 확장되었습니다.</block>
+  <block id="7f09e48950606d1acab05c889751f513" category="list-text">VMware 워크로드, Kubernetes 워크로드 또는 둘 다를 대상으로 보고서를 생성하여 대상에 맞게 보고서를 맞춤 설정할 수 있는 유연성을 제공합니다.</block>
+  <block id="7a778b01d59bf3ae1ff3f2feb2d289b6" category="list-text">각 보고서는 지정된 기간 동안의 활동에 대한 완전한 요약을 제공하여 Disaster Recovery 환경에서 발생하는 모든 이벤트를 완벽하게 파악할 수 있도록 합니다.</block>
+  <block id="fd5ba3d3711dc4d9c0e25f25fe06d680" category="paragraph">자세한 내용은 <block ref="39a309d4a05fe8ce442631f7b813f522" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="2c06591fa7a638998ecf07caf020e711" category="section-title">사용자 작업 로깅</block>
+  <block id="c021095f262d283ec8653a39f95e447d" category="paragraph">Disaster Recovery는 사용자 수준 작업 로깅을 통해 작업의 책임성과 감사 가능성을 향상시켰습니다. 이제 실행되는 모든 작업에는 작업을 시작한 사용자가 기록되어 규정 준수 및 문제 해결을 위한 명확한 감사 추적을 제공합니다. Disaster Recovery에 의해 자동으로 트리거되는 작업은 "system"으로 식별되어 사용자 시작 활동과 서비스 시작 활동을 쉽게 구분할 수 있습니다.</block>
+  <block id="42ed5c1343751a7af21890f24cd3c64e" category="paragraph">자세한 내용은 <block ref="40b7771ffeffc9237f3cc63a2ebdb5c0" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="00d2a24b32e6b20b963007b68cdb131f" category="section-title">성능 및 리소스 최적화</block>
+  <block id="30f4219e3688914aa51c7df386e1780b" category="paragraph">시스템 리소스 소비를 전반적으로 줄이고 Disaster Recovery 작업 전반의 성능을 향상시키기 위해 다양한 내부 개선 사항이 적용되었습니다.</block>
+  <block id="6ffc226d668d783acc3c710ae22bd61d" category="section-title">2026년 8월 10일</block>
+  <block id="2c613e5d46b6a88da4ef71969949f8ed" category="paragraph">버전 4.3.6</block>
+  <block id="64d5f2a483005a7cc6303c4015d43a5c" category="paragraph">NetApp Disaster Recovery 대시보드를 사용하면 재해 복구 사이트 및 복제 계획의 상태를 확인할 수 있습니다. 어떤 사이트와 계획이 정상인지, 연결이 끊겼는지, 또는 성능이 저하되었는지 쉽게 평가할 수 있습니다. 또한 최근 경고 및 실패한 작업을 검토하고, 보호되는 워크로드와 보호되지 않는 워크로드를 확인하고, 용량 개요를 볼 수 있습니다.</block>
+  <block id="bd068902af2ce39e706eebf1c24b4d76" category="list-text">대시보드의 상태 정보를 검토합니다.</block>
+  <block id="a42ca2864206a93e33039e6598055690" category="list-text">*작동 중*: 사이트가 연결되어 있고, 정상적으로 작동 중입니다.</block>
+  <block id="36cd7041f6cbfd714bd608ae3d78d535" category="list-text">*Down*: 사이트에 접속할 수 없거나 연결에 문제가 있습니다.</block>
+  <block id="9b2a75730600af9907e95659422ba650" category="list-text">*문제*: 사이트에 연결 문제가 발생했습니다.</block>
+  <block id="a34ac24ac668b7073f201165e855f7fa" category="paragraph">자세한 내용을 보려면 **모든 사이트 보기**를 선택하세요.</block>
+  <block id="205be22566e424b4c8a81c6d8e8864e6" category="list-text">*경고*</block>
+  <block id="f45e2c030a4c208e00f685932255a3ca" category="paragraph">복제 계획 세부 정보를 확인하려면 *모든 복제 계획 보기*를 선택합니다.</block>
+  <block id="c829e7823834805c5cfdbad004224956" category="list-text">*최근 경고 및 작업*을 검토하여 가장 최근에 실행된 작업과 경고 및 관련 상태를 확인하십시오. 모든 작업을 보려면 *모든 작업 보기*를 선택하십시오.</block>
+  <block id="cb616e9285bb30b93344966fddafd029" category="list-text">*검색 및 보호 상태*를 검토하여 검색된 워크로드 수와 유형별로 구분된 보호된 워크로드와 보호되지 않은 워크로드의 수치적 분포를 확인할 수 있습니다. 또한 모든 워크로드의 총 검색 용량과 유형별 워크로드 용량도 검토할 수 있습니다.</block>
+  <block id="c1f56983411f9326a2cf92b7e410cdf2" category="list-text">특정 작업의 세부 정보를 보려면 해당 행을 선택하십시오. 작업 메뉴에서 **작업 세부 정보 다운로드**를 선택하면 오프라인 검토를 위해 작업 세부 정보를 다운로드할 수 있습니다.</block>
+  <block id="7e8d3582ff1a097fae78e430ac2242b4" category="admonition">작업 세부 정보를 검토할 때 Disaster Recovery는 작업을 시작한 사용자를 보고합니다. 담당자가 "system"으로 표시되면 Disaster Recovery가 작업을 시작한 것입니다.</block>
+  <block id="69ebf4461fc9429dbfcd7813c2832c6a" category="list-text">작업 메뉴를 선택한 다음 **작업 취소**를 선택하십시오.</block>
+  <block id="c6f5d2645082be603586c7fcecedd01e" category="doc">NetApp Disaster Recovery에서 보고서 생성</block>
+  <block id="458bdb93da448c5d3e7bece387f1c4d2" category="paragraph">NetApp Disaster Recovery 보고서는 재해 복구 준비 상태를 분석하는 데 도움이 됩니다. 보고서는 리소스 그룹, VM 또는 Kubernetes 클러스터, 데이터스토어 수 등 복제 계획에 대한 정보를 제공합니다. 또한 규정 준수 상태, 작업 요약, 복구 시점 목표(RPO) 및 보존 기간을 포함한 백업 설정도 표시합니다.</block>
+  <block id="466b68043567b88303b6c00217b4aeb5" category="paragraph">보고서 다운로드 링크는 생성 후 6시간 동안 유효합니다.</block>
+  <block id="c5cbff21ca879b1c12f07a2c7ced7d25" category="list-text"><block ref="3127a7e60ca42a30e72a85e6e4e87658" category="inline-link-macro-rx"></block>에 로그인하십시오.</block>
+  <block id="86179d32bfddb5ed25033adf646f60d7" category="list-text">보고서 범위를 Kubernetes, VMware 또는 전체 중 어떤 *워크로드*로 지정할지 선택합니다.</block>
+  <block id="a4b18ba0532b0bf268eb0e3e25dcb79c" category="list-text">보고서에서 다룰 *파일 형식*(PDF, HTML 또는 JSON)과 *기간*(최근 1일~7일)을 선택합니다.</block>
+  <block id="a5a7078aa40bb08318bf73843094da19" category="image-alt">보고서 생성 화면 캡처</block>
+  <block id="3d5401fc3d8a7a798c226379efd0e54a" category="list-text">보고서를 생성하려면 *생성*을 선택합니다.</block>
+  <block id="c7752461db4ae72d9cab16a4731fae88" category="admonition">보고서를 생성하는 데 몇 분 정도 소요될 수 있습니다.</block>
+  <block id="570cb7369470f1ec54ee8b421baca86e" category="list-text">복제 계획 대시보드에서 *보고서 다운로드*를 선택합니다.</block>
 </blocks>

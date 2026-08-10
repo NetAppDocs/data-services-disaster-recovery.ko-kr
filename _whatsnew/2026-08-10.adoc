@@ -1,0 +1,46 @@
+= 개선된 대시보드
+:allow-uri-read: 
+
+
+
+
+[[improved-dashboard]]
+=== 개선된 대시보드
+
+Disaster Recovery 대시보드가 새롭게 개선되어 전체 Disaster Recovery 환경을 한눈에 파악할 수 있는 향상된 사용자 경험을 제공합니다. 새로운 대시보드에는 다음이 포함되어 있습니다.
+
+* *통합 워크로드 가시성* — 단일 화면에서 VMware 및 Kubernetes 워크로드와 기본 인프라 상태를 모두 모니터링할 수 있습니다.
+* *사전 예방적 문제 표시* — 대시보드가 이제 환경 문제를 자동으로 강조 표시하여 더 빠른 진단과 문제 해결 시간 단축을 지원합니다.
+* *용량 활용률* — 용량 관련 지표가 이제 대시보드에 직접 표시되어 리소스 소비량을 더 쉽게 파악할 수 있습니다.
+
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/dashboard-view.html["대시보드에서 NetApp Disaster Recovery 계획의 상태를 확인하세요."^]을 참조하십시오.
+
+
+
+[[improved-reports]]
+=== 개선된 보고서
+
+환경 전반의 Disaster Recovery 활동에 대한 보다 심층적인 인사이트를 제공하도록 보고 기능이 확장되었습니다.
+
+* VMware 워크로드, Kubernetes 워크로드 또는 둘 다를 대상으로 보고서를 생성하여 대상에 맞게 보고서를 맞춤 설정할 수 있는 유연성을 제공합니다.
+* 각 보고서는 지정된 기간 동안의 활동에 대한 완전한 요약을 제공하여 Disaster Recovery 환경에서 발생하는 모든 이벤트를 완벽하게 파악할 수 있도록 합니다.
+
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/reports.html["NetApp Disaster Recovery 보고서 만들기"^]을 참조하십시오.
+
+
+
+[[user-job-logging]]
+=== 사용자 작업 로깅
+
+Disaster Recovery는 사용자 수준 작업 로깅을 통해 작업의 책임성과 감사 가능성을 향상시켰습니다. 이제 실행되는 모든 작업에는 작업을 시작한 사용자가 기록되어 규정 준수 및 문제 해결을 위한 명확한 감사 추적을 제공합니다. Disaster Recovery에 의해 자동으로 트리거되는 작업은 "system"으로 식별되어 사용자 시작 활동과 서비스 시작 활동을 쉽게 구분할 수 있습니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/monitor-jobs.html["NetApp Disaster Recovery 작업 모니터링"^]을 참조하십시오.
+
+
+
+[[performance-and-resource-optimization]]
+=== 성능 및 리소스 최적화
+
+시스템 리소스 소비를 전반적으로 줄이고 Disaster Recovery 작업 전반의 성능을 향상시키기 위해 다양한 내부 개선 사항이 적용되었습니다.
