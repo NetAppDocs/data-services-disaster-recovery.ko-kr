@@ -56,6 +56,42 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 
 
 
+[[considerations-for-platform-managed-backups]]
+=== 플랫폼 관리형 백업에 대한 고려 사항
+
+플랫폼 관리형 백업(즉, ONTAP 관리형 스냅샷)을 사용할 계획이라면 *MirrorAll* 복제 정책을 사용하는 것이 좋습니다. 아래 표를 참조하여 다양한 SnapMirror 복제 정책의 영향과 MirrorAll이 권장되는 이유를 확인하십시오.
+
+[cols="10,10,80"]
+|===
+
+
+| 정책 | 권장 사항 | 노트 
+
+
+| *MirrorAll* | 권장 | SnapMirror 전송 스냅샷을 장애 조치 또는 장애 복구 작업에 사용하지 마십시오. 
+
+
+| *MirrorVault* .2+| 대안 추천 .2+| 장애 조치 또는 장애 복구 중에 선택된 스냅샷이 소스 볼륨과 대상 볼륨 모두에 있는지 확인하십시오. 그렇지 않으면 "Transition to 'snapmirrored' state failed.  Reason: No common snapshot found." 라는 오류가 발생합니다. 
+
+
+| *비동기* 
+
+
+| *MirrorLatest* | 권장하지 않음 | 이 정책으로 인해 대상 시스템은 장애 조치를 위한 공통 스냅샷을 사실상 하나만 보유하게 되는데, 이는 재해 복구 시나리오에 최적화되어 있지 않습니다. 
+|===
+
+
+[[considerations-for-disaster-recovery-managed-backups]]
+=== 재해 복구 관리형 백업에 대한 고려 사항
+
+재해 복구 관리형 백업을 사용하는 경우, NetApp Disaster Recovery 외부에서 생성된 SnapMirror 관계에 다음 지침이 적용됩니다:
+
+* SnapMirror 관계는 MirrorAll, MirrorVault, MirrorLatest 및 비동기 복제 정책을 지원할 수 있습니다.
+* 이러한 관계는 재해 복구 서비스에서 관리되므로 업데이트를 예약하지 마십시오.
+
+
+
+
 [[before-you-begin]]
 == 시작하기 전에
 
@@ -437,7 +473,10 @@ VMware 데이터스토어는 ONTAP FlexVol 볼륨이나 VMware VMFS를 사용하
 
 image:dr-plan-datastore-platform.png["복제 계획 추가 > 리소스 매핑 > 데이터 저장소를 보여주는 스크린샷"]
 
-* *플랫폼 관리 백업 및 보존 일정 사용*: 외부 스냅샷 관리 솔루션을 사용하는 경우 이 상자를 선택하세요.  NetApp Disaster Recovery 기본 ONTAP SnapMirror 정책 스케줄러나 타사 통합과 같은 외부 스냅샷 관리 솔루션의 사용을 지원합니다.  복제 계획의 모든 데이터 저장소(볼륨)에 이미 다른 곳에서 관리되는 SnapMirror 관계가 있는 경우 NetApp Disaster Recovery 에서 해당 스냅샷을 복구 지점으로 사용할 수 있습니다.
+
+TIP: 이러한 항목을 선택하기 전에 <<플랫폼 관리형 백업에 대한 고려 사항>>을 검토하십시오.
+
+* *플랫폼 관리 백업 및 보존 일정 사용*: 외부 스냅샷 관리 솔루션을 사용하는 경우 이 확인란을 선택하십시오. NetApp Disaster Recovery는 기본 ONTAP SnapMirror 정책 스케줄러 또는 타사 통합 등 외부 스냅샷 관리 솔루션의 사용을 지원합니다. 복제 계획의 모든 데이터스토어(볼륨)에 이미 다른 곳에서 관리되는 SnapMirror 관계가 있는 경우 해당 스냅샷을 NetApp Disaster Recovery의 복구 지점으로 사용할 수 있습니다.
 +
 이 옵션을 선택하면 NetApp Disaster Recovery 백업 일정을 구성하지 않습니다.  그러나 테스트, 장애 조치 및 장애 복구 작업을 위해 스냅샷이 계속 생성될 수 있으므로 보존 일정을 구성해야 합니다.
 

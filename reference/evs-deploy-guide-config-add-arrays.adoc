@@ -4,7 +4,7 @@ permalink: reference/evs-deploy-guide-config-add-arrays.html
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter,amazon elastic vmware service 
 summary: NetApp Disaster Recovery 사용하기 전에 온프레미스 및 클라우드 호스팅 스토리지 인스턴스를 NetApp Console 시스템에 추가해야 합니다. 
 ---
-= NetApp Disaster Recovery 사용하여 Amazon EVS용 NetApp Console 시스템에 온프레미스 어레이 추가
+= NetApp Disaster Recovery를 사용하여 Amazon EVS용 NetApp Console에 온프레미스 어레이 추가
 :allow-uri-read: 
 
 

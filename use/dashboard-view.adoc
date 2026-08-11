@@ -4,7 +4,7 @@ permalink: use/dashboard-view.html
 keywords: disaster recovery remediate, disaster recovery, failover, failback, replication, bluexp, netapp 
 summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다. 
 ---
-= 대시보드에서 NetApp Disaster Recovery 계획의 상태를 확인하세요.
+= NetApp Disaster Recovery에서 재해 복구 계획의 상태를 확인합니다.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
