@@ -71,7 +71,7 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 | *MirrorAll* | 권장 | SnapMirror 전송 스냅샷을 장애 조치 또는 장애 복구 작업에 사용하지 마십시오. 
 
 
-| *MirrorVault* .2+| 대안 추천 .2+| 장애 조치 또는 장애 복구 중에 선택된 스냅샷이 소스 볼륨과 대상 볼륨 모두에 있는지 확인하십시오. 그렇지 않으면 "Transition to 'snapmirrored' state failed.  Reason: No common snapshot found." 라는 오류가 발생합니다. 
+| *MirrorVault* .2+| 대안 추천 .2+| 장애 조치 또는 장애 복구 중에 선택된 스냅샷이 소스 볼륨과 대상 볼륨 모두에 있는지 확인하십시오. 그렇지 않으면 "Transition to 'snapmirrored' state failed. Reason: No common snapshot found." 라는 오류가 발생합니다. SnapMirror 전송 스냅샷을 장애 조치 또는 장애 복구 작업에 사용하지 마십시오. 
 
 
 | *비동기* 
