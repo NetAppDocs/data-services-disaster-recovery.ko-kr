@@ -12,7 +12,7 @@ summary: 재해 복구 계획을 만들려면 먼저 NetApp Disaster Recovery �
 
 
 [role="lead"]
-재해 복구 계획을 생성하기 전에 Disaster Recovery에 사이트를 추가해야 합니다. 사이트는 vCenter 서버 또는 Kubernetes 클러스터(온프레미스 또는 클라우드)의 모음입니다. 기본 또는 운영 사이트와 재해 복구 사이트를 추가해야 합니다.
+복구 계획을 생성하기 전에 NetApp Disaster Recovery에서 보호할 사이트를 추가하십시오. 사이트는 온프레미스 또는 클라우드에 있는 vCenter 서버 또는 Kubernetes 클러스터의 모음입니다. 프로덕션 사이트와 재해 복구 사이트를 모두 추가하십시오.
 
 
 TIP: 소스와 대상 모두 동일한 NetApp Console 에이전트를 사용하고 있는지 확인하십시오.

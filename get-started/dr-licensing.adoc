@@ -12,11 +12,16 @@ summary: NetApp Disaster Recovery 사용하면 무료 평가판, 사용량에 �
 
 
 [role="lead"]
-NetApp Disaster Recovery 사용하면 무료 평가판, 사용량에 따른 지불 구독 또는 자체 라이선스 사용 등 다양한 라이선스 플랜을 사용할 수 있습니다.
+NetApp Disaster Recovery는 무료 평가판, 종량제 구독, BYOL(고객 소유 라이선스) 등 다양한 라이선스 옵션을 제공합니다.
 
 *필요한 NetApp Console 역할* 이 작업을 수행하려면 Super admin, Disaster recovery admin 또는 Disaster recovery application admin 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^]. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
-*라이선스 옵션* 다음 라이선싱 옵션을 사용할 수 있습니다.
+
+
+[[licensing-options]]
+== 라이선스 옵션
+
+다음과 같은 라이선스 옵션을 사용할 수 있습니다.
 
 * 30일 무료 체험판에 등록하세요.
 * Amazon Web Services(AWS) Marketplace 또는 Microsoft Azure Marketplace에서 사용량에 따라 지불하는(PAYGO) 구독을 구매하세요.
@@ -79,13 +84,13 @@ image:draas-landing6-free-trial.png["NetApp Disaster Recovery 랜딩 페이지 �
 .단계
 . NetApp Disaster Recovery 에서 무료 평가판이 만료된다는 메시지가 표시됩니다.  메시지에서 *구독 또는 라이선스 구매*를 선택하세요.
 +
-또는, 에서 *결제 방법 보기*를 선택하세요.
+또는 재해 복구 메뉴에서 *결제 방법 보기*를 선택합니다.
 
 +
 image:dr-licensing-payment-methods.png["NetApp Disaster Recovery 지불 방법 페이지"]
 
 . *AWS Marketplace에서 구독* 또는 *Azure Marketplace에서 구독*을 선택하세요.
-. AWS Marketplace 또는 Microsoft Azure Marketplace를 사용하여 * NetApp Disaster Recovery*를 구독하세요.
+. AWS Marketplace 또는 Microsoft Azure Marketplace를 사용하여 *NetApp Disaster Recovery*를 구독하십시오.
 . NetApp Disaster Recovery 로 돌아오면 구독이 완료되었다는 메시지가 표시됩니다.
 +
 NetApp Console 구독 페이지에서 구독 세부 정보를 볼 수 있습니다. link:https://docs.netapp.com/us-en/console-licenses-subscriptions/task-homepage.html["NetApp Console 사용하여 구독 관리에 대해 자세히 알아보세요."^].
@@ -101,7 +106,12 @@ NetApp Console 구독 페이지에서 구독 세부 정보를 볼 수 있습니�
 
 자체 라이선스를 가져오는 경우(BYOL) 설정에는 라이선스 구매, NetApp 라이선스 파일(NLF) 가져오기, NetApp Console 에 라이선스 추가가 포함됩니다.
 
-* NetApp Console 에 라이선스 추가 ** NetApp 영업 담당자로부터 NetApp Disaster Recovery 라이선스를 구매한 후 콘솔에서 라이선스를 관리할 수 있습니다.
+
+
+[[add-the-license-to-the-netapp-console]]
+=== NetApp Console에 라이선스를 추가합니다
+
+NetApp 영업 담당자로부터 NetApp Disaster Recovery 라이선스를 구매하신 후에는 Console에서 라이선스를 관리할 수 있습니다.
 
 https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html["NetApp Console 사용하여 라이선스를 추가하는 방법에 대해 알아보세요."^].
 
@@ -110,7 +120,7 @@ https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-se
 [[update-your-license-when-it-expires]]
 == 라이센스가 만료되면 업데이트하세요
 
-라이선스 기간이 만료일에 가까워지거나 라이선스 용량이 한도에 도달하면 NetApp Disaster Recovery UI에서 알림을 받게 됩니다.  스캔한 데이터에 액세스하는 데 방해가 되지 않도록 NetApp Disaster Recovery 라이선스가 만료되기 전에 업데이트할 수 있습니다.
+라이선스 기간 만료일이 가까워지거나 라이선스 용량 한도에 도달하면 NetApp Disaster Recovery UI에서 알림을 받게 됩니다. NetApp Disaster Recovery 라이선스가 만료되기 전에 갱신하면 서비스 사용에 중단이 발생하지 않습니다.
 
 
 TIP: 이 메시지는 NetApp Console 과 다음에도 나타납니다. https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["알림"] .

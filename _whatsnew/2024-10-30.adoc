@@ -76,7 +76,7 @@
 [[vm-name-aliasing]]
 === VM 이름 별칭
 
-복제 계획을 만들 때 이제 재해 복구 사이트의 VM 이름에 접두사와 접미사를 추가할 수 있습니다.  이를 통해 계획에 있는 VM에 대해 보다 설명적인 이름을 사용할 수 있습니다.
+이제 복제 계획을 생성할 때 재해 복구 사이트의 VM 이름에 접두사와 접미사를 추가할 수 있습니다. 이를 통해 계획에서 VM에 대해 더욱 설명적인 이름을 사용할 수 있습니다.
 
 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
 

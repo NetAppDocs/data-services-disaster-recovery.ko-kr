@@ -4,7 +4,7 @@ permalink: use/dashboard-view.html
 keywords: disaster recovery remediate, disaster recovery, failover, failback, replication, bluexp, netapp 
 summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다. 
 ---
-= NetApp Disaster Recovery에서 재해 복구 계획의 상태를 확인합니다.
+= NetApp Disaster Recovery에서 복구 계획 상태 보기
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 
 
 [role="lead"]
-NetApp Disaster Recovery 대시보드를 사용하면 재해 복구 사이트 및 복제 계획의 상태를 확인할 수 있습니다. 어떤 사이트와 계획이 정상인지, 연결이 끊겼는지, 또는 성능이 저하되었는지 쉽게 평가할 수 있습니다. 또한 최근 경고 및 실패한 작업을 검토하고, 보호되는 워크로드와 보호되지 않는 워크로드를 확인하고, 용량 개요를 볼 수 있습니다.
+NetApp Disaster Recovery 대시보드를 사용하여 재해 복구 사이트 및 복제 계획의 상태를 확인할 수 있습니다. 사이트와 계획이 정상, 연결 끊김 또는 성능 저하 상태인지 확인하고, 최근 경고 및 실패한 작업을 검토하고, 보호되는 워크로드와 보호되지 않는 워크로드를 식별하고, 용량을 한눈에 볼 수 있습니다.
 
 *필요한 NetApp Console 역할* 이 작업을 수행하려면 슈퍼 관리자, 재해 복구 관리자, 재해 복구 애플리케이션 관리자 또는 재해 복구 뷰어 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^]. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
@@ -28,7 +28,7 @@ image:dr-dashboard.png["NetApp Disaster Recovery 보드"]
 ** *사이트*: 사이트의 상태를 확인하세요.  사이트는 다음 상태 중 하나를 가질 수 있습니다.
 +
 *** *작동 중*: 사이트가 연결되어 있고, 정상적으로 작동 중입니다.
-*** *Down*: 사이트에 접속할 수 없거나 연결에 문제가 있습니다.
+*** *다운*: 해당 사이트에 접속할 수 없거나 연결에 문제가 있습니다.
 *** *문제*: 사이트에 연결 문제가 발생했습니다.
 +
 자세한 내용을 보려면 **모든 사이트 보기**를 선택하세요.

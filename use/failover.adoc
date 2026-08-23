@@ -12,13 +12,16 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 
 
 [role="lead"]
-재해 발생 시 온프레미스 VMware 사이트를 다른 온프레미스 VMware 사이트나 AWS의 VMware Cloud로 장애 조치합니다.  필요할 때 성공하는지 확인하기 위해 장애 조치 프로세스를 테스트할 수 있습니다.
+재해가 발생할 경우, 기본 온프레미스 VMware 사이트를 다른 온프레미스 VMware 사이트 또는 AWS의 VMware Cloud로 페일오버할 수 있습니다. 또한 페일오버 프로세스를 사전에 테스트하여 복구가 예상대로 작동하는지 확인할 수 있습니다.
 
 *필요한 NetApp Console 역할* 이 작업을 수행하려면 Super admin, Disaster recovery admin 또는 Disaster recovery failover admin 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^]. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
-*이 작업에 관하여*
 
-장애 조치 시 재해 복구는 기본적으로 가장 최근의 SnapMirror 스냅샷 복사본을 사용하지만, SnapMirror 의 보존 정책에 따라 특정 시점의 스냅샷을 선택할 수도 있습니다. 랜섬웨어 공격과 같이 가장 최근의 복제본이 손상된 경우 특정 시점 옵션을 사용하십시오.
+
+[[about-this-task]]
+== 이 작업 정보
+
+장애 조치 시 NetApp Disaster Recovery는 기본적으로 가장 최근의 SnapMirror 스냅샷 복사본을 사용하지만, SnapMirror의 보존 정책에 따라 특정 시점 스냅샷에서 특정 스냅샷을 선택할 수 있습니다. 랜섬웨어 공격 등 가장 최근의 복제본이 손상된 경우 특정 시점 옵션을 사용하십시오.
 
 이 프로세스는 프로덕션 사이트가 정상인지 여부와 중요 인프라 장애 외의 다른 이유로 재해 복구 사이트로 장애 조치를 수행하는지에 따라 다릅니다.
 
@@ -62,7 +65,7 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 . 오른쪽에서 *작업* 옵션을 선택하세요image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"] *테스트 장애 조치*를 선택합니다.
 . 테스트 페일오버 페이지에서 테스트 페일오버에 사용할 스냅샷을 선택합니다. **지금 스냅샷 생성**을 선택하거나 기존 스냅샷을 선택하려면 **선택**을 선택합니다. **선택**을 선택하는 경우 기존 스냅샷을 선택하십시오.
 +
-그런 다음 "Test failover"를 입력하고 *Test fail over*를 선택합니다.
+그런 다음 "Test failover"를 입력하고 *Test failover*를 선택합니다.
 
 . 테스트가 완료되면 테스트 환경을 정리합니다.
 
@@ -86,7 +89,7 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 [[fail-over-the-source-site-to-a-disaster-recovery-site]]
 == 소스 사이트를 재해 복구 사이트로 장애 조치합니다.
 
-재해 발생 시 FSx for NetApp ONTAP 사용하여 온프레미스 VMware 사이트를 다른 온프레미스 VMware 사이트나 AWS의 VMware Cloud로 필요에 따라 장애 조치합니다.
+재해가 발생할 경우, FSx for NetApp ONTAP를 사용하여 기본 온프레미스 VMware 사이트를 다른 온프레미스 VMware 사이트 또는 AWS의 VMware Cloud로 온디맨드 방식으로 페일오버합니다.
 
 장애 조치 프로세스에는 다음 작업이 포함됩니다.
 
@@ -125,9 +128,9 @@ image:dr-plan-failover3.png["장애 조치 페이지"]
 
 . 장애 조치 페이지에서 지금 새 스냅샷을 생성하거나 데이터 저장소의 기존 스냅샷을 선택하여 복구 기반으로 사용할 수 있습니다. 기본 설정은 최신 버전입니다.
 +
-장애 조치가 발생하기 전에 현재 소스의 스냅샷이 촬영되어 현재 대상에 복제됩니다.
+장애 조치가 발생하기 전에 현재 소스의 스냅샷이 생성되어 현재 대상으로 복제됩니다.
 
-. 일반적으로 페일오버가 발생하지 않도록 하는 오류가 감지되더라도 페일오버가 발생하도록 하려면 *강제 페일오버*를 선택하십시오.
+. 서비스에서 일반적으로 장애 조치를 차단하는 오류가 감지되더라도 장애 조치가 계속되도록 하려면 *Force failover*를 선택하십시오.
 . 복제 계획 장애 조치 후 서비스에서 역방향 SnapMirror 보호 관계를 자동으로 생성하지 않도록 하려면 *보호 건너뛰기*를 선택하십시오. 이 옵션은 NetApp Disaster Recovery 환경에서 사이트를 다시 온라인 상태로 전환하기 전에 복원된 사이트에서 추가 작업을 수행하려는 경우에 유용합니다.
 +
 

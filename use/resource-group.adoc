@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: use/resource-group.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, replication plan, protection, disaster, recovery, virtual machines, vm 
-summary: 리소스 그룹을 사용하면 종속 리소스 집합을 요구 사항에 맞는 논리적 그룹으로 구성할 수 있습니다. 
+summary: 리소스 그룹을 사용하면 종속 리소스를 요구 사항에 맞는 논리적 그룹으로 구성할 수 있습니다. 
 ---
-= NetApp Disaster Recovery 에서 VM을 함께 구성하기 위한 리소스 그룹 생성
+= NetApp Disaster Recovery에서 리소스 그룹을 생성합니다.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 리소스 그룹을 사용하면 종속 리소스 집합을 요구 사�
 
 
 [role="lead"]
-사이트에 리소스를 추가한 후에는 리소스 그룹을 생성하여 VM, 데이터스토어 또는 Kubernetes 클러스터를 단일 단위로 구성할 수 있습니다. 리소스 그룹을 사용하면 종속 리소스 집합을 요구 사항에 맞는 논리적 그룹으로 구성할 수 있습니다. 예를 들어, 특정 애플리케이션과 관련된 VM을 그룹화하거나 유사한 계층을 가진 애플리케이션을 그룹화할 수 있습니다. 또 다른 예로, 그룹에는 복구 시 실행될 지연 부팅 순서를 포함할 수 있습니다.
+사이트에 리소스를 추가한 후에는 리소스 그룹을 생성하여 VM, 데이터스토어 또는 Kubernetes 클러스터를 단일 단위로 구성할 수 있습니다. 리소스 그룹을 사용하면 종속 리소스를 요구 사항에 맞는 논리적 그룹으로 구성할 수 있습니다. 예를 들어, 특정 애플리케이션에 사용되는 VM을 그룹화하거나 유사한 계층을 공유하는 애플리케이션을 그룹화할 수 있습니다. 또한 리소스 그룹에는 복구 중에 실행되는 지연 부팅 순서를 포함할 수 있습니다.
 
 *필요한 NetApp Console 역할* 이 작업을 수행하려면 Super admin, Disaster recovery admin 또는 Disaster recovery application admin 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^]. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
@@ -27,7 +27,7 @@ VM 자체를 그룹화하거나 데이터 저장소의 VM을 그룹화할 수 �
 
 
 
-TIP: 각 리소스 그룹에는 하나 이상의 VM, 데이터스토어 또는 Kubernetes 클러스터가 포함될 수 있습니다. VM은 복구 계획에 포함된 순서에 따라 켜집니다. 리소스 그룹 목록에서 VM 또는 데이터스토어를 위아래로 드래그하여 순서를 변경할 수 있습니다.
+TIP: 각 리소스 그룹에는 하나 이상의 VM, 데이터스토어 또는 Kubernetes 클러스터가 포함될 수 있습니다. VM은 복제 계획에 포함된 순서에 따라 켜집니다. 리소스 그룹 목록에서 VM 또는 데이터스토어를 위아래로 드래그하여 순서를 변경할 수 있습니다.
 
 .리소스 그룹에 관하여
 리소스 그룹을 사용하면 VM, 데이터 저장소 또는 Kubernetes 애플리케이션을 단일 단위로 결합할 수 있습니다.
@@ -35,9 +35,9 @@ TIP: 각 리소스 그룹에는 하나 이상의 VM, 데이터스토어 또는 K
 예를 들어, 판매 시점 관리 애플리케이션은 데이터베이스, 비즈니스 로직, 매장을 위해 여러 개의 VM을 사용할 수 있습니다.  이러한 모든 VM을 하나의 리소스 그룹으로 관리할 수 있습니다.  애플리케이션에 필요한 모든 VM의 VM 시작 순서, 네트워크 연결 및 복구에 대한 복제 계획 규칙을 적용하기 위해 리소스 그룹을 설정합니다.
 
 .어떻게 작동하나요?
-NetApp Disaster Recovery 리소스 그룹에서 VM을 호스팅하는 기본 ONTAP 볼륨과 LUN을 복제하여 VM을 보호합니다.  이를 위해 시스템은 리소스 그룹에서 VM을 호스팅하는 각 데이터 저장소의 이름을 vCenter에 쿼리합니다.  그런 다음 NetApp Disaster Recovery 해당 데이터 저장소를 호스팅하는 소스 ONTAP 볼륨이나 LUN을 식별합니다.  모든 보호는 SnapMirror 복제를 사용하여 ONTAP 볼륨 수준에서 수행됩니다.
+NetApp Disaster Recovery는 리소스 그룹 내 VM을 호스팅하는 기본 ONTAP 볼륨 및 LUN을 복제하여 VM을 보호합니다. 이를 위해 시스템은 vCenter에 리소스 그룹 내 VM을 호스팅하는 각 데이터스토어의 이름을 쿼리합니다. NetApp Disaster Recovery는 해당 데이터스토어를 호스팅하는 소스 ONTAP 볼륨 또는 LUN을 식별합니다. 모든 보호는 SnapMirror 복제를 사용하여 ONTAP 볼륨 수준에서 수행됩니다.
 
-리소스 그룹의 VM이 서로 다른 데이터 저장소에 호스팅되는 경우 NetApp Disaster Recovery 다음 방법 중 하나를 사용하여 ONTAP 볼륨 또는 LUN의 데이터 일관성 스냅샷을 만듭니다.
+리소스 그룹의 VM이 서로 다른 데이터스토어에 호스팅되는 경우 NetApp Disaster Recovery는 다음 방법 중 하나를 사용하여 ONTAP 볼륨 또는 LUN의 데이터 일관성 스냅샷을 생성합니다.
 
 [cols="30,65a"]
 |===
@@ -113,7 +113,7 @@ image::site-type-toggle.png[사이트 유형 전환 스크린샷]
 . *추가*를 선택하세요.
 . 리소스 그룹의 **이름**을 입력하고 드롭다운 메뉴에서 Kubernetes **클러스터**를 선택합니다.
 . 리소스 그룹에 추가할 *네임스페이스*를 선택합니다.
-. *리소스 유형*을 분류하세요. 기본적으로 선택 항목은 "모두 포함"이며, 이는 여러 리소스 유형을 나타냅니다.
+. 리소스 유형을 분류합니다. 기본값은 "모두 포함"으로, 여러 리소스 유형을 나타냅니다.
 . 선택적으로 *Label selectors*를 포함할 수 있습니다.
 +
 image:kubernetes-resource-group.png["Kubernetes 리소스 그룹 추가 스크린샷"]

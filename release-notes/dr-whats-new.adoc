@@ -230,7 +230,7 @@ NetApp Disaster Recovery의 GCVE 지원 기능이 이제 정식 출시(GA)되었
 * *플랫폼 관리형 스냅샷:* ONTAP 또는 Google Cloud Platform(GCP)을 통해 백업 및 보존 정책을 원활하게 관리합니다.
 * *복제 계획당 여러 데이터 저장소:* 여러 데이터 저장소를 단일 복제 전략으로 통합하여 Disaster Recovery 계획을 간소화하세요.
 * *사용할 수 없는 소스 사이트에 대한 강제 페일오버:* 소스를 사용할 수 없는 경우 재해 복구 사이트로 전환합니다.
-* *SnapMirror 재동기화 연기 및 필요에 따라 복제 복원:* "보호 건너뛰기" 옵션을 사용하여 운영량이 많은 시간대에 프로덕션 워크로드에 미치는 영향을 방지하기 위해 SnapMirror 재동기화를 연기하고, 나중에 재보호 옵션을 사용하여 필요에 따라 복제를 복원할 수 있습니다
+* *SnapMirror 재동기화 연기 및 필요에 따라 복제 복원:* "보호 건너뛰기" 옵션을 사용하여 운영량이 많은 기간 동안 운영 워크로드에 미치는 영향을 방지하기 위해 SnapMirror 재동기화를 연기하고, 나중에 "재보호" 옵션을 사용하여 필요에 따라 복제를 복원할 수 있습니다.
 
 
 GCVE 지원에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/release-notes/dr-limitations.html["Disaster Recovery를 위한 지원 구성"^]을(를) 참조하십시오.
@@ -247,7 +247,7 @@ GCVE 지원에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/dat
 [[exclude-a-datastore-from-replication-plans]]
 === 복제 계획에서 데이터 저장소 제외
 
-Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어를 복제에서 제외할 수 있습니다. VM이 여러 데이터스토어를 사용하도록 구성된 경우 복제할 데이터스토어를 제한할 수 있습니다.
+재해 복구에서 복제 계획을 생성할 때 이제 특정 데이터스토어를 복제에서 제외할 수 있습니다. 가상 머신이 여러 데이터스토어를 사용하도록 구성된 경우, 이 기능을 통해 복제할 데이터스토어를 제한할 수 있습니다.
 
 자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"^]을(를) 참조하십시오.
 
@@ -265,7 +265,7 @@ Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어�
 [[new-replication-plan-submenu]]
 === 새로운 복제 계획 하위 메뉴
 
-재해 복구 기능에 이제 복제 계획 대시보드에서 vCenter 새로 고침을 트리거하는 새로운 메뉴 옵션이 포함되어 있습니다. 복제 계획 대시보드의 작업 메뉴에서 하위 메뉴에 액세스할 수 있습니다. **계획 상태**를 선택한 다음 **원본 vCenter 새로 고침 / 대상 vCenter 새로 고침**을 선택하십시오.
+재해 복구 기능에 이제 복제 계획 대시보드에서 vCenter 새로 고침을 트리거하는 새 메뉴 옵션이 포함되었습니다. 복제 계획 대시보드의 작업 메뉴에서 하위 메뉴에 액세스할 수 있습니다. **계획 상태**를 선택한 다음 **소스 vCenter 새로 고침 / 타겟 vCenter 새로 고침**을 선택합니다.
 
 자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html#modify-a-replication-plan["복제 계획 수정"^]를 참조하십시오.
 
@@ -356,7 +356,7 @@ Disaster에서 복제 계획을 생성할 때 이제 특정 데이터스토어�
 [[retain-vm-folder-structure-added-as-default-in-replication-plans]]
 === 복제 계획에 기본값으로 추가된 VM 폴더 구조를 유지합니다.
 
-복제본을 생성할 때, 새로운 기본 설정은 VM 폴더 구조를 유지하는 것입니다. 복구 대상에 원래 폴더 계층 구조가 없는 경우 재해 복구 기능이 이를 생성합니다. 원래 폴더 계층 구조를 무시하려면 이 옵션을 선택 해제하면 됩니다.
+복제 계획을 생성할 때 새 기본 설정은 VM 폴더 구조를 유지하는 것입니다.  복구 대상에 원래 폴더 계층 구조가 없는 경우 Disaster Recovery에서 해당 계층 구조를 생성합니다.  원래 폴더 계층 구조를 무시하려면 이 옵션을 선택 해제할 수 있습니다.
 
 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"^].
 
@@ -461,7 +461,7 @@ BlueXP disaster recovery NetApp Disaster Recovery 로 이름이 변경되었습�
 [[bluexp-is-now-netapp-console]]
 === BlueXP 는 이제 NetApp Console 입니다.
 
-강화되고 재구성된 BlueXP 기반을 기반으로 구축된 NetApp Console 엔터프라이즈급 온프레미스 및 클라우드 환경에서 NetApp 스토리지와 NetApp Data Services 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 간소화된 관리를 제공하며, 높은 보안성과 규정 준수를 보장합니다.
+향상되고 재구성된 BlueXP 기반으로 구축된 NetApp Console은 온프레미스 및 클라우드 환경 전반에서 엔터프라이즈급으로 NetApp 스토리지 및 NetApp Data Services의 중앙 집중식 관리를 제공하여, 매우 안전하고 규정을 준수하면서 실시간 인사이트, 더 빠른 워크플로 및 간소화된 관리를 제공합니다.
 
 변경된 사항에 대한 자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp Console 릴리스 노트"].
 
@@ -598,7 +598,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 [[windows-local-administrator-password-solution-laps-support]]
 === Windows 로컬 관리자 암호 솔루션(LAPS) 지원
 
-Windows 로컬 관리자 암호 솔루션(Windows LAPS)은 Active Directory에서 로컬 관리자 계정의 암호를 자동으로 관리하고 백업하는 Windows 기능입니다.
+Windows 로컬 관리자 암호 솔루션(Windows LAPS)은 Active Directory의 로컬 관리자 계정 암호를 자동으로 관리하고 백업하는 Windows 기능입니다.
 
 이제 도메인 컨트롤러 세부 정보를 제공하여 서브넷 매핑 옵션을 선택하고 LAPS 옵션을 확인할 수 있습니다.  이 옵션을 사용하면 각 가상 머신에 대한 비밀번호를 제공할 필요가 없습니다.
 
@@ -628,7 +628,7 @@ Windows 로컬 관리자 암호 솔루션(Windows LAPS)은 Active Directory에�
 
 VM1에는 NetworkA에 연결된 vNIC(10.1.1.50)가 있습니다.  NetworkA는 복제 계획 설정에서 NetworkB에 매핑됩니다.
 
-장애 조치 시 NetApp Disaster Recovery 원래 IP 주소(10.1.1)의 네트워크 부분을 대체하고 원래 IP 주소(10.1.1.50)의 호스트 주소(.50)를 유지합니다.  VM1의 경우 NetApp Disaster Recovery NetworkB의 CIDR 설정을 살펴보고 NetworkB의 네트워크 부분인 192.168.1을 사용하고 호스트 부분(.50)은 그대로 유지하여 VM1의 새 IP 주소를 생성합니다.  새로운 IP는 192.168.1.50이 됩니다.
+장애 조치 시 NetApp Disaster Recovery는 원래 IP 주소(10.1.1)의 네트워크 부분을 교체하고 원래 IP 주소(10.1.1.50)의 호스트 주소(.50)는 그대로 유지합니다. VM1의 경우 NetApp Disaster Recovery는 NetworkB의 CIDR 설정을 확인하고 NetworkB의 네트워크 부분인 192.168.1을 사용하면서 호스트 부분(.50)은 유지하여 VM1에 대한 새 IP 주소를 생성합니다. 새 IP 주소는 192.168.1.50이 됩니다.
 
 요약하자면, 호스트 주소는 동일하게 유지되지만 네트워크 주소는 사이트 서브넷 매핑에 구성된 주소로 대체됩니다.  이를 통해 장애 조치 시 IP 주소 재할당을 보다 쉽게 관리할 수 있으며, 특히 관리해야 할 네트워크가 수백 개이고 VM이 수천 개일 경우 더욱 그렇습니다.
 
@@ -647,7 +647,7 @@ VM1에는 NetworkA에 연결된 vNIC(10.1.1.50)가 있습니다.  NetworkA는 �
 
 원래 소스 사이트가 다시 온라인 상태가 되면 복제 계획 작업 메뉴에서 *리소스 보호*를 선택하여 역방향 보호를 설정할 수 있습니다.  이는 계획의 각 볼륨에 대해 역방향 복제 관계를 생성하려고 시도합니다.  보호가 복구될 때까지 이 작업을 반복해서 실행할 수 있습니다.  보호가 복구되면 평소와 같은 방식으로 장애 복구를 시작할 수 있습니다.
 
-자세한 내용은 건너뛰기 보호에 대한 내용을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/failover.html["원격 사이트로 애플리케이션 장애 조치"] .
+건너뛰기 방지 기능에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-disaster-recovery/use/failover.html["원격 사이트로 애플리케이션 장애 조치"]을 참조하십시오.
 
 
 
@@ -678,7 +678,7 @@ NetApp Disaster Recovery 이제 기본 ONTAP SnapMirror 정책 스케줄러나 O
 
 NetApp Disaster Recovery 24시간마다 검색을 수행합니다.  이번 릴리스를 통해 이제 필요에 맞게 검색 일정을 사용자 지정하고 필요할 때 성능에 미치는 영향을 줄일 수 있습니다.  예를 들어, VM 수가 많은 경우 검색 일정을 48시간마다 실행되도록 설정할 수 있습니다.  VM 수가 적은 경우 검색 일정을 12시간마다 실행되도록 설정할 수 있습니다.
 
-검색 일정을 예약하고 싶지 않으면 예약된 검색 옵션을 비활성화하고 언제든지 수동으로 검색을 새로 고칠 수 있습니다.
+검색 일정을 예약하지 않으려면 예약된 검색 옵션을 비활성화하고 언제든지 수동으로 검색을 새로 고칠 수 있습니다.
 
 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/sites-add.html["vCenter 서버 사이트 추가"] .
 
@@ -754,7 +754,7 @@ NetApp Console 에서 일반 프록시 설정에 대한 자세한 내용은 다�
 [[asa-r2-support-for-vms-and-datastores-on-vmfs-storage]]
 === VMFS 스토리지의 VM 및 데이터 저장소에 대한 ASA r2 지원
 
-NetApp Disaster Recovery 의 이 릴리스에서는 VMFS 스토리지의 VM 및 데이터 저장소에 대한 ASA r2에 대한 지원을 제공합니다.  ASA r2 시스템에서 ONTAP 소프트웨어는 SAN 환경에서 지원되지 않는 기능을 제거하는 동시에 필수적인 SAN 기능을 지원합니다.
+이번 NetApp Disaster Recovery 릴리스에서는 VMFS 스토리지의 VM 및 데이터스토어에 대한 ASA r2 지원을 제공합니다. ASA r2 시스템에서 ONTAP 소프트웨어는 필수 SAN 기능을 지원하는 동시에 SAN 환경에서 지원되지 않는 기능은 제거합니다.
 
 이 릴리스는 ASA r2에 대해 다음 기능을 지원합니다.
 
@@ -845,7 +845,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 [[vm-name-aliasing]]
 === VM 이름 별칭
 
-복제 계획을 만들 때 이제 재해 복구 사이트의 VM 이름에 접두사와 접미사를 추가할 수 있습니다.  이를 통해 계획에 있는 VM에 대해 보다 설명적인 이름을 사용할 수 있습니다.
+이제 복제 계획을 생성할 때 재해 복구 사이트의 VM 이름에 접두사와 접미사를 추가할 수 있습니다. 이를 통해 계획에서 VM에 대해 더욱 설명적인 이름을 사용할 수 있습니다.
 
 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
 
