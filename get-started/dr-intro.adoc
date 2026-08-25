@@ -93,7 +93,7 @@ IMPORTANT: 일부 릴리스에는 기술 미리보기가 포함되어 있습니�
 다음 라이선스 유형을 사용할 수 있습니다.
 
 * 30일 무료 체험판에 등록하세요.
-* Amazon Web Services(AWS) Marketplace 또는 Microsoft Azure Marketplace에서 사용량에 따라 지불하는(PAYGO) 구독을 구매하세요.  이 라이선스를 사용하면 장기 약정 없이 고정 보호 용량 라이선스를 구매할 수 있습니다.
+* Amazon Web Services(AWS) Marketplace, Azure Marketplace 또는 Google Cloud Marketplace에서 종량제(PAYGO) 구독을 구매하십시오. 이 라이선스를 사용하면 장기 계약 없이 고정된 보호 용량 라이선스를 구매할 수 있습니다.
 * BYOL(Bring Your Own License)은 NetApp 영업 담당자로부터 받는 NetApp 라이선스 파일(NLF)입니다. NetApp Console 에서 라이선스 일련 번호를 사용하여 BYOL을 활성화할 수 있습니다.
 
 
@@ -104,7 +104,7 @@ IMPORTANT: 일부 릴리스에는 기술 미리보기가 포함되어 있습니�
 보호된 볼륨은 여러 개의 VM을 호스팅할 수 있습니다.  일부는 NetApp Disaster Recovery 리소스 그룹에 속하지 않을 수도 있습니다.  그럼에도 불구하고 해당 볼륨이나 LUN의 모든 VM이 사용하는 저장 용량은 라이선스 최대 용량에 포함됩니다.
 
 
-NOTE: NetApp Disaster Recovery 요금은 복제 계획이 있는 VM이 ​​하나 이상 있는 경우 소스 사이트의 데이터 저장소 사용 용량을 기준으로 부과됩니다.  장애 조치된 데이터 저장소의 용량은 용량 허용량에 포함되지 않습니다.  BYOL의 경우, 데이터가 허용된 용량을 초과하면 NetApp Console 에서 추가 용량 라이선스를 얻거나 라이선스를 업그레이드할 때까지 서비스 작업이 제한됩니다.
+NOTE: NetApp Disaster Recovery 요금은 복제 계획이 있는 VM 또는 Kubernetes 리소스가 하나 이상 있는 경우 소스 사이트의 데이터 저장소 사용 용량에 따라 계산됩니다. 장애 조치된 데이터 저장소의 용량은 허용 용량에 포함되지 않습니다. BYOL의 경우, 데이터가 허용된 용량을 초과하면 추가 용량 라이선스를 구매하거나 NetApp Console에서 라이선스를 업그레이드할 때까지 서비스 내 작업이 제한됩니다.
 
 NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내용은 다음을 참조하세요.link:../get-started/dr-licensing.html["NetApp Disaster Recovery 라이선스 설정"] .
 
