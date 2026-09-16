@@ -6,6 +6,8 @@ entries:
   url: "/reference/ontap-permissions.html"
 - title: 필요한 vCenter 권한
   url: "/reference/vcenter-privileges.html"
+- title: 필수 Trident 권한
+  url: "/reference/trident-permissions.html"
 - title: 스위치 콘솔 에이전트
   url: "/reference/switch-console-agent.html"
 - title: Amazon EVS와 함께 NetApp Disaster Recovery 사용
