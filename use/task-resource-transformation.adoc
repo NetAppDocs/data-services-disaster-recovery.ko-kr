@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: use/task-resource-transformation.html 
+keywords: disaster recovery, resource transformation, kubernetes, templates 
+summary: 리소스 변환을 사용하면 장애 조치 중에 워크로드의 모든 측면을 수정할 수 있습니다. 이 기능은 재해 복구 이벤트 중에 워크로드를 다양한 환경 및 구성에 맞게 조정할 수 있는 유연성을 제공합니다. 
+---
+= NetApp Disaster Recovery에서 리소스 변환 관리
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/use/
+
+
+[role="lead"]
+NetApp Disaster Recovery의 Kubernetes 워크로드에 대해 리소스 변환을 생성할 수 있습니다. 리소스 변환을 통해 장애 조치 중에 워크로드의 모든 측면을 수정할 수 있습니다. 리소스 변환은 재해 복구 상황에서 워크로드를 다양한 환경 및 구성에 맞게 조정할 수 있는 유연성을 제공합니다.
+
+Kubernetes용 복제 계획을 생성할 때 리소스 변환이 추가됩니다.
+
+*필요한 NetApp Console 역할* 이 작업을 수행하려면 Super admin, Disaster recovery admin 또는 Disaster recovery application admin 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^]. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+
+
+
+[[create-a-resource-transformation-template]]
+== 리소스 변환 템플릿을 생성합니다
+
+.단계
+. Disaster Recovery에서 사이드바의 *설정*을 선택합니다.
+. 리소스 변환 카드에서 *+ 템플릿 추가*를 선택합니다.
+. 리소스 변환에 사용할 *이름*을 입력하세요.
+. 추가, 복사, 이동, 삭제, 교체 또는 테스트 중에서 원하는 *작업*을 선택하십시오.
+. *JSON 경로* 및 *변수 이름* 을 입력합니다. 선택적으로 *기본값* 을 추가합니다.
++
+image::resource-transformation-template.png[리소스 변환 템플릿 스크린샷]
+
+. 템플릿에 작업을 추가하려면 *+ 작업 추가*를 선택합니다. 이전 두 단계를 반복한 다음, 실행 순서에 따라 작업을 정렬합니다.
+. 템플릿을 생성하려면 *추가*를 선택합니다.
+
+
+
+
+[[edit-a-resource-transformation]]
+== 리소스 변환 편집
+
+. Disaster Recovery에서 사이드바의 *설정*을 선택합니다.
+. 리소스 변환 카드에서 *리소스 변환 관리*를 선택합니다.
+. 편집하려는 리소스 변환을 찾습니다. 해당 행 끝에 있는 작업 메뉴에서 *편집*을 선택합니다.
+. 템플릿의 모든 필드를 편집할 수 있습니다. *이름*, *작업*(추가, 복사, 이동, 삭제, 교체 또는 테스트), 그리고 해당 작업에 대한 값(*JSON 경로* 및 *변수 이름* 또는 *기본값*)을 편집할 수 있습니다. 또한 작업을 추가하거나 작업 실행 순서를 편집할 수도 있습니다.
+. *저장*을 선택하세요.
+
+
+
+
+[[clone-a-resource-transformation]]
+== 리소스 변환 복제
+
+기존 리소스 변환을 복제하여 새 리소스 변환 템플릿의 기반으로 사용할 수 있습니다. 복제된 템플릿은 원본 템플릿의 이름을 사용하며 이름 뒤에 "-v1"이 추가됩니다. 예를 들어 "scale up deployment" 템플릿을 복제하면 복제본의 이름은 "scale up deployment-v1"이 됩니다.
+
+.단계
+. Disaster Recovery에서 사이드바의 *설정*을 선택합니다.
+. 리소스 변환 카드에서 *리소스 변환 관리*를 선택합니다.
+. 복제하려는 리소스 변환을 찾습니다. 해당 행의 끝에 있는 작업 메뉴에서 *복제*를 선택합니다.
+. 작업이 성공적으로 완료되면 재해 복구는 사용자 인터페이스에 확인 대화 상자를 표시합니다.
++
+복제된 템플릿은 리소스 변환 목록에서 확인할 수 있습니다.
+
+
+
+
+
+[[delete-a-resource-transformation]]
+== 리소스 변환 삭제
+
+리소스 변환이 더 이상 필요하지 않으면 삭제할 수 있습니다.
+
+.단계
+. Disaster Recovery에서 사이드바의 *설정*을 선택합니다.
+. 리소스 변환 카드에서 *리소스 변환 관리*를 선택합니다.
+. 삭제하려는 리소스 변환을 찾습니다. 해당 행 끝에 있는 작업 메뉴에서 *삭제*를 선택합니다.
+. 대화 상자에서 *삭제*를 선택하여 작업을 확인합니다.
+
+
+
+
+[[next-steps]]
+== 다음 단계
+
+* link:drplan-create.html["복제 계획 만들기"]
+

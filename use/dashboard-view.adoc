@@ -4,7 +4,7 @@ permalink: use/dashboard-view.html
 keywords: disaster recovery remediate, disaster recovery, failover, failback, replication, bluexp, netapp 
 summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다. 
 ---
-= NetApp Disaster Recovery에서 복구 계획 상태 보기
+= NetApp Disaster Recovery에서 계획 상태 및 워크로드 보호 상태를 확인합니다.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,13 +12,20 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 
 
 [role="lead"]
-NetApp Disaster Recovery 대시보드를 사용하여 재해 복구 사이트 및 복제 계획의 상태를 확인할 수 있습니다. 사이트와 계획이 정상, 연결 끊김 또는 성능 저하 상태인지 확인하고, 최근 경고 및 실패한 작업을 검토하고, 보호되는 워크로드와 보호되지 않는 워크로드를 식별하고, 용량을 한눈에 볼 수 있습니다.
+NetApp Disaster Recovery는 Disaster Recovery에서 발견된 워크로드와 사이트 및 복제 계획의 상태에 대한 통찰력을 얻을 수 있는 다양한 방법을 제공합니다.
+
+대시보드는 사이트 및 플랜의 상태에 대한 정보를 제공하며, 정상, 연결 끊김 또는 성능 저하 상태를 표시합니다. 또한 최근 경고 및 실패한 작업도 보여줍니다. 용량 및 보호 상태에 대한 개요도 제공합니다. 대시보드를 사용하여 상태를 검토하고 워크로드 개요를 확인합니다.
+
+*워크로드* 페이지는 Disaster Recovery에서 검색된 각 VMware 및 Kubernetes 워크로드에 대한 자세한 목록을 제공합니다. 워크로드와 관련된 정보 및 보호 상태가 표시됩니다. 워크로드 페이지를 사용하여 워크로드에 대한 자세한 정보와 보호 상태를 확인할 수 있습니다.
 
 *필요한 NetApp Console 역할* 이 작업을 수행하려면 슈퍼 관리자, 재해 복구 관리자, 재해 복구 애플리케이션 관리자 또는 재해 복구 뷰어 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^]. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
+
+
+[[view-health-and-protection-status-in-the-dashboard]]
+== 대시보드에서 상태 및 보호 상태 보기
+
 .단계
-. 에 로그인하세요 https://console.netapp.com/["NetApp Console"^] .
-. NetApp Console 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
 . NetApp Disaster Recovery 메뉴에서 *대시보드*를 선택합니다.
 +
 image:dr-dashboard.png["NetApp Disaster Recovery 보드"]
@@ -49,4 +56,46 @@ image:dr-dashboard.png["NetApp Disaster Recovery 보드"]
 
 . *최근 경고 및 작업*을 검토하여 가장 최근에 실행된 작업과 경고 및 관련 상태를 확인하십시오. 모든 작업을 보려면 *모든 작업 보기*를 선택하십시오.
 . *검색 및 보호 상태*를 검토하여 검색된 워크로드 수와 유형별로 구분된 보호된 워크로드와 보호되지 않은 워크로드의 수치적 분포를 확인할 수 있습니다. 또한 모든 워크로드의 총 검색 용량과 유형별 워크로드 용량도 검토할 수 있습니다.
+
+
+
+
+[[review-workloads-protection-status]]
+== 워크로드의 보호 상태 검토
+
+워크로드 페이지를 사용하여 Disaster Recovery에서 검색된 개별 워크로드의 보호 상태를 확인할 수 있습니다. Disaster Recovery는 보호 상태 외에도 각 워크로드 유형에 대한 다음 정보를 표시합니다.
+
+|===
+| Kubernetes 워크로드 | vCenter 워크로드 
+
+
+ a| 
+* 클러스터
+* 이름
+* 보호된 네임스페이스
+* 복제 계획(할당된 경우)
+* 사이트
+* 보호 상태
+
+ a| 
+* CPU
+* 데이터센터 이름
+* 데이터 저장소 이름
+* 메모리
+* 보호 상태
+* 복제 계획(할당된 경우)
+* 리소스 그룹(존재하는 경우)
+* vCenter IP 주소
+* 워크로드 이름
+
+
+|===
+.단계
+. NetApp Disaster Recovery 메뉴에서 *워크로드*를 선택합니다.
+. 드롭다운 메뉴에서 필터를 선택하여 *vCenter* 또는 *Kubernetes* 워크로드를 확인합니다.
++
+image::site-type-toggle.png[사이트 유형 전환 스크린샷]
+
+. 선택적으로 특정 워크로드를 검색하거나 보호 상태(보호됨 또는 보호되지 않음)별로 워크로드를 필터링할 수 있습니다.
+. 워크로드 및 보호 상태에 대한 정보를 검토하십시오. 보호되는 워크로드는 녹색 체크 표시로 나타납니다. 보호되지 않는 워크로드는 회색 대시로 표시됩니다.
 

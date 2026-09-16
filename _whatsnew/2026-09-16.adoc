@@ -1,0 +1,55 @@
+= NetApp Disaster Recovery에서 Kubernetes 지원 기능이 이제 정식 출시(GA)되었습니다.
+:allow-uri-read: 
+
+
+
+
+[[kubernetes-support-in-netapp-disaster-recovery-is-now-generally-available-ga]]
+=== NetApp Disaster Recovery에서 Kubernetes 지원 기능이 이제 정식 출시(GA)되었습니다.
+
+NetApp Disaster Recovery에서 Kubernetes 기반 워크로드 지원이 정식 출시(GA)되었습니다. Kubernetes 기반 워크로드 지원을 통해 OpenShift 가상화 환경을 포함한 Kubernetes 클러스터에서 실행되는 애플리케이션을 보호할 수 있습니다. Disaster Recovery는 Trident Protect에서 현재 지원하는 모든 버전의 Kubernetes를 지원하므로 컨테이너화된 애플리케이션에 대한 원활한 통합과 강력한 재해 복구 기능을 제공합니다.
+
+Kubernetes 기반 워크로드 보호를 시작하려면 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/get-started/task-kubernetes-requirements.html["NetApp Disaster Recovery를 위한 Kubernetes 요구 사항"^]을(를) 참조하십시오.
+
+
+
+[[resource-transformations]]
+=== 리소스 변환
+
+재해 복구 기능이 이제 리소스 변환을 지원하여 장애 조치 중에 워크로드의 모든 측면을 수정할 수 있습니다. 이 기능은 재해 복구 상황에서 워크로드를 다양한 환경 및 구성에 맞게 조정할 수 있는 유연성을 제공합니다.
+
+리소스 변환은 복제 계획을 생성할 때 적용됩니다. 새 설정 페이지에서 리소스 변환을 생성, 편집 및 삭제할 수 있습니다. 자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-resource-transformation.html["리소스 변환 관리"^]을 참조하십시오.
+
+
+
+[[script-execution]]
+=== 스크립트 실행
+
+이제 장애 조치 워크플로에 사용자 지정 스크립트를 삽입하여 애플리케이션의 일시 중지 및 재개를 조정할 수 있습니다. 이 기능을 통해 스냅샷이 복제되고 적절하게 복원되기 전에 애플리케이션이 제대로 준비되도록 하여 장애 조치 후에도 원활하게 운영을 재개할 수 있습니다.
+
+사용자 지정 스크립트를 삽입하는 방법을 알아보려면 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"^]을 참조하십시오.
+
+
+
+[[new-workloads-page]]
+=== 새 워크로드 페이지
+
+재해 복구 기능에 워크로드 페이지가 추가되어 검색된 모든 워크로드와 해당 보호 상태를 한눈에 확인할 수 있습니다. 이 워크로드 페이지를 통해 워크로드를 더욱 효과적으로 모니터링하고 관리할 수 있습니다.
+
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/dashboard-view.html["Disaster Recovery에서 상태 및 보호 상태 검토"^]을 참조하십시오.
+
+
+
+[[settings-page]]
+=== 설정 페이지
+
+이제 재해 복구 기능에 리소스 변환 템플릿과 AppVaults를 중앙에서 관리할 수 있는 설정 페이지가 제공됩니다. 이 페이지는 재해 복구 계획의 핵심 구성 요소를 구성하고 관리할 수 있는 단일 인터페이스를 제공합니다. 설정 페이지의 옵션에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-resource-transformation.html["리소스 변환 관리"^] 및 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-appvault.html["AppVaults 관리"^]을 참조하십시오.
+
+
+
+[[general-improvements]]
+=== 전반적인 개선
+
+NetApp Disaster Recovery는 더욱 원활하고 오류 없는 사용자 경험을 보장하기 위해 복제 계획 생성 페이지에 향상된 유효성 검사 기능을 도입했습니다.
+
+Disaster Recovery는 간헐적인 요청 시간 초과를 허용하도록 서비스의 복원력을 높여 UI의 전반적인 성능과 안정성을 향상시켰습니다.

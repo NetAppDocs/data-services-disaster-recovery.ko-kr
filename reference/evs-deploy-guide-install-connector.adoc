@@ -11,7 +11,7 @@ summary: NetApp Console 에이전트는 NetApp Console과 클라우드 또는 �
 [role="lead"]
 NetApp Console 에이전트를 사용하면 NetApp Console 배포를 인프라에 연결하여 AWS, Azure, Google Cloud 또는 온프레미스 환경 전반에서 솔루션을 안전하게 오케스트레이션할 수 있습니다. Console 에이전트는 NetApp Console이 데이터 인프라를 관리하는 데 필요한 작업을 실행합니다. Console 에이전트는 NetApp Disaster Recovery 서비스형 소프트웨어 계층에서 수행해야 하는 작업이 있는지 지속적으로 폴링합니다.
 
-NetApp Disaster Recovery의 경우, 수행되는 작업은 각 서비스의 네이티브 API를 사용하여 VMware vCenter 클러스터와 ONTAP 스토리지 인스턴스를 오케스트레이션하여 온프레미스 환경에서 실행되는 프로덕션 VM을 보호합니다. Console 에이전트는 네트워크의 어느 위치에든 설치할 수 있지만, NetApp Disaster Recovery의 경우 재해 복구 사이트에 Console 에이전트를 설치하는 것이 좋습니다. DR 사이트에 설치하면 기본 사이트에 장애가 발생하더라도 NetApp Console UI가 Console 에이전트와의 연결을 유지하고 해당 DR 사이트 내에서 복구 프로세스를 오케스트레이션할 수 있습니다.
+재해 복구를 위해 이러한 작업은 각 서비스의 기본 API를 사용하여 VMware vCenter 클러스터 및 ONTAP 스토리지 인스턴스를 오케스트레이션하여 온프레미스 위치에서 실행되는 프로덕션 VM을 보호합니다. 콘솔 에이전트는 네트워크의 어느 위치에든 설치할 수 있지만, 재해 복구를 위해서는 재해 복구 사이트에 설치하는 것이 좋습니다. 재해 복구 사이트에 설치하면 기본 사이트에 장애가 발생하더라도 NetApp 콘솔 UI가 콘솔 에이전트와의 연결을 유지하고 해당 재해 복구 사이트 내에서 복구 프로세스를 오케스트레이션할 수 있습니다.
 
 
 
