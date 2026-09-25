@@ -12,7 +12,7 @@ summary: NetApp Disaster Recovery 사용하기 전에 해당 환경이 ONTAP 스
 
 
 [role="lead"]
-NetApp Disaster Recovery 사용하기 전에 해당 환경이 ONTAP 스토리지, VMware vCenter 클러스터 및 NetApp Console 요구 사항을 충족하는지 확인하세요.
+워크로드가 복제 및 복구를 위한 준비를 갖추도록 설정하기 전에 스토리지, vCenter 및 콘솔의 필수 요구 사항을 검증하십시오.
 
 
 

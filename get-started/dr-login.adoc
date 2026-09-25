@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/dr-login.html 
-keywords: bluexp login, disaster recovery log in 
+keywords: bluexp login, disaster recovery, log in, sign in, iam roles 
 summary: NetApp Console 에서 서비스에 액세스하여 NetApp Disaster Recovery 시작하세요. 
 ---
 = NetApp Disaster Recovery 에 액세스
@@ -12,35 +12,41 @@ summary: NetApp Console 에서 서비스에 액세스하여 NetApp Disaster Reco
 
 
 [role="lead"]
-NetApp Console을 통해 NetApp Disaster Recovery에 로그인합니다.
+NetApp Disaster Recovery에 로그인하려면 NetApp 지원 사이트 자격 증명을 사용하거나 이메일 주소와 비밀번호를 사용하여 NetApp 클라우드 로그인을 등록하십시오. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["로그인에 대해 자세히 알아보세요"^].
 
-로그인하려면 NetApp 지원 사이트 자격 증명을 사용하거나 이메일 주소와 비밀번호를 사용하여 NetApp 클라우드 로그인을 등록하십시오. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["로그인에 대해 자세히 알아보세요"^].
 
-특정 작업에는 특정 사용자 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
-.단계
-. 웹 브라우저를 열고 이동하세요 https://console.netapp.com/["NetApp Console"^] .
-+
-NetApp Console 로그인 페이지가 나타납니다.
+[[user-roles]]
+== 사용자 역할
 
+Disaster Recovery에서는 특정 작업을 수행하기 위해 특정 사용자 역할이 필요합니다. 사용자에게 올바른 역할을 할당했는지 확인하십시오.
+
+자세한 내용은 다음을 참조하십시오. * link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery의 사용자 역할 및 권한"] * link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["NetApp Console 모든 서비스에 대한 액세스 역할"^]
+
+
+
+[[log-into-disaster-recovery]]
+== Disaster Recovery에 로그인합니다
+
+. 웹 브라우저를 엽니다.  https://console.netapp.com/["NetApp Console"^]로 이동합니다.
 . NetApp Console 에 로그인합니다.
 . NetApp Console 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
 +
 이 서비스에 처음 로그인하는 경우 랜딩 페이지가 나타나고 무료 체험판에 가입할 수 있습니다.
 
 +
-image:draas-landing6-free-trial.png["NetApp Disaster Recovery 랜딩 페이지 스크린샷"]
+image:draas-landing6-free-trial.png["재해 복구 랜딩 페이지 스크린샷"]
 
 +
-그렇지 않으면 NetApp Disaster Recovery 보드가 ​​나타납니다.
+그렇지 않으면 재해 복구 대시보드가 나타납니다.
 
 +
 ** 아직 NetApp Console 에이전트를 추가하지 않았다면 추가하십시오. 자세한 내용은 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 에이전트에 대해 알아보세요"^]을 참조하십시오.
-** 기존 에이전트가 있는 NetApp Console 사용자인 경우 *Disaster recovery*를 선택하면 등록에 대한 메시지가 표시됩니다.
+** 기존 에이전트가 있는 콘솔 사용자의 경우 *Disaster recovery*를 선택하면 가입에 대한 메시지가 표시됩니다.
 ** 이미 해당 서비스를 사용하고 있는 경우, "재해 복구"를 선택하면 대시보드가 나타납니다.
-
-
 +
-image:dr-dashboard.png["NetApp Disaster Recovery 보드"]
+image:dr-dashboard.png["재해 복구 대시보드"]
+
+
 
 

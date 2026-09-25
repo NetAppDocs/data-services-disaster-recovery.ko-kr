@@ -12,7 +12,7 @@ summary: NetApp Disaster Recovery를 사용하기 전에 Kubernetes 클러스터
 
 
 [role="lead"]
-NetApp Disaster Recovery for Kubernetes를 구성하기 전에 각 Kubernetes 클러스터를 준비하십시오. 보호는 일반적으로 소스 클러스터와 별도의 타겟 클러스터에 적용되므로 쌍을 이루는 각 클러스터에서 이러한 절차를 완료하십시오.
+NetApp Kubernetes용 재해 복구를 구성하기 전에 각 Kubernetes 클러스터가 복제 및 장애 조치를 수행할 준비가 되었는지 확인해야 합니다. 보호 기능은 일반적으로 소스 클러스터 와 별도의 타겟 클러스터에 적용됩니다. 쌍을 이루는 각 클러스터에서 이러한 절차를 완료하십시오.
 
 
 

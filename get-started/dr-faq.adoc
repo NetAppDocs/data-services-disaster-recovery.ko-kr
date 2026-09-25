@@ -22,8 +22,6 @@ summary: VMware 및 Kubernetes 워크로드를 위한 NetApp Disaster Recovery�
 이 FAQ는 VMware 및 Kubernetes 워크로드용 NetApp Disaster Recovery에 대한 일반적인 질문에 답변합니다. 재해 복구 구성을 구현하고 복제, 마이그레이션, 페일오버 및 페일백 작업을 관리할 때 유용한 개념, 용어, 시스템 동작 및 제약 조건에 중점을 둡니다.
 
 
-toc::[]
-
 
 [[getting-started]]
 == 시작하기

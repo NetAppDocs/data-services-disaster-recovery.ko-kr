@@ -260,11 +260,8 @@
   <block id="894162c00c509cce4fa014b223b3ddeb" category="doc">NetApp Disaster Recovery 에 액세스</block>
   <block id="8e917942a77709dfd28c155f42a97553" category="inline-link">로그인에 대해 자세히 알아보세요</block>
   <block id="a5999c1155de9850d34ba60075be7171" category="inline-link">모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요.</block>
-  <block id="6a65fb509b9c682f9df5eb122484e2f7" category="list-text">웹 브라우저를 열고 이동하세요<block ref="d6205946f936217747639e85e1340e8f" category="inline-link-rx"></block> .</block>
-  <block id="0daac1b9cd4c3a240bf2f6b44ba178a1" category="paragraph">NetApp Console 로그인 페이지가 나타납니다.</block>
   <block id="83046549bdfbacafb1888d0467d8acc4" category="list-text">NetApp Console 에 로그인합니다.</block>
   <block id="8deb19747c06e3643bab5716cb645635" category="paragraph">이 서비스에 처음 로그인하는 경우 랜딩 페이지가 나타나고 무료 체험판에 가입할 수 있습니다.</block>
-  <block id="60df1204aca74059babd44a247508093" category="paragraph">그렇지 않으면 NetApp Disaster Recovery 보드가 ​​나타납니다.</block>
   <block id="e2066cd1f4f96874fad4da9c48f8715b" category="list-text">이미 해당 서비스를 사용하고 있는 경우, "재해 복구"를 선택하면 대시보드가 나타납니다.</block>
   <block id="41fc27202bd95bf86c36faca5aa2292a" category="inline-image-macro">NetApp Disaster Recovery 보드</block>
   <block id="9b4e9ca1e2c8ff4e1232f26bb61224ee" category="paragraph"><block ref="9b4e9ca1e2c8ff4e1232f26bb61224ee" category="inline-image-macro-rx" type="image"></block></block>
@@ -345,14 +342,11 @@
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">전제 조건</block>
   <block id="c266abec3014ef58af380dae0b855a81" category="admonition">검토<block ref="92ab8b24e9e19913fbd62d38b5e3558b" category="inline-link-macro-rx"></block> 시스템이 준비되었는지 확인하세요.</block>
   <block id="414c3e433eb5c1851ae3a86b00f4ceb3" category="paragraph">다음 인프라에서 NetApp Disaster Recovery 사용할 수 있습니다.</block>
-  <block id="d55e1af9ee418296c246b4085e868b14" category="list-text">온프레미스 VMware와 ONTAP vCenter를 다른 온프레미스 VMware와 ONTAP vCenter로 복제하는 프라이빗 클라우드 DR입니다.</block>
   <block id="3a2292ce550693108458d6b2a70159a5" category="section-title">Amazon FSx for NetApp ONTAP 활용한 하이브리드 클라우드</block>
-  <block id="f95c7ab842d27a83ace1046a7ef13cba" category="paragraph">이 방법은 NFS 프로토콜을 사용하여 ONTAP FlexVol 볼륨에 호스팅된 데이터 저장소를 사용하는 온프레미스 프로덕션 vCenter 인프라로 구성됩니다.  DR 사이트는 NFS 프로토콜을 사용하는 하나 이상의 FSx for ONTAP 인스턴스에서 제공하는 FlexVol 볼륨에 호스팅된 데이터 저장소를 사용하는 하나 이상의 VMware Cloud SDDC 인스턴스로 구성됩니다.</block>
   <block id="b75bd33081eb3ed22808f61894156d53" category="paragraph">AWS 클라우드 인프라와 관련된 재해 복구의 경우 AWS용 콘솔 에이전트를 사용해야 합니다.  에이전트는 FSx for ONTAP 인스턴스와 동일한 VPC에 설치해야 합니다.  다른 VPC에 추가 FSx for ONTAP 인스턴스가 배포된 경우, 에이전트를 호스팅하는 VPC는 ​​다른 VPC에 액세스할 수 있어야 합니다.</block>
   <block id="1e8f73e81b609f921369b61db9962ba0" category="section-title">온프레미스에서 AWS로</block>
   <block id="1b4220c693741db78edd086cf105c0a2" category="paragraph">AWS는 프라이빗 데이터 센터를 AWS 클라우드에 연결하기 위해 다음과 같은 방법을 제공합니다.  각 솔루션에는 이점과 비용 고려사항이 있습니다.</block>
   <block id="53e59c58dc937b1664dff508b4e63986" category="list-text">*AWS 인터넷 게이트웨이*: AWS 클라우드 리소스와 외부 컴퓨팅 리소스 간의 공용 연결을 제공합니다.  이러한 유형의 연결은 일반적으로 보안이 필요하지 않은 HTTP/HTTPS 서비스와 같이 외부 고객에게 서비스를 제공하는 데 사용됩니다.  서비스 품질 제어, 보안, 연결 보장이 없습니다.  이러한 이유로 이 연결 방법은 프로덕션 데이터 센터를 클라우드에 연결하는 데 권장되지 않습니다.</block>
-  <block id="9a3de1fc98f937de84c79a7dd80dfcbd" category="paragraph">*모범 사례*: AWS DR 사이트 구성의 경우 NetApp AWS Direct Connect를 사용할 것을 권장합니다.  이 솔루션은 엔터프라이즈 애플리케이션에 최고의 성능과 보안을 제공합니다.  사용할 수 없는 경우 VPN과 함께 고성능 공용 ISP 연결을 사용해야 합니다.  ISP가 적절한 네트워크 성능을 보장하기 위해 상용 QoS 서비스 수준을 제공하는지 확인하세요.</block>
   <block id="db765aadec4d1aeb065102f4b7b8b139" category="section-title">VPC 간 상호 연결</block>
   <block id="5cc4b596e4f36712e12ccd6eb9c96042" category="paragraph">AWS는 다음과 같은 유형의 VPC-VPC 상호연결을 제공합니다.  각 솔루션에는 이점과 비용 고려사항이 있습니다.</block>
   <block id="2710c060e7c666ba60d8667e82e81332" category="list-text">*VPC 피어링*: 두 VPC 간의 개인 연결입니다.  이는 AWS가 제공하는 가장 직접적이고 효율적인 연결 방법입니다.  VPC 피어링은 동일하거나 다른 AWS 지역에 있는 VPC를 연결하는 데 사용할 수 있습니다.</block>
@@ -377,7 +371,6 @@
   <block id="cb38b39495aded16d3565297386a9c9e" category="section-title">프라이빗 클라우드</block>
   <block id="7f644ce2b5624607d0411455768b8a3f" category="paragraph">NetApp Disaster Recovery 사용하면 하나 이상의 vCenter 클러스터에 호스팅된 VMware VM을 보호할 수 있습니다. 즉, VM 데이터 저장소를 동일한 개인 데이터 센터에 있는 다른 vCenter 클러스터나 원격 개인 또는 공동 배치된 데이터 센터에 복제할 수 있습니다.</block>
   <block id="2d5173c44bed7d94e4a1a4c7f08085be" category="paragraph">온프레미스 간 상황의 경우, 물리적 사이트 중 하나에 콘솔 에이전트를 설치합니다.</block>
-  <block id="2e21c8e50d60b3158f51faef12898bab" category="paragraph">재해 복구는 이더넷과 TCP/IP를 사용하여 사이트 간 복제를 지원합니다.  모든 변경 사항을 복구 지점 목표(RPO) 시간 프레임 내에 DR 사이트에 복제할 수 있도록 프로덕션 사이트 VM에서 데이터 변경률을 지원할 수 있는 적절한 대역폭이 있는지 확인하세요.</block>
   <block id="83e6b7ed81269663eb0d7ec5dd6eaa2e" category="section-title">온프레미스 간 보호를 준비하세요</block>
   <block id="ac5b2964f36c97128db1cdd7fc3272ab" category="paragraph">온프레미스 간 보호를 위해 NetApp Disaster Recovery 설정하기 전에 다음 요구 사항이 충족되는지 확인하세요.</block>
   <block id="b2deae88b1a0357caaa51258ab1694e1" category="list-text">ONTAP 저장</block>
@@ -1404,7 +1397,6 @@
   <block id="8a6e25252289a1daedac4f0edba496da" category="paragraph"><block ref="d5b487b8647d589ee708465fa8f6ee1a" category="inline-link-rx"></block>.</block>
   <block id="6b12a212016aaf0720b69178e6a86c8c" category="admonition">이 메시지는 NetApp Console 과 다음에도 나타납니다.<block ref="2355a5350c49a10d2ea41458fca03a98" category="inline-link-rx"></block> .</block>
   <block id="5ac6ac982b7e70ea7339a4a3b33bf830" category="paragraph"><block ref="e9f92cb99927db4b051f21efde07f04c" category="inline-link-rx"></block>.</block>
-  <block id="b94b95cfe5aca58d64e6ae08bf0d9e9d" category="paragraph">특정 작업에는 특정 사용자 역할이 필요합니다. <block ref="31accac3325320cbdf81ca4694a5591c" category="inline-link-macro-rx"></block>. <block ref="e704c98551e5f8acdbf19af28a86dcf3" category="inline-link-rx"></block>.</block>
   <block id="58da51d642fdf90e20b6bc81ffd17071" category="cell">Google Google Cloud NetApp Volumes 사용하는 Google Cloud VMware Engine</block>
   <block id="c16627d554485432d2c775a2396d8ad6" category="section-title">Google Cloud 필수 구성 요소 및 고려 사항</block>
   <block id="8c9cabeb12945e6dfce2d25647e6e557" category="list-text">온프레미스 스토리지에서 Google Cloud NetApp Volumes 로 스냅샷을 전송하는 동기화 API입니다.</block>
@@ -1766,10 +1758,6 @@
   <block id="4a8a0c3493007142356e2bab5b977e96" category="inline-link-macro">Disaster Recovery를 위한 지원 구성</block>
   <block id="fd6fb30ddd2582b6a9be2fbd297066cd" category="paragraph">GCVE 지원에 대한 자세한 내용은 <block ref="e93ab8cb254bacf15604af8d15ae8da4" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
   <block id="cda0283bbd4a4fb561a454be42b95e79" category="section-title">지원되는 인프라</block>
-  <block id="9753fdc07008742b97e2abeb69d97996" category="list-text">온프레미스 VMware plus ONTAP 데이터 센터를 VMware Cloud on AWS 또는 Elastic VMware Service(EVS) 및 Amazon FSx for NetApp ONTAP 기반 AWS DR 인프라에 복제하는 하이브리드 클라우드 DR입니다.</block>
-  <block id="1a3b0e646655d3e634f506335377b274" category="list-text">VMware Cloud on AWS 또는 EVS 기반의 AWS DR 인프라를 FSx for NetApp ONTAP를 사용하여 다른 AWS 기반 DR 인프라로 복제하는 Cloud DR입니다.</block>
-  <block id="9e44011b9e0a2de4c376eea05ca3b108" category="list-text">온프레미스 VMware Plus ONTAP 데이터센터를 Google Cloud VMware Engine 및 Google Cloud NetApp Volumes 기반의 Google DR 인프라로 복제하는 하이브리드 클라우드 재해 복구(DR) 솔루션입니다.</block>
-  <block id="1d1e533f25b0978157fd3d6581e3bfce" category="paragraph">운영 사이트와 DR 사이트는 AWS 호환 보안 연결로 연결됩니다. 일반적인 연결 유형으로는 보안 VPN(프라이빗 또는 AWS 제공), AWS Direct Connect 또는 기타 승인된 상호 연결 방식이 있습니다.</block>
   <block id="6da123917575e59f72dab08a3d3c444b" category="list-text">*AWS Direct Connect*: 이는 사용자의 프라이빗 데이터 센터와 동일한 지리적 영역에 위치하고 AWS 파트너가 제공하는 AWS 클라우드 상호 연결입니다. 이 솔루션은 공용 인터넷 연결 없이 로컬 데이터 센터와 AWS 클라우드 간에 안전하고 프라이빗한 연결을 제공합니다. AWS에서 제공하는 가장 직접적이고 효율적인 연결 방식입니다.</block>
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026년 4월 13일</block>
   <block id="7a220dd27e25e08bf2217cc7bebbf755" category="paragraph">버전 4.3.2</block>
@@ -2277,7 +2265,6 @@
   <block id="847e894891a8e4fc59a7564985bb691c" category="list-text">Azure VMware Solution with NetApp Cloud Volumes ONTAP(iSCSI)(비공개 미리 보기)</block>
   <block id="c10f52436d024067a59463c5ea0c9966" category="list-text">ONTAP 스토리지를 사용하는 또 다른 온프레미스 NFS 및/또는 VMFS 기반(iSCSI/FC) VMware 환경</block>
   <block id="562e98f7c1898c8d6ea19c51f719228b" category="list-text">ONTAP 스토리지를 사용하는 또 다른 온프레미스 NFS 기반 VMware 환경 또는 온프레미스 FC/iSCSI VMFS 환경</block>
-  <block id="d3de37316839676459c39019cbb52c48" category="paragraph">NetApp Disaster Recovery는 무료 평가판, 종량제 구독, BYOL(고객 소유 라이선스) 등 다양한 라이선스 옵션을 제공합니다.</block>
   <block id="08ec25be97389edab02b4e5cbdc8edb5" category="section-title">라이선스 옵션</block>
   <block id="2e9455096be8b4965cdbde5e2161731b" category="paragraph">다음과 같은 라이선스 옵션을 사용할 수 있습니다.</block>
   <block id="45be3177175ff486efed8b44ba90e43d" category="paragraph">또는 재해 복구 메뉴에서 *결제 방법 보기*를 선택합니다.</block>
@@ -2285,30 +2272,21 @@
   <block id="913e2efda8033c4d362537a49d9ee67b" category="section-title">NetApp Console에 라이선스를 추가합니다</block>
   <block id="c981a82ac7d3c3de78fd59f637812ff4" category="paragraph">NetApp 영업 담당자로부터 NetApp Disaster Recovery 라이선스를 구매하신 후에는 Console에서 라이선스를 관리할 수 있습니다.</block>
   <block id="d971a46f9cf04224e04cda7bfc19afc4" category="paragraph">라이선스 기간 만료일이 가까워지거나 라이선스 용량 한도에 도달하면 NetApp Disaster Recovery UI에서 알림을 받게 됩니다. NetApp Disaster Recovery 라이선스가 만료되기 전에 갱신하면 서비스 사용에 중단이 발생하지 않습니다.</block>
-  <block id="3ea1fa975709109b97164317bb06281a" category="paragraph">NetApp Console을 통해 NetApp Disaster Recovery에 로그인합니다.</block>
-  <block id="eba4f3ce2b4f45e6ca2cb200a4c5eb69" category="paragraph">로그인하려면 NetApp 지원 사이트 자격 증명을 사용하거나 이메일 주소와 비밀번호를 사용하여 NetApp 클라우드 로그인을 등록하십시오.<block ref="83012c4a40bb3321733997744c83daa9" category="inline-link-rx"></block>.</block>
   <block id="18f9f0670619f2309b415af512fe847c" category="list-text">아직 NetApp Console 에이전트를 추가하지 않았다면 추가하십시오. 자세한 내용은<block ref="552a7d66ccd9c93a9dbc55fd8ef74d52" category="inline-link-rx"></block>을 참조하십시오.</block>
-  <block id="edde535a43612ec9fb38be8a33fcfa51" category="list-text">기존 에이전트가 있는 NetApp Console 사용자인 경우 *Disaster recovery*를 선택하면 등록에 대한 메시지가 표시됩니다.</block>
   <block id="e6d3951614e88937cbc3d9b3798d1c60" category="paragraph">NetApp Disaster Recovery를 Google Cloud VMware Engine 및 Google Cloud NetApp Volumes와 함께 사용하는 경우 올바른 권한을 구성하고 다음 고려 사항을 검토하십시오.</block>
   <block id="1dc05b055f10ad30a0ff313460b26634" category="list-text">다음 항목을 허용 목록에 추가하려면 Google SRE 팀에 문의하십시오.</block>
   <block id="1a72702bea711f39b088ed0d4020a87c" category="paragraph">이러한 필수 조건은 ONTAP 및 Amazon FSx for NetApp ONTAP 인스턴스에 적용됩니다.</block>
   <block id="9beb22b2943c3a24a0fe864d1a41e546" category="inline-link">NetApp Console에 가입하고 조직을 생성합니다.</block>
   <block id="10a3aa4ddbdce4dbbdbe8c24197b32e1" category="paragraph">아직 하지 않으셨다면,<block ref="1fb558a2395bd23df7d326ce1f18cd71" category="inline-link-rx"></block>.</block>
-  <block id="b6b43e50babb362754aaf7cc67cbe737" category="paragraph">NetApp Disaster Recovery를 시작하려면 다음 단계를 따르십시오. 각 단계의 링크를 클릭하면 자세한 내용을 확인할 수 있는 페이지로 이동합니다.</block>
   <block id="e173ccdbd07742f5e12ded0d5ceb4119" category="paragraph">서비스를 설정한 후 다음 단계를 완료할 수 있습니다.</block>
-  <block id="ec03af63f02570679b2c52949034c97a" category="paragraph">NetApp Disaster Recovery를 사용하려면 NetApp Console과 지원되는 재해 복구 환경에서 몇 가지 설정 단계를 완료해야 합니다.</block>
   <block id="5eee3cef11a4fc8d1e9f1807b868b72c" category="section-title">AWS 가용 영역</block>
   <block id="35fa6d73da1bc964f0127c1985e1ed16" category="paragraph">AWS는 리전 내 하나 이상의 가용 영역(AZ)에 솔루션을 배포하는 것을 지원합니다. NetApp Disaster Recovery는 AWS에서 호스팅되는 두 가지 서비스인 VMware Cloud on AWS와 Amazon FSx for NetApp ONTAP를 사용합니다.</block>
   <block id="6a78d39d8c8decb76164d1c3cc7ba8c8" category="list-text">*VMware Cloud for AWS*: 단일 가용 영역(AZ) 또는 이중 가용 영역(AZ) 확장 클러스터 SDDC 환경에 배포를 지원합니다. NetApp Disaster Recovery는 VMware Cloud on AWS의 경우 단일 가용 영역 SDDC 배포만 지원합니다.</block>
   <block id="54533f05a60099c878642d463905f738" category="list-text">*AWS FSx for NetApp ONTAP*: Amazon FSx for NetApp ONTAP가 다중 가용 영역(AZ) 구성으로 배포되면 각 볼륨은 하나의 FSx for ONTAP 파일 시스템에 속하고 데이터는 두 번째 파일 시스템에 미러링됩니다. FSx for ONTAP는 단일 AZ 또는 다중 AZ 구성으로 배포할 수 있습니다. NetApp Disaster Recovery는 두 가지 배포 모델을 모두 지원합니다.</block>
-  <block id="73d710b9e85058bf262c6bbf6a4ff19e" category="paragraph">*모범 사례*: AWS 재해 복구 사이트 구성의 경우, NetApp은 VMware Cloud와 AWS FSx for ONTAP 인스턴스 모두에 대해 단일 AZ 배포를 권장합니다. AWS를 재해 복구에 사용하는 경우 여러 가용 영역을 도입할 이점이 없습니다. 다중 AZ 배포는 비용과 복잡성을 증가시킬 수 있습니다.</block>
-  <block id="a765cdc056dd08e96c8d6a927b212408" category="list-text">*AWS 사이트 간 VPN*: 이 가상 사설망(VPN) 연결은 공용 인터넷 서비스 제공업체(ISP)를 통해 안전한 연결을 제공합니다.  VPN은 AWS 클라우드로 오가는 모든 데이터를 암호화하고 복호화합니다.  VPN은 소프트웨어 기반 또는 하드웨어 기반일 수 있습니다.  기업 애플리케이션의 경우, 공용 인터넷 서비스 제공업체(ISP)는 DR 복제를 위해 적절한 대역폭과 지연 시간을 보장하는 서비스 품질(QoS) 보장을 제공해야 합니다.</block>
-  <block id="0f5c7830ffbd944b4edd120da88f4c98" category="paragraph">*모범 사례*: VMware Cloud와 단일 FSx for ONTAP VPC를 사용하는 재해 복구(DR) 솔루션의 경우 NetApp은 VPC 피어링을 권장합니다. 여러 개의 FSx for ONTAP VPC가 배포된 경우, 여러 VPC 피어 연결에 따른 관리 오버헤드를 줄이기 위해 AWS Transit Gateway를 사용하는 것을 권장합니다.</block>
   <block id="3f27908dd0e654aebc5eaac2860f3026" category="list-text">AWS FSx for ONTAP 인스턴스에서 타겟 ONTAP SVM을 생성하거나 확인합니다.</block>
   <block id="16570eb72e5d1c2fd4ae8860b2e48aad" category="paragraph">NetApp Disaster Recovery 프록시 구현을 위해서는 HTTPS 프로토콜을 사용하여 Console 에이전트와 모든 vCenter Server 및 ONTAP 어레이 간에 443 포트 통신이 필요합니다. Console 에이전트 내의 NetApp Disaster Recovery 에이전트는 작업을 수행할 때 VMware vSphere, vCenter Server 또는 ONTAP과 직접 통신합니다.</block>
   <block id="7bb121cdcae2c2832838e2f290a86bf5" category="list-text">NetApp Disaster Recovery에서 관리하는 모든 VMware 클러스터는 보호하려는 VM을 호스팅하기 위해 ONTAP 볼륨을 사용해야 합니다.</block>
   <block id="dfb6f3404d01c2320e91dc82c3743342" category="list-text">VMware Cloud SDDC를 Amazon FSx for NetApp ONTAP 인스턴스와 연결합니다. 자세한 내용은<block ref="703588ab376df01744e79984f081d5fd" category="inline-link-rx"></block>을 참조하십시오.</block>
-  <block id="652475d7336cd836411ec7d566842d60" category="paragraph">NetApp Disaster Recovery for Kubernetes를 구성하기 전에 각 Kubernetes 클러스터를 준비하십시오. 보호는 일반적으로 소스 클러스터와 별도의 타겟 클러스터에 적용되므로 쌍을 이루는 각 클러스터에서 이러한 절차를 완료하십시오.</block>
   <block id="0a4e25753cea4f154af0469ab230e9ba" category="list-text">Helm 3는 설치 명령을 실행하는 위치에서 사용할 수 있습니다.</block>
   <block id="538e8cc604d9acb8c54b11be5d28123e" category="list-text">**관리 LIF**: Trident 관리 API 접근에 사용됩니다.</block>
   <block id="e8fe43ecd8f37d6c3b374d6267a0e1bc" category="list-text">**데이터(NFS) LIF**: 볼륨의 NFS 트래픽에 사용됩니다.</block>
@@ -2725,4 +2703,35 @@
   <block id="08e23a6b35ef4e66680d353da268fa9d" category="paragraph">사이트에 리소스를 추가한 후에는 리소스 그룹을 생성하여 VM, 데이터스토어 또는 Kubernetes 클러스터를 단일 단위로 구성할 수 있습니다. 리소스 그룹을 사용하면 종속 리소스를 요구 사항에 맞는 논리적 그룹으로 구성할 수 있습니다. 예를 들어, 특정 애플리케이션에 사용되는 VM을 그룹화하거나 유사한 계층을 공유하는 애플리케이션을 그룹화할 수 있습니다. 또한 리소스 그룹에는 복구 중에 실행되는 지연 부팅 순서를 포함하여 리소스가 올바른 순서로 시작되도록 할 수 있습니다.</block>
   <block id="0b3812b60ebe3c1059cea904557f00cb" category="paragraph">재해 복구 계획을 생성하기 전에 NetApp Disaster Recovery에 보호할 사이트를 추가하십시오. 사이트는 온프레미스 또는 클라우드에 있는 vCenter 서버 또는 Kubernetes 클러스터의 모음입니다. 재해 복구에서 복구에 사용되는 리소스를 조정할 수 있도록 프로덕션 사이트와 재해 복구 사이트를 모두 추가하십시오.</block>
   <block id="163f4744512c53baf24fa0cfd3a4e497" category="sidebar">필수 Trident 권한</block>
+  <block id="1153c95a8d407c454fc356499e80ce24" category="paragraph">NetApp Disaster Recovery는 무료 평가판, 종량제 구독, BYOL(고객 소유 라이선스) 등 다양한 라이선스 옵션을 제공합니다. 재해 복구를 구성하기 전에 서비스가 조직의 요구 사항을 충족하는지 확인하기 위해 라이센스 모델을 확인하십시오.</block>
+  <block id="2f10eb504784057b33920ac8cf9d39bc" category="paragraph">NetApp Disaster Recovery에 로그인하려면 NetApp 지원 사이트 자격 증명을 사용하거나 이메일 주소와 비밀번호를 사용하여 NetApp 클라우드 로그인을 등록하십시오.<block ref="83012c4a40bb3321733997744c83daa9" category="inline-link-rx"></block>.</block>
+  <block id="f4040f71a7d553f2519487070892b115" category="section-title">사용자 역할</block>
+  <block id="6f3015e9c08dbe0a0c048cd314e0e8ea" category="paragraph">Disaster Recovery에서는 특정 작업을 수행하기 위해 특정 사용자 역할이 필요합니다. 사용자에게 올바른 역할을 할당했는지 확인하십시오.</block>
+  <block id="bb91529f7ed6a88571b27d8e1ac73fcd" category="inline-link-macro">NetApp Disaster Recovery의 사용자 역할 및 권한</block>
+  <block id="864663fab286d747fb67313339d4a6a3" category="inline-link-macro">NetApp Console 모든 서비스에 대한 액세스 역할</block>
+  <block id="d17878cff524ca0e56412d14d3033be6" category="paragraph">자세한 내용은 다음을 참조하십시오. * <block ref="c5e5299326c2f45c0bce3e6343021ca2" category="inline-link-macro-rx"></block> * <block ref="ac8a9d8d6bca78a52bdf47d9949c1df4" category="inline-link-macro-rx"></block></block>
+  <block id="97e4fbf5c270d963151711bff4103ba2" category="section-title">Disaster Recovery에 로그인합니다</block>
+  <block id="03875c3f0de2a98130bb9dfa1b7f8afb" category="list-text">웹 브라우저를 엽니다. <block ref="d6205946f936217747639e85e1340e8f" category="inline-link-rx"></block>로 이동합니다.</block>
+  <block id="0f90d40f52124cc1ea0fddb212b47ef3" category="inline-image-macro">재해 복구 랜딩 페이지 스크린샷</block>
+  <block id="10bbb43332175a82cbd613c185c52932" category="paragraph"><block ref="10bbb43332175a82cbd613c185c52932" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="61493fb7ce16e72db3c2cf4bb6a2c308" category="paragraph">그렇지 않으면 재해 복구 대시보드가 나타납니다.</block>
+  <block id="6f8eac83cd95ea0227f0b0d3e138f4f4" category="list-text">기존 에이전트가 있는 콘솔 사용자의 경우 *Disaster recovery*를 선택하면 가입에 대한 메시지가 표시됩니다.</block>
+  <block id="56dba1a0fa6fc2322a683fe201c0ee47" category="inline-image-macro">재해 복구 대시보드</block>
+  <block id="e21367b623115dc2d573941e82450d18" category="paragraph"><block ref="e21367b623115dc2d573941e82450d18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0d7437c3aaaf0629acc4ff530b980318" category="paragraph">워크로드가 복제 및 복구를 위한 준비를 갖추도록 설정하기 전에 스토리지, vCenter 및 콘솔의 필수 요구 사항을 검증하십시오.</block>
+  <block id="d5eebd68b04cfb5ee093006e8a051759" category="paragraph">NetApp Disaster Recovery를 신속하게 시작하는 방법, 시스템이 요구 사항을 충족하는지 확인하는 방법, 워크로드를 검색하는 방법, 장애 조치에 대비하여 복제 계획을 구성하는 방법을 알아보십시오.</block>
+  <block id="d05f28ac4af4437fc2d15ad33f1d60d9" category="paragraph">NetApp Disaster Recovery를 사용하려면 먼저 장애 발생 전에 복구 환경을 준비하여 복제 및 페일오버를 최소한의 지연으로 구성하고 테스트할 수 있도록 해야 합니다.</block>
+  <block id="1d9e43693cfe15e882fe79c64ab0c709" category="list-text">온프레미스 VMware Plus ONTAP 데이터센터를 VMware Cloud on AWS 또는 Elastic VMware Service(EVS) 및 Amazon FSx for NetApp ONTAP 기반 AWS 재해 복구 인프라로 복제하는 하이브리드 클라우드 재해 복구입니다.</block>
+  <block id="5e9e30d9aff0f87a7bb097a63f5daea6" category="list-text">온프레미스 VMware Plus ONTAP vCenter를 다른 온프레미스 VMware Plus ONTAP vCenter로 복제하는 프라이빗 클라우드 재해 복구입니다.</block>
+  <block id="3b988d8a7bd7f69dd1a123441159e826" category="list-text">VMware Cloud on AWS 또는 EVS 기반의 AWS 재해 복구 인프라를 FSx for NetApp ONTAP을 사용하여 다른 AWS 기반 재해 복구 인프라로 복제하는 클라우드 재해 복구.</block>
+  <block id="418bc5ed1d5f54ec6e42e1b630faa9d1" category="list-text">온프레미스 VMware Plus ONTAP 데이터센터를 Google Cloud VMware Engine 및 Google Cloud NetApp Volumes 기반의 Google 재해 복구 인프라로 복제하는 하이브리드 클라우드 재해 복구 솔루션입니다.</block>
+  <block id="84d4949a8d1e4a83a3e1ed70d9b337f2" category="paragraph">이 방법은 NFS 프로토콜을 사용하는 ONTAP FlexVol 볼륨에 호스팅된 데이터스토어를 사용하는 온프레미스 운영 vCenter 인프라로 구성됩니다. 재해 복구 사이트는 NFS 프로토콜을 사용하는 하나 이상의 FSx for ONTAP 인스턴스에서 제공하는 FlexVol 볼륨에 호스팅된 데이터스토어를 사용하는 하나 이상의 VMware Cloud SDDC 인스턴스로 구성됩니다.</block>
+  <block id="4257c376490fcdeb2d85428bb69e098f" category="paragraph">운영 환경과 재해 복구 사이트는 AWS와 호환되는 보안 연결을 통해 연결됩니다. 일반적인 연결 유형으로는 보안 VPN(프라이빗 VPN 또는 AWS 제공 VPN), AWS Direct Connect 또는 기타 승인된 상호 연결 방식이 있습니다.</block>
+  <block id="98a98eb174df91339e38055b7c5c6130" category="paragraph">*모범 사례*: AWS 재해 복구 사이트 구성의 경우, NetApp은 VMware Cloud와 AWS FSx for ONTAP 인스턴스 모두에 대해 단일 AZ 배포를 권장합니다. AWS를 재해 복구에 사용하는 경우 여러 가용 영역을 도입할 필요가 없습니다. 다중 AZ 배포는 비용과 복잡성을 증가시킬 수 있습니다.</block>
+  <block id="3e0c72c1eed706238450b329bda91672" category="list-text">*AWS 사이트 간 VPN*: 이 가상 사설망(VPN) 연결은 공용 인터넷 서비스 제공업체(ISP)를 통해 안전한 연결을 제공합니다.  VPN은 AWS 클라우드로 전송되거나 AWS 클라우드에서 전송되는 모든 데이터를 암호화하고 복호화합니다.  VPN은 소프트웨어 기반 또는 하드웨어 기반일 수 있습니다.  기업 애플리케이션의 경우, 공용 인터넷 서비스 제공업체(ISP)는 재해 복구 복제를 위해 적절한 대역폭과 지연 시간을 보장하는 서비스 품질(QoS) 보장을 제공해야 합니다.</block>
+  <block id="925ec5407d9b04794a24d162e56ff698" category="paragraph">*모범 사례*: AWS 재해 복구 사이트 구성의 경우, NetApp은 AWS Direct Connect 사용을 권장합니다. 이 솔루션은 엔터프라이즈 애플리케이션에 최상의 성능과 보안을 제공합니다. 사용할 수 없는 경우, 고성능 공용 ISP 연결과 VPN을 함께 사용해야 합니다. 적절한 네트워크 성능을 보장하기 위해 ISP에서 상용 QoS 서비스 수준을 제공하는지 확인하십시오.</block>
+  <block id="05a939b2aaaca6afbe6c35b25a72170e" category="paragraph">*모범 사례*: VMware Cloud와 단일 FSx for ONTAP VPC를 사용하는 재해 복구 솔루션의 경우 NetApp은 VPC 피어링을 권장합니다. 여러 개의 FSx for ONTAP VPC가 배포된 경우, AWS Transit Gateway를 사용하여 여러 VPC 피어 연결에 따른 관리 오버헤드를 줄이는 것이 좋습니다.</block>
+  <block id="2838fb3a8731afbc320b29a147b86e21" category="paragraph">재해 복구는 이더넷 및 TCP/IP를 사용하여 사이트 간 복제를 지원합니다.  프로덕션 사이트 VM의 데이터 변경 속도를 지원할 수 있도록 충분한 대역폭이 확보되어 모든 변경 사항이 복구 시점 목표(RPO) 시간 내에 재해 복구 사이트로 복제될 수 있도록 해야 합니다.</block>
+  <block id="022268024cea56e0a580165d587cd756" category="paragraph">NetApp Disaster Recovery를 사용하기 전에 복제 및 복구가 호환성 문제 없이 실행될 수 있도록 환경이 VMware vCenter 클러스터 요구 사항을 충족하는지 확인하십시오.</block>
+  <block id="70de8fd72044fea5813c432b196646c1" category="paragraph">NetApp Kubernetes용 재해 복구를 구성하기 전에 각 Kubernetes 클러스터가 복제 및 장애 조치를 수행할 준비가 되었는지 확인해야 합니다. 보호 기능은 일반적으로 소스 클러스터 와 별도의 타겟 클러스터에 적용됩니다. 쌍을 이루는 각 클러스터에서 이러한 절차를 완료하십시오.</block>
 </blocks>

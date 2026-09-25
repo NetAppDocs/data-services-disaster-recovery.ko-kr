@@ -12,7 +12,7 @@ summary: NetApp Disaster Recovery 사용하려면 몇 가지 단계를 수행하
 
 
 [role="lead"]
-NetApp Disaster Recovery를 사용하려면 NetApp Console과 지원되는 재해 복구 환경에서 몇 가지 설정 단계를 완료해야 합니다.
+NetApp Disaster Recovery를 사용하려면 먼저 장애 발생 전에 복구 환경을 준비하여 복제 및 페일오버를 최소한의 지연으로 구성하고 테스트할 수 있도록 해야 합니다.
 
 
 TIP: 검토link:../get-started/dr-prerequisites.html["전제 조건"] 시스템이 준비되었는지 확인하세요.
@@ -24,10 +24,10 @@ TIP: 검토link:../get-started/dr-prerequisites.html["전제 조건"] 시스템�
 
 다음 인프라에서 NetApp Disaster Recovery 사용할 수 있습니다.
 
-* 온프레미스 VMware plus ONTAP 데이터 센터를 VMware Cloud on AWS 또는 Elastic VMware Service(EVS) 및 Amazon FSx for NetApp ONTAP 기반 AWS DR 인프라에 복제하는 하이브리드 클라우드 DR입니다.
-* 온프레미스 VMware와 ONTAP vCenter를 다른 온프레미스 VMware와 ONTAP vCenter로 복제하는 프라이빗 클라우드 DR입니다.
-* VMware Cloud on AWS 또는 EVS 기반의 AWS DR 인프라를 FSx for NetApp ONTAP를 사용하여 다른 AWS 기반 DR 인프라로 복제하는 Cloud DR입니다.
-* 온프레미스 VMware Plus ONTAP 데이터센터를 Google Cloud VMware Engine 및 Google Cloud NetApp Volumes 기반의 Google DR 인프라로 복제하는 하이브리드 클라우드 재해 복구(DR) 솔루션입니다.
+* 온프레미스 VMware Plus ONTAP 데이터센터를 VMware Cloud on AWS 또는 Elastic VMware Service(EVS) 및 Amazon FSx for NetApp ONTAP 기반 AWS 재해 복구 인프라로 복제하는 하이브리드 클라우드 재해 복구입니다.
+* 온프레미스 VMware Plus ONTAP vCenter를 다른 온프레미스 VMware Plus ONTAP vCenter로 복제하는 프라이빗 클라우드 재해 복구입니다.
+* VMware Cloud on AWS 또는 EVS 기반의 AWS 재해 복구 인프라를 FSx for NetApp ONTAP을 사용하여 다른 AWS 기반 재해 복구 인프라로 복제하는 클라우드 재해 복구.
+* 온프레미스 VMware Plus ONTAP 데이터센터를 Google Cloud VMware Engine 및 Google Cloud NetApp Volumes 기반의 Google 재해 복구 인프라로 복제하는 하이브리드 클라우드 재해 복구 솔루션입니다.
 
 
 
@@ -35,9 +35,9 @@ TIP: 검토link:../get-started/dr-prerequisites.html["전제 조건"] 시스템�
 [[hybrid-cloud-with-vmware-cloud-and-amazon-fsx-for-netapp-ontap]]
 == Amazon FSx for NetApp ONTAP 활용한 하이브리드 클라우드
 
-이 방법은 NFS 프로토콜을 사용하여 ONTAP FlexVol 볼륨에 호스팅된 데이터 저장소를 사용하는 온프레미스 프로덕션 vCenter 인프라로 구성됩니다.  DR 사이트는 NFS 프로토콜을 사용하는 하나 이상의 FSx for ONTAP 인스턴스에서 제공하는 FlexVol 볼륨에 호스팅된 데이터 저장소를 사용하는 하나 이상의 VMware Cloud SDDC 인스턴스로 구성됩니다.
+이 방법은 NFS 프로토콜을 사용하는 ONTAP FlexVol 볼륨에 호스팅된 데이터스토어를 사용하는 온프레미스 운영 vCenter 인프라로 구성됩니다. 재해 복구 사이트는 NFS 프로토콜을 사용하는 하나 이상의 FSx for ONTAP 인스턴스에서 제공하는 FlexVol 볼륨에 호스팅된 데이터스토어를 사용하는 하나 이상의 VMware Cloud SDDC 인스턴스로 구성됩니다.
 
-운영 사이트와 DR 사이트는 AWS 호환 보안 연결로 연결됩니다. 일반적인 연결 유형으로는 보안 VPN(프라이빗 또는 AWS 제공), AWS Direct Connect 또는 기타 승인된 상호 연결 방식이 있습니다.
+운영 환경과 재해 복구 사이트는 AWS와 호환되는 보안 연결을 통해 연결됩니다. 일반적인 연결 유형으로는 보안 VPN(프라이빗 VPN 또는 AWS 제공 VPN), AWS Direct Connect 또는 기타 승인된 상호 연결 방식이 있습니다.
 
 AWS 클라우드 인프라와 관련된 재해 복구의 경우 AWS용 콘솔 에이전트를 사용해야 합니다.  에이전트는 FSx for ONTAP 인스턴스와 동일한 VPC에 설치해야 합니다.  다른 VPC에 추가 FSx for ONTAP 인스턴스가 배포된 경우, 에이전트를 호스팅하는 VPC는 ​​다른 VPC에 액세스할 수 있어야 합니다.
 
@@ -52,7 +52,7 @@ AWS는 리전 내 하나 이상의 가용 영역(AZ)에 솔루션을 배포하�
 * *AWS FSx for NetApp ONTAP*: Amazon FSx for NetApp ONTAP가 다중 가용 영역(AZ) 구성으로 배포되면 각 볼륨은 하나의 FSx for ONTAP 파일 시스템에 속하고 데이터는 두 번째 파일 시스템에 미러링됩니다. FSx for ONTAP는 단일 AZ 또는 다중 AZ 구성으로 배포할 수 있습니다. NetApp Disaster Recovery는 두 가지 배포 모델을 모두 지원합니다.
 
 
-*모범 사례*: AWS 재해 복구 사이트 구성의 경우, NetApp은 VMware Cloud와 AWS FSx for ONTAP 인스턴스 모두에 대해 단일 AZ 배포를 권장합니다. AWS를 재해 복구에 사용하는 경우 여러 가용 영역을 도입할 이점이 없습니다. 다중 AZ 배포는 비용과 복잡성을 증가시킬 수 있습니다.
+*모범 사례*: AWS 재해 복구 사이트 구성의 경우, NetApp은 VMware Cloud와 AWS FSx for ONTAP 인스턴스 모두에 대해 단일 AZ 배포를 권장합니다. AWS를 재해 복구에 사용하는 경우 여러 가용 영역을 도입할 필요가 없습니다. 다중 AZ 배포는 비용과 복잡성을 증가시킬 수 있습니다.
 
 
 
@@ -63,10 +63,10 @@ AWS는 프라이빗 데이터 센터를 AWS 클라우드에 연결하기 위해 
 
 * *AWS Direct Connect*: 이는 사용자의 프라이빗 데이터 센터와 동일한 지리적 영역에 위치하고 AWS 파트너가 제공하는 AWS 클라우드 상호 연결입니다. 이 솔루션은 공용 인터넷 연결 없이 로컬 데이터 센터와 AWS 클라우드 간에 안전하고 프라이빗한 연결을 제공합니다. AWS에서 제공하는 가장 직접적이고 효율적인 연결 방식입니다.
 * *AWS 인터넷 게이트웨이*: AWS 클라우드 리소스와 외부 컴퓨팅 리소스 간의 공용 연결을 제공합니다.  이러한 유형의 연결은 일반적으로 보안이 필요하지 않은 HTTP/HTTPS 서비스와 같이 외부 고객에게 서비스를 제공하는 데 사용됩니다.  서비스 품질 제어, 보안, 연결 보장이 없습니다.  이러한 이유로 이 연결 방법은 프로덕션 데이터 센터를 클라우드에 연결하는 데 권장되지 않습니다.
-* *AWS 사이트 간 VPN*: 이 가상 사설망(VPN) 연결은 공용 인터넷 서비스 제공업체(ISP)를 통해 안전한 연결을 제공합니다.  VPN은 AWS 클라우드로 오가는 모든 데이터를 암호화하고 복호화합니다.  VPN은 소프트웨어 기반 또는 하드웨어 기반일 수 있습니다.  기업 애플리케이션의 경우, 공용 인터넷 서비스 제공업체(ISP)는 DR 복제를 위해 적절한 대역폭과 지연 시간을 보장하는 서비스 품질(QoS) 보장을 제공해야 합니다.
+* *AWS 사이트 간 VPN*: 이 가상 사설망(VPN) 연결은 공용 인터넷 서비스 제공업체(ISP)를 통해 안전한 연결을 제공합니다.  VPN은 AWS 클라우드로 전송되거나 AWS 클라우드에서 전송되는 모든 데이터를 암호화하고 복호화합니다.  VPN은 소프트웨어 기반 또는 하드웨어 기반일 수 있습니다.  기업 애플리케이션의 경우, 공용 인터넷 서비스 제공업체(ISP)는 재해 복구 복제를 위해 적절한 대역폭과 지연 시간을 보장하는 서비스 품질(QoS) 보장을 제공해야 합니다.
 
 
-*모범 사례*: AWS DR 사이트 구성의 경우 NetApp AWS Direct Connect를 사용할 것을 권장합니다.  이 솔루션은 엔터프라이즈 애플리케이션에 최고의 성능과 보안을 제공합니다.  사용할 수 없는 경우 VPN과 함께 고성능 공용 ISP 연결을 사용해야 합니다.  ISP가 적절한 네트워크 성능을 보장하기 위해 상용 QoS 서비스 수준을 제공하는지 확인하세요.
+*모범 사례*: AWS 재해 복구 사이트 구성의 경우, NetApp은 AWS Direct Connect 사용을 권장합니다. 이 솔루션은 엔터프라이즈 애플리케이션에 최상의 성능과 보안을 제공합니다. 사용할 수 없는 경우, 고성능 공용 ISP 연결과 VPN을 함께 사용해야 합니다. 적절한 네트워크 성능을 보장하기 위해 ISP에서 상용 QoS 서비스 수준을 제공하는지 확인하십시오.
 
 
 
@@ -80,7 +80,7 @@ AWS는 다음과 같은 유형의 VPC-VPC 상호연결을 제공합니다.  각 
 * *AWS Transit Gateway*: 이는 각 VPC가 단일 중앙 게이트웨이에 연결될 수 있도록 하는 중앙 집중식 라우터 기반 연결 유형으로, 이 게이트웨이는 모든 VPC 간 트래픽에 대한 중앙 허브 역할을 합니다.  이를 VPN 솔루션에 연결하여 온프레미스 데이터 센터 리소스가 AWS VPC 호스팅 리소스에 액세스할 수 있도록 할 수도 있습니다.  이러한 유형의 연결을 구현하려면 일반적으로 추가 비용이 필요합니다.
 
 
-*모범 사례*: VMware Cloud와 단일 FSx for ONTAP VPC를 사용하는 재해 복구(DR) 솔루션의 경우 NetApp은 VPC 피어링을 권장합니다. 여러 개의 FSx for ONTAP VPC가 배포된 경우, 여러 VPC 피어 연결에 따른 관리 오버헤드를 줄이기 위해 AWS Transit Gateway를 사용하는 것을 권장합니다.
+*모범 사례*: VMware Cloud와 단일 FSx for ONTAP VPC를 사용하는 재해 복구 솔루션의 경우 NetApp은 VPC 피어링을 권장합니다. 여러 개의 FSx for ONTAP VPC가 배포된 경우, AWS Transit Gateway를 사용하여 여러 VPC 피어 연결에 따른 관리 오버헤드를 줄이는 것이 좋습니다.
 
 
 
@@ -127,7 +127,7 @@ NetApp Disaster Recovery 사용하면 하나 이상의 vCenter 클러스터에 �
 
 온프레미스 간 상황의 경우, 물리적 사이트 중 하나에 콘솔 에이전트를 설치합니다.
 
-재해 복구는 이더넷과 TCP/IP를 사용하여 사이트 간 복제를 지원합니다.  모든 변경 사항을 복구 지점 목표(RPO) 시간 프레임 내에 DR 사이트에 복제할 수 있도록 프로덕션 사이트 VM에서 데이터 변경률을 지원할 수 있는 적절한 대역폭이 있는지 확인하세요.
+재해 복구는 이더넷 및 TCP/IP를 사용하여 사이트 간 복제를 지원합니다.  프로덕션 사이트 VM의 데이터 변경 속도를 지원할 수 있도록 충분한 대역폭이 확보되어 모든 변경 사항이 복구 시점 목표(RPO) 시간 내에 재해 복구 사이트로 복제될 수 있도록 해야 합니다.
 
 
 
