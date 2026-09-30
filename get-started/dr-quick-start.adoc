@@ -58,7 +58,7 @@ NetApp Disaster Recovery를 구성하는 방법을 알아보십시오. 시스템
 [role="quick-margin-para"]
 이러한 작업을 수행하려면 _Disaster Recovery admin_ 또는 _Disaster Recovery failover admin role_이 필요합니다.
 
-[role="quick-margin-para"]
+[role="quick-margin-list"]
 * link:../use/failover.html["원격 사이트로 애플리케이션 장애 조치"]
 * link:../use/failback.html["원래 소스 사이트로 애플리케이션을 다시 장애 조치합니다."]
 
