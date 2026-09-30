@@ -22,7 +22,7 @@ entries:
   url: "/use/task-appvault.html"
 - title: 리소스 변환 템플릿 관리
   url: "/use/task-resource-transformation.html"
-- title: 사이트, 계획, 데이터 저장소 및 가상 머신 정보 관리
+- title: 사이트, 플랜, 데이터 저장소 및 VM 정보를 관리합니다.
   url: "/use/manage.html"
 - title: 재해 복구 작업 모니터링
   url: "/use/monitor-jobs.html"

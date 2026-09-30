@@ -315,29 +315,14 @@
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">하나</block>
   <block id="a2d56436fc6737079209e6c74380c5fb" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>필수 조건 검토</block>
   <block id="8245d68da46718af8e64343032f76d49" category="inline-link-macro">시스템이 이러한 요구 사항을 충족하는지 확인하세요.</block>
-  <block id="50b527e0838c12c02e25ab9a4fcd5504" category="paragraph"><block ref="a3f1443a0df3325eac10e29ebb8e240a" category="inline-link-macro-rx"></block> .</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">둘</block>
   <block id="6a69fd00ba725b1639174a30530de6be" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>NetApp Disaster Recovery 설정</block>
   <block id="bba2d28657478d7f1f8cfa1202334b6c" category="inline-link-macro">서비스를 위한 인프라를 구축하세요</block>
-  <block id="922a3f684ad3f3d8beda0f750bdbb18f" category="list-text"><block ref="d5f560af5db6cf4511b8e34e3209d0d9" category="inline-link-macro-rx"></block> .</block>
-  <block id="143a2ad68b93a4241fb25dee71d34878" category="list-text"><block ref="eaa54a57026891d12cbf928afd176564" category="inline-link-macro-rx"></block> .</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">삼</block>
-  <block id="fb35cdd7029fec15aadbdddd879fa161" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>다음은 무엇인가요?</block>
-  <block id="a58c9f9b0e3161b6e373e0839c8e8ef2" category="inline-link-macro">NetApp Disaster Recovery 에 vCenter 사이트 추가</block>
-  <block id="d883674dc3cca3be0ad5160baba8bf86" category="list-text"><block ref="82ae3efa25dbb783bb1a9bac0fdc23dd" category="inline-link-macro-rx"></block> .</block>
-  <block id="b65e0d1bdfae52b7003edeca0851a1cd" category="inline-link-macro">첫 번째 리소스 그룹을 만드세요</block>
-  <block id="2694ce9387b386ed8def037e0ef2a01c" category="list-text"><block ref="92830d5aa0eb820db09685f71801553b" category="inline-link-macro-rx"></block> .</block>
-  <block id="81b20ae68e2b688ed9a18df38cce62c6" category="inline-link-macro">첫 번째 복제 계획을 만드세요</block>
-  <block id="1bef08da93920d58af9116d6cc82018e" category="list-text"><block ref="3447feddfbfb06a3f88061bcb344494c" category="inline-link-macro-rx"></block> .</block>
   <block id="847c11e2bf47a2c63ba2cf24f4cfa928" category="inline-link-macro">다른 사이트에 애플리케이션 복제</block>
-  <block id="3733a924551067923391fb57d35c7a3f" category="list-text"><block ref="ed1db02de11c4d365ac64a594dde8a8e" category="inline-link-macro-rx"></block> .</block>
-  <block id="1fe816fda92d87bdaa9cb3f438b34e0b" category="list-text"><block ref="524f5a32773e3e832b74877ecf58916f" category="inline-link-macro-rx"></block> .</block>
   <block id="4f1f3c6d1472c505e740ebe57c2881ce" category="inline-link-macro">원래 소스 사이트로 애플리케이션을 다시 장애 조치합니다.</block>
-  <block id="5faa19197effc4c0fdc74b32045263ef" category="list-text"><block ref="6fbeff9687fcc9f06bd89057c3ed5a34" category="inline-link-macro-rx"></block> .</block>
   <block id="e111b7436e71ef6b7b99d4ab60693716" category="inline-link-macro">사이트, 리소스 그룹 및 복제 계획 관리</block>
-  <block id="9c0c127bbcf25422e200cf3bf5c94728" category="list-text"><block ref="b808936e11943a7ce505d2bf605d808d" category="inline-link-macro-rx"></block> .</block>
   <block id="01a7e7f1580e9ccf4f0275e9f79a32dd" category="inline-link-macro">재해 복구 작업 모니터링</block>
-  <block id="899a3601f4e45edcb69bd9d82c68fbef" category="list-text"><block ref="698cc22cc758157d8f18359f8b528216" category="inline-link-macro-rx"></block> .</block>
   <block id="f908b1751b236e73d9e2a5a1506e778e" category="summary">NetApp Disaster Recovery 사용하려면 몇 가지 단계를 수행하여 설정하세요.</block>
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">전제 조건</block>
   <block id="c266abec3014ef58af380dae0b855a81" category="admonition">검토<block ref="92ab8b24e9e19913fbd62d38b5e3558b" category="inline-link-macro-rx"></block> 시스템이 준비되었는지 확인하세요.</block>
@@ -1283,7 +1268,6 @@
   <block id="548b49f4267cb06525a994818f01fc03" category="sidebar">리소스 그룹 만들기</block>
   <block id="a900cb57c651ef75881dfa4543e4701d" category="sidebar">다른 사이트로 복제</block>
   <block id="ad80d6168dc288f4361413eeca80dc5f" category="sidebar">다른 사이트로 마이그레이션</block>
-  <block id="b7cd69eed80f723036ef0a99b8bb375e" category="sidebar">사이트, 계획, 데이터 저장소 및 가상 머신 정보 관리</block>
   <block id="dd64baea4cd51b54ff1827028e4db4f6" category="paragraph"><block ref="b0f53b92ba6c515b65cd9cce152b9651" category="inline-link-macro-rx"></block>.</block>
   <block id="867215f2d24d8d500f9d6d76b166230b" category="summary">NetApp Disaster Recovery 사용하기 전에 해당 환경이 ONTAP 스토리지, VMware vCenter 클러스터 및 NetApp Console 요구 사항을 충족하는지 확인하세요.</block>
   <block id="43f2bccff85f631b4171a654387bbcc5" category="list-text">재해 복구 볼륨을 호스팅하는 SVM은 대상 클러스터에 있어야 합니다.</block>
@@ -2278,7 +2262,6 @@
   <block id="1a72702bea711f39b088ed0d4020a87c" category="paragraph">이러한 필수 조건은 ONTAP 및 Amazon FSx for NetApp ONTAP 인스턴스에 적용됩니다.</block>
   <block id="9beb22b2943c3a24a0fe864d1a41e546" category="inline-link">NetApp Console에 가입하고 조직을 생성합니다.</block>
   <block id="10a3aa4ddbdce4dbbdbe8c24197b32e1" category="paragraph">아직 하지 않으셨다면,<block ref="1fb558a2395bd23df7d326ce1f18cd71" category="inline-link-rx"></block>.</block>
-  <block id="e173ccdbd07742f5e12ded0d5ceb4119" category="paragraph">서비스를 설정한 후 다음 단계를 완료할 수 있습니다.</block>
   <block id="5eee3cef11a4fc8d1e9f1807b868b72c" category="section-title">AWS 가용 영역</block>
   <block id="35fa6d73da1bc964f0127c1985e1ed16" category="paragraph">AWS는 리전 내 하나 이상의 가용 영역(AZ)에 솔루션을 배포하는 것을 지원합니다. NetApp Disaster Recovery는 AWS에서 호스팅되는 두 가지 서비스인 VMware Cloud on AWS와 Amazon FSx for NetApp ONTAP를 사용합니다.</block>
   <block id="6a78d39d8c8decb76164d1c3cc7ba8c8" category="list-text">*VMware Cloud for AWS*: 단일 가용 영역(AZ) 또는 이중 가용 영역(AZ) 확장 클러스터 SDDC 환경에 배포를 지원합니다. NetApp Disaster Recovery는 VMware Cloud on AWS의 경우 단일 가용 영역 SDDC 배포만 지원합니다.</block>
@@ -2719,7 +2702,6 @@
   <block id="56dba1a0fa6fc2322a683fe201c0ee47" category="inline-image-macro">재해 복구 대시보드</block>
   <block id="e21367b623115dc2d573941e82450d18" category="paragraph"><block ref="e21367b623115dc2d573941e82450d18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0d7437c3aaaf0629acc4ff530b980318" category="paragraph">워크로드가 복제 및 복구를 위한 준비를 갖추도록 설정하기 전에 스토리지, vCenter 및 콘솔의 필수 요구 사항을 검증하십시오.</block>
-  <block id="d5eebd68b04cfb5ee093006e8a051759" category="paragraph">NetApp Disaster Recovery를 신속하게 시작하는 방법, 시스템이 요구 사항을 충족하는지 확인하는 방법, 워크로드를 검색하는 방법, 장애 조치에 대비하여 복제 계획을 구성하는 방법을 알아보십시오.</block>
   <block id="d05f28ac4af4437fc2d15ad33f1d60d9" category="paragraph">NetApp Disaster Recovery를 사용하려면 먼저 장애 발생 전에 복구 환경을 준비하여 복제 및 페일오버를 최소한의 지연으로 구성하고 테스트할 수 있도록 해야 합니다.</block>
   <block id="1d9e43693cfe15e882fe79c64ab0c709" category="list-text">온프레미스 VMware Plus ONTAP 데이터센터를 VMware Cloud on AWS 또는 Elastic VMware Service(EVS) 및 Amazon FSx for NetApp ONTAP 기반 AWS 재해 복구 인프라로 복제하는 하이브리드 클라우드 재해 복구입니다.</block>
   <block id="5e9e30d9aff0f87a7bb097a63f5daea6" category="list-text">온프레미스 VMware Plus ONTAP vCenter를 다른 온프레미스 VMware Plus ONTAP vCenter로 복제하는 프라이빗 클라우드 재해 복구입니다.</block>
@@ -2734,4 +2716,37 @@
   <block id="2838fb3a8731afbc320b29a147b86e21" category="paragraph">재해 복구는 이더넷 및 TCP/IP를 사용하여 사이트 간 복제를 지원합니다.  프로덕션 사이트 VM의 데이터 변경 속도를 지원할 수 있도록 충분한 대역폭이 확보되어 모든 변경 사항이 복구 시점 목표(RPO) 시간 내에 재해 복구 사이트로 복제될 수 있도록 해야 합니다.</block>
   <block id="022268024cea56e0a580165d587cd756" category="paragraph">NetApp Disaster Recovery를 사용하기 전에 복제 및 복구가 호환성 문제 없이 실행될 수 있도록 환경이 VMware vCenter 클러스터 요구 사항을 충족하는지 확인하십시오.</block>
   <block id="70de8fd72044fea5813c432b196646c1" category="paragraph">NetApp Kubernetes용 재해 복구를 구성하기 전에 각 Kubernetes 클러스터가 복제 및 장애 조치를 수행할 준비가 되었는지 확인해야 합니다. 보호 기능은 일반적으로 소스 클러스터 와 별도의 타겟 클러스터에 적용됩니다. 쌍을 이루는 각 클러스터에서 이러한 절차를 완료하십시오.</block>
+  <block id="b69b0deae43f067aceec60ca46b81e75" category="paragraph">NetApp Disaster Recovery를 구성하는 방법을 알아보십시오. 시스템이 워크로드를 성공적으로 검색하고 장애 조치를 준비하기 위한 복제 계획을 구성하는 데 필요한 요구 사항을 충족하는지 확인하십시오.</block>
+  <block id="450c303d7338ae99abb9140e57f1802f" category="paragraph">콘솔 에이전트를 배포하고 권한을 할당하려면 _Super admin_ 또는 _Organization admin_ 역할이 필요합니다.</block>
+  <block id="4cdcdd6cc684e8847f57a8c461306706" category="inline-link-macro">Console 에이전트 배포</block>
+  <block id="da0194b4447687b49b43d16da4a421bf" category="list-text"><block ref="da0194b4447687b49b43d16da4a421bf" category="inline-link-macro-rx"></block></block>
+  <block id="4fbda210d9079288afd6f2ccf0b2fcf4" category="inline-link-macro">Disaster Recovery 사용자 역할을 검토하고 필요한 사용자에게 권한을 할당하십시오.</block>
+  <block id="dd112af035097a220b3fd99a9f196044" category="list-text"><block ref="dd112af035097a220b3fd99a9f196044" category="inline-link-macro-rx"></block></block>
+  <block id="a3f1443a0df3325eac10e29ebb8e240a" category="list-text"><block ref="a3f1443a0df3325eac10e29ebb8e240a" category="inline-link-macro-rx"></block></block>
+  <block id="25b43f115aa356ef13f467c3cedc630f" category="list-text">업무 유형에 맞는 요구 사항을 충족하는지 확인하십시오.</block>
+  <block id="634c312393dca96c3e570e9865274c97" category="list-text"><block ref="634c312393dca96c3e570e9865274c97" category="inline-link-macro-rx"></block></block>
+  <block id="ed40cb42275a28e7b5377d8fa92461ee" category="list-text"><block ref="ed40cb42275a28e7b5377d8fa92461ee" category="inline-link-macro-rx"></block></block>
+  <block id="e1e12e7d2eb44422325db325a5558c5c" category="paragraph">이러한 작업을 수행하려면 _Super admin_ 또는 _Disaster recovery admin_ 역할이 필요합니다.</block>
+  <block id="d5f560af5db6cf4511b8e34e3209d0d9" category="list-text"><block ref="d5f560af5db6cf4511b8e34e3209d0d9" category="inline-link-macro-rx"></block></block>
+  <block id="eaa54a57026891d12cbf928afd176564" category="list-text"><block ref="eaa54a57026891d12cbf928afd176564" category="inline-link-macro-rx"></block></block>
+  <block id="5d1645ab89b982156d5095ad611b9aaf" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 재해 복구 계획 구성</block>
+  <block id="06e1b78d359c9b62257986a2b478c87d" category="paragraph">이러한 작업을 수행하려면 _Disaster recovery admin_ 역할이 필요합니다.</block>
+  <block id="a4e889b4c4cf96459ebc87610a411cd6" category="inline-link-macro">사이트를 Disaster Recovery에 추가합니다</block>
+  <block id="0439af6ffc9018ad61a84a98aaf7c382" category="list-text"><block ref="0439af6ffc9018ad61a84a98aaf7c382" category="inline-link-macro-rx"></block></block>
+  <block id="020a36deb114af1bb518c70d5975e940" category="inline-link-macro">리소스 그룹 생성</block>
+  <block id="e630b26a169cbcad33bbea4d618a6289" category="list-text"><block ref="e630b26a169cbcad33bbea4d618a6289" category="inline-link-macro-rx"></block></block>
+  <block id="c12123744a3c90fe5495b387b449f97a" category="inline-link-macro">Kubernetes 워크로드의 경우 AppVault를 추가합니다</block>
+  <block id="8619027af6daf10544bdaf5851bcbefd" category="list-text"><block ref="8619027af6daf10544bdaf5851bcbefd" category="inline-link-macro-rx"></block></block>
+  <block id="8aa3c94c171b2c9d7252afb28ee019a7" category="list-text"><block ref="8aa3c94c171b2c9d7252afb28ee019a7" category="inline-link-macro-rx"></block></block>
+  <block id="ed1db02de11c4d365ac64a594dde8a8e" category="list-text"><block ref="ed1db02de11c4d365ac64a594dde8a8e" category="inline-link-macro-rx"></block></block>
+  <block id="a1ecc3af70d301516033783eb7d75412" category="inline-link-macro">Kubernetes 워크로드에 대한 리소스 변환 관리</block>
+  <block id="fe6c4b92fc7a6c7bf7f3429ce0ccd951" category="list-text"><block ref="fe6c4b92fc7a6c7bf7f3429ce0ccd951" category="inline-link-macro-rx"></block></block>
+  <block id="b808936e11943a7ce505d2bf605d808d" category="list-text"><block ref="b808936e11943a7ce505d2bf605d808d" category="inline-link-macro-rx"></block></block>
+  <block id="698cc22cc758157d8f18359f8b528216" category="list-text"><block ref="698cc22cc758157d8f18359f8b528216" category="inline-link-macro-rx"></block></block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">네</block>
+  <block id="7bcfbf6f4e3aa95fa87554dde245ad27" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 재난으로부터 복구</block>
+  <block id="4fa723a7acca0573a7f95ed1267196d5" category="paragraph">이러한 작업을 수행하려면 _Disaster Recovery admin_ 또는 _Disaster Recovery failover admin role_이 필요합니다.</block>
+  <block id="524f5a32773e3e832b74877ecf58916f" category="list-text"><block ref="524f5a32773e3e832b74877ecf58916f" category="inline-link-macro-rx"></block></block>
+  <block id="6fbeff9687fcc9f06bd89057c3ed5a34" category="list-text"><block ref="6fbeff9687fcc9f06bd89057c3ed5a34" category="inline-link-macro-rx"></block></block>
+  <block id="57574b91a736e91f1b6149f9abdf3330" category="sidebar">사이트, 플랜, 데이터 저장소 및 VM 정보를 관리합니다.</block>
 </blocks>
