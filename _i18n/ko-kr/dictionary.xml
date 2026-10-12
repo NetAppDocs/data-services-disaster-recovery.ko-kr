@@ -2280,7 +2280,6 @@
   <block id="bc5f6fc21f6a94d180764bb6c6a4cd7d" category="paragraph"><block ref="eec6190e0599877ad03e04b40eef0c58" category="inline-link-macro-rx"></block>을 설치하십시오. 이러한 설치는 Trident Protect에서 볼륨 스냅샷을 사용하기 위해 필요합니다.</block>
   <block id="918fa72b18f488b31c1a63283c4f2148" category="paragraph"><block ref="4569567eb3ca20d8c53676753a511f69" prefix="" category="inline-code"></block></block>
   <block id="d601ac6a8739700584fe1f4c446d9754" category="list-text">*다운*: 해당 사이트에 접속할 수 없거나 연결에 문제가 있습니다.</block>
-  <block id="6026e48cd116a5cbacecfc8da06638ea" category="paragraph">리소스와 사이트를 추가한 후에는 데이터를 보호하기 위해 복제 계획을 생성하십시오. 복제 계획은 소스 및 대상 사이트, 리소스 그룹, 복구 매핑, 애플리케이션의 전원 켜기 동작을 정의합니다. 또한 규정 준수 및 테스트 일정을 구성하고 운영 데이터에 영향을 주지 않고 테스트 페일오버를 수행할 수 있습니다.</block>
   <block id="1c4de46c0cd1d0a73f4e3432ea708002" category="paragraph">여러 데이터스토어에 있는 여러 VM을 보호할 수 있습니다. NetApp Disaster Recovery는 보호된 VM 데이터스토어를 호스팅하는 모든 ONTAP 볼륨에 대해 ONTAP 일관성 그룹을 생성합니다.</block>
   <block id="46224a4824d70ef03f0888359b806a9e" category="list-text">대상 사이트에 누락된 스냅샷이 있는 경우, 서비스는 해당 관계에 대한 기본 SnapMirror 정책에 따라 다음 예약된 스냅샷 조정 프로세스 중에 소스 사이트에서 해당 스냅샷을 삭제할 수 있습니다.</block>
   <block id="7e0f1183c0ae5c291e2245966bd03d67" category="paragraph">마법사가 다음 단계를 안내합니다.</block>
@@ -2568,7 +2567,6 @@
   <block id="8d57596f9b796b61e90df9540d12cc03" category="paragraph">Azure의 경우 클라우드 공급자로 *구독*, *리소스 그룹* 및 *스토리지 계정*을 선택하십시오.</block>
   <block id="d575618a014f5e9564ca37f19e47ce57" category="paragraph">AWS, ONTAP S3 및 StorageGRID의 경우 *계정*, *자격 증명* 및 *버킷*을 선택하십시오.</block>
   <block id="5a5927bde0ac7465b00ff420f8ccdb8c" category="list-text">ONTAP S3 또는 StorageGRID를 선택한 경우 선택적으로 자격 증명을 추가할 수 있습니다. *자격 증명 추가*를 선택하여 옵션을 확장한 다음 *자격 증명 이름*, *게이트웨이 노드 FQDN*, *포트* 번호, *액세스 키* 및 *비밀 키*를 추가하십시오.</block>
-  <block id="796c589626154baa50e1f1b1c6b6ff97" category="section-title">리소스 변환 및 스크립트 실행</block>
   <block id="bb9e542c041adb6fce43a5550a447aee" category="paragraph">Kubernetes 복제 계획의 경우 리소스 변환 및 스크립트 실행을 적용할 수 있습니다. 이러한 단계는 선택 사항입니다.</block>
   <block id="89fd45000e9691421f0cd2d2422f2098" category="paragraph-title">리소스 변환 추가</block>
   <block id="daac935d0f9259f469bdeb6216a7bedd" category="inline-link-macro">변환을 생성하고 리소스를 할당하는 방법을 알아보십시오.</block>
@@ -2749,4 +2747,28 @@
   <block id="524f5a32773e3e832b74877ecf58916f" category="list-text"><block ref="524f5a32773e3e832b74877ecf58916f" category="inline-link-macro-rx"></block></block>
   <block id="6fbeff9687fcc9f06bd89057c3ed5a34" category="list-text"><block ref="6fbeff9687fcc9f06bd89057c3ed5a34" category="inline-link-macro-rx"></block></block>
   <block id="57574b91a736e91f1b6149f9abdf3330" category="sidebar">사이트, 플랜, 데이터 저장소 및 VM 정보를 관리합니다.</block>
+  <block id="02062d06535ce7696876b02309ed3f5e" category="admonition">변조 방지 SnapLock 스냅샷을 사용하는 경우 *지금 스냅샷 생성* 옵션을 사용해야 합니다. 그렇지 않으면 작업이 실패합니다.</block>
+  <block id="1c335a9c5603264a97d8d84cb6c6faf0" category="doc">Kubernetes 리소스 그룹의 선택적 부팅 순서</block>
+  <block id="84af32d37767e36e149339ec37e513b1" category="paragraph">NetApp Disaster Recovery는 이제 리소스에 대한 우선순위 순서 및 선택적 지연 시간을 지정하여 Kubernetes 복제 계획의 리소스 그룹에 대한 선택적 부팅 순서 설정을 지원합니다. 이 옵션을 사용하면 필요한 경우 리소스를 동시에 부팅하고 다른 리소스에 종속된 리소스의 부팅을 지연시켜 애플리케이션이 정상적으로 다시 온라인 상태가 되도록 지원할 수 있습니다.</block>
+  <block id="f2497ae428eba83b3f39732433d3cb44" category="inline-link-macro">복제 계획을 생성하십시오</block>
+  <block id="9e29609c3bbaf3dd61657f73add99007" category="paragraph">자세한 내용은 <block ref="b368f0a73ce8108f9547ecd0643b331f" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="05316212411905c51cdd49deaf78a58e" category="section-title">SnapLock 볼륨 지원</block>
+  <block id="a547512ac8a0a093f138ab19fb5f9c67" category="paragraph">재해 복구 기능이 이제 SnapLock 볼륨을 지원하여 변조 방지 스냅샷으로 장애 조치를 수행할 수 있습니다.. SnapLock 볼륨을 사용하여 장애 복구를 수행할 때는 장애 복구가 성공적으로 완료되도록 *지금 스냅샷 생성* 옵션을 사용해야 합니다.</block>
+  <block id="3ad6e9988864aeae2ef386345946dc6d" category="inline-link-macro">장애 조치</block>
+  <block id="a571d3783c8d552371d5e8b486416b18" category="inline-link-macro">페일백</block>
+  <block id="374fdd2efa0670899dec57115b7ed99b" category="paragraph">자세한 내용은 <block ref="8fc81de61ce6b6f345351934ad55bc91" category="inline-link-macro-rx"></block> 및 <block ref="54d34f2cfe03dcbe402071f8f9beccd0" category="inline-link-macro-rx"></block>에 대한 지침을 참조하십시오.</block>
+  <block id="eec8280b12e61e71ed9a9f31e25a4cb6" category="section-title">간소화된 새로 고침 및 규정 준수 실행</block>
+  <block id="196ba426ef1a0d15830e58f8ea71c405" category="inline-link-macro">작업 모니터링</block>
+  <block id="844a671e46adc508ee852b03a616e916" category="paragraph">vCenter, 복제 계획 및 규정 준수에 대한 새로 고침 실행이 단일 작업으로 간소화되어 실행 속도가 향상되었습니다. 이 변경 사항을 확인하려면 <block ref="c4c673075f72fe052d440b509fb5db2d" category="inline-link-macro-rx"></block> 방법을 알아보십시오.</block>
+  <block id="838e15ad2606430b761fae47ebb38dee" category="section-title">Kubernetes 규정 준수 검사</block>
+  <block id="07de08b6dc69bbb77fbf2faa073882f2" category="paragraph">Disaster Recovery에 Kubernetes 워크로드의 누락된 작업 환경을 식별하는 규정 준수 검사가 추가되었습니다. 이러한 규정 준수 검사는 복제 계획의 무결성을 위해 워크로드 상태를 보장하는 데 도움이 됩니다.</block>
+  <block id="e019cb225a4644922cdd06575b099710" category="section-title">2026년 10월 12일</block>
+  <block id="644654fd24758e69ba70d0af50f707b2" category="paragraph">버전 4.3.8</block>
+  <block id="86ad5929405f6e7a459f3adf67f298e6" category="paragraph">리소스와 사이트를 추가한 후 NetApp Disaster Recovery를 사용하여 데이터를 보호하기 위한 _복제 계획_을 생성하십시오. 이 계획은 애플리케이션의 소스 및 대상 사이트, 리소스 그룹, 복구 매핑 및 전원 켜기 동작을 정의합니다. 또한 규정 준수 및 테스트 일정을 구성하고 운영 데이터에 영향을 주지 않고 테스트 페일오버를 수행할 수 있습니다.</block>
+  <block id="e65bfba01c1dd06a7952b0d1a116ad70" category="section-title">리소스 변환, 스크립트 실행 및 부팅 순서</block>
+  <block id="5753c0f11c80b803bc47552e63a898cb" category="paragraph-title">부팅 순서를 설정하십시오</block>
+  <block id="b5c34ed8fbc17ece1ce6b8ca13f9d672" category="paragraph">여러 리소스 그룹을 포함하는 복제 계획의 경우, 선택적으로 부팅 순서를 설정하여 함께 온라인 상태가 되어야 하는 리소스가 온라인 상태가 되도록 하고, 다른 리소스 그룹에 의존하는 리소스 그룹은 해당 리소스 그룹이 온라인 상태가 될 때까지 온라인 상태가 되지 않도록 할 수 있습니다.</block>
+  <block id="b2784505a08cc196fdf2c01fb8722bbc" category="list-text">*부팅 순서 및 지연* 섹션을 선택하십시오.</block>
+  <block id="7b49064e2ebb0dab724dfae418ebec8e" category="list-text">복제 계획의 각 리소스에 대해 1부터 시작하는 부팅 *순서* 값을 지정합니다. 동시에 부팅해야 하는 리소스에는 동일한 번호를 할당해야 합니다.</block>
+  <block id="9aae48d2077953d7be448b6a399f3b3c" category="list-text">*지연* 시간을 분 단위로 설정하십시오. 리소스에 지연이 필요한 경우, 지연 시간을 분 단위로 설정하십시오.</block>
 </blocks>
