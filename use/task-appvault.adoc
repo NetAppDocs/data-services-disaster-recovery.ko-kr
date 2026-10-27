@@ -21,7 +21,7 @@ NetApp Disaster Recovery 워크로드(Kubernetes 사용)는 Trident Protect가 K
 [[add-an-appvault]]
 == AppVault 추가
 
-Kubernetes용 복제 계획을 생성할 때 AppVault를 추가하거나 설정 페이지에서 직접 생성할 수 있습니다.
+link:task-replication-plan-kubernetes.html["Kubernetes용 복제 계획을 생성합니다"]할 때 AppVault를 추가하거나 설정 페이지에서 생성할 수 있습니다.
 
 .단계
 . Disaster Recovery에서 사이드바의 *설정*을 선택합니다.

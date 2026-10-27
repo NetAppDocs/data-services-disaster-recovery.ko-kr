@@ -53,4 +53,4 @@ NetApp Disaster Recovery 이제 기본 ONTAP SnapMirror 정책 스케줄러나 O
 
 이것이 구성된 후에는 서비스가 정기적으로 예약된 스냅샷을 찍지 않고 대신 외부 엔터티를 사용하여 해당 스냅샷을 찍고 업데이트합니다.
 
-복제 계획에서 외부 스냅샷 솔루션을 사용하는 방법에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+복제 계획에서 외부 스냅샷 솔루션을 사용하는 방법에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.

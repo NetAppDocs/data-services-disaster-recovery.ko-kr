@@ -26,8 +26,10 @@ indexpage:
     links:
     - title: 사이트에 vCenter 추가
       url: "/use/sites-add.html"
-    - title: 재해 복구 계획 만들기
-      url: "/use/drplan-create.html"
+    - title: VMware 재해 복구 계획 생성
+      url: "/use/task-replication-plan-vmware.html"
+    - title: Kubernetes 재해 복구 계획 생성
+      url: "/use/task-replication-plan-kubernetes.html"
     - title: 다른 사이트에 앱 복제
       url: "/use/replicate.html"
     - title: 앱을 다른 사이트로 마이그레이션

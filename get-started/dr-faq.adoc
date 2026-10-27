@@ -5,17 +5,7 @@ keywords: disaster recovery faq, disaster recovery frequently asked questions, f
 summary: VMware 및 Kubernetes 워크로드를 위한 NetApp Disaster Recovery에 대한 자주 묻는 질문입니다. 
 ---
 = NetApp Disaster Recovery에 대한 FAQ
-:toc: macro
-:hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ../media/
-:toc-position: content
 
 
 [role="lead"]

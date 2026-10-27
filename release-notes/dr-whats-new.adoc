@@ -26,9 +26,9 @@ NetApp Disaster Recovery 의 새로운 기능을 알아보세요.
 [[optional-boot-order-for-kubernetes-resource-groups]]
 === Kubernetes 리소스 그룹의 선택적 부팅 순서
 
-NetApp Disaster Recovery는 이제 리소스에 대한 우선순위 순서 및 선택적 지연 시간을 지정하여 Kubernetes 복제 계획의 리소스 그룹에 대한 선택적 부팅 순서 설정을 지원합니다. 이 옵션을 사용하면 필요한 경우 리소스를 동시에 부팅하고 다른 리소스에 종속된 리소스의 부팅을 지연시켜 애플리케이션이 정상적으로 다시 온라인 상태가 되도록 지원할 수 있습니다.
+NetApp Disaster Recovery는 이제 리소스에 대한 우선순위 및 선택적 지연 시간을 지정하여 Kubernetes 복제 계획의 리소스 그룹에 대한 선택적 부팅 순서 설정을 지원합니다. 이 옵션을 사용하면 필요한 경우 리소스를 동시에 부팅하고 다른 리소스에 종속된 리소스의 부팅을 지연시켜 애플리케이션이 정상적으로 다시 온라인 상태가 되도록 지원할 수 있습니다.
 
-자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획을 생성하십시오"^]를 참조하십시오.
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-kubernetes.html["복제 계획을 생성하십시오"^] 참조하십시오.
 
 
 
@@ -85,7 +85,7 @@ Kubernetes 기반 워크로드 보호를 시작하려면 link:https://docs.netap
 
 이제 장애 조치 워크플로에 사용자 지정 스크립트를 삽입하여 애플리케이션의 일시 중지 및 재개를 조정할 수 있습니다. 이 기능을 통해 스냅샷이 복제되고 적절하게 복원되기 전에 애플리케이션이 제대로 준비되도록 하여 장애 조치 후에도 원활하게 운영을 재개할 수 있습니다.
 
-사용자 지정 스크립트를 삽입하는 방법을 알아보려면 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"^]을 참조하십시오.
+사용자 지정 스크립트를 삽입하는 방법을 알아보려면 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-kubernetes.html["복제 계획 만들기"^]을 참조하십시오.
 
 
 
@@ -374,7 +374,7 @@ GCVE 지원에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/dat
 
 재해 복구에서 복제 계획을 생성할 때 이제 특정 데이터스토어를 복제에서 제외할 수 있습니다. 가상 머신이 여러 데이터스토어를 사용하도록 구성된 경우, 이 기능을 통해 복제할 데이터스토어를 제한할 수 있습니다.
 
-자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"^]을(를) 참조하십시오.
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"^]를 참조하십시오.
 
 
 
@@ -392,7 +392,7 @@ GCVE 지원에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/dat
 
 재해 복구 기능에 이제 복제 계획 대시보드에서 vCenter 새로 고침을 트리거하는 새 메뉴 옵션이 포함되었습니다. 복제 계획 대시보드의 작업 메뉴에서 하위 메뉴에 액세스할 수 있습니다. **계획 상태**를 선택한 다음 **소스 vCenter 새로 고침 / 타겟 vCenter 새로 고침**을 선택합니다.
 
-자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html#modify-a-replication-plan["복제 계획 수정"^]를 참조하십시오.
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-modify.html["복제 계획 수정"^] 참조하십시오.
 
 
 
@@ -483,7 +483,7 @@ GCVE 지원에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/dat
 
 복제 계획을 생성할 때 새 기본 설정은 VM 폴더 구조를 유지하는 것입니다.  복구 대상에 원래 폴더 계층 구조가 없는 경우 Disaster Recovery에서 해당 계층 구조를 생성합니다.  원래 폴더 계층 구조를 무시하려면 이 옵션을 선택 해제할 수 있습니다.
 
-자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"^].
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"^] 참조하십시오.
 
 
 
@@ -501,7 +501,7 @@ GCVE 지원에 대한 자세한 내용은 link:https://docs.netapp.com/us-en/dat
 
 이제 새로운 부모 VM 폴더를 지정하거나 **원래 폴더 계층 구조 유지** 옵션의 선택을 취소하여 이 설정을 재정의할 수 있습니다.
 
-자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"].
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"] 참조하십시오.
 
 
 
@@ -549,7 +549,7 @@ NetApp Disaster Recovery 이제 마이그레이션, 장애 조치, 장애 복구
 
 재해 복구는 이제 등록 중에 VMware 하드웨어를 이전 버전의 vSphere로 다운그레이드하는 것을 지원합니다. 이 기능은 소스 ESX 호스트가 재해 복구 사이트보다 최신 버전을 실행하는 경우에 유용합니다.
 
-자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html#select-vcenter-servers["NetApp Disaster Recovery 에서 복제 계획 만들기"].
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html#select-vcenter-servers["NetApp Disaster Recovery 에서 복제 계획 만들기"] 참조하십시오.
 
 
 
@@ -565,7 +565,7 @@ NetApp Disaster Recovery 이제 마이그레이션, 장애 조치, 장애 복구
 
 이제 백업을 생성하기 전에 실행할 사용자 정의 스크립팅을 장애 조치 워크플로에 삽입할 수 있습니다. 사전 백업 스크립팅을 사용하면 스냅샷이 복제되기 전에 VM 상태를 제어하고 전환을 위해 VM을 준비할 수 있습니다. 예를 들어, 장애 조치 후 다른 스크립트를 사용하여 다시 마운트될 NFS 마운트를 마운트 해제하는 스크립트를 삽입할 수 있습니다.
 
-자세한 내용은 다음을 참조하세요. link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html#select-vcenter-servers["NetApp Disaster Recovery 에서 복제 계획 만들기"].
+자세한 내용은 link:https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html#select-vcenter-servers["NetApp Disaster Recovery 에서 복제 계획 만들기"] 참조하십시오.
 
 
 
@@ -727,7 +727,7 @@ Windows 로컬 관리자 암호 솔루션(Windows LAPS)은 Active Directory의 �
 
 이제 도메인 컨트롤러 세부 정보를 제공하여 서브넷 매핑 옵션을 선택하고 LAPS 옵션을 확인할 수 있습니다.  이 옵션을 사용하면 각 가상 머신에 대한 비밀번호를 제공할 필요가 없습니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -787,7 +787,7 @@ NetApp Disaster Recovery 이제 기본 ONTAP SnapMirror 정책 스케줄러나 O
 
 이것이 구성된 후에는 서비스가 정기적으로 예약된 스냅샷을 찍지 않고 대신 외부 엔터티를 사용하여 해당 스냅샷을 찍고 업데이트합니다.
 
-복제 계획에서 외부 스냅샷 솔루션을 사용하는 방법에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+복제 계획에서 외부 스냅샷 솔루션을 사용하는 방법에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -820,7 +820,7 @@ NetApp Disaster Recovery 24시간마다 검색을 수행합니다.  이번 릴�
 * 복제 계획을 만들고 계획 내에서 리소스 그룹을 만들면 데이터 저장소에서 VM을 볼 수 있습니다.
 
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -936,7 +936,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 복제 계획을 생성하고 컴퓨팅 리소스를 매핑할 때 이제 폴더를 매핑하여 데이터 센터, 클러스터 및 호스트에 대해 지정한 폴더에 VM을 복구할 수 있습니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -954,7 +954,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 복제 계획을 만들 때 이제 계획에 있는 각 VM에 대한 부팅 지연을 설정할 수 있습니다.  이를 통해 VM이 시작될 순서를 설정하여 후속 우선순위 VM이 시작되기 전에 모든 우선순위 1 VM이 실행되도록 할 수 있습니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -963,7 +963,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 복제 계획을 만들면 이제 계획에 있는 각 VM의 운영 체제를 볼 수 있습니다.  이는 리소스 그룹에서 VM을 어떻게 그룹화할지 결정하는 데 유용합니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -972,7 +972,7 @@ NetApp Disaster Recovery 에서 ASA r2를 지원하려면 ONTAP 9.16.1이 필요
 
 이제 복제 계획을 생성할 때 재해 복구 사이트의 VM 이름에 접두사와 접미사를 추가할 수 있습니다. 이를 통해 계획에서 VM에 대해 더욱 설명적인 이름을 사용할 수 있습니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -1103,7 +1103,7 @@ NOTE: NetApp 미리 본 워크로드 용량에 대해 요금을 청구하지 않
 [[replication-plan-updates]]
 === 복제 계획 업데이트
 
-애플리케이션 페이지에서 데이터 저장소별로 VM을 필터링하고 리소스 매핑 페이지에서 추가 대상 세부 정보를 선택하면 복제 계획을 더 쉽게 추가할 수 있습니다. 참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+애플리케이션 페이지에서 데이터스토어별로 VM을 필터링하고 리소스 매핑 페이지에서 대상 세부 정보를 더 선택하여 복제 계획을 더 쉽게 추가할 수 있습니다.  https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을(를) 참조하십시오.
 
 
 
@@ -1198,9 +1198,9 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 [[edit-schedules]]
 === 일정 편집
 
-이 릴리스를 사용하면 규정 준수 및 장애 조치 테스트를 위한 일정을 설정하여 필요할 경우 해당 테스트가 올바르게 작동하는지 확인할 수 있습니다.
+이번 릴리스를 통해 규정 준수 및 장애 조치 테스트 일정을 설정하여 이러한 테스트가 올바르게 작동하는지 확인할 수 있습니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-modify.html["복제 계획 수정"]을 참조하십시오.
 
 
 
@@ -1220,7 +1220,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 * 고정 IP: 소스 VM에서 동일하거나 다른 정보를 선택할 수 있습니다.  출처와 동일한 것을 선택하면 자격 증명을 입력할 필요가 없습니다.  반면, 소스의 다른 정보를 사용하기로 선택한 경우 자격 증명, IP 주소, 서브넷 마스크, DNS 및 게이트웨이 정보를 제공할 수 있습니다.
 
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -1238,7 +1238,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 이제 복제 계획을 개발하는 동안 SnapMirror 관계를 만들 수 있습니다.  이전에는 NetApp Disaster Recovery 외부에서 관계를 만들어야 했습니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -1247,7 +1247,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 복제 계획을 만들 때 서로 다른 볼륨과 서로 다른 SVM에 속한 VM을 포함할 수 있습니다.  NetApp Disaster Recovery 모든 볼륨을 포함하여 일관성 그룹 스냅샷을 만들고 모든 보조 위치를 업데이트합니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -1256,7 +1256,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 복제 계획을 만들 때 리소스 그룹에 VM을 추가할 수 있습니다.  리소스 그룹을 사용하면 각 VM에 지연 시간을 설정하여 지연된 순서로 전원이 켜지도록 할 수 있습니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -1265,7 +1265,7 @@ NetApp Disaster Recovery 에 대한 라이선싱 설정에 대한 자세한 내�
 
 애플리케이션과 일관된 스냅샷 복사본을 생성하도록 지정할 수 있습니다.  이 서비스는 애플리케이션을 정지시킨 다음 스냅샷을 찍어 애플리케이션의 일관된 상태를 얻습니다.
 
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+자세한 내용은 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을 참조하십시오.
 
 
 
@@ -1325,11 +1325,11 @@ NetApp Disaster Recovery 의 이 미리 보기 릴리스에는 다음과 같은 
 
 * *RPO*: 이제 복제 계획의 데이터 저장소 섹션에 복구 지점 목표(RPO)와 보존 횟수를 입력할 수 있습니다. 이는 설정된 시간보다 오래되지 않은 데이터의 양을 나타냅니다. 예를 들어, 5분으로 설정하면 비즈니스에 중요한 요구 사항에 영향을 미치지 않고도 재해가 발생해도 시스템은 최대 5분 동안의 데이터를 잃을 수 있습니다.
 +
-참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+ https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을(를) 참조하십시오.
 
 * *네트워킹 향상*: 복제 계획의 가상 머신 섹션에서 소스와 대상 위치 간의 네트워킹을 매핑할 때 NetApp Disaster Recovery 이제 DHCP 또는 정적 IP의 두 가지 옵션을 제공합니다. 이전에는 DHCP만 지원되었습니다. 고정 IP의 경우 서브넷, 게이트웨이, DNS 서버를 구성합니다. 또한 이제 가상 머신에 대한 자격 증명을 입력할 수 있습니다.
 +
-참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+ https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을(를) 참조하십시오.
 
 * *일정 편집*: 이제 복제 계획 일정을 업데이트할 수 있습니다.
 +
@@ -1342,7 +1342,7 @@ NetApp Disaster Recovery 의 이 미리 보기 릴리스에는 다음과 같은 
 ** 일관성 그룹으로서 다수 대 1
 ** 다대다
 +
-참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+ https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"]을(를) 참조하십시오.
 
 
 
@@ -1372,7 +1372,7 @@ https://docs.netapp.com/us-en/data-services-disaster-recovery/get-started/dr-int
 [[resource-groups-update-for-boot-order]]
 === 부팅 순서에 대한 리소스 그룹 업데이트
 
-재해 복구 또는 복제 계획을 만들 때 가상 머신을 기능적 리소스 그룹에 추가할 수 있습니다. 리소스 그룹을 사용하면 요구 사항을 충족하는 논리적 그룹에 종속된 가상 머신 세트를 넣을 수 있습니다. 예를 들어, 그룹에는 복구 시 실행할 수 있는 부팅 순서가 포함될 수 있습니다. 이 릴리스에서는 각 리소스 그룹에 하나 이상의 가상 머신을 포함할 수 있습니다. 가상 머신은 계획에 포함한 순서에 따라 전원이 켜집니다. 참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["복제할 애플리케이션을 선택하고 리소스 그룹을 할당합니다."] .
+재해 복구 또는 복제 계획을 생성할 때 가상 머신을 기능 리소스 그룹에 추가할 수 있습니다. 리소스 그룹을 사용하면 종속 가상 머신 세트를 요구 사항에 맞는 논리적 그룹으로 묶을 수 있습니다. 예를 들어, 그룹에는 복구 시 실행할 수 있는 부팅 순서가 포함될 수 있습니다. 이번 릴리스에서는 각 리소스 그룹에 하나 이상의 가상 머신을 포함할 수 있습니다. 가상 머신은 계획에 포함된 순서에 따라 전원이 켜집니다.  https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제할 애플리케이션을 선택하고 리소스 그룹을 할당합니다."]을(를) 참조하십시오.
 
 
 
@@ -1386,7 +1386,7 @@ https://docs.netapp.com/us-en/data-services-disaster-recovery/get-started/dr-int
 [[replication-plan-shows-recovery-point-objective-rpo-transfer-schedules]]
 === 복제 계획은 RPO(복구 지점 목표) 전송 일정을 보여줍니다.
 
-재해 복구 또는 복제 계획을 만들 때 VM을 선택합니다. 이 릴리스에서는 이제 데이터 저장소 또는 VM에 연결된 각 볼륨과 연관된 SnapMirror 볼 수 있습니다. SnapMirror 일정과 연결된 RPO 전송 일정도 볼 수 있습니다. RPO는 재해 발생 후 복구에 백업 일정이 충분한지 여부를 판단하는 데 도움이 됩니다. 참조하다 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/drplan-create.html["복제 계획 만들기"] .
+재해 복구 또는 복제 계획을 생성할 때 VM을 선택합니다. 이번 릴리스에서는 데이터스토어 또는 VM과 연결된 각 볼륨과 연결된 SnapMirror를 확인할 수 있습니다. 또한 SnapMirror 일정과 연결된 RPO 전송 일정도 볼 수 있습니다. RPO는 백업 일정이 재해 발생 후 복구에 충분한지 판단하는 데 도움이 됩니다. 다음을 참조하십시오 https://docs.netapp.com/us-en/data-services-disaster-recovery/use/task-replication-plan-vmware.html["복제 계획 만들기"].
 
 
 

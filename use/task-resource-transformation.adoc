@@ -84,5 +84,5 @@ image::resource-transformation-template.png[리소스 변환 템플릿 스크린
 [[next-steps]]
 == 다음 단계
 
-* link:drplan-create.html["복제 계획 만들기"]
+* link:task-replication-plan-kubernetes.html["Kubernetes 워크로드에 대한 복제 계획 생성"]
 

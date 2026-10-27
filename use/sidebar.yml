@@ -8,8 +8,16 @@ entries:
   url: "/use/sites-add.html"
 - title: 리소스 그룹 만들기
   url: "/use/resource-group.html"
-- title: 복제 계획 만들기
-  url: "/use/drplan-create.html"
+- title: 복제 계획
+  entries:
+  - title: 복제 계획에 대해 알아보십시오.
+    url: "/use/concept-replication-plan.html"
+  - title: VMware 복제 계획 생성
+    url: "/use/task-replication-plan-vmware.html"
+  - title: Kubernetes 복제 계획 생성
+    url: "/use/task-replication-plan-kubernetes.html"
+  - title: 복제 계획 수정
+    url: "/use/task-replication-plan-modify.html"
 - title: 다른 사이트로 복제
   url: "/use/replicate.html"
 - title: 다른 사이트로 마이그레이션
