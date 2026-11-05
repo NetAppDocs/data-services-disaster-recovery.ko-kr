@@ -21,9 +21,9 @@ NetApp Disaster Recovery를 사용하기 전에 복제 및 복구가 호환성 �
 
 이러한 필수 구성 요소는 온프레미스 vCenter 클러스터와 VMware Cloud for AWS 소프트웨어 정의 데이터 센터(SDDC)에 모두 적용됩니다.
 
-* 검토link:../reference/vcenter-privileges.html["vCenter 권한"] NetApp Disaster Recovery 에 필요합니다.
-* NetApp Disaster Recovery에서 관리하는 모든 VMware 클러스터는 보호하려는 VM을 호스팅하기 위해 ONTAP 볼륨을 사용해야 합니다.
-* NetApp Disaster Recovery 에서 관리하는 모든 VMware 데이터 저장소는 다음 프로토콜 중 하나를 사용해야 합니다.
+* 재해 복구에 필요한 link:../reference/vcenter-privileges.html["vCenter 권한"]를 검토하십시오.
+* 재해 복구에서 관리하는 모든 VMware 클러스터는 보호하려는 VM을 호스팅하기 위해 ONTAP 볼륨을 사용해야 합니다.
+* 재해 복구에서 관리할 모든 VMware 데이터스토어는 다음 프로토콜 중 하나를 사용해야 합니다:
 +
 ** NFS
 ** iSCSI 또는 FC 프로토콜을 사용하는 VMFS

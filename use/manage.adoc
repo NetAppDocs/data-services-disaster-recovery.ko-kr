@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: use/manage.html 
-keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, replication plans, resource groups 
-summary: 모든 NetApp Disaster Recovery 리소스를 빠르게 살펴보고 vCenter 사이트, 리소스 그룹 및 복제 계획을 관리할 수 있습니다. 
+keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, kubernetes, trident protect, replication plans, resource groups 
+summary: 모든 NetApp Disaster Recovery 리소스를 한눈에 빠르게 확인하고 VMware 및 Kubernetes 워크로드에 대한 사이트, 리소스 그룹 및 복제 계획을 관리할 수 있습니다. 
 ---
 = NetApp Disaster Recovery를 사용하여 사이트, 리소스 그룹 및 복제 계획을 관리합니다.
 :hardbreaks:
@@ -14,29 +14,30 @@ summary: 모든 NetApp Disaster Recovery 리소스를 빠르게 살펴보고 vCe
 [role="lead"]
 NetApp Disaster Recovery 모든 리소스에 대한 개요와 보다 자세한 관점을 제공합니다.
 
-* 사이트
+* 사이트(vCenter 및 Kubernetes)
 * 리소스 그룹
 * 복제 계획
-* 데이터 저장소
-* 가상 머신
+* 데이터스토어(VMware)
+* 가상 머신(VMware)
+* Kubernetes 클러스터 및 Trident Protect
 
 
 작업에는 다양한 NetApp Console 역할이 필요합니다.  자세한 내용은 각 작업의 *필수 NetApp Console 역할* 섹션을 참조하세요.
 
-link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["재해 복구의 사용자 역할 및 권한에 대해 알아보십시오."]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 
 
 [[manage-vcenter-sites]]
 == vCenter 사이트 관리
 
-vCenter 사이트 이름과 유형(온프레미스 또는 AWS)을 편집할 수 있습니다.
+vCenter 사이트 이름과 유형(온프레미스 또는 AWS)을 편집할 수 있습니다. Kubernetes 클러스터 및 사이트를 관리하려면 link:manage.html#manage-trident-protect["Trident Protect 관리"]을(를) 참조하십시오.
 
 *필요한 NetApp Console 역할* 이 작업을 수행하려면 조직 관리자, 폴더 또는 프로젝트 관리자, 또는 재해 복구 관리자 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^]. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . 메뉴에서 *사이트*를 선택합니다.
-. *작업* 옵션을 선택하세요image:../use/icon-vertical-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"] vCenter 이름 오른쪽에서 *편집*을 선택합니다.
+. vCenter 이름 오른쪽에 있는 *작업* 옵션 image:../use/icon-vertical-dots.png["재해 복구 서비스의 작업 메뉴 아이콘"]을 선택한 다음 *편집*을 선택합니다.
 . vCenter 사이트 이름과 위치를 편집합니다.
 
 
@@ -45,7 +46,7 @@ vCenter 사이트 이름과 유형(온프레미스 또는 AWS)을 편집할 수 
 [[manage-resource-groups]]
 == 리소스 그룹 관리
 
-가상 머신 또는 데이터스토어별로 리소스 그룹을 생성할 수 있습니다. 복제 계획을 생성할 때 또는 나중에 리소스 그룹을 추가할 수 있습니다.
+VM, 데이터스토어 또는 Kubernetes 리소스를 기준으로 리소스 그룹을 생성할 수 있습니다. 복제 계획을 생성할 때 또는 나중에 리소스 그룹을 추가할 수 있습니다.
 
 *필요한 NetApp Console 역할* 이 작업을 수행하려면 Super admin, Disaster recovery admin 또는 Disaster recovery application admin 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^]. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
@@ -68,7 +69,7 @@ vCenter 사이트 이름과 유형(온프레미스 또는 AWS)을 편집할 수 
 .단계
 . 메뉴에서 *리소스 그룹*을 선택합니다.
 . 리소스 그룹을 추가하려면 *그룹 추가*를 선택하세요.
-. *작업* 옵션을 선택하여 리소스 그룹을 수정하거나 삭제할 수 있습니다.image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"] .
+. *작업* 옵션 image:../use/icon-horizontal-dots.png["재해 복구 서비스의 작업 메뉴 아이콘"]을 선택하여 리소스 그룹을 수정하거나 삭제할 수 있습니다.
 
 
 
@@ -89,7 +90,7 @@ vCenter 사이트 이름과 유형(온프레미스 또는 AWS)을 편집할 수 
 +
 image:../use/dr-plan-list.png["복제 계획 목록"]
 
-. 계획 세부 정보를 보려면 *작업* 옵션을 선택하세요.image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"] *플랜 세부정보 보기*를 선택하세요.
+. 계획 세부 정보를 보려면 *작업* 옵션 image:../use/icon-horizontal-dots.png["재해 복구 서비스의 작업 메뉴 아이콘"]을 선택한 다음 *계획 세부 정보 보기*를 선택하십시오.
 . 다음 중 하나를 수행하세요.
 +
 ** 플랜 세부 정보를 편집하려면(반복 일정을 변경하려면) *플랜 세부 정보* 탭을 선택하고 오른쪽에 있는 *편집* 아이콘을 선택하세요.
@@ -98,8 +99,8 @@ image:../use/dr-plan-list.png["복제 계획 목록"]
 
 
 . 왼쪽의 탐색 경로에서 "복제 계획"을 선택하여 계획 목록으로 돌아갑니다.
-. 복제 계획에 대한 작업을 수행하려면 복제 계획 목록에서 해당 계획 오른쪽에 있는 *작업* 옵션 image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"]을 선택한 다음 *일정 편집*, *장애 조치 테스트*, *장애 조치*, *페일백*, *마이그레이션*, *지금 스냅샷 생성*, *오래된 스냅샷 정리*, *사용 안 함*, *사용* 또는 *삭제* 중에서 원하는 작업을 선택하십시오.
-. 테스트 장애 조치 일정을 설정하거나 변경하거나 규정 준수 빈도 검사를 설정하려면 *작업* 옵션을 선택하세요.image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"] 계획 오른쪽에서 *일정 편집*을 선택하세요.
+. 복제 계획에 대한 작업을 수행하려면 복제 계획 목록에서 해당 계획 오른쪽에 있는 *작업* 옵션 image:../use/icon-horizontal-dots.png["재해 복구 서비스의 작업 메뉴 아이콘"]을 선택한 다음 *일정 편집*, *장애 조치 테스트*, *장애 조치*, *페일백*, *마이그레이션*, *지금 스냅샷 생성*, *오래된 스냅샷 정리*, *사용 안 함*, *사용* 또는 *삭제* 중에서 원하는 작업을 선택하십시오.
+. 테스트 페일오버 일정을 설정 또는 변경하거나 규정 준수 확인 빈도를 설정하려면 계획 오른쪽에 있는 *작업* 옵션 image:../use/icon-horizontal-dots.png["재해 복구 서비스의 작업 메뉴 아이콘"] 을 선택하고 *일정 편집*을 선택하십시오.
 +
 .. 일정 편집 페이지에서 장애 조치 규정 준수 검사를 수행할 빈도를 분 단위로 입력합니다.
 .. *일정에 따라 테스트 장애 조치 실행*을 선택합니다.
@@ -123,7 +124,7 @@ image:../use/dr-plan-list.png["복제 계획 목록"]
 +
 image:../use/dr-plan-list.png["복제 계획 목록"]
 
-. 복제 계획 목록에서 *작업* 옵션을 선택하세요.image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"] 그런 다음 *스냅샷을 조정합니다*.
+. 복제 계획 목록에서 *작업* 옵션 image:../use/icon-horizontal-dots.png["재해 복구 서비스의 작업 메뉴 아이콘"]을 선택한 다음 *스냅샷 조정*을 선택합니다.
 . 조정 정보를 검토하세요.
 . *조정*을 선택하세요.
 
@@ -139,7 +140,7 @@ image:../use/dr-plan-list.png["복제 계획 목록"]
 
 .단계
 . 메뉴에서 *복제 계획*을 선택합니다.
-. *작업* 옵션을 선택하세요image:../use/icon-horizontal-dots.png["NetApp Disaster Recovery 서비스의 작업 메뉴 아이콘"] 계획 오른쪽에서 *삭제*를 선택하세요.
+. 계획 오른쪽에 있는 *작업* 옵션 image:../use/icon-horizontal-dots.png["재해 복구 서비스의 작업 메뉴 아이콘"]을 선택하고 *삭제*를 선택합니다.
 . 기본 스냅샷, 보조 스냅샷 또는 계획에서 생성된 메타데이터만 삭제할지 여부를 선택합니다.
 . 삭제를 확인하려면 "delete"를 입력하세요.
 . *삭제*를 선택하세요.
@@ -200,7 +201,7 @@ image:../use/dr-plan-failover-edit.png["장애 조치 매핑 페이지 편집"]
 [[view-datastore-information]]
 == 데이터 저장소 정보 보기
 
-소스 및 타겟 사이트에 존재하는 데이터 저장소의 수를 확인할 수 있습니다.
+VMware 워크로드의 경우 소스 및 대상 사이트에 있는 데이터스토어 수를 확인할 수 있습니다.
 
 *필수 NetApp Console 역할* 이 작업을 수행하려면 Super admin, Disaster recovery admin, Disaster recovery failover admin, Disaster recovery application admin 또는 Disaster recovery viewer 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^]. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
@@ -216,7 +217,7 @@ image:../use/dr-plan-failover-edit.png["장애 조치 매핑 페이지 편집"]
 [[view-virtual-machines-information]]
 == 가상 머신 정보 보기
 
-소스 사이트와 타겟 사이트에 있는 가상 머신의 수와 CPU, 메모리, 사용 가능한 용량을 확인할 수 있습니다.
+VMware 워크로드의 경우 소스 및 대상 사이트에 있는 가상 머신 수와 CPU, 메모리 및 사용 가능한 용량을 확인할 수 있습니다.
 
 *필수 NetApp Console 역할* 이 작업을 수행하려면 Super admin, Disaster recovery admin, Disaster recovery failover admin, Disaster recovery application admin 또는 Disaster recovery viewer 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^]. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 

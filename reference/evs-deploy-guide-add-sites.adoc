@@ -9,7 +9,7 @@ summary: VM 인프라를 보호하기 전에 NetApp Disaster Recovery 서비스�
 
 
 [role="lead"]
-VM 인프라를 보호하기 전에 보호할 VM을 호스팅하는 VMware vCenter 클러스터와 해당 vCenter가 있는 위치를 파악해야 합니다.  첫 번째 단계는 소스 및 대상 데이터 센터를 나타내는 사이트를 만드는 것입니다.  사이트는 장애 도메인 또는 복구 도메인입니다.
+NetApp Disaster Recovery로 VM 인프라를 보호하기 전에 보호할 VM을 호스팅하는 VMware vCenter 클러스터와 해당 vCenters의 위치를 확인해야 합니다. 첫 번째 단계는 소스 및 대상 데이터 센터를 나타내는 사이트를 생성하는 것입니다. 사이트는 장애 도메인 또는 복구 도메인입니다.
 
 다음을 만들어야 합니다.
 
@@ -26,7 +26,7 @@ VM 인프라를 보호하기 전에 보호할 VM을 호스팅하는 VMware vCent
 
 .단계
 . NetApp Console 왼쪽 탐색 모음에서 *보호* > *재해 복구*를 선택합니다.
-. NetApp Disaster Recovery 의 모든 페이지에서 *사이트* 옵션을 선택합니다.
+. 재해 복구의 어느 페이지에서든 *사이트* 옵션을 선택합니다.
 +
 image:evs-create-site-op-1.png["사이트 옵션"]
 
@@ -51,7 +51,7 @@ image:evs-create-site-op-3-5.png["사이트 만들기 대화 상자"]
 
 Amazon FSx for NetApp ONTAP 스토리지를 사용하여 Amazon EVS에 대한 DR 사이트를 만듭니다.
 
-. NetApp Disaster Recovery 의 모든 페이지에서 *사이트* 옵션을 선택합니다.
+. 재해 복구의 어느 페이지에서든 *사이트* 옵션을 선택합니다.
 +
 image:evs-create-site-op-1.png["사이트 옵션"]
 

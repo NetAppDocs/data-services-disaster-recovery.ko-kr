@@ -28,7 +28,7 @@ NetApp Console은 단일 작업 환경에서 여러 콘솔 에이전트를 사�
 [[steps]]
 == 단계
 
-. 재해 복구에서 **사이트**를 선택합니다.
+. NetApp Disaster Recovery에서 **사이트**를 선택합니다.
 . 소스 및 대상 vCenter 모두에 대한 콘솔 에이전트를 변경해야 합니다.  수정하려는 vCenter를 식별합니다.  vCenter에 대한 작업 메뉴를 선택한 다음 **편집**을 선택합니다.
 +
 image:dr-sites-subnet-menu.png["사이트 대시보드의 스크린샷"]

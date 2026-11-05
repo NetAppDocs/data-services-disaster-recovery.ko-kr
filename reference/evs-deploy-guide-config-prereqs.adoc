@@ -13,10 +13,10 @@ Amazon EVS를 NetApp Disaster Recovery와 연동하여 구성하기 위한 요�
 
 .필수 조건
 * link:../get-started/dr-prerequisites.html["Disaster Recovery를 위한 일반적인 전제 조건"]를 검토해 보세요.
-* NetApp Disaster Recovery 에 필요한 작업을 수행하는 데 필요한 특정 VMware 권한이 있는 vCenter 사용자 계정을 만듭니다.
+* 재해 복구에 필요한 작업을 수행할 수 있도록 특정 VMware 권한을 가진 vCenter 사용자 계정을 생성하십시오.
 +
 
-NOTE: 기본 "\administrator@vsphere.com" 관리자 계정을 **사용하지 않는 것**을 권장합니다. 대신, 재해 복구 프로세스에 참여할 모든 vCenter 클러스터에 NetApp Disaster Recovery 전용 사용자 계정을 생성해야 합니다. 필요한 특정 권한 목록은 link:vcenter-privileges.html["NetApp Disaster Recovery 에 필요한 vCenter 권한"]를 참조하십시오.
+NOTE: 기본 "\administrator@vsphere.com" 관리자 계정은 사용하지 **않는** 것이 좋습니다. 대신 재해 복구 프로세스에 참여할 모든 vCenter 클러스터에 재해 복구 전용 사용자 계정을 생성해야 합니다. 필요한 특정 권한 목록은 link:vcenter-privileges.html["재해 복구에 필요한 vCenter 권한"]을(를) 참조하십시오.
 
 * 재해 복구로 보호되는 VM을 호스팅할 모든 vCenter 데이터스토어가 NetApp ONTAP 스토리지 리소스에 있는지 확인하십시오.
 +

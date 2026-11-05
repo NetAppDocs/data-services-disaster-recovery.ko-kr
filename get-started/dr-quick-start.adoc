@@ -30,7 +30,7 @@ NetApp Disaster Recovery를 구성하는 방법을 알아보십시오. 시스템
 
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"]NetApp Disaster Recovery 설정
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["둘"] 재해 복구 설정
 [role="quick-margin-para"]
 이러한 작업을 수행하려면 _Super admin_ 또는 _Disaster recovery admin_ 역할이 필요합니다.
 

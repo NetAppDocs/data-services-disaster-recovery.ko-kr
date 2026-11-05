@@ -30,7 +30,7 @@ NOTE: VMware 워크로드에 대한 복제 계획을 생성하려면 link:task-r
 
 
 
-TIP: NetApp Disaster Recovery를 배포하기 전에 Kubernetes 클러스터와 네임스페이스를 구성하여 확산을 최소화하십시오. 복제 계획을 생성하기 전에 리소스 그룹을 구성하려면 link:resource-group.html["리소스 그룹 만들기"]를 참조하십시오.
+TIP: 재해 복구를 배포하기 전에 Kubernetes 클러스터와 네임스페이스를 구성하여 확산을 최소화하십시오. 복제 계획을 생성하기 전에 리소스 그룹을 구성하려면 link:resource-group.html["리소스 그룹 만들기"]을(를) 참조하십시오.
 
 
 
@@ -52,7 +52,7 @@ TIP: NetApp Disaster Recovery를 배포하기 전에 Kubernetes 클러스터와 
 먼저 복제 계획에 사용할 소스 클러스터와 대상 클러스터를 선택합니다.
 
 .단계
-. NetApp Disaster Recovery 메뉴에서 *복제 계획*을 선택합니다.
+. 재해 복구 메뉴에서 *복제 계획*을 선택합니다.
 . 드롭다운 메뉴에서 *Kubernetes*를 선택하세요.
 +
 image::site-type-toggle.png[사이트 유형 전환 스크린샷]

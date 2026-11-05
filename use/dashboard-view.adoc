@@ -4,7 +4,7 @@ permalink: use/dashboard-view.html
 keywords: disaster recovery remediate, disaster recovery, failover, failback, replication, bluexp, netapp 
 summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다. 
 ---
-= NetApp Disaster Recovery에서 계획 상태 및 워크로드 보호 상태를 확인합니다.
+= NetApp Disaster Recovery에서 플랜 상태 및 보호 상태를 확인하십시오.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -26,9 +26,9 @@ NetApp Disaster Recovery는 Disaster Recovery에서 발견된 워크로드와 �
 == 대시보드에서 상태 및 보호 상태 보기
 
 .단계
-. NetApp Disaster Recovery 메뉴에서 *대시보드*를 선택합니다.
+. 재해 복구 메뉴에서 *대시보드*를 선택하십시오.
 +
-image:dr-dashboard.png["NetApp Disaster Recovery 보드"]
+image:dr-dashboard.png["재해 복구 대시보드"]
 
 . 대시보드의 상태 정보를 검토합니다.
 +
@@ -91,7 +91,7 @@ image:dr-dashboard.png["NetApp Disaster Recovery 보드"]
 
 |===
 .단계
-. NetApp Disaster Recovery 메뉴에서 *워크로드*를 선택합니다.
+. 재해 복구 메뉴에서 *워크로드*를 선택합니다.
 . 드롭다운 메뉴에서 필터를 선택하여 *vCenter* 또는 *Kubernetes* 워크로드를 확인합니다.
 +
 image::site-type-toggle.png[사이트 유형 전환 스크린샷]

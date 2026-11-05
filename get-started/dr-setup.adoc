@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/dr-setup.html 
-keywords: bluexp, disaster recovery, aws, amazon web services, amazon fsx for netapp ontap 
+keywords: bluexp, disaster recovery, aws, amazon web services, amazon fsx for netapp ontap, vmware, kubernetes, trident protect 
 summary: NetApp Disaster Recovery 사용하려면 몇 가지 단계를 수행하여 설정하세요. 
 ---
 = NetApp Disaster Recovery 위한 인프라 설정
@@ -22,12 +22,13 @@ TIP: 검토link:../get-started/dr-prerequisites.html["전제 조건"] 시스템�
 [[supported-infrastructures]]
 == 지원되는 인프라
 
-다음 인프라에서 NetApp Disaster Recovery 사용할 수 있습니다.
+재해 복구는 다음과 같은 인프라에서 사용할 수 있습니다:
 
 * 온프레미스 VMware Plus ONTAP 데이터센터를 VMware Cloud on AWS 또는 Elastic VMware Service(EVS) 및 Amazon FSx for NetApp ONTAP 기반 AWS 재해 복구 인프라로 복제하는 하이브리드 클라우드 재해 복구입니다.
 * 온프레미스 VMware Plus ONTAP vCenter를 다른 온프레미스 VMware Plus ONTAP vCenter로 복제하는 프라이빗 클라우드 재해 복구입니다.
 * VMware Cloud on AWS 또는 EVS 기반의 AWS 재해 복구 인프라를 FSx for NetApp ONTAP을 사용하여 다른 AWS 기반 재해 복구 인프라로 복제하는 클라우드 재해 복구.
 * 온프레미스 VMware Plus ONTAP 데이터센터를 Google Cloud VMware Engine 및 Google Cloud NetApp Volumes 기반의 Google 재해 복구 인프라로 복제하는 하이브리드 클라우드 재해 복구 솔루션입니다.
+* Trident에서 관리하는 ONTAP 스토리지를 사용하는 Kubernetes 클러스터 간 Kubernetes 재해 복구. 클러스터 요구 사항은 link:task-kubernetes-requirements.html["Kubernetes 클러스터 요구 사항"]을(를) 참조하십시오.
 
 
 
@@ -46,10 +47,10 @@ AWS 클라우드 인프라와 관련된 재해 복구의 경우 AWS용 콘솔 �
 [[aws-availability-zones]]
 === AWS 가용 영역
 
-AWS는 리전 내 하나 이상의 가용 영역(AZ)에 솔루션을 배포하는 것을 지원합니다. NetApp Disaster Recovery는 AWS에서 호스팅되는 두 가지 서비스인 VMware Cloud on AWS와 Amazon FSx for NetApp ONTAP를 사용합니다.
+AWS는 리전 내 하나 이상의 가용 영역(AZ)에 솔루션을 배포하는 것을 지원합니다. 재해 복구는 AWS에서 호스팅되는 두 가지 서비스인 VMware Cloud on AWS 및 Amazon FSx for NetApp ONTAP를 사용합니다.
 
-* *VMware Cloud for AWS*: 단일 가용 영역(AZ) 또는 이중 가용 영역(AZ) 확장 클러스터 SDDC 환경에 배포를 지원합니다. NetApp Disaster Recovery는 VMware Cloud on AWS의 경우 단일 가용 영역 SDDC 배포만 지원합니다.
-* *AWS FSx for NetApp ONTAP*: Amazon FSx for NetApp ONTAP가 다중 가용 영역(AZ) 구성으로 배포되면 각 볼륨은 하나의 FSx for ONTAP 파일 시스템에 속하고 데이터는 두 번째 파일 시스템에 미러링됩니다. FSx for ONTAP는 단일 AZ 또는 다중 AZ 구성으로 배포할 수 있습니다. NetApp Disaster Recovery는 두 가지 배포 모델을 모두 지원합니다.
+* *VMware Cloud for AWS*: 단일 가용 영역(AZ) 또는 이중 가용 영역(AZ) 확장 클러스터 SDDC 환경에 배포를 지원합니다. 재해 복구는 VMware Cloud on AWS의 단일 가용 영역 SDDC 배포만 지원합니다.
+* *AWS FSx for NetApp ONTAP*: Amazon FSx for NetApp ONTAP이 다중 AZ 구성으로 배포될 때, 각 볼륨은 하나의 FSx for ONTAP 파일 시스템에 속하며 데이터는 두 번째 파일 시스템에 미러링됩니다. FSx for ONTAP은 단일 AZ 또는 다중 AZ 구성으로 배포할 수 있습니다. 재해 복구는 두 배포 모델을 모두 지원합니다.
 
 
 *모범 사례*: AWS 재해 복구 사이트 구성의 경우, NetApp은 VMware Cloud와 AWS FSx for ONTAP 인스턴스 모두에 대해 단일 AZ 배포를 권장합니다. AWS를 재해 복구에 사용하는 경우 여러 가용 영역을 도입할 필요가 없습니다. 다중 AZ 배포는 비용과 복잡성을 증가시킬 수 있습니다.
@@ -87,7 +88,7 @@ AWS는 다음과 같은 유형의 VPC-VPC 상호연결을 제공합니다.  각 
 [[get-ready-for-on-premises-to-cloud-protection-using-aws]]
 === AWS를 사용하여 온프레미스에서 클라우드로의 보호를 준비하세요
 
-AWS를 사용하여 온프레미스에서 클라우드로의 보호를 위한 NetApp Disaster Recovery 설정하려면 다음을 설정해야 합니다.
+AWS를 사용하여 온프레미스에서 클라우드로의 재해 복구를 설정하려면 다음 사항을 설정해야 합니다.
 
 * NetApp ONTAP 용 AWS FSx 설정
 * AWS SDDC에 VMware Cloud 설정
@@ -123,7 +124,7 @@ AWS에서 VMware Cloud 환경을 구성하려면 다음 단계를 따르세요. 
 [[private-cloud]]
 == 프라이빗 클라우드
 
-NetApp Disaster Recovery 사용하면 하나 이상의 vCenter 클러스터에 호스팅된 VMware VM을 보호할 수 있습니다. 즉, VM 데이터 저장소를 동일한 개인 데이터 센터에 있는 다른 vCenter 클러스터나 원격 개인 또는 공동 배치된 데이터 센터에 복제할 수 있습니다.
+재해 복구를 사용하면 하나 이상의 vCenter 클러스터에서 호스팅되는 VMware VM을 보호하기 위해 VM 데이터스토어를 동일한 프라이빗 데이터센터 또는 원격 프라이빗이나 코로케이션 데이터센터에 있는 다른 vCenter 클러스터로 복제할 수 있습니다.
 
 온프레미스 간 상황의 경우, 물리적 사이트 중 하나에 콘솔 에이전트를 설치합니다.
 
@@ -134,7 +135,7 @@ NetApp Disaster Recovery 사용하면 하나 이상의 vCenter 클러스터에 �
 [[get-ready-for-on-premises-to-on-premises-protection]]
 === 온프레미스 간 보호를 준비하세요
 
-온프레미스 간 보호를 위해 NetApp Disaster Recovery 설정하기 전에 다음 요구 사항이 충족되는지 확인하세요.
+온프레미스 간 보호를 위한 재해 복구를 설정하기 전에 다음 요구 사항을 충족하는지 확인하십시오:
 
 * ONTAP 저장
 +
@@ -147,7 +148,7 @@ NetApp Disaster Recovery 사용하면 하나 이상의 vCenter 클러스터에 �
 * vCenter 클러스터
 +
 ** 보호하려는 VM이 ​​NFS 데이터 저장소( ONTAP NFS 볼륨 사용) 또는 VMFS 데이터 저장소( NetApp iSCSI LUN 사용)에 호스팅되어 있는지 확인하세요.
-** 검토link:../reference/vcenter-privileges.html["vCenter 권한"] NetApp Disaster Recovery 에 필요합니다.
+** 재해 복구에 필요한 link:../reference/vcenter-privileges.html["vCenter 권한"]를 검토하십시오.
 ** 재해 복구 사용자 계정(기본 vCenter 관리자 계정 아님)을 만들고 해당 계정에 vCenter 권한을 할당합니다.
 
 
@@ -160,8 +161,8 @@ NetApp Disaster Recovery 사용하면 하나 이상의 vCenter 클러스터에 �
 
 NetApp Console 에이전트는 지능형 프록시를 지원합니다.  지능형 프록시는 온프레미스 환경을 NetApp Console 에 연결하는 가볍고 안전하며 효율적인 방법입니다.  VPN이나 ​​직접 인터넷 접속이 필요 없이 시스템과 콘솔 서비스 간의 안전한 연결을 제공합니다.  이 최적화된 프록시 구현은 로컬 네트워크 내의 API 트래픽을 오프로드합니다.
 
-프록시가 구성되면 NetApp Disaster Recovery VMware 또는 ONTAP 과 직접 통신을 시도하고 직접 통신이 실패하면 구성된 프록시를 사용합니다.
+프록시가 구성된 경우, 재해 복구는 VMware 또는 ONTAP과 직접 통신을 시도하며 직접 통신이 실패할 경우 구성된 프록시를 사용합니다.
 
-NetApp Disaster Recovery 프록시 구현을 위해서는 HTTPS 프로토콜을 사용하여 Console 에이전트와 모든 vCenter Server 및 ONTAP 어레이 간에 443 포트 통신이 필요합니다. Console 에이전트 내의 NetApp Disaster Recovery 에이전트는 작업을 수행할 때 VMware vSphere, vCenter Server 또는 ONTAP과 직접 통신합니다.
+재해 복구 프록시 구현에는 콘솔 에이전트와 모든 vCenter 서버 및 ONTAP 어레이 간에 HTTPS 프로토콜을 사용한 포트 443 통신이 필요합니다. 콘솔 에이전트 내의 재해 복구 에이전트는 작업을 수행할 때 VMware vSphere, vCenter 서버 또는 ONTAP과 직접 통신합니다.
 
 NetApp Console 에서 일반 프록시 설정에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/task-configuring-proxy.html["프록시 서버를 사용하도록 콘솔 에이전트 구성"^] .
