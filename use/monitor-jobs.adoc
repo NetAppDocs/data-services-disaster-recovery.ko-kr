@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: use/monitor-jobs.html 
 keywords: disaster recovery, bluexp disaster recovery, failover, failback, replicate, fail over, fail back, vmware, vcenter, monitor, bluexp 
-summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다.  모든 재해 복구 작업을 모니터링하고 진행 상황을 확인할 수 있습니다. 
+summary: NetApp Disaster Recovery에서 작업을 모니터링하여 작업 기록을 확인하고, 사용자 작업을 감사하고, 잠재적으로 문제가 있거나 시간 초과된 작업을 추적할 수 있습니다. 
 ---
 = NetApp Disaster Recovery 작업 모니터링
 :hardbreaks:
@@ -13,6 +13,13 @@ summary: NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 
 
 [role="lead"]
 NetApp Disaster Recovery 작업을 모니터링하여 작업 기록, 상태 및 세부 정보를 확인합니다. 작업 상태 및 진행 상황을 추적하면 복구 준비 상태에 영향을 미치기 전에 실패하거나 중단된 작업을 파악할 수 있습니다.
+
+
+
+[[about-job-monitoring]]
+== 작업 모니터링에 관하여
+
+실패, 취소 또는 시간 초과된 검색, 재동기화, 규정 준수, 보호, 복제 계획 또는 백업 보존 작업을 다시 실행하면 Disaster Recovery는 해당 재실행을 새 작업으로 등록하고 재실행을 시작한 사용자를 기록하므로 각 작업을 수행한 사용자를 확인할 수 있습니다. 페일백, 페일오버 및 마이그레이션 작업의 재실행은 원래 작업 아래에 나열되며 재실행을 시작한 사용자는 표시되지 않습니다.
 
 
 
@@ -39,16 +46,16 @@ TIP: 작업 세부 정보를 검토할 때 Disaster Recovery는 작업을 시작
 [[cancel-a-job]]
 == 작업 취소
 
-진행 중이거나 대기 중인 작업이 중단된 경우 또는 보류 중인 작업의 우선 순위를 지정하기 위해 해당 작업을 취소할 수 있습니다.
+진행 중이거나 대기 중인 작업이 멈췄거나 보류 중인 작업의 우선순위를 높여야 하는 경우 해당 작업을 취소할 수 있습니다.
 
 *필요한 NetApp Console 역할* 이 작업을 수행하려면 Super admin, Disaster recovery admin, Disaster recovery failover admin 또는 Disaster recovery application admin 역할이 필요합니다. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-disaster-rec-roles.html["NetApp Disaster Recovery 의 사용자 역할 및 권한에 대해 알아보세요."^]. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
-. NetApp Console 왼쪽 탐색 모음에서 *보호* > *재해 복구*를 선택합니다.
+. NetApp Console 왼쪽 탐색에서 *보호* > *재해 복구*를 선택합니다.
 . 메뉴에서 *작업 모니터링*을 선택합니다.
 . 작업 모니터링 페이지에서 취소하려는 작업의 ID를 기록해 두십시오.
 +
 작업은 "진행 중" 또는 "대기 중" 상태여야 합니다.
 
-. 작업 메뉴를 선택한 다음 **작업 취소**를 선택하십시오.
+. 작업 메뉴를 선택한 다음 **작업 취소**를 선택합니다.
 

@@ -981,12 +981,10 @@
   <block id="3849da8702f93c4c73b8b2d18d7d3b4d" category="list-text">*가상 머신*을 선택하세요.</block>
   <block id="2e91c6382e139b4d3b0307917725df9c" category="list-text">가상 머신 정보를 확인합니다.</block>
   <block id="e149f52ef3987c9798fc0b5e92f0d94c" category="doc">NetApp Disaster Recovery 사용하여 애플리케이션을 다른 사이트로 마이그레이션</block>
-  <block id="c1845ff7083c49cb3022e9cb477f265b" category="summary">NetApp Disaster Recovery 재해 복구 워크플로를 자동화하는 클라우드 기반 재해 복구 서비스입니다.  모든 재해 복구 작업을 모니터링하고 진행 상황을 확인할 수 있습니다.</block>
   <block id="45b443b335251cfe162de8423d5b2021" category="doc">NetApp Disaster Recovery 작업 모니터링</block>
   <block id="b2885babde6f690716af50f947f38fa4" category="list-text">메뉴에서 *작업 모니터링*을 선택합니다.</block>
   <block id="19a2cef623f0e702dd97e37e1bddd114" category="list-text">정보를 새로 고치려면 *새로 고침*을 선택하세요.</block>
   <block id="24391a0c4e58147fa07febdb32887a1a" category="section-title">작업 취소</block>
-  <block id="860b70267867fe6caf0f4adfd247b3e2" category="list-text">NetApp Console 왼쪽 탐색 모음에서 *보호* &gt; *재해 복구*를 선택합니다.</block>
   <block id="49e474835558193a9bed54c7dadf777e" category="paragraph">작업은 "진행 중" 또는 "대기 중" 상태여야 합니다.</block>
   <block id="5542a31575b0db973ecf1e27638145e5" category="doc">NetApp Disaster Recovery 사용하여 다른 사이트에 애플리케이션 복제</block>
   <block id="4fcb591c27b70823ff71112c0db6af4f" category="summary">재해 복구 보고서를 검토하면 재해 복구 준비 상태를 분석하는 데 도움이 될 수 있습니다.  사전 설계된 보고서에는 장애 조치 및 장애 복구 요약, 모든 사이트의 복제 세부 정보, 지난 1년간의 작업 세부 정보가 포함됩니다.</block>
@@ -1841,7 +1839,6 @@
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026년 6월 8일</block>
   <block id="0926e17414694f3b4201b416c6c4a6ca" category="paragraph">버전 4.3.4</block>
   <block id="f5fa15f6901bb980064f0a1e081fbfb7" category="list-text">테스트 페일오버 페이지에서 테스트 페일오버에 사용할 스냅샷을 선택합니다. **지금 스냅샷 생성**을 선택하거나 기존 스냅샷을 선택하려면 **선택**을 선택합니다. **선택**을 선택하는 경우 기존 스냅샷을 선택하십시오.</block>
-  <block id="e363882b79ccd237ac1f4dd679c679c2" category="paragraph">진행 중이거나 대기 중인 작업이 중단된 경우 또는 보류 중인 작업의 우선 순위를 지정하기 위해 해당 작업을 취소할 수 있습니다.</block>
   <block id="caf5841d5a0afa8a150bf6da9c22fc2f" category="list-text">워크로드 드롭다운 메뉴에서 필터를 *Kubernetes*로 설정합니다.</block>
   <block id="86839797735bfc02dea42929601e887a" category="list-text">설정 창에서 필요에 따라 필드를 편집합니다.</block>
   <block id="83cfc8bb47b46515d41842fa32fa608b" category="list-text">검색 일정을 사용자 지정하려면 *예약된 검색 사용* 확인란을 선택하십시오. 검색 시작 날짜와 검색 간격(시간 및 분)을 선택하십시오.</block>
@@ -1906,7 +1903,6 @@
   <block id="f45e2c030a4c208e00f685932255a3ca" category="paragraph">복제 계획 세부 정보를 확인하려면 *모든 복제 계획 보기*를 선택합니다.</block>
   <block id="c829e7823834805c5cfdbad004224956" category="list-text">*최근 경고 및 작업*을 검토하여 가장 최근에 실행된 작업과 경고 및 관련 상태를 확인하십시오. 모든 작업을 보려면 *모든 작업 보기*를 선택하십시오.</block>
   <block id="cb616e9285bb30b93344966fddafd029" category="list-text">*검색 및 보호 상태*를 검토하여 검색된 워크로드 수와 유형별로 구분된 보호된 워크로드와 보호되지 않은 워크로드의 수치적 분포를 확인할 수 있습니다. 또한 모든 워크로드의 총 검색 용량과 유형별 워크로드 용량도 검토할 수 있습니다.</block>
-  <block id="69ebf4461fc9429dbfcd7813c2832c6a" category="list-text">작업 메뉴를 선택한 다음 **작업 취소**를 선택하십시오.</block>
   <block id="c6f5d2645082be603586c7fcecedd01e" category="doc">NetApp Disaster Recovery에서 보고서 생성</block>
   <block id="466b68043567b88303b6c00217b4aeb5" category="paragraph">보고서 다운로드 링크는 생성 후 6시간 동안 유효합니다.</block>
   <block id="c5cbff21ca879b1c12f07a2c7ced7d25" category="list-text"><block ref="3127a7e60ca42a30e72a85e6e4e87658" category="inline-link-macro-rx"></block>에 로그인하십시오.</block>
@@ -2834,4 +2830,15 @@
   <block id="67582bf168c69167e5196885e4690704" category="paragraph">*삭제*를 선택하는 경우, 복제 계획과 함께 삭제할 관련 스냅샷 또는 메타데이터를 선택하십시오(*기본 스냅샷 삭제*, *보조 스냅샷 삭제* 또는 *스냅샷 메타데이터 삭제*). 텍스트 상자에 "delete"를 입력하여 작업을 확인한 다음 *삭제*를 선택하십시오.</block>
   <block id="8f16177ab00235f59e48b3f88600dc4e" category="sidebar">클라우드로의 재해 복구는 사이트 중단 및 데이터 손상 이벤트(예: 랜섬웨어)로부터 워크로드를 보호하는 탄력적이고 비용 효율적인 방법입니다. NetApp Disaster Recovery를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 및 Kubernetes 워크로드를 다른 온프레미스 사이트나 VMware 워크로드의 경우 퍼블릭 클라우드의 VMware 소프트웨어 정의 데이터 센터 등 재해 복구 사이트로 복제하여 보호할 수 있습니다.</block>
   <block id="ca3da73b82227265cf5cad362eba88f9" category="sidebar">NetApp Disaster Recovery를 사용하면 ONTAP 스토리지를 실행하는 온프레미스 VMware 및 Kubernetes 워크로드를 재해 복구 사이트로 복제할 수 있습니다.</block>
+  <block id="a022cebca1f841a4a75654f3e54a623b" category="doc">작업 재실행 시 작업 모니터링 기능 향상</block>
+  <block id="c5473f86ef99f2b81306aec2f780c239" category="paragraph">실패, 취소 또는 시간 초과된 특정 작업을 다시 실행하면 이제 NetApp Disaster Recovery에서 이러한 작업을 새 작업으로 등록하고 작업을 시작한 사용자를 식별합니다. 이전에는 Disaster Recovery에서 새 작업을 최초 작업 아래에 나열했습니다. 이 개선 사항은 요청이 수정되지 않은 한 Disaster Recovery의 작업에 대해 더 명확한 감사 추적을 생성합니다. 이는 검색, 재동기화, 규정 준수, 보호, 복제 계획 및 백업 보존 작업에만 적용됩니다. 페일백, 페일오버 및 마이그레이션 작업의 재실행은 새 작업으로 나열되지 않습니다. 재실행 체인에서 가장 최근 작업만 해당되며, 실행 중인 작업 뒤에 최대 하나의 재실행만 대기열에 추가될 수 있습니다.</block>
+  <block id="85aac6cb5b462503919fc861b656a1fa" category="inline-link-macro">재해 복구에서 작업 모니터링</block>
+  <block id="762e29bb52300aa24d22073f79b3d226" category="paragraph">자세한 내용은 <block ref="23d16b59790b4ad5fc943f7449cf33c5" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="e370f8f4d5db9e4f93257ac02adddec3" category="section-title">2026년 11월 9일</block>
+  <block id="6c6def1e063357d2dbcb737904433f45" category="paragraph">버전 4.3.9</block>
+  <block id="6c0cf6e0bcdd11f211b4e682480a409b" category="summary">NetApp Disaster Recovery에서 작업을 모니터링하여 작업 기록을 확인하고, 사용자 작업을 감사하고, 잠재적으로 문제가 있거나 시간 초과된 작업을 추적할 수 있습니다.</block>
+  <block id="a0b10368604904a36461ecb27e11a658" category="section-title">작업 모니터링에 관하여</block>
+  <block id="8dec9ccdd6e1ed3c94d0a2f1aa6d21a8" category="paragraph">실패, 취소 또는 시간 초과된 검색, 재동기화, 규정 준수, 보호, 복제 계획 또는 백업 보존 작업을 다시 실행하면 Disaster Recovery는 해당 재실행을 새 작업으로 등록하고 재실행을 시작한 사용자를 기록하므로 각 작업을 수행한 사용자를 확인할 수 있습니다. 페일백, 페일오버 및 마이그레이션 작업의 재실행은 원래 작업 아래에 나열되며 재실행을 시작한 사용자는 표시되지 않습니다.</block>
+  <block id="f93bdc0664253a11e5d06cbc704f8d85" category="paragraph">진행 중이거나 대기 중인 작업이 멈췄거나 보류 중인 작업의 우선순위를 높여야 하는 경우 해당 작업을 취소할 수 있습니다.</block>
+  <block id="d89601481d21a5b4c57d9d0c59bcbce3" category="list-text">작업 메뉴를 선택한 다음 **작업 취소**를 선택합니다.</block>
 </blocks>
